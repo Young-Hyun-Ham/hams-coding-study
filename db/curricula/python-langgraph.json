@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "python-langgraph-day-01",
+    "language": "python-langgraph",
+    "day": 1,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "LangGraph 개요와 설치",
+    "summary": "Python LangGraph의 LangGraph 개요와 설치 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "LangGraph는 장시간 실행되는 상태 기반 워크플로와 에이전트를 구성하는 저수준 런타임입니다. 설치 후 StateGraph를 중심으로 사용하며 모델 없이도 그래프 로직을 테스트할 수 있습니다.",
+    "keyPoints": [
+      "LangGraph 개요와 설치의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "LangGraph 개요와 설치의 핵심 개념 설명하기",
+      "LangGraph 개요와 설치을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "LangGraph 개요와 설치에서 배운 개념을 사용해 Day 1 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 1: LangGraph 개요와 설치\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: LangGraph 개요와 설치 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# pip install -U langgraph\nfrom langgraph.graph import StateGraph\nprint(\"LangGraph는 상태 기반 에이전트 오케스트레이션 런타임입니다.\")\nprint(StateGraph)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-02",
+    "language": "python-langgraph",
+    "day": 2,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "그래프 기반 워크플로 사고법",
+    "summary": "Python LangGraph의 그래프 기반 워크플로 사고법 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "업무를 공유 데이터인 State, 상태를 변경하는 Node, 실행 순서를 결정하는 Edge로 분해합니다. 먼저 결정적인 업무 흐름을 그린 뒤 필요한 지점에 모델이나 도구를 배치합니다.",
+    "keyPoints": [
+      "그래프 기반 워크플로 사고법의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "그래프 기반 워크플로 사고법의 핵심 개념 설명하기",
+      "그래프 기반 워크플로 사고법을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "그래프 기반 워크플로 사고법에서 배운 개념을 사용해 Day 2 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 2: 그래프 기반 워크플로 사고법\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 그래프 기반 워크플로 사고법 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# 업무를 상태(State), 작업(Node), 이동(Edge)으로 나눕니다.\nworkflow = {\n    \"state\": [\"request\", \"result\"],\n    \"nodes\": [\"validate\", \"process\"],\n    \"edges\": [\"START -> validate\", \"validate -> process\", \"process -> END\"],\n}\nprint(workflow)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-03",
+    "language": "python-langgraph",
+    "day": 3,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "TypedDict 상태 정의",
+    "summary": "Python LangGraph의 TypedDict 상태 정의 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "TypedDict는 그래프의 공유 상태 키와 값 타입을 명시합니다. 모든 노드는 전체 상태를 직접 변경하지 않고 변경할 키만 딕셔너리로 반환합니다.",
+    "keyPoints": [
+      "TypedDict 상태 정의의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "TypedDict 상태 정의의 핵심 개념 설명하기",
+      "TypedDict 상태 정의을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "TypedDict 상태 정의에서 배운 개념을 사용해 Day 3 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 3: TypedDict 상태 정의\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: TypedDict 상태 정의 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nclass StudyState(TypedDict):\n    topic: str\n    completed: bool\nstate: StudyState = {\"topic\": \"LangGraph\", \"completed\": False}\nprint(state)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-04",
+    "language": "python-langgraph",
+    "day": 4,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "노드 함수 작성",
+    "summary": "Python LangGraph의 노드 함수 작성 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "노드는 현재 상태를 인자로 받고 부분 상태 업데이트를 반환하는 동기 또는 비동기 함수입니다. 외부 부작용은 재실행되어도 안전하도록 멱등성을 고려해야 합니다.",
+    "keyPoints": [
+      "노드 함수 작성의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "노드 함수 작성의 핵심 개념 설명하기",
+      "노드 함수 작성을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "노드 함수 작성에서 배운 개념을 사용해 Day 4 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 4: 노드 함수 작성\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 노드 함수 작성 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nclass State(TypedDict):\n    text: str\n    length: int\ndef measure(state: State) -> dict:\n    return {\"length\": len(state[\"text\"])}\nprint(measure({\"text\": \"LangGraph\", \"length\": 0}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-05",
+    "language": "python-langgraph",
+    "day": 5,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "START와 END 엣지",
+    "summary": "Python LangGraph의 START와 END 엣지 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "START는 가상 진입점이고 END는 종료점입니다. add_edge로 고정 실행 순서를 연결하며 종료 엣지가 없는 순환 구조에는 반드시 명확한 종료 조건이 필요합니다.",
+    "keyPoints": [
+      "START와 END 엣지의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "START와 END 엣지의 핵심 개념 설명하기",
+      "START와 END 엣지을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "START와 END 엣지에서 배운 개념을 사용해 Day 5 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 5: START와 END 엣지\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: START와 END 엣지 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): value: int\ndef double(state: State): return {\"value\": state[\"value\"] * 2}\nbuilder = StateGraph(State); builder.add_node(\"double\", double)\nbuilder.add_edge(START, \"double\"); builder.add_edge(\"double\", END)\nprint(builder.compile().invoke({\"value\": 3}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-06",
+    "language": "python-langgraph",
+    "day": 6,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "그래프 컴파일과 invoke",
+    "summary": "Python LangGraph의 그래프 컴파일과 invoke 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "compile은 그래프 구조를 검증하고 실행 가능한 CompiledStateGraph를 만듭니다. invoke에는 스키마에 맞는 초기 상태를 전달하고 최종 병합 상태를 반환받습니다.",
+    "keyPoints": [
+      "그래프 컴파일과 invoke의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "그래프 컴파일과 invoke의 핵심 개념 설명하기",
+      "그래프 컴파일과 invoke을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "그래프 컴파일과 invoke에서 배운 개념을 사용해 Day 6 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 6: 그래프 컴파일과 invoke\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 그래프 컴파일과 invoke 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START\nclass State(TypedDict): message: str\ndef greet(state: State): return {\"message\": f\"Hello, {state['message']}\"}\nbuilder = StateGraph(State); builder.add_node(greet); builder.add_edge(START, \"greet\")\ngraph = builder.compile()\nprint(graph.invoke({\"message\": \"LangGraph\"}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-07",
+    "language": "python-langgraph",
+    "day": 7,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "상태 업데이트 규칙",
+    "summary": "Python LangGraph의 상태 업데이트 규칙 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "노드 반환값은 상태 전체가 아니라 업데이트입니다. 기본 채널은 새 값으로 교체되고, 리듀서가 지정된 채널은 기존 값과 새 값을 정의된 규칙으로 병합합니다.",
+    "keyPoints": [
+      "상태 업데이트 규칙의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "상태 업데이트 규칙의 핵심 개념 설명하기",
+      "상태 업데이트 규칙을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "상태 업데이트 규칙에서 배운 개념을 사용해 Day 7 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 7: 상태 업데이트 규칙\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 상태 업데이트 규칙 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START\nclass State(TypedDict): original: str; normalized: str\ndef normalize(state: State): return {\"normalized\": state[\"original\"].strip().lower()}\nbuilder = StateGraph(State); builder.add_node(normalize); builder.add_edge(START, \"normalize\")\nprint(builder.compile().invoke({\"original\": \"  HELLO  \", \"normalized\": \"\"}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-08",
+    "language": "python-langgraph",
+    "day": 8,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "여러 노드 연결",
+    "summary": "Python LangGraph의 여러 노드 연결 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "여러 노드를 add_node로 등록하고 add_edge로 연결하면 각 super-step에서 활성 노드가 실행됩니다. 상태를 통해 노드 간 결합도를 낮추는 것이 중요합니다.",
+    "keyPoints": [
+      "여러 노드 연결의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "여러 노드 연결의 핵심 개념 설명하기",
+      "여러 노드 연결을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "여러 노드 연결에서 배운 개념을 사용해 Day 8 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 8: 여러 노드 연결\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 여러 노드 연결 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): value: int\ndef add_one(state: State): return {\"value\": state[\"value\"] + 1}\ndef square(state: State): return {\"value\": state[\"value\"] ** 2}\nb = StateGraph(State); b.add_node(\"add\", add_one); b.add_node(\"square\", square)\nb.add_edge(START, \"add\"); b.add_edge(\"add\", \"square\"); b.add_edge(\"square\", END)\nprint(b.compile().invoke({\"value\": 2}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-09",
+    "language": "python-langgraph",
+    "day": 9,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "Mermaid 그래프 시각화",
+    "summary": "Python LangGraph의 Mermaid 그래프 시각화 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컴파일된 그래프의 get_graph().draw_mermaid()는 구조를 Mermaid 문자열로 표현합니다. 분기와 순환이 의도대로 연결됐는지 코드 리뷰와 디버깅에 활용합니다.",
+    "keyPoints": [
+      "Mermaid 그래프 시각화의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Mermaid 그래프 시각화의 핵심 개념 설명하기",
+      "Mermaid 그래프 시각화을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Mermaid 그래프 시각화에서 배운 개념을 사용해 Day 9 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 9: Mermaid 그래프 시각화\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Mermaid 그래프 시각화 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): value: str\ndef finish(state: State): return {\"value\": state[\"value\"].upper()}\nb = StateGraph(State); b.add_node(finish); b.add_edge(START, \"finish\"); b.add_edge(\"finish\", END)\ngraph = b.compile()\nprint(graph.get_graph().draw_mermaid())"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-10",
+    "language": "python-langgraph",
+    "day": 10,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "미니 프로젝트: 선형 처리 파이프라인",
+    "summary": "Python LangGraph의 미니 프로젝트: 선형 처리 파이프라인 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "선형 파이프라인은 정제, 변환, 검증 같은 결정적 단계를 각각 노드로 분리합니다. 각 노드를 독립 테스트하면 전체 그래프 오류를 빠르게 격리할 수 있습니다.",
+    "keyPoints": [
+      "미니 프로젝트: 선형 처리 파이프라인의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 선형 처리 파이프라인의 핵심 개념 설명하기",
+      "미니 프로젝트: 선형 처리 파이프라인을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 선형 처리 파이프라인에서 배운 개념을 사용해 Day 10 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 10: 미니 프로젝트: 선형 처리 파이프라인\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 미니 프로젝트: 선형 처리 파이프라인 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass PipelineState(TypedDict): raw: str; cleaned: str; words: list[str]\ndef clean(s): return {\"cleaned\": s[\"raw\"].strip().lower()}\ndef tokenize(s): return {\"words\": s[\"cleaned\"].split()}\nb = StateGraph(PipelineState); b.add_node(\"clean\", clean); b.add_node(\"tokenize\", tokenize)\nb.add_edge(START, \"clean\"); b.add_edge(\"clean\", \"tokenize\"); b.add_edge(\"tokenize\", END)\nprint(b.compile().invoke({\"raw\": \"  LangGraph Study  \", \"cleaned\": \"\", \"words\": []}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-11",
+    "language": "python-langgraph",
+    "day": 11,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "Annotated 리듀서",
+    "summary": "Python LangGraph의 Annotated 리듀서 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Annotated 필드에 operator.add 같은 리듀서를 지정하면 여러 노드 업데이트를 누적할 수 있습니다. 병렬 노드가 동일 키를 갱신할 때 리듀서가 없으면 충돌이 발생합니다.",
+    "keyPoints": [
+      "Annotated 리듀서의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Annotated 리듀서의 핵심 개념 설명하기",
+      "Annotated 리듀서을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Annotated 리듀서에서 배운 개념을 사용해 Day 11 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 11: Annotated 리듀서\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Annotated 리듀서 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "import operator\nfrom typing import Annotated\nfrom typing_extensions import TypedDict\nclass State(TypedDict):\n    logs: Annotated[list[str], operator.add]\ndef node_a(state): return {\"logs\": [\"A\"]}\ndef node_b(state): return {\"logs\": [\"B\"]}\nprint(node_a({\"logs\": []}), node_b({\"logs\": []}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-12",
+    "language": "python-langgraph",
+    "day": 12,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "MessagesState 활용",
+    "summary": "Python LangGraph의 MessagesState 활용 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "MessagesState는 add_messages 리듀서가 적용된 messages 채널을 제공합니다. 메시지 ID를 기준으로 추가하거나 교체하므로 대화형 에이전트의 기본 상태로 적합합니다.",
+    "keyPoints": [
+      "MessagesState 활용의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "MessagesState 활용의 핵심 개념 설명하기",
+      "MessagesState 활용을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "MessagesState 활용에서 배운 개념을 사용해 Day 12 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 12: MessagesState 활용\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: MessagesState 활용 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.graph import MessagesState\nfrom langchain_core.messages import HumanMessage, AIMessage\ndef mock_model(state: MessagesState):\n    question = state[\"messages\"][-1].content\n    return {\"messages\": [AIMessage(content=f\"답변: {question}\")]}\nprint(mock_model({\"messages\": [HumanMessage(content=\"LangGraph란?\")]}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-13",
+    "language": "python-langgraph",
+    "day": 13,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "입력·출력 상태 스키마",
+    "summary": "Python LangGraph의 입력·출력 상태 스키마 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "input_schema와 output_schema를 분리하면 외부에 노출되는 입력과 결과를 최소화하면서 그래프 내부에서는 더 풍부한 OverallState를 사용할 수 있습니다.",
+    "keyPoints": [
+      "입력·출력 상태 스키마의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "입력·출력 상태 스키마의 핵심 개념 설명하기",
+      "입력·출력 상태 스키마을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "입력·출력 상태 스키마에서 배운 개념을 사용해 Day 13 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 13: 입력·출력 상태 스키마\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 입력·출력 상태 스키마 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START\nclass InputState(TypedDict): text: str\nclass OutputState(TypedDict): length: int\nclass OverallState(InputState, OutputState): pass\ndef measure(state: InputState) -> OutputState: return {\"length\": len(state[\"text\"])}\nb = StateGraph(OverallState, input_schema=InputState, output_schema=OutputState)\nb.add_node(measure); b.add_edge(START, \"measure\")\nprint(b.compile().invoke({\"text\": \"LangGraph\"}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-14",
+    "language": "python-langgraph",
+    "day": 14,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "런타임 컨텍스트",
+    "summary": "Python LangGraph의 런타임 컨텍스트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "context_schema는 실행 중 변하지 않는 사용자 ID나 설정을 상태와 분리합니다. 노드는 Runtime을 통해 컨텍스트와 Store에 접근할 수 있습니다.",
+    "keyPoints": [
+      "런타임 컨텍스트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "런타임 컨텍스트의 핵심 개념 설명하기",
+      "런타임 컨텍스트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "런타임 컨텍스트에서 배운 개념을 사용해 Day 14 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 14: 런타임 컨텍스트\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 런타임 컨텍스트 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from dataclasses import dataclass\nfrom langgraph.runtime import Runtime\nfrom langgraph.graph import StateGraph, START\nfrom typing_extensions import TypedDict\nclass State(TypedDict): greeting: str\n@dataclass class Context: user_name: str\ndef greet(state: State, runtime: Runtime[Context]): return {\"greeting\": f\"안녕, {runtime.context.user_name}\"}\nb = StateGraph(State, context_schema=Context); b.add_node(greet); b.add_edge(START, \"greet\")\nprint(b.compile().invoke({\"greeting\": \"\"}, context=Context(user_name=\"Mina\")))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-15",
+    "language": "python-langgraph",
+    "day": 15,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "Pydantic 상태 모델",
+    "summary": "Python LangGraph의 Pydantic 상태 모델 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Pydantic 모델을 상태 스키마로 사용하면 입력 검증과 기본값을 표현할 수 있습니다. 다만 노드가 반환하는 부분 업데이트의 런타임 검증 범위를 이해하고 사용해야 합니다.",
+    "keyPoints": [
+      "Pydantic 상태 모델의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Pydantic 상태 모델의 핵심 개념 설명하기",
+      "Pydantic 상태 모델을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Pydantic 상태 모델에서 배운 개념을 사용해 Day 15 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 15: Pydantic 상태 모델\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Pydantic 상태 모델 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from pydantic import BaseModel, Field\nfrom langgraph.graph import StateGraph, START\nclass State(BaseModel): score: int = Field(ge=0, le=100); passed: bool = False\ndef grade(state: State): return {\"passed\": state.score >= 60}\nb = StateGraph(State); b.add_node(grade); b.add_edge(START, \"grade\")\nprint(b.compile().invoke({\"score\": 85}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-16",
+    "language": "python-langgraph",
+    "day": 16,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "비공개 내부 상태",
+    "summary": "Python LangGraph의 비공개 내부 상태 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "노드 입력·출력 타입에 별도의 내부 스키마를 선언하면 임시 계산값을 공개 상태에 노출하지 않을 수 있습니다. 상태 채널은 그래프가 인식하는 스키마를 기준으로 관리됩니다.",
+    "keyPoints": [
+      "비공개 내부 상태의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비공개 내부 상태의 핵심 개념 설명하기",
+      "비공개 내부 상태을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비공개 내부 상태에서 배운 개념을 사용해 Day 16 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 16: 비공개 내부 상태\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 비공개 내부 상태 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass PublicState(TypedDict): request: str; response: str\nclass InternalState(TypedDict): secret: str\ndef prepare(state: PublicState) -> InternalState: return {\"secret\": state[\"request\"].upper()}\ndef respond(state: InternalState): return {\"response\": f\"processed:{state['secret']}\"}\nb = StateGraph(PublicState); b.add_node(\"prepare\", prepare); b.add_node(\"respond\", respond)\nb.add_edge(START, \"prepare\"); b.add_edge(\"prepare\", \"respond\"); b.add_edge(\"respond\", END)\nprint(b.compile().invoke({\"request\": \"hello\", \"response\": \"\"}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-17",
+    "language": "python-langgraph",
+    "day": 17,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "Overwrite로 값 교체",
+    "summary": "Python LangGraph의 Overwrite로 값 교체 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Overwrite는 리듀서가 설정된 채널에서도 누적 대신 현재 값을 명시적으로 교체합니다. 한 super-step에서 같은 채널에 여러 Overwrite를 반환하면 오류가 됩니다.",
+    "keyPoints": [
+      "Overwrite로 값 교체의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Overwrite로 값 교체의 핵심 개념 설명하기",
+      "Overwrite로 값 교체을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Overwrite로 값 교체에서 배운 개념을 사용해 Day 17 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 17: Overwrite로 값 교체\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Overwrite로 값 교체 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing import Annotated\nfrom typing_extensions import TypedDict\nfrom langgraph.types import Overwrite\nclass State(TypedDict): values: Annotated[list[str], list.__add__]\ndef replace_values(state: State): return {\"values\": Overwrite([\"교체됨\"])}\nprint(replace_values({\"values\": [\"기존\"]}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-18",
+    "language": "python-langgraph",
+    "day": 18,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "비동기 노드",
+    "summary": "Python LangGraph의 비동기 노드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "async def 노드는 ainvoke와 astream으로 실행합니다. 네트워크나 모델 호출처럼 대기 시간이 큰 작업을 비동기로 작성하면 병렬 실행 효율이 좋아집니다.",
+    "keyPoints": [
+      "비동기 노드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 노드의 핵심 개념 설명하기",
+      "비동기 노드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 노드에서 배운 개념을 사용해 Day 18 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 18: 비동기 노드\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 비동기 노드 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "import asyncio\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START\nclass State(TypedDict): value: int\nasync def async_double(state: State): await asyncio.sleep(.01); return {\"value\": state[\"value\"] * 2}\nb = StateGraph(State); b.add_node(async_double); b.add_edge(START, \"async_double\")\nprint(asyncio.run(b.compile().ainvoke({\"value\": 4})))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-19",
+    "language": "python-langgraph",
+    "day": 19,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "RetryPolicy와 CachePolicy",
+    "summary": "Python LangGraph의 RetryPolicy와 CachePolicy 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "RetryPolicy는 일시적인 외부 호출 실패를 노드 단위로 재시도합니다. 캐시는 동일 입력의 계산을 재사용하지만 부작용이 있는 노드에는 신중히 적용해야 합니다.",
+    "keyPoints": [
+      "RetryPolicy와 CachePolicy의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "RetryPolicy와 CachePolicy의 핵심 개념 설명하기",
+      "RetryPolicy와 CachePolicy을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "RetryPolicy와 CachePolicy에서 배운 개념을 사용해 Day 19 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 19: RetryPolicy와 CachePolicy\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: RetryPolicy와 CachePolicy 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.graph import StateGraph, START\nfrom langgraph.types import RetryPolicy\nfrom typing_extensions import TypedDict\nclass State(TypedDict): result: str\ndef unstable(state): return {\"result\": \"ok\"}\nb = StateGraph(State); b.add_node(\"api\", unstable, retry_policy=RetryPolicy(max_attempts=3)); b.add_edge(START, \"api\")\nprint(b.compile().invoke({\"result\": \"\"}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-20",
+    "language": "python-langgraph",
+    "day": 20,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "미니 프로젝트: 요청 분류 그래프",
+    "summary": "Python LangGraph의 미니 프로젝트: 요청 분류 그래프 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "분류 그래프는 먼저 요청 특성을 상태에 기록하고 조건부 엣지에서 후속 처리 노드를 선택합니다. 분류와 실제 처리 로직을 분리하면 라우팅을 독립 평가할 수 있습니다.",
+    "keyPoints": [
+      "미니 프로젝트: 요청 분류 그래프의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 요청 분류 그래프의 핵심 개념 설명하기",
+      "미니 프로젝트: 요청 분류 그래프을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 요청 분류 그래프에서 배운 개념을 사용해 Day 20 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 20: 미니 프로젝트: 요청 분류 그래프\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 미니 프로젝트: 요청 분류 그래프 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing import Literal\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): request: str; category: str\ndef classify(s): return {\"category\": \"question\" if \"?\" in s[\"request\"] else \"statement\"}\ndef answer(s): return {\"request\": \"질문 처리 완료\"}\ndef store(s): return {\"request\": \"문장 저장 완료\"}\ndef route(s) -> Literal[\"answer\", \"store\"]: return \"answer\" if s[\"category\"] == \"question\" else \"store\"\nb=StateGraph(State); b.add_node(\"classify\",classify); b.add_node(\"answer\",answer); b.add_node(\"store\",store); b.add_edge(START,\"classify\"); b.add_conditional_edges(\"classify\",route); b.add_edge(\"answer\",END); b.add_edge(\"store\",END)\nprint(b.compile().invoke({\"request\":\"LangGraph란?\",\"category\":\"\"}))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-21",
+    "language": "python-langgraph",
+    "day": 21,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "조건부 엣지",
+    "summary": "Python LangGraph의 조건부 엣지 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "add_conditional_edges는 라우팅 함수 반환값으로 다음 노드를 선택합니다. 가능한 경로를 명확히 제한하고 모든 분기가 END 또는 다음 단계에 도달하도록 설계합니다.",
+    "keyPoints": [
+      "조건부 엣지의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "조건부 엣지의 핵심 개념 설명하기",
+      "조건부 엣지을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "조건부 엣지에서 배운 개념을 사용해 Day 21 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 21: 조건부 엣지\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 조건부 엣지 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing import Literal\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): score: int; result: str\ndef pass_node(s): return {\"result\": \"pass\"}\ndef retry_node(s): return {\"result\": \"retry\"}\ndef decide(s) -> Literal[\"pass_node\", \"retry_node\"]: return \"pass_node\" if s[\"score\"] >= 60 else \"retry_node\"\nb=StateGraph(State); b.add_node(pass_node); b.add_node(retry_node); b.add_conditional_edges(START,decide); b.add_edge(\"pass_node\",END); b.add_edge(\"retry_node\",END)\nprint(b.compile().invoke({\"score\":80,\"result\":\"\"}))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-22",
+    "language": "python-langgraph",
+    "day": 22,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "Literal 기반 라우팅",
+    "summary": "Python LangGraph의 Literal 기반 라우팅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "라우팅 반환 타입을 Literal로 선언하면 가능한 노드 이름이 문서화되고 그래프 시각화도 정확해집니다. 문자열 오타를 줄이기 위해 경로 이름을 일관되게 관리합니다.",
+    "keyPoints": [
+      "Literal 기반 라우팅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Literal 기반 라우팅의 핵심 개념 설명하기",
+      "Literal 기반 라우팅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Literal 기반 라우팅에서 배운 개념을 사용해 Day 22 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 22: Literal 기반 라우팅\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Literal 기반 라우팅 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing import Literal\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): kind: str; result: str\ndef route(state: State) -> Literal[\"code\", \"text\"]: return \"code\" if state[\"kind\"] == \"code\" else \"text\"\ndef code(s): return {\"result\":\"코드 처리\"}\ndef text(s): return {\"result\":\"텍스트 처리\"}\nb=StateGraph(State); b.add_node(code); b.add_node(text); b.add_conditional_edges(START,route); b.add_edge(\"code\",END); b.add_edge(\"text\",END)\nprint(b.compile().invoke({\"kind\":\"code\",\"result\":\"\"}))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-23",
+    "language": "python-langgraph",
+    "day": 23,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "Command로 업데이트와 이동",
+    "summary": "Python LangGraph의 Command로 업데이트와 이동 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Command는 한 노드에서 상태 update와 goto를 함께 반환합니다. 동적 핸드오프에 유용하며 반환 타입의 Literal에 가능한 목적지를 명시해야 합니다.",
+    "keyPoints": [
+      "Command로 업데이트와 이동의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Command로 업데이트와 이동의 핵심 개념 설명하기",
+      "Command로 업데이트와 이동을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Command로 업데이트와 이동에서 배운 개념을 사용해 Day 23 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 23: Command로 업데이트와 이동\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Command로 업데이트와 이동 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing import Literal\nfrom typing_extensions import TypedDict\nfrom langgraph.types import Command\nclass State(TypedDict): approved: bool; status: str\ndef decide(state: State) -> Command[Literal[\"publish\", \"revise\"]]:\n    destination = \"publish\" if state[\"approved\"] else \"revise\"\n    return Command(update={\"status\": destination}, goto=destination)\nprint(decide({\"approved\": True, \"status\": \"\"}))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-24",
+    "language": "python-langgraph",
+    "day": 24,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "Send를 이용한 Map-Reduce",
+    "summary": "Python LangGraph의 Send를 이용한 Map-Reduce 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Send는 실행 중 데이터에 따라 여러 작업을 동적으로 생성합니다. 각 작업 결과가 병렬로 돌아오므로 집계 상태 채널에는 적절한 리듀서가 필요합니다.",
+    "keyPoints": [
+      "Send를 이용한 Map-Reduce의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Send를 이용한 Map-Reduce의 핵심 개념 설명하기",
+      "Send를 이용한 Map-Reduce을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Send를 이용한 Map-Reduce에서 배운 개념을 사용해 Day 24 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 24: Send를 이용한 Map-Reduce\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Send를 이용한 Map-Reduce 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "import operator\nfrom typing import Annotated\nfrom typing_extensions import TypedDict\nfrom langgraph.types import Send\nclass State(TypedDict): items: list[str]; summaries: Annotated[list[str], operator.add]\nclass WorkerState(TypedDict): item: str\ndef fan_out(state: State): return [Send(\"summarize\", {\"item\": item}) for item in state[\"items\"]]\ndef summarize(state: WorkerState): return {\"summaries\": [state[\"item\"].upper()]}\nprint(fan_out({\"items\":[\"a\",\"b\"],\"summaries\":[]})); print(summarize({\"item\":\"a\"}))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-25",
+    "language": "python-langgraph",
+    "day": 25,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "순환 그래프와 에이전트 루프",
+    "summary": "Python LangGraph의 순환 그래프와 에이전트 루프 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "순환 그래프는 모델과 도구를 반복하는 에이전트 루프를 표현합니다. 매 반복마다 종료 여부를 상태로 판단하고 END로 빠지는 경로를 반드시 제공합니다.",
+    "keyPoints": [
+      "순환 그래프와 에이전트 루프의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "순환 그래프와 에이전트 루프의 핵심 개념 설명하기",
+      "순환 그래프와 에이전트 루프을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "순환 그래프와 에이전트 루프에서 배운 개념을 사용해 Day 25 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 25: 순환 그래프와 에이전트 루프\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 순환 그래프와 에이전트 루프 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): count: int\ndef step(s): return {\"count\": s[\"count\"] + 1}\ndef route(s): return END if s[\"count\"] >= 3 else \"step\"\nb=StateGraph(State); b.add_node(step); b.add_edge(START,\"step\"); b.add_conditional_edges(\"step\",route)\nprint(b.compile().invoke({\"count\":0}))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-26",
+    "language": "python-langgraph",
+    "day": 26,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "재귀 제한과 무한 루프 방지",
+    "summary": "Python LangGraph의 재귀 제한과 무한 루프 방지 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "recursion_limit은 그래프의 최대 super-step을 제한해 잘못된 순환을 차단합니다. 제한 오류를 숨기기보다 종료 상태와 라우팅 조건을 점검해야 합니다.",
+    "keyPoints": [
+      "재귀 제한과 무한 루프 방지의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "재귀 제한과 무한 루프 방지의 핵심 개념 설명하기",
+      "재귀 제한과 무한 루프 방지을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "재귀 제한과 무한 루프 방지에서 배운 개념을 사용해 Day 26 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 26: 재귀 제한과 무한 루프 방지\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 재귀 제한과 무한 루프 방지 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.errors import GraphRecursionError\n# graph.invoke(input, {\"recursion_limit\": 10})로 최대 super-step을 제한합니다.\ntry:\n    raise GraphRecursionError(\"반복 한도 도달\")\nexcept GraphRecursionError:\n    print(\"루프 종료 조건과 recursion_limit을 확인하세요.\")"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-27",
+    "language": "python-langgraph",
+    "day": 27,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "병렬 브랜치 실행",
+    "summary": "Python LangGraph의 병렬 브랜치 실행 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "START에서 여러 노드로 엣지를 연결하면 같은 super-step에서 병렬 실행됩니다. 서로 독립적인 검색이나 분석을 병렬화하고 결과는 리듀서로 안전하게 합칩니다.",
+    "keyPoints": [
+      "병렬 브랜치 실행의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "병렬 브랜치 실행의 핵심 개념 설명하기",
+      "병렬 브랜치 실행을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "병렬 브랜치 실행에서 배운 개념을 사용해 Day 27 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 27: 병렬 브랜치 실행\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 병렬 브랜치 실행 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "import operator\nfrom typing import Annotated\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): value:int; results:Annotated[list[int],operator.add]\ndef double(s): return {\"results\":[s[\"value\"]*2]}\ndef square(s): return {\"results\":[s[\"value\"]**2]}\nb=StateGraph(State); b.add_node(double); b.add_node(square); b.add_edge(START,\"double\"); b.add_edge(START,\"square\"); b.add_edge(\"double\",END); b.add_edge(\"square\",END)\nprint(b.compile().invoke({\"value\":3,\"results\":[]}))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-28",
+    "language": "python-langgraph",
+    "day": 28,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "병렬 업데이트 리듀서",
+    "summary": "Python LangGraph의 병렬 업데이트 리듀서 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "병렬 노드가 같은 상태 키를 갱신할 때 기본 교체 채널은 충돌합니다. 리스트 누적, 집합 합집합 등 업무 의미에 맞는 결합 법칙을 리듀서로 정의합니다.",
+    "keyPoints": [
+      "병렬 업데이트 리듀서의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "병렬 업데이트 리듀서의 핵심 개념 설명하기",
+      "병렬 업데이트 리듀서을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "병렬 업데이트 리듀서에서 배운 개념을 사용해 Day 28 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 28: 병렬 업데이트 리듀서\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 병렬 업데이트 리듀서 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "import operator\nfrom typing import Annotated\nfrom typing_extensions import TypedDict\nclass State(TypedDict): logs: Annotated[list[str], operator.add]\ndef branch_a(state): return {\"logs\":[\"A 완료\"]}\ndef branch_b(state): return {\"logs\":[\"B 완료\"]}\nstate={\"logs\":[]}; print(operator.add(branch_a(state)[\"logs\"], branch_b(state)[\"logs\"]))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-29",
+    "language": "python-langgraph",
+    "day": 29,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "동적 작업 대기",
+    "summary": "Python LangGraph의 동적 작업 대기 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "defer 노드는 다른 활성 작업이 끝난 뒤 종료 직전에 실행되어 최종 집계에 적합합니다. 동적 작업 수를 미리 알 수 없는 Map-Reduce 흐름에서 활용합니다.",
+    "keyPoints": [
+      "동적 작업 대기의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "동적 작업 대기의 핵심 개념 설명하기",
+      "동적 작업 대기을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "동적 작업 대기에서 배운 개념을 사용해 Day 29 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 29: 동적 작업 대기\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 동적 작업 대기 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# defer=True 노드는 다른 작업이 끝난 뒤 실행되는 집계 노드에 유용합니다.\nfrom langgraph.graph import StateGraph\nfrom typing_extensions import TypedDict\nclass State(TypedDict): values:list[int]; total:int\ndef aggregate(s): return {\"total\":sum(s[\"values\"])}\nb=StateGraph(State); b.add_node(\"aggregate\", aggregate, defer=True)\nprint(\"aggregate 노드는 종료 직전 실행되도록 예약됨\")"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-30",
+    "language": "python-langgraph",
+    "day": 30,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "미니 프로젝트: 병렬 문서 분석",
+    "summary": "Python LangGraph의 미니 프로젝트: 병렬 문서 분석 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "문서 분석 그래프는 Send로 문서별 작업을 분산하고 Annotated 리듀서로 분석 결과를 모읍니다. 실패 문서와 성공 문서를 구분해 부분 결과를 보존하도록 설계합니다.",
+    "keyPoints": [
+      "미니 프로젝트: 병렬 문서 분석의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 병렬 문서 분석의 핵심 개념 설명하기",
+      "미니 프로젝트: 병렬 문서 분석을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 병렬 문서 분석에서 배운 개념을 사용해 Day 30 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 30: 미니 프로젝트: 병렬 문서 분석\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 미니 프로젝트: 병렬 문서 분석 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "import operator\nfrom typing import Annotated\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass State(TypedDict): docs:list[str]; analyses:Annotated[list[dict],operator.add]\ndef split(s): return {}\ndef analyze_one(doc): return {\"doc\":doc,\"words\":len(doc.split())}\n# 실제 그래프에서는 split 노드가 Send(\"analyze\", {\"doc\": doc}) 목록을 반환합니다.\nprint([analyze_one(doc) for doc in [\"LangGraph state\", \"parallel nodes\"]])"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-31",
+    "language": "python-langgraph",
+    "day": 31,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "values 스트리밍",
+    "summary": "Python LangGraph의 values 스트리밍 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "values 스트림은 각 단계가 끝난 뒤 전체 상태 스냅샷을 전달합니다. 간단하지만 상태가 크면 전송량이 증가하므로 UI 요구에 맞춰 선택합니다.",
+    "keyPoints": [
+      "values 스트리밍의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "values 스트리밍의 핵심 개념 설명하기",
+      "values 스트리밍을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "values 스트리밍에서 배운 개념을 사용해 Day 31 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 31: values 스트리밍\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: values 스트리밍 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START\nclass State(TypedDict): value:int\ndef add(s): return {\"value\":s[\"value\"]+1}\nb=StateGraph(State); b.add_node(add); b.add_edge(START,\"add\"); graph=b.compile()\nfor chunk in graph.stream({\"value\":1}, stream_mode=\"values\"): print(chunk)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-32",
+    "language": "python-langgraph",
+    "day": 32,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "updates 스트리밍",
+    "summary": "Python LangGraph의 updates 스트리밍 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "updates 스트림은 노드 이름과 해당 노드의 부분 업데이트만 전달합니다. 진행 단계 표시와 변경된 데이터만 갱신하는 UI에 적합합니다.",
+    "keyPoints": [
+      "updates 스트리밍의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "updates 스트리밍의 핵심 개념 설명하기",
+      "updates 스트리밍을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "updates 스트리밍에서 배운 개념을 사용해 Day 32 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 32: updates 스트리밍\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: updates 스트리밍 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START\nclass State(TypedDict): value:int\ndef add(s): return {\"value\":s[\"value\"]+1}\nb=StateGraph(State); b.add_node(add); b.add_edge(START,\"add\"); graph=b.compile()\nfor chunk in graph.stream({\"value\":1}, stream_mode=\"updates\"): print(chunk)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-33",
+    "language": "python-langgraph",
+    "day": 33,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "messages 스트리밍",
+    "summary": "Python LangGraph의 messages 스트리밍 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "messages 스트림은 LLM이 생성하는 메시지 청크와 노드 메타데이터를 전달합니다. 특정 노드나 태그의 토큰만 골라 사용자에게 출력할 수 있습니다.",
+    "keyPoints": [
+      "messages 스트리밍의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "messages 스트리밍의 핵심 개념 설명하기",
+      "messages 스트리밍을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "messages 스트리밍에서 배운 개념을 사용해 Day 33 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 33: messages 스트리밍\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: messages 스트리밍 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# LLM 노드에서 stream_mode=\"messages\"를 사용하면 (message_chunk, metadata)를 받습니다.\nfor message_chunk, metadata in graph.stream(inputs, stream_mode=\"messages\"):\n    if message_chunk.content:\n        print(metadata.get(\"langgraph_node\"), message_chunk.content, end=\"\")"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-34",
+    "language": "python-langgraph",
+    "day": 34,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "custom 스트리밍",
+    "summary": "Python LangGraph의 custom 스트리밍 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "custom 스트림은 get_stream_writer로 업무별 진행 이벤트를 내보냅니다. 모델 토큰과 별개로 검색 건수나 처리 단계 같은 구조화된 진행률을 표현합니다.",
+    "keyPoints": [
+      "custom 스트리밍의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "custom 스트리밍의 핵심 개념 설명하기",
+      "custom 스트리밍을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "custom 스트리밍에서 배운 개념을 사용해 Day 34 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 34: custom 스트리밍\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: custom 스트리밍 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.config import get_stream_writer\ndef progress_node(state):\n    writer = get_stream_writer(); writer({\"step\":1,\"message\":\"검색 중\"})\n    writer({\"step\":2,\"message\":\"정리 중\"})\n    return {\"result\":\"완료\"}\nprint(\"graph.stream(input, stream_mode='custom')로 사용자 이벤트를 받습니다.\")"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-35",
+    "language": "python-langgraph",
+    "day": 35,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "비동기 astream",
+    "summary": "Python LangGraph의 비동기 astream 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 애플리케이션에서는 astream을 async for로 소비합니다. 클라이언트 연결 종료 시 작업 취소와 자원 정리를 전파하는 구조도 함께 고려합니다.",
+    "keyPoints": [
+      "비동기 astream의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 astream의 핵심 개념 설명하기",
+      "비동기 astream을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 astream에서 배운 개념을 사용해 Day 35 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 35: 비동기 astream\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 비동기 astream 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "import asyncio\nasync def consume(graph, inputs):\n    async for chunk in graph.astream(inputs, stream_mode=[\"updates\",\"custom\"]):\n        print(chunk)\n# asyncio.run(consume(graph, {\"value\": 1}))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-36",
+    "language": "python-langgraph",
+    "day": 36,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "debug 스트림과 실행 추적",
+    "summary": "Python LangGraph의 debug 스트림과 실행 추적 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "debug 스트림은 태스크, 상태, 실행 결과를 포함한 상세 이벤트를 제공합니다. 개발 환경에서만 필요한 정보를 걸러 사용하고 민감 데이터 노출을 방지합니다.",
+    "keyPoints": [
+      "debug 스트림과 실행 추적의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "debug 스트림과 실행 추적의 핵심 개념 설명하기",
+      "debug 스트림과 실행 추적을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "debug 스트림과 실행 추적에서 배운 개념을 사용해 Day 36 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 36: debug 스트림과 실행 추적\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: debug 스트림과 실행 추적 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# debug 모드는 노드 실행, 상태, 태스크 정보를 상세 이벤트로 제공합니다.\nfor event in graph.stream(inputs, stream_mode=\"debug\"):\n    print(event.get(\"type\"), event.get(\"payload\"))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-37",
+    "language": "python-langgraph",
+    "day": 37,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "상태 히스토리 조회",
+    "summary": "Python LangGraph의 상태 히스토리 조회 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "get_state_history는 thread의 체크포인트 스냅샷을 역시간 순으로 조회합니다. 각 스냅샷의 values, next, metadata를 사용해 상태 전이를 분석합니다.",
+    "keyPoints": [
+      "상태 히스토리 조회의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "상태 히스토리 조회의 핵심 개념 설명하기",
+      "상태 히스토리 조회을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "상태 히스토리 조회에서 배운 개념을 사용해 Day 37 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 37: 상태 히스토리 조회\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 상태 히스토리 조회 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "config={\"configurable\":{\"thread_id\":\"study-37\"}}\n# graph.invoke(input, config) 이후 저장된 상태 스냅샷을 시간순으로 조회합니다.\nfor snapshot in graph.get_state_history(config):\n    print(snapshot.config, snapshot.values, snapshot.next)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-38",
+    "language": "python-langgraph",
+    "day": 38,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "현재 상태 검사",
+    "summary": "Python LangGraph의 현재 상태 검사 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "get_state는 thread_id가 가리키는 최신 StateSnapshot을 반환합니다. values뿐 아니라 다음 실행 노드와 대기 중 작업을 확인해 중단 상태를 진단합니다.",
+    "keyPoints": [
+      "현재 상태 검사의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "현재 상태 검사의 핵심 개념 설명하기",
+      "현재 상태 검사을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "현재 상태 검사에서 배운 개념을 사용해 Day 38 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 38: 현재 상태 검사\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 현재 상태 검사 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "config={\"configurable\":{\"thread_id\":\"study-38\"}}\nsnapshot = graph.get_state(config)\nprint(\"values:\", snapshot.values)\nprint(\"next nodes:\", snapshot.next)\nprint(\"created:\", snapshot.created_at)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-39",
+    "language": "python-langgraph",
+    "day": 39,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "update_state로 상태 수정",
+    "summary": "Python LangGraph의 update_state로 상태 수정 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "update_state는 기존 체크포인트를 직접 덮지 않고 새로운 체크포인트를 만듭니다. as_node를 지정해 어떤 노드의 업데이트로 해석할지 제어할 수 있습니다.",
+    "keyPoints": [
+      "update_state로 상태 수정의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "update_state로 상태 수정의 핵심 개념 설명하기",
+      "update_state로 상태 수정을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "update_state로 상태 수정에서 배운 개념을 사용해 Day 39 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 39: update_state로 상태 수정\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: update_state로 상태 수정 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "config={\"configurable\":{\"thread_id\":\"study-39\"}}\n# as_node를 지정하면 해당 노드가 업데이트한 것처럼 새 체크포인트를 만듭니다.\nupdated_config = graph.update_state(config, {\"approved\": True}, as_node=\"review\")\nprint(updated_config)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-40",
+    "language": "python-langgraph",
+    "day": 40,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "미니 프로젝트: 실시간 진행 UI",
+    "summary": "Python LangGraph의 미니 프로젝트: 실시간 진행 UI 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "실시간 UI는 updates로 노드 완료 상태를, messages로 답변 토큰을, custom으로 진행률을 구분해 처리합니다. 재연결 시 체크포인트에서 현재 상태를 복구합니다.",
+    "keyPoints": [
+      "미니 프로젝트: 실시간 진행 UI의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 실시간 진행 UI의 핵심 개념 설명하기",
+      "미니 프로젝트: 실시간 진행 UI을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 실시간 진행 UI에서 배운 개념을 사용해 Day 40 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 40: 미니 프로젝트: 실시간 진행 UI\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 미니 프로젝트: 실시간 진행 UI 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "async def stream_to_ui(graph, request, thread_id):\n    config={\"configurable\":{\"thread_id\":thread_id}}\n    async for mode, chunk in graph.astream(request, config, stream_mode=[\"updates\",\"custom\"]):\n        yield {\"mode\":mode,\"data\":chunk}\nprint(\"UI는 updates로 단계 상태를, custom으로 진행률을 갱신합니다.\")"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-41",
+    "language": "python-langgraph",
+    "day": 41,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "InMemorySaver 체크포인트",
+    "summary": "Python LangGraph의 InMemorySaver 체크포인트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "InMemorySaver는 테스트와 디버깅용 체크포인터입니다. compile에 전달하고 invoke config에 thread_id를 지정해야 상태 조회와 재개가 가능합니다.",
+    "keyPoints": [
+      "InMemorySaver 체크포인트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "InMemorySaver 체크포인트의 핵심 개념 설명하기",
+      "InMemorySaver 체크포인트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "InMemorySaver 체크포인트에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 41: InMemorySaver 체크포인트\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: InMemorySaver 체크포인트 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.checkpoint.memory import InMemorySaver\nfrom langgraph.graph import StateGraph, START\nfrom typing_extensions import TypedDict\nclass State(TypedDict): count:int\ndef increase(s): return {\"count\":s[\"count\"]+1}\nb=StateGraph(State); b.add_node(increase); b.add_edge(START,\"increase\")\ngraph=b.compile(checkpointer=InMemorySaver()); config={\"configurable\":{\"thread_id\":\"demo\"}}\nprint(graph.invoke({\"count\":0},config)); print(graph.get_state(config).values)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-42",
+    "language": "python-langgraph",
+    "day": 42,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "thread_id와 대화 분리",
+    "summary": "Python LangGraph의 thread_id와 대화 분리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "thread_id는 체크포인트를 찾는 영속 커서입니다. 같은 ID는 이전 상태를 이어가고 다른 ID는 완전히 독립된 실행이나 대화를 시작합니다.",
+    "keyPoints": [
+      "thread_id와 대화 분리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "thread_id와 대화 분리의 핵심 개념 설명하기",
+      "thread_id와 대화 분리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "thread_id와 대화 분리에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 42: thread_id와 대화 분리\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: thread_id와 대화 분리 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.checkpoint.memory import InMemorySaver\nconfig_a={\"configurable\":{\"thread_id\":\"user-a\"}}\nconfig_b={\"configurable\":{\"thread_id\":\"user-b\"}}\n# 같은 graph라도 thread_id가 다르면 독립 체크포인트를 사용합니다.\nprint(config_a, config_b, InMemorySaver)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-43",
+    "language": "python-langgraph",
+    "day": 43,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "지속 실행과 장애 복구",
+    "summary": "Python LangGraph의 지속 실행과 장애 복구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "지속 실행은 각 단계의 체크포인트를 이용해 프로세스 장애 뒤에도 재개합니다. 재실행될 수 있는 노드의 외부 결제·전송 작업에는 멱등 키가 필요합니다.",
+    "keyPoints": [
+      "지속 실행과 장애 복구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "지속 실행과 장애 복구의 핵심 개념 설명하기",
+      "지속 실행과 장애 복구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "지속 실행과 장애 복구에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 43: 지속 실행과 장애 복구\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 지속 실행과 장애 복구 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# 체크포인터는 매 super-step 뒤 상태를 저장하므로 실패 후 동일 thread_id로 재개할 수 있습니다.\ndef idempotent_charge(state):\n    if state.get(\"charged\"): return {}\n    charge_id = payment_api.charge(state[\"amount\"], idempotency_key=state[\"request_id\"])\n    return {\"charged\": True, \"charge_id\": charge_id}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-44",
+    "language": "python-langgraph",
+    "day": 44,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Time Travel과 재실행",
+    "summary": "Python LangGraph의 Time Travel과 재실행 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Time Travel은 과거 체크포인트에서 실행을 분기하거나 재생합니다. 운영 데이터 수정과 재실행 권한을 통제하고 분기 이력을 감사 로그로 남겨야 합니다.",
+    "keyPoints": [
+      "Time Travel과 재실행의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Time Travel과 재실행의 핵심 개념 설명하기",
+      "Time Travel과 재실행을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Time Travel과 재실행에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 44: Time Travel과 재실행\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Time Travel과 재실행 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "config={\"configurable\":{\"thread_id\":\"time-travel\"}}\n# history=list(graph.get_state_history(config)); target=history[2].config\n# 분기 실행은 과거 체크포인트 config를 입력으로 다시 invoke합니다.\n# result=graph.invoke(None, target)\nprint(\"과거 상태에서 새 실행 분기를 만들 수 있습니다.\")"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-45",
+    "language": "python-langgraph",
+    "day": 45,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "PostgresSaver 운영 저장소",
+    "summary": "Python LangGraph의 PostgresSaver 운영 저장소 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "PostgresSaver는 운영 환경의 지속성 저장소입니다. 최초 setup으로 테이블을 준비하고 연결 수, 보존 기간, 암호화와 백업 정책을 함께 운영합니다.",
+    "keyPoints": [
+      "PostgresSaver 운영 저장소의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "PostgresSaver 운영 저장소의 핵심 개념 설명하기",
+      "PostgresSaver 운영 저장소을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "PostgresSaver 운영 저장소에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 45: PostgresSaver 운영 저장소\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: PostgresSaver 운영 저장소 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.checkpoint.postgres import PostgresSaver\nDB_URI=\"postgresql://user:pass@localhost:5432/langgraph\"\n# with PostgresSaver.from_conn_string(DB_URI) as saver:\n#     saver.setup()  # 최초 한 번\n#     graph = builder.compile(checkpointer=saver)\nprint(\"운영 환경은 InMemorySaver 대신 PostgresSaver를 사용합니다.\")"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-46",
+    "language": "python-langgraph",
+    "day": 46,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Store 기반 장기 메모리",
+    "summary": "Python LangGraph의 Store 기반 장기 메모리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Store는 체크포인트와 별개로 thread를 넘어 재사용할 장기 메모리를 저장합니다. 사용자 선호나 사실처럼 명시적으로 관리할 데이터에 사용합니다.",
+    "keyPoints": [
+      "Store 기반 장기 메모리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Store 기반 장기 메모리의 핵심 개념 설명하기",
+      "Store 기반 장기 메모리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Store 기반 장기 메모리에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 46: Store 기반 장기 메모리\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Store 기반 장기 메모리 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.store.memory import InMemoryStore\nstore=InMemoryStore(); namespace=(\"users\",\"mina\",\"memories\")\nstore.put(namespace,\"profile\",{\"language\":\"python\",\"level\":\"advanced\"})\nprint(store.get(namespace,\"profile\").value)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-47",
+    "language": "python-langgraph",
+    "day": 47,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "메모리 네임스페이스",
+    "summary": "Python LangGraph의 메모리 네임스페이스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "네임스페이스는 튜플 계층으로 메모리를 격리합니다. 사용자, 조직, 메모리 유형을 포함해 다른 테넌트 데이터가 섞이지 않도록 설계합니다.",
+    "keyPoints": [
+      "메모리 네임스페이스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메모리 네임스페이스의 핵심 개념 설명하기",
+      "메모리 네임스페이스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메모리 네임스페이스에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 47: 메모리 네임스페이스\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 메모리 네임스페이스 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "user_id=\"mina\"\nprofile_namespace=(\"users\",user_id,\"profile\")\npreferences_namespace=(\"users\",user_id,\"preferences\")\nprint(profile_namespace, preferences_namespace)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-48",
+    "language": "python-langgraph",
+    "day": 48,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "의미 기반 메모리 검색",
+    "summary": "Python LangGraph의 의미 기반 메모리 검색 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "임베딩 인덱스를 설정한 Store는 자연어 query로 의미가 가까운 메모리를 검색합니다. limit과 필터를 적용하고 검색 점수를 맹신하지 않아야 합니다.",
+    "keyPoints": [
+      "의미 기반 메모리 검색의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "의미 기반 메모리 검색의 핵심 개념 설명하기",
+      "의미 기반 메모리 검색을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "의미 기반 메모리 검색에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 48: 의미 기반 메모리 검색\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 의미 기반 메모리 검색 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# 임베딩을 설정한 Store에서는 자연어 query로 의미 검색을 수행합니다.\n# store = InMemoryStore(index={\"embed\": embeddings, \"dims\": 1536})\n# matches = store.search((\"users\",\"mina\",\"memories\"), query=\"선호하는 프로그래밍 언어\", limit=3)\nprint(\"검색 결과에는 value와 score가 포함됩니다.\")"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-49",
+    "language": "python-langgraph",
+    "day": 49,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "메모리 관리 정책",
+    "summary": "Python LangGraph의 메모리 관리 정책 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메모리는 저장 동의, 출처, 갱신 시각, 만료 기간을 포함해야 합니다. 사용자가 조회·수정·삭제할 수 있는 정책을 에이전트 기능과 함께 구현합니다.",
+    "keyPoints": [
+      "메모리 관리 정책의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메모리 관리 정책의 핵심 개념 설명하기",
+      "메모리 관리 정책을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메모리 관리 정책에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 49: 메모리 관리 정책\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 메모리 관리 정책 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from datetime import datetime, timezone\ndef remember(store, namespace, memory_id, text):\n    store.put(namespace,memory_id,{\"text\":text,\"updated_at\":datetime.now(timezone.utc).isoformat()})\ndef forget(store, namespace, memory_id): store.delete(namespace,memory_id)\nprint(\"동의, 보존 기간, 수정·삭제 정책을 함께 설계합니다.\")"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-50",
+    "language": "python-langgraph",
+    "day": 50,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "미니 프로젝트: 개인화 어시스턴트",
+    "summary": "Python LangGraph의 미니 프로젝트: 개인화 어시스턴트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "개인화 어시스턴트는 현재 thread의 단기 상태와 Store의 장기 선호를 결합합니다. 답변마다 모든 메모리를 넣지 말고 관련 항목만 검색해 컨텍스트를 제한합니다.",
+    "keyPoints": [
+      "미니 프로젝트: 개인화 어시스턴트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 개인화 어시스턴트의 핵심 개념 설명하기",
+      "미니 프로젝트: 개인화 어시스턴트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 개인화 어시스턴트에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 50: 미니 프로젝트: 개인화 어시스턴트\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 미니 프로젝트: 개인화 어시스턴트 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.store.memory import InMemoryStore\nstore=InMemoryStore(); ns=(\"assistant\",\"user-1\")\nstore.put(ns,\"preference\",{\"tone\":\"concise\"})\ndef personalize(state):\n    memory=store.get(ns,\"preference\")\n    return {\"prompt\":f\"답변 스타일: {memory.value['tone']}\"}\nprint(personalize({}))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-51",
+    "language": "python-langgraph",
+    "day": 51,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "interrupt로 실행 중단",
+    "summary": "Python LangGraph의 interrupt로 실행 중단 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "interrupt는 노드 안에서 JSON 직렬화 가능한 검토 요청을 외부로 노출하고 실행을 무기한 중단합니다. 사용하려면 체크포인터가 반드시 필요합니다.",
+    "keyPoints": [
+      "interrupt로 실행 중단의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "interrupt로 실행 중단의 핵심 개념 설명하기",
+      "interrupt로 실행 중단을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "interrupt로 실행 중단에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 51: interrupt로 실행 중단\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: interrupt로 실행 중단 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.types import interrupt\ndef review_node(state):\n    approval=interrupt({\"question\":\"게시할까요?\",\"draft\":state[\"draft\"]})\n    return {\"approved\":bool(approval)}\nprint(\"interrupt는 체크포인터가 활성화된 그래프에서 실행을 중단합니다.\")"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-52",
+    "language": "python-langgraph",
+    "day": 52,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "Command resume으로 재개",
+    "summary": "Python LangGraph의 Command resume으로 재개 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "중단된 그래프는 같은 thread_id로 Command(resume=value)를 전달해 재개합니다. 노드는 처음부터 다시 실행되므로 interrupt 이전 부작용은 멱등해야 합니다.",
+    "keyPoints": [
+      "Command resume으로 재개의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Command resume으로 재개의 핵심 개념 설명하기",
+      "Command resume으로 재개을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Command resume으로 재개에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 52: Command resume으로 재개\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: Command resume으로 재개 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.types import Command\nconfig={\"configurable\":{\"thread_id\":\"review-1\"}}\n# first = graph.invoke({\"draft\":\"내용\"}, config)\n# resumed = graph.invoke(Command(resume=True), config)\nprint(Command(resume=True), config)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-53",
+    "language": "python-langgraph",
+    "day": 53,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "승인·거절 Human-in-the-loop",
+    "summary": "Python LangGraph의 승인·거절 Human-in-the-loop 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "승인 흐름은 interrupt 결과에 따라 publish 또는 cancel 노드로 이동합니다. 권한 확인과 승인자 정보, 원본 초안, 결정 시간을 감사 데이터로 기록합니다.",
+    "keyPoints": [
+      "승인·거절 Human-in-the-loop의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "승인·거절 Human-in-the-loop의 핵심 개념 설명하기",
+      "승인·거절 Human-in-the-loop을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "승인·거절 Human-in-the-loop에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 53: 승인·거절 Human-in-the-loop\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 승인·거절 Human-in-the-loop 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing import Literal\nfrom langgraph.types import Command, interrupt\ndef approval(state) -> Command[Literal[\"publish\",\"cancel\"]]:\n    decision=interrupt({\"action\":\"approve\",\"draft\":state[\"draft\"]})\n    if decision==\"approve\": return Command(update={\"approved\":True},goto=\"publish\")\n    return Command(update={\"approved\":False},goto=\"cancel\")"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-54",
+    "language": "python-langgraph",
+    "day": 54,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "사용자 수정 후 상태 반영",
+    "summary": "Python LangGraph의 사용자 수정 후 상태 반영 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "사용자 수정 흐름은 현재 초안을 interrupt payload로 보여주고 수정값을 상태 업데이트로 반영합니다. 재개 값의 타입과 비어 있는 입력을 반드시 검증합니다.",
+    "keyPoints": [
+      "사용자 수정 후 상태 반영의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "사용자 수정 후 상태 반영의 핵심 개념 설명하기",
+      "사용자 수정 후 상태 반영을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "사용자 수정 후 상태 반영에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 54: 사용자 수정 후 상태 반영\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 사용자 수정 후 상태 반영 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.types import interrupt\ndef edit_draft(state):\n    edited=interrupt({\"instruction\":\"내용을 검토하고 수정하세요.\",\"draft\":state[\"draft\"]})\n    if not isinstance(edited,str) or not edited.strip(): raise ValueError(\"수정 내용이 필요합니다.\")\n    return {\"draft\":edited.strip(),\"reviewed\":True}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-55",
+    "language": "python-langgraph",
+    "day": 55,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "서브그래프 구성",
+    "summary": "Python LangGraph의 서브그래프 구성 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "서브그래프는 독립 상태와 노드를 가진 컴파일 그래프를 부모 노드로 합성합니다. 공유 키가 다르면 변환 노드에서 부모·자식 상태를 명시적으로 매핑합니다.",
+    "keyPoints": [
+      "서브그래프 구성의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "서브그래프 구성의 핵심 개념 설명하기",
+      "서브그래프 구성을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "서브그래프 구성에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 55: 서브그래프 구성\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 서브그래프 구성 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nclass SubState(TypedDict): text:str; summary:str\ndef summarize(s): return {\"summary\":s[\"text\"][:20]}\nsub=StateGraph(SubState); sub.add_node(summarize); sub.add_edge(START,\"summarize\"); sub.add_edge(\"summarize\",END)\nsubgraph=sub.compile(); print(subgraph.invoke({\"text\":\"긴 문서를 요약합니다.\",\"summary\":\"\"}))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-56",
+    "language": "python-langgraph",
+    "day": 56,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "서브그래프 지속성 전략",
+    "summary": "Python LangGraph의 서브그래프 지속성 전략 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "서브그래프 checkpointer=None은 호출별 상태, True는 thread별 기억, False는 무상태 실행을 의미합니다. 대부분의 일회성 하위 에이전트는 기본값이 적합합니다.",
+    "keyPoints": [
+      "서브그래프 지속성 전략의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "서브그래프 지속성 전략의 핵심 개념 설명하기",
+      "서브그래프 지속성 전략을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "서브그래프 지속성 전략에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 56: 서브그래프 지속성 전략\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 서브그래프 지속성 전략 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# 부모 그래프에 노드로 추가한 서브그래프는 기본적으로 부모 체크포인터를 상속합니다.\nper_invocation = sub_builder.compile(checkpointer=None)\nper_thread = sub_builder.compile(checkpointer=True)\nstateless = sub_builder.compile(checkpointer=False)\nprint(\"독립 작업은 None, 대화 기억은 True, 순수 함수는 False\")"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-57",
+    "language": "python-langgraph",
+    "day": 57,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "ToolNode와 tools_condition",
+    "summary": "Python LangGraph의 ToolNode와 tools_condition 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "ToolNode는 도구 호출 메시지를 실행하고 결과 메시지를 상태에 추가합니다. tools_condition은 모델 메시지에 도구 호출이 있는지 보고 도구 노드 또는 종료로 라우팅합니다.",
+    "keyPoints": [
+      "ToolNode와 tools_condition의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "ToolNode와 tools_condition의 핵심 개념 설명하기",
+      "ToolNode와 tools_condition을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "ToolNode와 tools_condition에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 57: ToolNode와 tools_condition\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: ToolNode와 tools_condition 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "from langgraph.prebuilt import ToolNode, tools_condition\nfrom langchain_core.tools import tool\n@tool\ndef add(a:int,b:int)->int: \"\"\"두 수를 더합니다.\"\"\"; return a+b\ntool_node=ToolNode([add])\n# builder.add_node(\"tools\", tool_node)\n# builder.add_conditional_edges(\"model\", tools_condition)\nprint(tool_node)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-58",
+    "language": "python-langgraph",
+    "day": 58,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "멀티 에이전트 오케스트레이션",
+    "summary": "Python LangGraph의 멀티 에이전트 오케스트레이션 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "멀티 에이전트에서는 감독자가 요청을 전문 에이전트나 서브그래프로 전달합니다. 상태 소유권, 핸드오프 계약, 종료 조건과 에이전트 간 반복 한도를 명확히 합니다.",
+    "keyPoints": [
+      "멀티 에이전트 오케스트레이션의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "멀티 에이전트 오케스트레이션의 핵심 개념 설명하기",
+      "멀티 에이전트 오케스트레이션을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "멀티 에이전트 오케스트레이션에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 58: 멀티 에이전트 오케스트레이션\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 멀티 에이전트 오케스트레이션 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# 감독자(supervisor)가 전문 에이전트를 서브그래프/도구로 호출하는 구조입니다.\nfrom langgraph.types import Command\ndef supervisor(state):\n    target=\"researcher\" if \"조사\" in state[\"request\"] else \"coder\"\n    return Command(update={\"assigned_to\":target},goto=target)\nprint(supervisor({\"request\":\"API를 조사해줘\"}))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-59",
+    "language": "python-langgraph",
+    "day": 59,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "테스트와 LangSmith 추적",
+    "summary": "Python LangGraph의 테스트와 LangSmith 추적 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "노드는 순수 함수 단위 테스트, 그래프는 상태 전이 통합 테스트를 수행합니다. LangSmith trace로 노드 지연, 모델·도구 입력, 오류 경로와 평가 결과를 관측합니다.",
+    "keyPoints": [
+      "테스트와 LangSmith 추적의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트와 LangSmith 추적의 핵심 개념 설명하기",
+      "테스트와 LangSmith 추적을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트와 LangSmith 추적에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 59: 테스트와 LangSmith 추적\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 테스트와 LangSmith 추적 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# 순수 노드는 단위 테스트하고, 컴파일 그래프는 고정 입력/상태 전이를 검증합니다.\ndef classify(state): return {\"route\":\"code\" if \"코드\" in state[\"text\"] else \"chat\"}\nassert classify({\"text\":\"코드 작성\"})=={\"route\":\"code\"}\n# LANGSMITH_TRACING=true 환경에서는 실행 trace로 노드 지연과 오류를 분석합니다.\nprint(\"test passed\")"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-langgraph-day-60",
+    "language": "python-langgraph",
+    "day": 60,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "최종 프로젝트: 운영형 에이전트 시스템",
+    "summary": "Python LangGraph의 최종 프로젝트: 운영형 에이전트 시스템 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "운영형 시스템은 Postgres 체크포인트, 장기 Store, 스트리밍 API, 재시도와 멱등성, interrupt 승인, 추적과 평가를 함께 구성합니다. 비밀 관리와 데이터 보존도 배포 설계에 포함합니다.",
+    "keyPoints": [
+      "최종 프로젝트: 운영형 에이전트 시스템의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "최종 프로젝트: 운영형 에이전트 시스템의 핵심 개념 설명하기",
+      "최종 프로젝트: 운영형 에이전트 시스템을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "최종 프로젝트: 운영형 에이전트 시스템에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 60: 최종 프로젝트: 운영형 에이전트 시스템\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: 최종 프로젝트: 운영형 에이전트 시스템 개념을 적용하세요.\n    return {\"value\": state[\"value\"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"study\", study_node)\nbuilder.add_edge(START, \"study\")\nbuilder.add_edge(\"study\", END)\ngraph = builder.compile()\nprint(graph.invoke({\"value\": \"start\"}))",
+      "solutionCode": "# 운영형 구조: API -> graph service -> nodes/tools -> checkpointer/store\nproduction_checklist={\n \"durability\":\"PostgresSaver\", \"memory\":\"Store + 보존 정책\",\n \"safety\":\"interrupt 승인\", \"observability\":\"LangSmith trace\",\n \"reliability\":\"retry + idempotency\", \"delivery\":\"streaming API\",\n}\nprint(production_checklist)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  }
+]

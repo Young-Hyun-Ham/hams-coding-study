@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "java-day-01",
+    "language": "java",
+    "day": 1,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "JDK와 첫 프로그램",
+    "summary": "Java의 JDK와 첫 프로그램 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "JDK와 첫 프로그램은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { System.out.println(\"Hello, Java!\"); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "JDK와 첫 프로그램의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "JDK와 첫 프로그램의 핵심 개념 설명하기",
+      "JDK와 첫 프로그램을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "JDK와 첫 프로그램에서 배운 개념을 사용해 Day 1 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 1: JDK와 첫 프로그램\nimport java.util.List;\n\npublic class Main {\n    static int solveDay1(List<Integer> values) {\n        // TODO: JDK와 첫 프로그램 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay1(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { System.out.println(\"Hello, Java!\"); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-02",
+    "language": "java",
+    "day": 2,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "변수와 자료형",
+    "summary": "Java의 변수와 자료형 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "변수와 자료형은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { int day = 2; double progress = 0.5; boolean active = true; char grade = 'A'; System.out.println(day + \" \" + progress + \" \" + active + \" \" + grade); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "변수와 자료형의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "변수와 자료형의 핵심 개념 설명하기",
+      "변수와 자료형을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "변수와 자료형에서 배운 개념을 사용해 Day 2 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 2: 변수와 자료형\nimport java.util.List;\n\npublic class Main {\n    static int solveDay2(List<Integer> values) {\n        // TODO: 변수와 자료형 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay2(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { int day = 2; double progress = 0.5; boolean active = true; char grade = 'A'; System.out.println(day + \" \" + progress + \" \" + active + \" \" + grade); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-03",
+    "language": "java",
+    "day": 3,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "연산자",
+    "summary": "Java의 연산자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "연산자은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { int a = 17, b = 5; System.out.println((a + b) + \" \" + (a / b) + \" \" + (a % b)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "연산자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "연산자의 핵심 개념 설명하기",
+      "연산자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "연산자에서 배운 개념을 사용해 Day 3 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 3: 연산자\nimport java.util.List;\n\npublic class Main {\n    static int solveDay3(List<Integer> values) {\n        // TODO: 연산자 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay3(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { int a = 17, b = 5; System.out.println((a + b) + \" \" + (a / b) + \" \" + (a % b)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-04",
+    "language": "java",
+    "day": 4,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "입력과 출력",
+    "summary": "Java의 입력과 출력 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "입력과 출력은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.Scanner; public class Main { public static void main(String[] args) { Scanner scanner = new Scanner(System.in); String name = scanner.nextLine(); int age = scanner.nextInt(); System.out.printf(\"%s: %d%n\", name, age); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "입력과 출력의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "입력과 출력의 핵심 개념 설명하기",
+      "입력과 출력을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "입력과 출력에서 배운 개념을 사용해 Day 4 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 4: 입력과 출력\nimport java.util.List;\n\npublic class Main {\n    static int solveDay4(List<Integer> values) {\n        // TODO: 입력과 출력 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay4(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.Scanner; public class Main { public static void main(String[] args) { Scanner scanner = new Scanner(System.in); String name = scanner.nextLine(); int age = scanner.nextInt(); System.out.printf(\"%s: %d%n\", name, age); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-05",
+    "language": "java",
+    "day": 5,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "형 변환",
+    "summary": "Java의 형 변환 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "형 변환은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { double price = 12.7; int roundedDown = (int) price; long widened = roundedDown; System.out.println(roundedDown + \" \" + widened); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "형 변환의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "형 변환의 핵심 개념 설명하기",
+      "형 변환을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "형 변환에서 배운 개념을 사용해 Day 5 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 5: 형 변환\nimport java.util.List;\n\npublic class Main {\n    static int solveDay5(List<Integer> values) {\n        // TODO: 형 변환 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay5(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { double price = 12.7; int roundedDown = (int) price; long widened = roundedDown; System.out.println(roundedDown + \" \" + widened); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-06",
+    "language": "java",
+    "day": 6,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "조건문",
+    "summary": "Java의 조건문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "조건문은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { int score = 85; String grade = score >= 90 ? \"A\" : score >= 80 ? \"B\" : \"C\"; System.out.println(grade); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "조건문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "조건문의 핵심 개념 설명하기",
+      "조건문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "조건문에서 배운 개념을 사용해 Day 6 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 6: 조건문\nimport java.util.List;\n\npublic class Main {\n    static int solveDay6(List<Integer> values) {\n        // TODO: 조건문 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay6(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { int score = 85; String grade = score >= 90 ? \"A\" : score >= 80 ? \"B\" : \"C\"; System.out.println(grade); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-07",
+    "language": "java",
+    "day": 7,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "for 반복문",
+    "summary": "Java의 for 반복문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "for 반복문은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { int total = 0; for (int i = 1; i <= 10; i++) total += i; System.out.println(total); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "for 반복문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "for 반복문의 핵심 개념 설명하기",
+      "for 반복문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "for 반복문에서 배운 개념을 사용해 Day 7 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 7: for 반복문\nimport java.util.List;\n\npublic class Main {\n    static int solveDay7(List<Integer> values) {\n        // TODO: for 반복문 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay7(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { int total = 0; for (int i = 1; i <= 10; i++) total += i; System.out.println(total); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-08",
+    "language": "java",
+    "day": 8,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "while 반복문",
+    "summary": "Java의 while 반복문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "while 반복문은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { int count = 3; while (count > 0) System.out.println(count--); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "while 반복문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "while 반복문의 핵심 개념 설명하기",
+      "while 반복문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "while 반복문에서 배운 개념을 사용해 Day 8 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 8: while 반복문\nimport java.util.List;\n\npublic class Main {\n    static int solveDay8(List<Integer> values) {\n        // TODO: while 반복문 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay8(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { int count = 3; while (count > 0) System.out.println(count--); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-09",
+    "language": "java",
+    "day": 9,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "배열",
+    "summary": "Java의 배열 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "배열은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.Arrays; public class Main { public static void main(String[] args) { int[] numbers = {3, 1, 4}; Arrays.sort(numbers); System.out.println(Arrays.toString(numbers)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "배열의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "배열의 핵심 개념 설명하기",
+      "배열을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "배열에서 배운 개념을 사용해 Day 9 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 9: 배열\nimport java.util.List;\n\npublic class Main {\n    static int solveDay9(List<Integer> values) {\n        // TODO: 배열 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay9(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.Arrays; public class Main { public static void main(String[] args) { int[] numbers = {3, 1, 4}; Arrays.sort(numbers); System.out.println(Arrays.toString(numbers)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-10",
+    "language": "java",
+    "day": 10,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "기초 종합 문제",
+    "summary": "Java의 기초 종합 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "기초 종합 문제은(는) JVM에서 동작하는 정적 타입 코드의 기본 문법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.Arrays; public class Main { public static void main(String[] args) { int[] values = {3, 7, 2, 9}; int total = Arrays.stream(values).sum(); int max = Arrays.stream(values).max().orElse(0); System.out.println(total + \" \" + max); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "기초 종합 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "기초 종합 문제의 핵심 개념 설명하기",
+      "기초 종합 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "기초 종합 문제에서 배운 개념을 사용해 Day 10 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 10: 기초 종합 문제\nimport java.util.List;\n\npublic class Main {\n    static int solveDay10(List<Integer> values) {\n        // TODO: 기초 종합 문제 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay10(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.Arrays; public class Main { public static void main(String[] args) { int[] values = {3, 7, 2, 9}; int total = Arrays.stream(values).sum(); int max = Arrays.stream(values).max().orElse(0); System.out.println(total + \" \" + max); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-11",
+    "language": "java",
+    "day": 11,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "메서드 선언",
+    "summary": "Java의 메서드 선언 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메서드 선언은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { static int add(int a, int b) { return a + b; } public static void main(String[] args) { System.out.println(add(2, 3)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "메서드 선언의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메서드 선언의 핵심 개념 설명하기",
+      "메서드 선언을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메서드 선언에서 배운 개념을 사용해 Day 11 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 11: 메서드 선언\nimport java.util.List;\n\npublic class Main {\n    static int solveDay11(List<Integer> values) {\n        // TODO: 메서드 선언 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay11(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { static int add(int a, int b) { return a + b; } public static void main(String[] args) { System.out.println(add(2, 3)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-12",
+    "language": "java",
+    "day": 12,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "매개변수와 반환값",
+    "summary": "Java의 매개변수와 반환값 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "매개변수와 반환값은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { static int rectangle(int width, int height) { return width * height; } public static void main(String[] args) { System.out.println(rectangle(4, 3)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "매개변수와 반환값의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "매개변수와 반환값의 핵심 개념 설명하기",
+      "매개변수와 반환값을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "매개변수와 반환값에서 배운 개념을 사용해 Day 12 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 12: 매개변수와 반환값\nimport java.util.List;\n\npublic class Main {\n    static int solveDay12(List<Integer> values) {\n        // TODO: 매개변수와 반환값 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay12(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { static int rectangle(int width, int height) { return width * height; } public static void main(String[] args) { System.out.println(rectangle(4, 3)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-13",
+    "language": "java",
+    "day": 13,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "메서드 오버로딩",
+    "summary": "Java의 메서드 오버로딩 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메서드 오버로딩은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { static int add(int a, int b) { return a + b; } static double add(double a, double b) { return a + b; } public static void main(String[] args) { System.out.println(add(2, 3)); System.out.println(add(2.5, 3.5)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "메서드 오버로딩의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메서드 오버로딩의 핵심 개념 설명하기",
+      "메서드 오버로딩을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메서드 오버로딩에서 배운 개념을 사용해 Day 13 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 13: 메서드 오버로딩\nimport java.util.List;\n\npublic class Main {\n    static int solveDay13(List<Integer> values) {\n        // TODO: 메서드 오버로딩 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay13(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { static int add(int a, int b) { return a + b; } static double add(double a, double b) { return a + b; } public static void main(String[] args) { System.out.println(add(2, 3)); System.out.println(add(2.5, 3.5)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-14",
+    "language": "java",
+    "day": 14,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "가변 인자",
+    "summary": "Java의 가변 인자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "가변 인자은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { static int sum(int... values) { int total = 0; for (int value : values) total += value; return total; } public static void main(String[] args) { System.out.println(sum(1, 2, 3)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "가변 인자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "가변 인자의 핵심 개념 설명하기",
+      "가변 인자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "가변 인자에서 배운 개념을 사용해 Day 14 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 14: 가변 인자\nimport java.util.List;\n\npublic class Main {\n    static int solveDay14(List<Integer> values) {\n        // TODO: 가변 인자 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay14(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { static int sum(int... values) { int total = 0; for (int value : values) total += value; return total; } public static void main(String[] args) { System.out.println(sum(1, 2, 3)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-15",
+    "language": "java",
+    "day": 15,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "재귀 호출",
+    "summary": "Java의 재귀 호출 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "재귀 호출은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { static int factorial(int n) { return n <= 1 ? 1 : n * factorial(n - 1); } public static void main(String[] args) { System.out.println(factorial(5)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "재귀 호출의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "재귀 호출의 핵심 개념 설명하기",
+      "재귀 호출을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "재귀 호출에서 배운 개념을 사용해 Day 15 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 15: 재귀 호출\nimport java.util.List;\n\npublic class Main {\n    static int solveDay15(List<Integer> values) {\n        // TODO: 재귀 호출 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay15(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { static int factorial(int n) { return n <= 1 ? 1 : n * factorial(n - 1); } public static void main(String[] args) { System.out.println(factorial(5)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-16",
+    "language": "java",
+    "day": 16,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "문자열",
+    "summary": "Java의 문자열 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "문자열은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { String text = \"coding study\"; System.out.println(text.toUpperCase()); System.out.println(text.substring(0, 6)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "문자열의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "문자열의 핵심 개념 설명하기",
+      "문자열을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "문자열에서 배운 개념을 사용해 Day 16 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 16: 문자열\nimport java.util.List;\n\npublic class Main {\n    static int solveDay16(List<Integer> values) {\n        // TODO: 문자열 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay16(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { String text = \"coding study\"; System.out.println(text.toUpperCase()); System.out.println(text.substring(0, 6)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-17",
+    "language": "java",
+    "day": 17,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "StringBuilder",
+    "summary": "Java의 StringBuilder 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "StringBuilder은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { StringBuilder builder = new StringBuilder(); for (int i = 1; i <= 3; i++) builder.append(i).append(\",\"); System.out.println(builder); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "StringBuilder의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "StringBuilder의 핵심 개념 설명하기",
+      "StringBuilder을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "StringBuilder에서 배운 개념을 사용해 Day 17 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 17: StringBuilder\nimport java.util.List;\n\npublic class Main {\n    static int solveDay17(List<Integer> values) {\n        // TODO: StringBuilder 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay17(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { StringBuilder builder = new StringBuilder(); for (int i = 1; i <= 3; i++) builder.append(i).append(\",\"); System.out.println(builder); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-18",
+    "language": "java",
+    "day": 18,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "다차원 배열",
+    "summary": "Java의 다차원 배열 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "다차원 배열은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.Arrays; public class Main { public static void main(String[] args) { int[][] matrix = {{1, 2}, {3, 4}}; System.out.println(Arrays.deepToString(matrix)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "다차원 배열의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "다차원 배열의 핵심 개념 설명하기",
+      "다차원 배열을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "다차원 배열에서 배운 개념을 사용해 Day 18 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 18: 다차원 배열\nimport java.util.List;\n\npublic class Main {\n    static int solveDay18(List<Integer> values) {\n        // TODO: 다차원 배열 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay18(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.Arrays; public class Main { public static void main(String[] args) { int[][] matrix = {{1, 2}, {3, 4}}; System.out.println(Arrays.deepToString(matrix)); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-19",
+    "language": "java",
+    "day": 19,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "열거형",
+    "summary": "Java의 열거형 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "열거형은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `enum Level { BEGINNER, INTERMEDIATE, ADVANCED } public class Main { public static void main(String[] args) { Level level = Level.INTERMEDIATE; System.out.println(level.name()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "열거형의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "열거형의 핵심 개념 설명하기",
+      "열거형을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "열거형에서 배운 개념을 사용해 Day 19 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 19: 열거형\nimport java.util.List;\n\npublic class Main {\n    static int solveDay19(List<Integer> values) {\n        // TODO: 열거형 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay19(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "enum Level { BEGINNER, INTERMEDIATE, ADVANCED } public class Main { public static void main(String[] args) { Level level = Level.INTERMEDIATE; System.out.println(level.name()); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-20",
+    "language": "java",
+    "day": 20,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "미니 프로젝트: 성적 관리",
+    "summary": "Java의 미니 프로젝트: 성적 관리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 성적 관리은(는) 메서드와 기본 데이터 구조로 로직을 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; public class Main { public static void main(String[] args) { Map<String, List<Integer>> scores = Map.of(\"Mina\", List.of(90, 80), \"Jin\", List.of(70, 75)); scores.forEach((name, values) -> System.out.println(name + \":\" + values.stream().mapToInt(Integer::intValue).average().orElse(0))); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "미니 프로젝트: 성적 관리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 성적 관리의 핵심 개념 설명하기",
+      "미니 프로젝트: 성적 관리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 성적 관리에서 배운 개념을 사용해 Day 20 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 20: 미니 프로젝트: 성적 관리\nimport java.util.List;\n\npublic class Main {\n    static int solveDay20(List<Integer> values) {\n        // TODO: 미니 프로젝트: 성적 관리 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay20(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; public class Main { public static void main(String[] args) { Map<String, List<Integer>> scores = Map.of(\"Mina\", List.of(90, 80), \"Jin\", List.of(70, 75)); scores.forEach((name, values) -> System.out.println(name + \":\" + values.stream().mapToInt(Integer::intValue).average().orElse(0))); } }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "java-day-21",
+    "language": "java",
+    "day": 21,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "클래스와 객체",
+    "summary": "Java의 클래스와 객체 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "클래스와 객체은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Student { String name; int score; boolean passed() { return score >= 60; } } public class Main { public static void main(String[] args) { Student student = new Student(); student.name = \"Mina\"; student.score = 90; System.out.println(student.passed()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "클래스와 객체의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "클래스와 객체의 핵심 개념 설명하기",
+      "클래스와 객체을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "클래스와 객체에서 배운 개념을 사용해 Day 21 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 21: 클래스와 객체\nimport java.util.List;\n\npublic class Main {\n    static int solveDay21(List<Integer> values) {\n        // TODO: 클래스와 객체 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay21(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "class Student { String name; int score; boolean passed() { return score >= 60; } } public class Main { public static void main(String[] args) { Student student = new Student(); student.name = \"Mina\"; student.score = 90; System.out.println(student.passed()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-22",
+    "language": "java",
+    "day": 22,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "생성자",
+    "summary": "Java의 생성자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "생성자은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Account { private final String owner; private int balance; Account(String owner, int balance) { this.owner = owner; this.balance = balance; } void deposit(int amount) { balance += amount; } int balance() { return balance; } } public class Main { public static void main(String[] args) { Account account = new Account(\"Mina\", 0); account.deposit(1000); System.out.println(account.balance()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "생성자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "생성자의 핵심 개념 설명하기",
+      "생성자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "생성자에서 배운 개념을 사용해 Day 22 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 22: 생성자\nimport java.util.List;\n\npublic class Main {\n    static int solveDay22(List<Integer> values) {\n        // TODO: 생성자 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay22(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "class Account { private final String owner; private int balance; Account(String owner, int balance) { this.owner = owner; this.balance = balance; } void deposit(int amount) { balance += amount; } int balance() { return balance; } } public class Main { public static void main(String[] args) { Account account = new Account(\"Mina\", 0); account.deposit(1000); System.out.println(account.balance()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-23",
+    "language": "java",
+    "day": 23,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "접근 제어자",
+    "summary": "Java의 접근 제어자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "접근 제어자은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Account { private int balance; public void deposit(int amount) { if (amount <= 0) throw new IllegalArgumentException(); balance += amount; } public int getBalance() { return balance; } } public class Main { public static void main(String[] args) { Account account = new Account(); account.deposit(1000); System.out.println(account.getBalance()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "접근 제어자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "접근 제어자의 핵심 개념 설명하기",
+      "접근 제어자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "접근 제어자에서 배운 개념을 사용해 Day 23 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 23: 접근 제어자\nimport java.util.List;\n\npublic class Main {\n    static int solveDay23(List<Integer> values) {\n        // TODO: 접근 제어자 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay23(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "class Account { private int balance; public void deposit(int amount) { if (amount <= 0) throw new IllegalArgumentException(); balance += amount; } public int getBalance() { return balance; } } public class Main { public static void main(String[] args) { Account account = new Account(); account.deposit(1000); System.out.println(account.getBalance()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-24",
+    "language": "java",
+    "day": 24,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "캡슐화",
+    "summary": "Java의 캡슐화 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "캡슐화은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `final class Constants { static final int MAX_DAYS = 60; private Constants() {} } public class Main { static int learners = 0; public static void main(String[] args) { learners++; System.out.println(Constants.MAX_DAYS + \" \" + learners); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "캡슐화의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "캡슐화의 핵심 개념 설명하기",
+      "캡슐화을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "캡슐화에서 배운 개념을 사용해 Day 24 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 24: 캡슐화\nimport java.util.List;\n\npublic class Main {\n    static int solveDay24(List<Integer> values) {\n        // TODO: 캡슐화 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay24(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "final class Constants { static final int MAX_DAYS = 60; private Constants() {} } public class Main { static int learners = 0; public static void main(String[] args) { learners++; System.out.println(Constants.MAX_DAYS + \" \" + learners); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-25",
+    "language": "java",
+    "day": 25,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "static과 final",
+    "summary": "Java의 static과 final 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "static과 final은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Animal { String speak() { return \"...\"; } } class Dog extends Animal { @Override String speak() { return \"멍멍\"; } } public class Main { public static void main(String[] args) { System.out.println(new Dog().speak()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "static과 final의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "static과 final의 핵심 개념 설명하기",
+      "static과 final을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "static과 final에서 배운 개념을 사용해 Day 25 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 25: static과 final\nimport java.util.List;\n\npublic class Main {\n    static int solveDay25(List<Integer> values) {\n        // TODO: static과 final 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay25(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "class Animal { String speak() { return \"...\"; } } class Dog extends Animal { @Override String speak() { return \"멍멍\"; } } public class Main { public static void main(String[] args) { System.out.println(new Dog().speak()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-26",
+    "language": "java",
+    "day": 26,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "상속",
+    "summary": "Java의 상속 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "상속은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Shape { double area() { return 0; } } class Circle extends Shape { private final double radius; Circle(double radius) { this.radius = radius; } @Override double area() { return Math.PI * radius * radius; } } public class Main { public static void main(String[] args) { Shape shape = new Circle(2); System.out.println(shape.area()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "상속의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "상속의 핵심 개념 설명하기",
+      "상속을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "상속에서 배운 개념을 사용해 Day 26 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 26: 상속\nimport java.util.List;\n\npublic class Main {\n    static int solveDay26(List<Integer> values) {\n        // TODO: 상속 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay26(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "class Shape { double area() { return 0; } } class Circle extends Shape { private final double radius; Circle(double radius) { this.radius = radius; } @Override double area() { return Math.PI * radius * radius; } } public class Main { public static void main(String[] args) { Shape shape = new Circle(2); System.out.println(shape.area()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-27",
+    "language": "java",
+    "day": 27,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "메서드 오버라이딩",
+    "summary": "Java의 메서드 오버라이딩 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메서드 오버라이딩은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `interface Payable { int pay(); } class Order implements Payable { public int pay() { return 12000; } } public class Main { public static void main(String[] args) { Payable payable = new Order(); System.out.println(payable.pay()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "메서드 오버라이딩의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메서드 오버라이딩의 핵심 개념 설명하기",
+      "메서드 오버라이딩을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메서드 오버라이딩에서 배운 개념을 사용해 Day 27 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 27: 메서드 오버라이딩\nimport java.util.List;\n\npublic class Main {\n    static int solveDay27(List<Integer> values) {\n        // TODO: 메서드 오버라이딩 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay27(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "interface Payable { int pay(); } class Order implements Payable { public int pay() { return 12000; } } public class Main { public static void main(String[] args) { Payable payable = new Order(); System.out.println(payable.pay()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-28",
+    "language": "java",
+    "day": 28,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "다형성",
+    "summary": "Java의 다형성 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "다형성은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `abstract class Shape { abstract double area(); } class Rectangle extends Shape { double w, h; Rectangle(double w, double h) { this.w = w; this.h = h; } double area() { return w * h; } } public class Main { public static void main(String[] args) { System.out.println(new Rectangle(4, 3).area()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "다형성의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "다형성의 핵심 개념 설명하기",
+      "다형성을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "다형성에서 배운 개념을 사용해 Day 28 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 28: 다형성\nimport java.util.List;\n\npublic class Main {\n    static int solveDay28(List<Integer> values) {\n        // TODO: 다형성 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay28(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "abstract class Shape { abstract double area(); } class Rectangle extends Shape { double w, h; Rectangle(double w, double h) { this.w = w; this.h = h; } double area() { return w * h; } } public class Main { public static void main(String[] args) { System.out.println(new Rectangle(4, 3).area()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-29",
+    "language": "java",
+    "day": 29,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "추상 클래스",
+    "summary": "Java의 추상 클래스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "추상 클래스은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `interface Printable { String render(); } class Report implements Printable { public String render() { return \"report\"; } } public class Main { public static void main(String[] args) { Printable item = new Report(); System.out.println(item.render()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "추상 클래스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "추상 클래스의 핵심 개념 설명하기",
+      "추상 클래스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "추상 클래스에서 배운 개념을 사용해 Day 29 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 29: 추상 클래스\nimport java.util.List;\n\npublic class Main {\n    static int solveDay29(List<Integer> values) {\n        // TODO: 추상 클래스 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay29(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "interface Printable { String render(); } class Report implements Printable { public String render() { return \"report\"; } } public class Main { public static void main(String[] args) { Printable item = new Report(); System.out.println(item.render()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-30",
+    "language": "java",
+    "day": 30,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "인터페이스",
+    "summary": "Java의 인터페이스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "인터페이스은(는) 클래스·상속·다형성으로 객체의 책임을 설계하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.List; interface Discount { int apply(int price); } class Order { private final Discount discount; Order(Discount discount) { this.discount = discount; } int total(List<Integer> prices) { return discount.apply(prices.stream().mapToInt(Integer::intValue).sum()); } } public class Main { public static void main(String[] args) { System.out.println(new Order(price -> price * 9 / 10).total(List.of(1000, 2000))); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "인터페이스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "인터페이스의 핵심 개념 설명하기",
+      "인터페이스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "인터페이스에서 배운 개념을 사용해 Day 30 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 30: 인터페이스\nimport java.util.List;\n\npublic class Main {\n    static int solveDay30(List<Integer> values) {\n        // TODO: 인터페이스 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay30(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.List; interface Discount { int apply(int price); } class Order { private final Discount discount; Order(Discount discount) { this.discount = discount; } int total(List<Integer> prices) { return discount.apply(prices.stream().mapToInt(Integer::intValue).sum()); } } public class Main { public static void main(String[] args) { System.out.println(new Order(price -> price * 9 / 10).total(List.of(1000, 2000))); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-31",
+    "language": "java",
+    "day": 31,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "중첩 클래스",
+    "summary": "Java의 중첩 클래스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "중첩 클래스은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Outer { private int value = 10; class Inner { int doubled() { return value * 2; } } static class Helper { static int square(int n) { return n * n; } } } public class Main { public static void main(String[] args) { System.out.println(new Outer().new Inner().doubled()); System.out.println(Outer.Helper.square(3)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "중첩 클래스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "중첩 클래스의 핵심 개념 설명하기",
+      "중첩 클래스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "중첩 클래스에서 배운 개념을 사용해 Day 31 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 31: 중첩 클래스\nimport java.util.List;\n\npublic class Main {\n    static int solveDay31(List<Integer> values) {\n        // TODO: 중첩 클래스 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay31(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "class Outer { private int value = 10; class Inner { int doubled() { return value * 2; } } static class Helper { static int square(int n) { return n * n; } } } public class Main { public static void main(String[] args) { System.out.println(new Outer().new Inner().doubled()); System.out.println(Outer.Helper.square(3)); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-32",
+    "language": "java",
+    "day": 32,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "레코드",
+    "summary": "Java의 레코드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "레코드은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `record Student(String name, int score) { boolean passed() { return score >= 60; } } public class Main { public static void main(String[] args) { System.out.println(new Student(\"Mina\", 90)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "레코드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "레코드의 핵심 개념 설명하기",
+      "레코드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "레코드에서 배운 개념을 사용해 Day 32 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 32: 레코드\nimport java.util.List;\n\npublic class Main {\n    static int solveDay32(List<Integer> values) {\n        // TODO: 레코드 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay32(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "record Student(String name, int score) { boolean passed() { return score >= 60; } } public class Main { public static void main(String[] args) { System.out.println(new Student(\"Mina\", 90)); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-33",
+    "language": "java",
+    "day": 33,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "제네릭 기초",
+    "summary": "Java의 제네릭 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "제네릭 기초은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Box<T> { private final T value; Box(T value) { this.value = value; } T get() { return value; } } public class Main { public static void main(String[] args) { Box<String> box = new Box<>(\"Java\"); System.out.println(box.get()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "제네릭 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "제네릭 기초의 핵심 개념 설명하기",
+      "제네릭 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "제네릭 기초에서 배운 개념을 사용해 Day 33 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 33: 제네릭 기초\nimport java.util.List;\n\npublic class Main {\n    static int solveDay33(List<Integer> values) {\n        // TODO: 제네릭 기초 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay33(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "class Box<T> { private final T value; Box(T value) { this.value = value; } T get() { return value; } } public class Main { public static void main(String[] args) { Box<String> box = new Box<>(\"Java\"); System.out.println(box.get()); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-34",
+    "language": "java",
+    "day": 34,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "제네릭 메서드",
+    "summary": "Java의 제네릭 메서드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "제네릭 메서드은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { static <T> T first(java.util.List<T> values) { return values.get(0); } public static void main(String[] args) { System.out.println(first(java.util.List.of(1, 2))); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "제네릭 메서드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "제네릭 메서드의 핵심 개념 설명하기",
+      "제네릭 메서드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "제네릭 메서드에서 배운 개념을 사용해 Day 34 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 34: 제네릭 메서드\nimport java.util.List;\n\npublic class Main {\n    static int solveDay34(List<Integer> values) {\n        // TODO: 제네릭 메서드 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay34(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { static <T> T first(java.util.List<T> values) { return values.get(0); } public static void main(String[] args) { System.out.println(first(java.util.List.of(1, 2))); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-35",
+    "language": "java",
+    "day": 35,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "객체지향 설계 문제",
+    "summary": "Java의 객체지향 설계 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계 문제은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `interface Repository<T> { void save(T value); } record Study(String title) {} class MemoryRepository implements Repository<Study> { public void save(Study study) { System.out.println(\"saved: \" + study.title()); } } public class Main { public static void main(String[] args) { new MemoryRepository().save(new Study(\"Java\")); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "객체지향 설계 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계 문제의 핵심 개념 설명하기",
+      "객체지향 설계 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계 문제에서 배운 개념을 사용해 Day 35 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 35: 객체지향 설계 문제\nimport java.util.List;\n\npublic class Main {\n    static int solveDay35(List<Integer> values) {\n        // TODO: 객체지향 설계 문제 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay35(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "interface Repository<T> { void save(T value); } record Study(String title) {} class MemoryRepository implements Repository<Study> { public void save(Study study) { System.out.println(\"saved: \" + study.title()); } } public class Main { public static void main(String[] args) { new MemoryRepository().save(new Study(\"Java\")); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-36",
+    "language": "java",
+    "day": 36,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "예외 처리",
+    "summary": "Java의 예외 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외 처리은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { static int parse(String text) { try { return Integer.parseInt(text); } catch (NumberFormatException error) { return 0; } finally { System.out.println(\"parsed\"); } } public static void main(String[] args) { System.out.println(parse(\"12a\")); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "예외 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외 처리의 핵심 개념 설명하기",
+      "예외 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외 처리에서 배운 개념을 사용해 Day 36 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 36: 예외 처리\nimport java.util.List;\n\npublic class Main {\n    static int solveDay36(List<Integer> values) {\n        // TODO: 예외 처리 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay36(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { static int parse(String text) { try { return Integer.parseInt(text); } catch (NumberFormatException error) { return 0; } finally { System.out.println(\"parsed\"); } } public static void main(String[] args) { System.out.println(parse(\"12a\")); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-37",
+    "language": "java",
+    "day": 37,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "컬렉션 프레임워크",
+    "summary": "Java의 컬렉션 프레임워크 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션 프레임워크은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; public class Main { public static void main(String[] args) { Collection<String> items = new ArrayList<>(); items.add(\"Java\"); items.add(\"Kotlin\"); System.out.println(items); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "컬렉션 프레임워크의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션 프레임워크의 핵심 개념 설명하기",
+      "컬렉션 프레임워크을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션 프레임워크에서 배운 개념을 사용해 Day 37 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 37: 컬렉션 프레임워크\nimport java.util.List;\n\npublic class Main {\n    static int solveDay37(List<Integer> values) {\n        // TODO: 컬렉션 프레임워크 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay37(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; public class Main { public static void main(String[] args) { Collection<String> items = new ArrayList<>(); items.add(\"Java\"); items.add(\"Kotlin\"); System.out.println(items); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-38",
+    "language": "java",
+    "day": 38,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "List와 Set",
+    "summary": "Java의 List와 Set 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "List와 Set은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; public class Main { public static void main(String[] args) { List<Integer> list = new ArrayList<>(List.of(3, 1, 2)); Collections.sort(list); Set<Integer> set = new LinkedHashSet<>(list); System.out.println(list + \" \" + set); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "List와 Set의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "List와 Set의 핵심 개념 설명하기",
+      "List와 Set을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "List와 Set에서 배운 개념을 사용해 Day 38 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 38: List와 Set\nimport java.util.List;\n\npublic class Main {\n    static int solveDay38(List<Integer> values) {\n        // TODO: List와 Set 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay38(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; public class Main { public static void main(String[] args) { List<Integer> list = new ArrayList<>(List.of(3, 1, 2)); Collections.sort(list); Set<Integer> set = new LinkedHashSet<>(list); System.out.println(list + \" \" + set); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-39",
+    "language": "java",
+    "day": 39,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "Map",
+    "summary": "Java의 Map 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Map은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; public class Main { public static void main(String[] args) { Map<String, Integer> frequency = new HashMap<>(); for (String word : List.of(\"a\", \"b\", \"a\")) frequency.merge(word, 1, Integer::sum); System.out.println(frequency); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Map의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Map의 핵심 개념 설명하기",
+      "Map을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Map에서 배운 개념을 사용해 Day 39 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 39: Map\nimport java.util.List;\n\npublic class Main {\n    static int solveDay39(List<Integer> values) {\n        // TODO: Map 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay39(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; public class Main { public static void main(String[] args) { Map<String, Integer> frequency = new HashMap<>(); for (String word : List.of(\"a\", \"b\", \"a\")) frequency.merge(word, 1, Integer::sum); System.out.println(frequency); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-40",
+    "language": "java",
+    "day": 40,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "Comparable과 Comparator",
+    "summary": "Java의 Comparable과 Comparator 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Comparable과 Comparator은(는) 컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; record Student(String name, int score) {} public class Main { public static void main(String[] args) { List<Student> students = new ArrayList<>(List.of(new Student(\"A\", 80), new Student(\"B\", 95))); students.sort(Comparator.comparingInt(Student::score).reversed()); System.out.println(students); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Comparable과 Comparator의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Comparable과 Comparator의 핵심 개념 설명하기",
+      "Comparable과 Comparator을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Comparable과 Comparator에서 배운 개념을 사용해 Day 40 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 40: Comparable과 Comparator\nimport java.util.List;\n\npublic class Main {\n    static int solveDay40(List<Integer> values) {\n        // TODO: Comparable과 Comparator 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay40(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; record Student(String name, int score) {} public class Main { public static void main(String[] args) { List<Student> students = new ArrayList<>(List.of(new Student(\"A\", 80), new Student(\"B\", 95))); students.sort(Comparator.comparingInt(Student::score).reversed()); System.out.println(students); } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "java-day-41",
+    "language": "java",
+    "day": 41,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "람다 표현식",
+    "summary": "Java의 람다 표현식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "람다 표현식은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; public class Main { public static void main(String[] args) { List<String> names = List.of(\"Mina\", \"Jin\"); names.forEach(name -> System.out.println(name.toUpperCase())); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "람다 표현식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "람다 표현식의 핵심 개념 설명하기",
+      "람다 표현식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "람다 표현식에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 41: 람다 표현식\nimport java.util.List;\n\npublic class Main {\n    static int solveDay41(List<Integer> values) {\n        // TODO: 람다 표현식 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay41(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; public class Main { public static void main(String[] args) { List<String> names = List.of(\"Mina\", \"Jin\"); names.forEach(name -> System.out.println(name.toUpperCase())); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-42",
+    "language": "java",
+    "day": 42,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 인터페이스",
+    "summary": "Java의 함수형 인터페이스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 인터페이스은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.function.*; public class Main { public static void main(String[] args) { Predicate<Integer> even = n -> n % 2 == 0; Function<Integer, Integer> square = n -> n * n; System.out.println(square.apply(4) + \" \" + even.test(4)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "함수형 인터페이스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수형 인터페이스의 핵심 개념 설명하기",
+      "함수형 인터페이스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수형 인터페이스에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 42: 함수형 인터페이스\nimport java.util.List;\n\npublic class Main {\n    static int solveDay42(List<Integer> values) {\n        // TODO: 함수형 인터페이스 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay42(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.function.*; public class Main { public static void main(String[] args) { Predicate<Integer> even = n -> n % 2 == 0; Function<Integer, Integer> square = n -> n * n; System.out.println(square.apply(4) + \" \" + even.test(4)); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-43",
+    "language": "java",
+    "day": 43,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Stream API",
+    "summary": "Java의 Stream API 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Stream API은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; public class Main { public static void main(String[] args) { int total = List.of(1, 2, 3, 4).stream().filter(n -> n % 2 == 0).map(n -> n * n).reduce(0, Integer::sum); System.out.println(total); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Stream API의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Stream API의 핵심 개념 설명하기",
+      "Stream API을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Stream API에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 43: Stream API\nimport java.util.List;\n\npublic class Main {\n    static int solveDay43(List<Integer> values) {\n        // TODO: Stream API 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay43(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; public class Main { public static void main(String[] args) { int total = List.of(1, 2, 3, 4).stream().filter(n -> n % 2 == 0).map(n -> n * n).reduce(0, Integer::sum); System.out.println(total); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-44",
+    "language": "java",
+    "day": 44,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Optional",
+    "summary": "Java의 Optional 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Optional은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.Optional; public class Main { static Optional<String> nickname(boolean exists) { return exists ? Optional.of(\"Mina\") : Optional.empty(); } public static void main(String[] args) { System.out.println(nickname(false).orElse(\"익명\")); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Optional의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Optional의 핵심 개념 설명하기",
+      "Optional을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Optional에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 44: Optional\nimport java.util.List;\n\npublic class Main {\n    static int solveDay44(List<Integer> values) {\n        // TODO: Optional 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay44(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.Optional; public class Main { static Optional<String> nickname(boolean exists) { return exists ? Optional.of(\"Mina\") : Optional.empty(); } public static void main(String[] args) { System.out.println(nickname(false).orElse(\"익명\")); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-45",
+    "language": "java",
+    "day": 45,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "미니 프로젝트: 주문 분석",
+    "summary": "Java의 미니 프로젝트: 주문 분석 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 주문 분석은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; record Order(String item, int price) {} public class Main { public static void main(String[] args) { List<Order> orders = List.of(new Order(\"book\", 12000), new Order(\"pen\", 1500)); Map<Boolean, List<Order>> grouped = orders.stream().collect(java.util.stream.Collectors.partitioningBy(order -> order.price() >= 10000)); System.out.println(grouped); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "미니 프로젝트: 주문 분석의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 주문 분석의 핵심 개념 설명하기",
+      "미니 프로젝트: 주문 분석을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 주문 분석에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 45: 미니 프로젝트: 주문 분석\nimport java.util.List;\n\npublic class Main {\n    static int solveDay45(List<Integer> values) {\n        // TODO: 미니 프로젝트: 주문 분석 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay45(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; record Order(String item, int price) {} public class Main { public static void main(String[] args) { List<Order> orders = List.of(new Order(\"book\", 12000), new Order(\"pen\", 1500)); Map<Boolean, List<Order>> grouped = orders.stream().collect(java.util.stream.Collectors.partitioningBy(order -> order.price() >= 10000)); System.out.println(grouped); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-46",
+    "language": "java",
+    "day": 46,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "파일 입출력",
+    "summary": "Java의 파일 입출력 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일 입출력은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.nio.file.*; public class Main { public static void main(String[] args) throws Exception { Path path = Path.of(\"study.txt\"); Files.writeString(path, \"Java I/O\"); System.out.println(Files.readString(path)); Files.delete(path); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "파일 입출력의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일 입출력의 핵심 개념 설명하기",
+      "파일 입출력을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일 입출력에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 46: 파일 입출력\nimport java.util.List;\n\npublic class Main {\n    static int solveDay46(List<Integer> values) {\n        // TODO: 파일 입출력 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay46(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.nio.file.*; public class Main { public static void main(String[] args) throws Exception { Path path = Path.of(\"study.txt\"); Files.writeString(path, \"Java I/O\"); System.out.println(Files.readString(path)); Files.delete(path); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-47",
+    "language": "java",
+    "day": 47,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "NIO",
+    "summary": "Java의 NIO 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "NIO은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.nio.file.*; public class Main { public static void main(String[] args) throws Exception { try (var lines = Files.lines(Path.of(\"README.md\"))) { System.out.println(lines.filter(line -> !line.isBlank()).count()); } } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "NIO의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "NIO의 핵심 개념 설명하기",
+      "NIO을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "NIO에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 47: NIO\nimport java.util.List;\n\npublic class Main {\n    static int solveDay47(List<Integer> values) {\n        // TODO: NIO 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay47(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.nio.file.*; public class Main { public static void main(String[] args) throws Exception { try (var lines = Files.lines(Path.of(\"README.md\"))) { System.out.println(lines.filter(line -> !line.isBlank()).count()); } } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-48",
+    "language": "java",
+    "day": 48,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "직렬화와 JSON",
+    "summary": "Java의 직렬화와 JSON 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "직렬화와 JSON은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `record Study(String title, int day) {} public class Main { public static void main(String[] args) { Study study = new Study(\"Java\", 48); String json = \"{\\\"title\\\":\\\"\" + study.title() + \"\\\",\\\"day\\\":\" + study.day() + \"}\"; System.out.println(json); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "직렬화와 JSON의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "직렬화와 JSON의 핵심 개념 설명하기",
+      "직렬화와 JSON을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "직렬화와 JSON에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 48: 직렬화와 JSON\nimport java.util.List;\n\npublic class Main {\n    static int solveDay48(List<Integer> values) {\n        // TODO: 직렬화와 JSON 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay48(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "record Study(String title, int day) {} public class Main { public static void main(String[] args) { Study study = new Study(\"Java\", 48); String json = \"{\\\"title\\\":\\\"\" + study.title() + \"\\\",\\\"day\\\":\" + study.day() + \"}\"; System.out.println(json); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-49",
+    "language": "java",
+    "day": 49,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "날짜와 시간 API",
+    "summary": "Java의 날짜와 시간 API 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "날짜와 시간 API은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.time.*; import java.time.format.*; public class Main { public static void main(String[] args) { LocalDate deadline = LocalDate.now().plusDays(7); System.out.println(deadline.format(DateTimeFormatter.ISO_DATE)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "날짜와 시간 API의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "날짜와 시간 API의 핵심 개념 설명하기",
+      "날짜와 시간 API을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "날짜와 시간 API에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 49: 날짜와 시간 API\nimport java.util.List;\n\npublic class Main {\n    static int solveDay49(List<Integer> values) {\n        // TODO: 날짜와 시간 API 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay49(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.time.*; import java.time.format.*; public class Main { public static void main(String[] args) { LocalDate deadline = LocalDate.now().plusDays(7); System.out.println(deadline.format(DateTimeFormatter.ISO_DATE)); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-50",
+    "language": "java",
+    "day": 50,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "정규 표현식",
+    "summary": "Java의 정규 표현식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "정규 표현식은(는) 입출력·테스트·동시성을 운영 수준으로 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.regex.*; public class Main { public static void main(String[] args) { Matcher matcher = Pattern.compile(\"[\\w.-]+@[\\w.-]+\\.\\w+\").matcher(\"study@example.com\"); System.out.println(matcher.find() ? matcher.group() : \"없음\"); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "정규 표현식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "정규 표현식의 핵심 개념 설명하기",
+      "정규 표현식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "정규 표현식에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 50: 정규 표현식\nimport java.util.List;\n\npublic class Main {\n    static int solveDay50(List<Integer> values) {\n        // TODO: 정규 표현식 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay50(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.regex.*; public class Main { public static void main(String[] args) { Matcher matcher = Pattern.compile(\"[\\w.-]+@[\\w.-]+\\.\\w+\").matcher(\"study@example.com\"); System.out.println(matcher.find() ? matcher.group() : \"없음\"); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-51",
+    "language": "java",
+    "day": 51,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "JUnit 테스트",
+    "summary": "Java의 JUnit 테스트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "JUnit 테스트은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import static org.junit.jupiter.api.Assertions.assertEquals; import org.junit.jupiter.api.Test; class CalculatorTest { @Test void addsNumbers() { assertEquals(5, 2 + 3); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "JUnit 테스트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "JUnit 테스트의 핵심 개념 설명하기",
+      "JUnit 테스트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "JUnit 테스트에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 51: JUnit 테스트\nimport java.util.List;\n\npublic class Main {\n    static int solveDay51(List<Integer> values) {\n        // TODO: JUnit 테스트 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay51(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import static org.junit.jupiter.api.Assertions.assertEquals; import org.junit.jupiter.api.Test; class CalculatorTest { @Test void addsNumbers() { assertEquals(5, 2 + 3); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-52",
+    "language": "java",
+    "day": 52,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "동시성 기초",
+    "summary": "Java의 동시성 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "동시성 기초은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) throws Exception { Thread worker = new Thread(() -> System.out.println(Thread.currentThread().getName())); worker.start(); worker.join(); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "동시성 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "동시성 기초의 핵심 개념 설명하기",
+      "동시성 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "동시성 기초에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 52: 동시성 기초\nimport java.util.List;\n\npublic class Main {\n    static int solveDay52(List<Integer> values) {\n        // TODO: 동시성 기초 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay52(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) throws Exception { Thread worker = new Thread(() -> System.out.println(Thread.currentThread().getName())); worker.start(); worker.join(); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-53",
+    "language": "java",
+    "day": 53,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "ExecutorService",
+    "summary": "Java의 ExecutorService 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "ExecutorService은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.concurrent.*; public class Main { public static void main(String[] args) throws Exception { try (ExecutorService executor = Executors.newFixedThreadPool(2)) { Future<Integer> future = executor.submit(() -> 2 + 3); System.out.println(future.get()); } } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "ExecutorService의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "ExecutorService의 핵심 개념 설명하기",
+      "ExecutorService을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "ExecutorService에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 53: ExecutorService\nimport java.util.List;\n\npublic class Main {\n    static int solveDay53(List<Integer> values) {\n        // TODO: ExecutorService 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay53(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.concurrent.*; public class Main { public static void main(String[] args) throws Exception { try (ExecutorService executor = Executors.newFixedThreadPool(2)) { Future<Integer> future = executor.submit(() -> 2 + 3); System.out.println(future.get()); } } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-54",
+    "language": "java",
+    "day": 54,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "CompletableFuture",
+    "summary": "Java의 CompletableFuture 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "CompletableFuture은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.concurrent.*; public class Main { public static void main(String[] args) { CompletableFuture.supplyAsync(() -> \"study\").thenApply(String::toUpperCase).thenAccept(System.out::println).join(); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "CompletableFuture의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "CompletableFuture의 핵심 개념 설명하기",
+      "CompletableFuture을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "CompletableFuture에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 54: CompletableFuture\nimport java.util.List;\n\npublic class Main {\n    static int solveDay54(List<Integer> values) {\n        // TODO: CompletableFuture 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay54(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.concurrent.*; public class Main { public static void main(String[] args) { CompletableFuture.supplyAsync(() -> \"study\").thenApply(String::toUpperCase).thenAccept(System.out::println).join(); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-55",
+    "language": "java",
+    "day": 55,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "JVM 메모리 구조",
+    "summary": "Java의 JVM 메모리 구조 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "JVM 메모리 구조은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `public class Main { public static void main(String[] args) { Runtime runtime = Runtime.getRuntime(); long used = runtime.totalMemory() - runtime.freeMemory(); System.out.println(\"heap used=\" + used); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "JVM 메모리 구조의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "JVM 메모리 구조의 핵심 개념 설명하기",
+      "JVM 메모리 구조을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "JVM 메모리 구조에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 55: JVM 메모리 구조\nimport java.util.List;\n\npublic class Main {\n    static int solveDay55(List<Integer> values) {\n        // TODO: JVM 메모리 구조 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay55(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "public class Main { public static void main(String[] args) { Runtime runtime = Runtime.getRuntime(); long used = runtime.totalMemory() - runtime.freeMemory(); System.out.println(\"heap used=\" + used); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-56",
+    "language": "java",
+    "day": 56,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "자료구조와 복잡도",
+    "summary": "Java의 자료구조와 복잡도 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "자료구조와 복잡도은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; public class Main { public static void main(String[] args) { Deque<Integer> stack = new ArrayDeque<>(); Queue<Integer> queue = new ArrayDeque<>(); stack.push(1); queue.offer(2); System.out.println(stack.pop() + queue.poll()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "자료구조와 복잡도의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "자료구조와 복잡도의 핵심 개념 설명하기",
+      "자료구조와 복잡도을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "자료구조와 복잡도에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 56: 자료구조와 복잡도\nimport java.util.List;\n\npublic class Main {\n    static int solveDay56(List<Integer> values) {\n        // TODO: 자료구조와 복잡도 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay56(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; public class Main { public static void main(String[] args) { Deque<Integer> stack = new ArrayDeque<>(); Queue<Integer> queue = new ArrayDeque<>(); stack.push(1); queue.offer(2); System.out.println(stack.pop() + queue.poll()); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-57",
+    "language": "java",
+    "day": 57,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "정렬과 탐색",
+    "summary": "Java의 정렬과 탐색 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "정렬과 탐색은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; public class Main { static int binarySearch(int[] values, int target) { int left = 0, right = values.length - 1; while (left <= right) { int mid = (left + right) >>> 1; if (values[mid] == target) return mid; if (values[mid] < target) left = mid + 1; else right = mid - 1; } return -1; } public static void main(String[] args) { int[] values = {4, 1, 3, 2}; Arrays.sort(values); System.out.println(binarySearch(values, 3)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "정렬과 탐색의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "정렬과 탐색의 핵심 개념 설명하기",
+      "정렬과 탐색을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "정렬과 탐색에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 57: 정렬과 탐색\nimport java.util.List;\n\npublic class Main {\n    static int solveDay57(List<Integer> values) {\n        // TODO: 정렬과 탐색 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay57(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; public class Main { static int binarySearch(int[] values, int target) { int left = 0, right = values.length - 1; while (left <= right) { int mid = (left + right) >>> 1; if (values[mid] == target) return mid; if (values[mid] < target) left = mid + 1; else right = mid - 1; } return -1; } public static void main(String[] args) { int[] values = {4, 1, 3, 2}; Arrays.sort(values); System.out.println(binarySearch(values, 3)); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-58",
+    "language": "java",
+    "day": 58,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "디자인 패턴",
+    "summary": "Java의 디자인 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "디자인 패턴은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `interface PricingStrategy { int price(int amount); } class DiscountPricing implements PricingStrategy { public int price(int amount) { return amount * 9 / 10; } } public class Main { public static void main(String[] args) { PricingStrategy strategy = new DiscountPricing(); System.out.println(strategy.price(10000)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "디자인 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "디자인 패턴의 핵심 개념 설명하기",
+      "디자인 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "디자인 패턴에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 58: 디자인 패턴\nimport java.util.List;\n\npublic class Main {\n    static int solveDay58(List<Integer> values) {\n        // TODO: 디자인 패턴 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay58(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "interface PricingStrategy { int price(int amount); } class DiscountPricing implements PricingStrategy { public int price(int amount) { return amount * 9 / 10; } } public class Main { public static void main(String[] args) { PricingStrategy strategy = new DiscountPricing(); System.out.println(strategy.price(10000)); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-59",
+    "language": "java",
+    "day": 59,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "REST API 개념",
+    "summary": "Java의 REST API 개념 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "REST API 개념은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.net.URI; import java.net.http.*; public class Main { public static void main(String[] args) throws Exception { HttpRequest request = HttpRequest.newBuilder(URI.create(\"https://example.com/api/studies\")).GET().build(); System.out.println(request.method() + \" \" + request.uri()); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "REST API 개념의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "REST API 개념의 핵심 개념 설명하기",
+      "REST API 개념을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "REST API 개념에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 59: REST API 개념\nimport java.util.List;\n\npublic class Main {\n    static int solveDay59(List<Integer> values) {\n        // TODO: REST API 개념 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay59(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.net.URI; import java.net.http.*; public class Main { public static void main(String[] args) throws Exception { HttpRequest request = HttpRequest.newBuilder(URI.create(\"https://example.com/api/studies\")).GET().build(); System.out.println(request.method() + \" \" + request.uri()); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "java-day-60",
+    "language": "java",
+    "day": 60,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "최종 프로젝트: 콘솔 서비스",
+    "summary": "Java의 최종 프로젝트: 콘솔 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "최종 프로젝트: 콘솔 서비스은(는) 알고리즘과 설계 원칙을 서비스에 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.*; record Lesson(int day, String title) {} class StudyService { private final List<Lesson> lessons = new ArrayList<>(); void add(Lesson lesson) { lessons.add(lesson); } Optional<Lesson> find(int day) { return lessons.stream().filter(item -> item.day() == day).findFirst(); } } public class Main { public static void main(String[] args) { StudyService service = new StudyService(); service.add(new Lesson(60, \"Final\")); System.out.println(service.find(60)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "최종 프로젝트: 콘솔 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "최종 프로젝트: 콘솔 서비스의 핵심 개념 설명하기",
+      "최종 프로젝트: 콘솔 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "최종 프로젝트: 콘솔 서비스에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 60: 최종 프로젝트: 콘솔 서비스\nimport java.util.List;\n\npublic class Main {\n    static int solveDay60(List<Integer> values) {\n        // TODO: 최종 프로젝트: 콘솔 서비스 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay60(List.of(1, 2, 3, 4)));\n    }\n}",
+      "solutionCode": "import java.util.*; record Lesson(int day, String title) {} class StudyService { private final List<Lesson> lessons = new ArrayList<>(); void add(Lesson lesson) { lessons.add(lesson); } Optional<Lesson> find(int day) { return lessons.stream().filter(item -> item.day() == day).findFirst(); } } public class Main { public static void main(String[] args) { StudyService service = new StudyService(); service.add(new Lesson(60, \"Final\")); System.out.println(service.find(60)); } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  }
+]

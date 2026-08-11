@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "javascript-day-01",
+    "language": "javascript",
+    "day": 1,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "실행 환경과 첫 출력",
+    "summary": "JavaScript의 실행 환경과 첫 출력 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "실행 환경과 첫 출력은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `console.log(\"Hello, JavaScript!\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "실행 환경과 첫 출력의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "실행 환경과 첫 출력의 핵심 개념 설명하기",
+      "실행 환경과 첫 출력을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "실행 환경과 첫 출력에서 배운 개념을 사용해 Day 1 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 1: 실행 환경과 첫 출력\nfunction solveDay1(values) {\n  // TODO: 실행 환경과 첫 출력 개념을 적용하세요.\n}\n\nconsole.log(solveDay1([1, 2, 3, 4]));",
+      "solutionCode": "console.log(\"Hello, JavaScript!\");"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-02",
+    "language": "javascript",
+    "day": 2,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "변수 선언 방식",
+    "summary": "JavaScript의 변수 선언 방식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "변수 선언 방식은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `let count = 1; count += 1;` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "변수 선언 방식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "변수 선언 방식의 핵심 개념 설명하기",
+      "변수 선언 방식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "변수 선언 방식에서 배운 개념을 사용해 Day 2 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 2: 변수 선언 방식\nfunction solveDay2(values) {\n  // TODO: 변수 선언 방식 개념을 적용하세요.\n}\n\nconsole.log(solveDay2([1, 2, 3, 4]));",
+      "solutionCode": "let count = 1; count += 1;\nconst course = \"JavaScript\";\nconsole.log(course, count);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-03",
+    "language": "javascript",
+    "day": 3,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "원시 타입",
+    "summary": "JavaScript의 원시 타입 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "원시 타입은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const values = [42, \"study\", true, null, undefined, 10n];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "원시 타입의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "원시 타입의 핵심 개념 설명하기",
+      "원시 타입을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "원시 타입에서 배운 개념을 사용해 Day 3 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 3: 원시 타입\nfunction solveDay3(values) {\n  // TODO: 원시 타입 개념을 적용하세요.\n}\n\nconsole.log(solveDay3([1, 2, 3, 4]));",
+      "solutionCode": "const values = [42, \"study\", true, null, undefined, 10n];\nvalues.forEach((value) => console.log(typeof value));"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-04",
+    "language": "javascript",
+    "day": 4,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "연산자와 형 변환",
+    "summary": "JavaScript의 연산자와 형 변환 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "연산자와 형 변환은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const input = \"42\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "연산자와 형 변환의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "연산자와 형 변환의 핵심 개념 설명하기",
+      "연산자와 형 변환을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "연산자와 형 변환에서 배운 개념을 사용해 Day 4 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 4: 연산자와 형 변환\nfunction solveDay4(values) {\n  // TODO: 연산자와 형 변환 개념을 적용하세요.\n}\n\nconsole.log(solveDay4([1, 2, 3, 4]));",
+      "solutionCode": "const input = \"42\";\nconsole.log(Number(input) + 8, String(100), Boolean(input));"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-05",
+    "language": "javascript",
+    "day": 5,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "문자열과 템플릿 리터럴",
+    "summary": "JavaScript의 문자열과 템플릿 리터럴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "문자열과 템플릿 리터럴은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const name = \"Mina\"; const day = 5;` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "문자열과 템플릿 리터럴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "문자열과 템플릿 리터럴의 핵심 개념 설명하기",
+      "문자열과 템플릿 리터럴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "문자열과 템플릿 리터럴에서 배운 개념을 사용해 Day 5 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 5: 문자열과 템플릿 리터럴\nfunction solveDay5(values) {\n  // TODO: 문자열과 템플릿 리터럴 개념을 적용하세요.\n}\n\nconsole.log(solveDay5([1, 2, 3, 4]));",
+      "solutionCode": "const name = \"Mina\"; const day = 5;\nconsole.log(`${name}님의 ${day}일차 학습`);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-06",
+    "language": "javascript",
+    "day": 6,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "조건문",
+    "summary": "JavaScript의 조건문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "조건문은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const score = 85;` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "조건문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "조건문의 핵심 개념 설명하기",
+      "조건문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "조건문에서 배운 개념을 사용해 Day 6 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 6: 조건문\nfunction solveDay6(values) {\n  // TODO: 조건문 개념을 적용하세요.\n}\n\nconsole.log(solveDay6([1, 2, 3, 4]));",
+      "solutionCode": "const score = 85;\nconst grade = score >= 90 ? \"A\" : score >= 80 ? \"B\" : \"C\";\nconsole.log(grade);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-07",
+    "language": "javascript",
+    "day": 7,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "반복문",
+    "summary": "JavaScript의 반복문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "반복문은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `let total = 0;` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "반복문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "반복문의 핵심 개념 설명하기",
+      "반복문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "반복문에서 배운 개념을 사용해 Day 7 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 7: 반복문\nfunction solveDay7(values) {\n  // TODO: 반복문 개념을 적용하세요.\n}\n\nconsole.log(solveDay7([1, 2, 3, 4]));",
+      "solutionCode": "let total = 0;\nfor (let number = 1; number <= 10; number += 1) total += number;\nconsole.log(total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-08",
+    "language": "javascript",
+    "day": 8,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "함수 선언",
+    "summary": "JavaScript의 함수 선언 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수 선언은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function add(a, b) { return a + b; }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "함수 선언의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수 선언의 핵심 개념 설명하기",
+      "함수 선언을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수 선언에서 배운 개념을 사용해 Day 8 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 8: 함수 선언\nfunction solveDay8(values) {\n  // TODO: 함수 선언 개념을 적용하세요.\n}\n\nconsole.log(solveDay8([1, 2, 3, 4]));",
+      "solutionCode": "function add(a, b) { return a + b; }\nconsole.log(add(2, 3));"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-09",
+    "language": "javascript",
+    "day": 9,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "화살표 함수",
+    "summary": "JavaScript의 화살표 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "화살표 함수은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const multiply = (a, b) => a * b;` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "화살표 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "화살표 함수의 핵심 개념 설명하기",
+      "화살표 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "화살표 함수에서 배운 개념을 사용해 Day 9 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 9: 화살표 함수\nfunction solveDay9(values) {\n  // TODO: 화살표 함수 개념을 적용하세요.\n}\n\nconsole.log(solveDay9([1, 2, 3, 4]));",
+      "solutionCode": "const multiply = (a, b) => a * b;\nconsole.log(multiply(4, 5));"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-10",
+    "language": "javascript",
+    "day": 10,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "기초 종합 문제",
+    "summary": "JavaScript의 기초 종합 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "기초 종합 문제은(는) 자바스크립트 값과 실행 흐름을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const numbers = [3, 7, 2, 9];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "기초 종합 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "기초 종합 문제의 핵심 개념 설명하기",
+      "기초 종합 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "기초 종합 문제에서 배운 개념을 사용해 Day 10 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 10: 기초 종합 문제\nfunction solveDay10(values) {\n  // TODO: 기초 종합 문제 개념을 적용하세요.\n}\n\nconsole.log(solveDay10([1, 2, 3, 4]));",
+      "solutionCode": "const numbers = [3, 7, 2, 9];\nconsole.log({ max: Math.max(...numbers), total: numbers.reduce((a, b) => a + b, 0) });"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-11",
+    "language": "javascript",
+    "day": 11,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "배열 기초",
+    "summary": "JavaScript의 배열 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "배열 기초은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const fruits = [\"apple\", \"banana\"];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "배열 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "배열 기초의 핵심 개념 설명하기",
+      "배열 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "배열 기초에서 배운 개념을 사용해 Day 11 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 11: 배열 기초\nfunction solveDay11(values) {\n  // TODO: 배열 기초 개념을 적용하세요.\n}\n\nconsole.log(solveDay11([1, 2, 3, 4]));",
+      "solutionCode": "const fruits = [\"apple\", \"banana\"];\nconsole.log(fruits[0], fruits.at(-1));"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-12",
+    "language": "javascript",
+    "day": 12,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "배열 변경 메서드",
+    "summary": "JavaScript의 배열 변경 메서드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "배열 변경 메서드은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const items = [\"a\"]; items.push(\"b\"); items.splice(0, 1);` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "배열 변경 메서드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "배열 변경 메서드의 핵심 개념 설명하기",
+      "배열 변경 메서드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "배열 변경 메서드에서 배운 개념을 사용해 Day 12 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 12: 배열 변경 메서드\nfunction solveDay12(values) {\n  // TODO: 배열 변경 메서드 개념을 적용하세요.\n}\n\nconsole.log(solveDay12([1, 2, 3, 4]));",
+      "solutionCode": "const items = [\"a\"]; items.push(\"b\"); items.splice(0, 1);\nconsole.log(items);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-13",
+    "language": "javascript",
+    "day": 13,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "map·filter·reduce",
+    "summary": "JavaScript의 map·filter·reduce 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "map·filter·reduce은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const numbers = [1, 2, 3, 4];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "map·filter·reduce의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "map·filter·reduce의 핵심 개념 설명하기",
+      "map·filter·reduce을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "map·filter·reduce에서 배운 개념을 사용해 Day 13 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 13: map·filter·reduce\nfunction solveDay13(values) {\n  // TODO: map·filter·reduce 개념을 적용하세요.\n}\n\nconsole.log(solveDay13([1, 2, 3, 4]));",
+      "solutionCode": "const numbers = [1, 2, 3, 4];\nconst result = numbers.filter((n) => n % 2 === 0).map((n) => n ** 2).reduce((a, b) => a + b, 0);\nconsole.log(result);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-14",
+    "language": "javascript",
+    "day": 14,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "객체 기초",
+    "summary": "JavaScript의 객체 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체 기초은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const student = { name: \"Mina\", score: 95 };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "객체 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체 기초의 핵심 개념 설명하기",
+      "객체 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체 기초에서 배운 개념을 사용해 Day 14 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 14: 객체 기초\nfunction solveDay14(values) {\n  // TODO: 객체 기초 개념을 적용하세요.\n}\n\nconsole.log(solveDay14([1, 2, 3, 4]));",
+      "solutionCode": "const student = { name: \"Mina\", score: 95 };\nstudent.passed = student.score >= 60;\nconsole.log(student);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-15",
+    "language": "javascript",
+    "day": 15,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "객체 구조 분해",
+    "summary": "JavaScript의 객체 구조 분해 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체 구조 분해은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const user = { name: \"Jin\", address: { city: \"Seoul\" } };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "객체 구조 분해의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체 구조 분해의 핵심 개념 설명하기",
+      "객체 구조 분해을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체 구조 분해에서 배운 개념을 사용해 Day 15 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 15: 객체 구조 분해\nfunction solveDay15(values) {\n  // TODO: 객체 구조 분해 개념을 적용하세요.\n}\n\nconsole.log(solveDay15([1, 2, 3, 4]));",
+      "solutionCode": "const user = { name: \"Jin\", address: { city: \"Seoul\" } };\nconst { name, address: { city } } = user;\nconsole.log(name, city);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-16",
+    "language": "javascript",
+    "day": 16,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "Map과 Set",
+    "summary": "JavaScript의 Map과 Set 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Map과 Set은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const unique = new Set([1, 1, 2]);` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Map과 Set의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Map과 Set의 핵심 개념 설명하기",
+      "Map과 Set을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Map과 Set에서 배운 개념을 사용해 Day 16 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 16: Map과 Set\nfunction solveDay16(values) {\n  // TODO: Map과 Set 개념을 적용하세요.\n}\n\nconsole.log(solveDay16([1, 2, 3, 4]));",
+      "solutionCode": "const unique = new Set([1, 1, 2]);\nconst scores = new Map([[\"Mina\", 90]]);\nconsole.log([...unique], scores.get(\"Mina\"));"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-17",
+    "language": "javascript",
+    "day": 17,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "스프레드와 나머지 문법",
+    "summary": "JavaScript의 스프레드와 나머지 문법 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "스프레드와 나머지 문법은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const base = [1, 2]; const values = [...base, 3];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "스프레드와 나머지 문법의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "스프레드와 나머지 문법의 핵심 개념 설명하기",
+      "스프레드와 나머지 문법을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "스프레드와 나머지 문법에서 배운 개념을 사용해 Day 17 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 17: 스프레드와 나머지 문법\nfunction solveDay17(values) {\n  // TODO: 스프레드와 나머지 문법 개념을 적용하세요.\n}\n\nconsole.log(solveDay17([1, 2, 3, 4]));",
+      "solutionCode": "const base = [1, 2]; const values = [...base, 3];\nfunction sum(...numbers) { return numbers.reduce((a, b) => a + b, 0); }\nconsole.log(sum(...values));"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-18",
+    "language": "javascript",
+    "day": 18,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "옵셔널 체이닝",
+    "summary": "JavaScript의 옵셔널 체이닝 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "옵셔널 체이닝은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const user = {};` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "옵셔널 체이닝의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "옵셔널 체이닝의 핵심 개념 설명하기",
+      "옵셔널 체이닝을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "옵셔널 체이닝에서 배운 개념을 사용해 Day 18 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 18: 옵셔널 체이닝\nfunction solveDay18(values) {\n  // TODO: 옵셔널 체이닝 개념을 적용하세요.\n}\n\nconsole.log(solveDay18([1, 2, 3, 4]));",
+      "solutionCode": "const user = {};\nconsole.log(user.profile?.nickname ?? \"익명\");"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-19",
+    "language": "javascript",
+    "day": 19,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "컬렉션 문제",
+    "summary": "JavaScript의 컬렉션 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션 문제은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const orders = [{ price: 1000 }, { price: 2500 }];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "컬렉션 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션 문제의 핵심 개념 설명하기",
+      "컬렉션 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션 문제에서 배운 개념을 사용해 Day 19 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 19: 컬렉션 문제\nfunction solveDay19(values) {\n  // TODO: 컬렉션 문제 개념을 적용하세요.\n}\n\nconsole.log(solveDay19([1, 2, 3, 4]));",
+      "solutionCode": "const orders = [{ price: 1000 }, { price: 2500 }];\nconsole.log(orders.reduce((total, order) => total + order.price, 0));"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-20",
+    "language": "javascript",
+    "day": 20,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "미니 프로젝트: 장바구니",
+    "summary": "JavaScript의 미니 프로젝트: 장바구니 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 장바구니은(는) 배열과 객체 데이터를 불변하게 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const cart = [{ name: \"book\", price: 12000, quantity: 2 }];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "미니 프로젝트: 장바구니의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 장바구니의 핵심 개념 설명하기",
+      "미니 프로젝트: 장바구니을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 장바구니에서 배운 개념을 사용해 Day 20 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 20: 미니 프로젝트: 장바구니\nfunction solveDay20(values) {\n  // TODO: 미니 프로젝트: 장바구니 개념을 적용하세요.\n}\n\nconsole.log(solveDay20([1, 2, 3, 4]));",
+      "solutionCode": "const cart = [{ name: \"book\", price: 12000, quantity: 2 }];\nconst total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);\nconsole.log({ cart, total });"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "javascript-day-21",
+    "language": "javascript",
+    "day": 21,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "스코프와 호이스팅",
+    "summary": "JavaScript의 스코프와 호이스팅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "스코프와 호이스팅은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const globalValue = \"global\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "스코프와 호이스팅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "스코프와 호이스팅의 핵심 개념 설명하기",
+      "스코프와 호이스팅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "스코프와 호이스팅에서 배운 개념을 사용해 Day 21 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 21: 스코프와 호이스팅\nfunction solveDay21(values) {\n  // TODO: 스코프와 호이스팅 개념을 적용하세요.\n}\n\nconsole.log(solveDay21([1, 2, 3, 4]));",
+      "solutionCode": "const globalValue = \"global\";\nfunction scopeDemo() { const localValue = \"local\"; return [globalValue, localValue]; }\nconsole.log(scopeDemo());"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-22",
+    "language": "javascript",
+    "day": 22,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "클로저",
+    "summary": "JavaScript의 클로저 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "클로저은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function counter() { let count = 0; return () => ++count; }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "클로저의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "클로저의 핵심 개념 설명하기",
+      "클로저을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "클로저에서 배운 개념을 사용해 Day 22 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 22: 클로저\nfunction solveDay22(values) {\n  // TODO: 클로저 개념을 적용하세요.\n}\n\nconsole.log(solveDay22([1, 2, 3, 4]));",
+      "solutionCode": "function counter() { let count = 0; return () => ++count; }\nconst increase = counter(); console.log(increase(), increase());"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-23",
+    "language": "javascript",
+    "day": 23,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "this 바인딩",
+    "summary": "JavaScript의 this 바인딩 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "this 바인딩은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const person = { name: \"Mina\", greet() { return this.name; } };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "this 바인딩의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "this 바인딩의 핵심 개념 설명하기",
+      "this 바인딩을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "this 바인딩에서 배운 개념을 사용해 Day 23 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 23: this 바인딩\nfunction solveDay23(values) {\n  // TODO: this 바인딩 개념을 적용하세요.\n}\n\nconsole.log(solveDay23([1, 2, 3, 4]));",
+      "solutionCode": "const person = { name: \"Mina\", greet() { return this.name; } };\nconsole.log(person.greet());"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-24",
+    "language": "javascript",
+    "day": 24,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "콜백 함수",
+    "summary": "JavaScript의 콜백 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "콜백 함수은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function load(callback) { setTimeout(() => callback(null, \"완료\"), 10); }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "콜백 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "콜백 함수의 핵심 개념 설명하기",
+      "콜백 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "콜백 함수에서 배운 개념을 사용해 Day 24 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 24: 콜백 함수\nfunction solveDay24(values) {\n  // TODO: 콜백 함수 개념을 적용하세요.\n}\n\nconsole.log(solveDay24([1, 2, 3, 4]));",
+      "solutionCode": "function load(callback) { setTimeout(() => callback(null, \"완료\"), 10); }\nload((error, data) => console.log(error ?? data));"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-25",
+    "language": "javascript",
+    "day": 25,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "고차 함수",
+    "summary": "JavaScript의 고차 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "고차 함수은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const withLogging = (fn) => (...args) => { console.log(args); return fn(...args); };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "고차 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "고차 함수의 핵심 개념 설명하기",
+      "고차 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "고차 함수에서 배운 개념을 사용해 Day 25 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 25: 고차 함수\nfunction solveDay25(values) {\n  // TODO: 고차 함수 개념을 적용하세요.\n}\n\nconsole.log(solveDay25([1, 2, 3, 4]));",
+      "solutionCode": "const withLogging = (fn) => (...args) => { console.log(args); return fn(...args); };\nconsole.log(withLogging((a, b) => a + b)(2, 3));"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-26",
+    "language": "javascript",
+    "day": 26,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "프로토타입",
+    "summary": "JavaScript의 프로토타입 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로토타입은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function User(name) { this.name = name; }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "프로토타입의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로토타입의 핵심 개념 설명하기",
+      "프로토타입을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로토타입에서 배운 개념을 사용해 Day 26 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 26: 프로토타입\nfunction solveDay26(values) {\n  // TODO: 프로토타입 개념을 적용하세요.\n}\n\nconsole.log(solveDay26([1, 2, 3, 4]));",
+      "solutionCode": "function User(name) { this.name = name; }\nUser.prototype.greet = function () { return `Hi, ${this.name}`; };\nconsole.log(new User(\"Mina\").greet());"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-27",
+    "language": "javascript",
+    "day": 27,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "클래스 문법",
+    "summary": "JavaScript의 클래스 문법 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "클래스 문법은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Account { #balance = 0; deposit(amount) { this.#balance += amount; } get balance() { return this.#balance; } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "클래스 문법의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "클래스 문법의 핵심 개념 설명하기",
+      "클래스 문법을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "클래스 문법에서 배운 개념을 사용해 Day 27 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 27: 클래스 문법\nfunction solveDay27(values) {\n  // TODO: 클래스 문법 개념을 적용하세요.\n}\n\nconsole.log(solveDay27([1, 2, 3, 4]));",
+      "solutionCode": "class Account { #balance = 0; deposit(amount) { this.#balance += amount; } get balance() { return this.#balance; } }\nconst account = new Account(); account.deposit(1000); console.log(account.balance);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-28",
+    "language": "javascript",
+    "day": 28,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "모듈 시스템",
+    "summary": "JavaScript의 모듈 시스템 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "모듈 시스템은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import { add } from \"./math.js\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "모듈 시스템의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "모듈 시스템의 핵심 개념 설명하기",
+      "모듈 시스템을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "모듈 시스템에서 배운 개념을 사용해 Day 28 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 28: 모듈 시스템\nfunction solveDay28(values) {\n  // TODO: 모듈 시스템 개념을 적용하세요.\n}\n\nconsole.log(solveDay28([1, 2, 3, 4]));",
+      "solutionCode": "// math.js: export const add = (a, b) => a + b;\n// app.js\nimport { add } from \"./math.js\";\nconsole.log(add(2, 3));"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-29",
+    "language": "javascript",
+    "day": 29,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "에러 처리",
+    "summary": "JavaScript의 에러 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "에러 처리은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function parseJSON(text) { try { return JSON.parse(text); } catch (error) { return { error: error.message }; } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "에러 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "에러 처리의 핵심 개념 설명하기",
+      "에러 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "에러 처리에서 배운 개념을 사용해 Day 29 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 29: 에러 처리\nfunction solveDay29(values) {\n  // TODO: 에러 처리 개념을 적용하세요.\n}\n\nconsole.log(solveDay29([1, 2, 3, 4]));",
+      "solutionCode": "function parseJSON(text) { try { return JSON.parse(text); } catch (error) { return { error: error.message }; } }\nconsole.log(parseJSON(\"{\"));"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-30",
+    "language": "javascript",
+    "day": 30,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "함수형 설계 문제",
+    "summary": "JavaScript의 함수형 설계 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 설계 문제은(는) 함수·클로저·모듈로 동작을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const compose = (...functions) => (value) => functions.reduceRight((result, fn) => fn(result), value);` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "함수형 설계 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수형 설계 문제의 핵심 개념 설명하기",
+      "함수형 설계 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수형 설계 문제에서 배운 개념을 사용해 Day 30 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 30: 함수형 설계 문제\nfunction solveDay30(values) {\n  // TODO: 함수형 설계 문제 개념을 적용하세요.\n}\n\nconsole.log(solveDay30([1, 2, 3, 4]));",
+      "solutionCode": "const compose = (...functions) => (value) => functions.reduceRight((result, fn) => fn(result), value);\nconsole.log(compose((n) => n * 2, (n) => n + 1)(3));"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-31",
+    "language": "javascript",
+    "day": 31,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "DOM 선택과 변경",
+    "summary": "JavaScript의 DOM 선택과 변경 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "DOM 선택과 변경은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const title = document.querySelector(\"h1\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "DOM 선택과 변경의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "DOM 선택과 변경의 핵심 개념 설명하기",
+      "DOM 선택과 변경을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "DOM 선택과 변경에서 배운 개념을 사용해 Day 31 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 31: DOM 선택과 변경\nfunction solveDay31(values) {\n  // TODO: DOM 선택과 변경 개념을 적용하세요.\n}\n\nconsole.log(solveDay31([1, 2, 3, 4]));",
+      "solutionCode": "const title = document.querySelector(\"h1\");\ntitle.textContent = \"DOM 변경 완료\"; title.classList.add(\"active\");"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-32",
+    "language": "javascript",
+    "day": 32,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "이벤트 처리",
+    "summary": "JavaScript의 이벤트 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이벤트 처리은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `document.querySelector(\"button\").addEventListener(\"click\", (event) => { event.currentTarget.textContent = \"클릭됨\"; });` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "이벤트 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이벤트 처리의 핵심 개념 설명하기",
+      "이벤트 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이벤트 처리에서 배운 개념을 사용해 Day 32 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 32: 이벤트 처리\nfunction solveDay32(values) {\n  // TODO: 이벤트 처리 개념을 적용하세요.\n}\n\nconsole.log(solveDay32([1, 2, 3, 4]));",
+      "solutionCode": "document.querySelector(\"button\").addEventListener(\"click\", (event) => { event.currentTarget.textContent = \"클릭됨\"; });"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-33",
+    "language": "javascript",
+    "day": 33,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "폼 데이터",
+    "summary": "JavaScript의 폼 데이터 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "폼 데이터은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const form = document.querySelector(\"form\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "폼 데이터의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "폼 데이터의 핵심 개념 설명하기",
+      "폼 데이터을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "폼 데이터에서 배운 개념을 사용해 Day 33 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 33: 폼 데이터\nfunction solveDay33(values) {\n  // TODO: 폼 데이터 개념을 적용하세요.\n}\n\nconsole.log(solveDay33([1, 2, 3, 4]));",
+      "solutionCode": "const form = document.querySelector(\"form\");\nform.addEventListener(\"submit\", (event) => { event.preventDefault(); console.log(Object.fromEntries(new FormData(form))); });"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-34",
+    "language": "javascript",
+    "day": 34,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "브라우저 저장소",
+    "summary": "JavaScript의 브라우저 저장소 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "브라우저 저장소은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `localStorage.setItem(\"settings\", JSON.stringify({ theme: \"dark\" }));` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "브라우저 저장소의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "브라우저 저장소의 핵심 개념 설명하기",
+      "브라우저 저장소을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "브라우저 저장소에서 배운 개념을 사용해 Day 34 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 34: 브라우저 저장소\nfunction solveDay34(values) {\n  // TODO: 브라우저 저장소 개념을 적용하세요.\n}\n\nconsole.log(solveDay34([1, 2, 3, 4]));",
+      "solutionCode": "localStorage.setItem(\"settings\", JSON.stringify({ theme: \"dark\" }));\nconsole.log(JSON.parse(localStorage.getItem(\"settings\") ?? \"{}\"));"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-35",
+    "language": "javascript",
+    "day": 35,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "Fetch API",
+    "summary": "JavaScript의 Fetch API 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Fetch API은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const response = await fetch(\"/api/studies\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Fetch API의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Fetch API의 핵심 개념 설명하기",
+      "Fetch API을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Fetch API에서 배운 개념을 사용해 Day 35 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 35: Fetch API\nfunction solveDay35(values) {\n  // TODO: Fetch API 개념을 적용하세요.\n}\n\nconsole.log(solveDay35([1, 2, 3, 4]));",
+      "solutionCode": "const response = await fetch(\"/api/studies\");\nif (!response.ok) throw new Error(\"요청 실패\");\nconsole.log(await response.json());"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-36",
+    "language": "javascript",
+    "day": 36,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "Promise 기초",
+    "summary": "JavaScript의 Promise 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Promise 기초은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Promise 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Promise 기초의 핵심 개념 설명하기",
+      "Promise 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Promise 기초에서 배운 개념을 사용해 Day 36 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 36: Promise 기초\nfunction solveDay36(values) {\n  // TODO: Promise 기초 개념을 적용하세요.\n}\n\nconsole.log(solveDay36([1, 2, 3, 4]));",
+      "solutionCode": "const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));\nwait(100).then(() => console.log(\"완료\"));"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-37",
+    "language": "javascript",
+    "day": 37,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "async와 await",
+    "summary": "JavaScript의 async와 await 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "async와 await은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `async function loadStudy() { try { const response = await fetch(\"/api/study/1\"); return await response.json(); } catch (error) { console.error(error); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "async와 await의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "async와 await의 핵심 개념 설명하기",
+      "async와 await을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "async와 await에서 배운 개념을 사용해 Day 37 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 37: async와 await\nfunction solveDay37(values) {\n  // TODO: async와 await 개념을 적용하세요.\n}\n\nconsole.log(solveDay37([1, 2, 3, 4]));",
+      "solutionCode": "async function loadStudy() { try { const response = await fetch(\"/api/study/1\"); return await response.json(); } catch (error) { console.error(error); } }\nawait loadStudy();"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-38",
+    "language": "javascript",
+    "day": 38,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "병렬 비동기 처리",
+    "summary": "JavaScript의 병렬 비동기 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "병렬 비동기 처리은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const requests = [1, 2, 3].map((id) => fetch(`/api/studies/${id}`).then((r) => r.json()));` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "병렬 비동기 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "병렬 비동기 처리의 핵심 개념 설명하기",
+      "병렬 비동기 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "병렬 비동기 처리에서 배운 개념을 사용해 Day 38 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 38: 병렬 비동기 처리\nfunction solveDay38(values) {\n  // TODO: 병렬 비동기 처리 개념을 적용하세요.\n}\n\nconsole.log(solveDay38([1, 2, 3, 4]));",
+      "solutionCode": "const requests = [1, 2, 3].map((id) => fetch(`/api/studies/${id}`).then((r) => r.json()));\nconst results = await Promise.allSettled(requests); console.log(results);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-39",
+    "language": "javascript",
+    "day": 39,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "AbortController",
+    "summary": "JavaScript의 AbortController 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "AbortController은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const controller = new AbortController();` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "AbortController의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "AbortController의 핵심 개념 설명하기",
+      "AbortController을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "AbortController에서 배운 개념을 사용해 Day 39 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 39: AbortController\nfunction solveDay39(values) {\n  // TODO: AbortController 개념을 적용하세요.\n}\n\nconsole.log(solveDay39([1, 2, 3, 4]));",
+      "solutionCode": "const controller = new AbortController();\nsetTimeout(() => controller.abort(), 3000);\nawait fetch(\"/api/slow\", { signal: controller.signal });"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-40",
+    "language": "javascript",
+    "day": 40,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "미니 프로젝트: 검색 앱",
+    "summary": "JavaScript의 미니 프로젝트: 검색 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 검색 앱은(는) 브라우저 및 비동기 작업을 제어하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const query = document.querySelector(\"input\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "미니 프로젝트: 검색 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 검색 앱의 핵심 개념 설명하기",
+      "미니 프로젝트: 검색 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 검색 앱에서 배운 개념을 사용해 Day 40 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 40: 미니 프로젝트: 검색 앱\nfunction solveDay40(values) {\n  // TODO: 미니 프로젝트: 검색 앱 개념을 적용하세요.\n}\n\nconsole.log(solveDay40([1, 2, 3, 4]));",
+      "solutionCode": "const query = document.querySelector(\"input\");\nquery.addEventListener(\"input\", async () => { const data = await fetch(`/api/search?q=${encodeURIComponent(query.value)}`).then((r) => r.json()); console.log(data); });"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "javascript-day-41",
+    "language": "javascript",
+    "day": 41,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이벤트 루프",
+    "summary": "JavaScript의 이벤트 루프 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이벤트 루프은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `console.log(\"sync\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "이벤트 루프의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이벤트 루프의 핵심 개념 설명하기",
+      "이벤트 루프을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이벤트 루프에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 41: 이벤트 루프\nfunction solveDay41(values) {\n  // TODO: 이벤트 루프 개념을 적용하세요.\n}\n\nconsole.log(solveDay41([1, 2, 3, 4]));",
+      "solutionCode": "console.log(\"sync\");\nsetTimeout(() => console.log(\"task\"), 0);\nqueueMicrotask(() => console.log(\"microtask\"));\nPromise.resolve().then(() => console.log(\"promise\"));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-42",
+    "language": "javascript",
+    "day": 42,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "마이크로태스크",
+    "summary": "JavaScript의 마이크로태스크 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "마이크로태스크은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `console.log(\"start\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "마이크로태스크의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "마이크로태스크의 핵심 개념 설명하기",
+      "마이크로태스크을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "마이크로태스크에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 42: 마이크로태스크\nfunction solveDay42(values) {\n  // TODO: 마이크로태스크 개념을 적용하세요.\n}\n\nconsole.log(solveDay42([1, 2, 3, 4]));",
+      "solutionCode": "console.log(\"start\");\nPromise.resolve().then(() => console.log(\"microtask\"));\nsetTimeout(() => console.log(\"macrotask\"), 0);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-43",
+    "language": "javascript",
+    "day": 43,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이터레이터",
+    "summary": "JavaScript의 이터레이터 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이터레이터은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const range = { *[Symbol.iterator]() { for (let i = 1; i <= 3; i += 1) yield i; } };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "이터레이터의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이터레이터의 핵심 개념 설명하기",
+      "이터레이터을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이터레이터에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 43: 이터레이터\nfunction solveDay43(values) {\n  // TODO: 이터레이터 개념을 적용하세요.\n}\n\nconsole.log(solveDay43([1, 2, 3, 4]));",
+      "solutionCode": "const range = { *[Symbol.iterator]() { for (let i = 1; i <= 3; i += 1) yield i; } };\nconsole.log([...range]);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-44",
+    "language": "javascript",
+    "day": 44,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "제너레이터",
+    "summary": "JavaScript의 제너레이터 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "제너레이터은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function* fibonacci() { let [a, b] = [0, 1]; while (true) { yield a; [a, b] = [b, a + b]; } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "제너레이터의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "제너레이터의 핵심 개념 설명하기",
+      "제너레이터을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "제너레이터에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 44: 제너레이터\nfunction solveDay44(values) {\n  // TODO: 제너레이터 개념을 적용하세요.\n}\n\nconsole.log(solveDay44([1, 2, 3, 4]));",
+      "solutionCode": "function* fibonacci() { let [a, b] = [0, 1]; while (true) { yield a; [a, b] = [b, a + b]; } }\nconst sequence = fibonacci(); console.log(sequence.next().value, sequence.next().value);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-45",
+    "language": "javascript",
+    "day": 45,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Proxy와 Reflect",
+    "summary": "JavaScript의 Proxy와 Reflect 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Proxy와 Reflect은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const state = new Proxy({}, { set(target, key, value) { console.log(`${String(key)} 변경`); return Reflect.set(target, key, value); } });` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Proxy와 Reflect의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Proxy와 Reflect의 핵심 개념 설명하기",
+      "Proxy와 Reflect을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Proxy와 Reflect에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 45: Proxy와 Reflect\nfunction solveDay45(values) {\n  // TODO: Proxy와 Reflect 개념을 적용하세요.\n}\n\nconsole.log(solveDay45([1, 2, 3, 4]));",
+      "solutionCode": "const state = new Proxy({}, { set(target, key, value) { console.log(`${String(key)} 변경`); return Reflect.set(target, key, value); } });\nstate.count = 1;"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-46",
+    "language": "javascript",
+    "day": 46,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "정규 표현식",
+    "summary": "JavaScript의 정규 표현식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "정규 표현식은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const email = \"study@example.com\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "정규 표현식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "정규 표현식의 핵심 개념 설명하기",
+      "정규 표현식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "정규 표현식에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 46: 정규 표현식\nfunction solveDay46(values) {\n  // TODO: 정규 표현식 개념을 적용하세요.\n}\n\nconsole.log(solveDay46([1, 2, 3, 4]));",
+      "solutionCode": "const email = \"study@example.com\";\nconsole.log(/^[w.-]+@[w.-]+.w+$/.test(email));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-47",
+    "language": "javascript",
+    "day": 47,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "날짜와 국제화",
+    "summary": "JavaScript의 날짜와 국제화 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "날짜와 국제화은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const date = new Date(\"2026-08-11T00:00:00Z\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "날짜와 국제화의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "날짜와 국제화의 핵심 개념 설명하기",
+      "날짜와 국제화을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "날짜와 국제화에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 47: 날짜와 국제화\nfunction solveDay47(values) {\n  // TODO: 날짜와 국제화 개념을 적용하세요.\n}\n\nconsole.log(solveDay47([1, 2, 3, 4]));",
+      "solutionCode": "const date = new Date(\"2026-08-11T00:00:00Z\");\nconsole.log(new Intl.DateTimeFormat(\"ko-KR\", { dateStyle: \"long\" }).format(date));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-48",
+    "language": "javascript",
+    "day": 48,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "웹 컴포넌트 기초",
+    "summary": "JavaScript의 웹 컴포넌트 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "웹 컴포넌트 기초은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class StudyCard extends HTMLElement { connectedCallback() { this.innerHTML = `<article><slot></slot></article>`; } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "웹 컴포넌트 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "웹 컴포넌트 기초의 핵심 개념 설명하기",
+      "웹 컴포넌트 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "웹 컴포넌트 기초에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 48: 웹 컴포넌트 기초\nfunction solveDay48(values) {\n  // TODO: 웹 컴포넌트 기초 개념을 적용하세요.\n}\n\nconsole.log(solveDay48([1, 2, 3, 4]));",
+      "solutionCode": "class StudyCard extends HTMLElement { connectedCallback() { this.innerHTML = `<article><slot></slot></article>`; } }\ncustomElements.define(\"study-card\", StudyCard);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-49",
+    "language": "javascript",
+    "day": 49,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "단위 테스트",
+    "summary": "JavaScript의 단위 테스트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "단위 테스트은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import { test, expect } from \"vitest\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "단위 테스트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "단위 테스트의 핵심 개념 설명하기",
+      "단위 테스트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "단위 테스트에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 49: 단위 테스트\nfunction solveDay49(values) {\n  // TODO: 단위 테스트 개념을 적용하세요.\n}\n\nconsole.log(solveDay49([1, 2, 3, 4]));",
+      "solutionCode": "import { test, expect } from \"vitest\";\nconst add = (a, b) => a + b;\ntest(\"두 수를 더한다\", () => expect(add(2, 3)).toBe(5));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-50",
+    "language": "javascript",
+    "day": 50,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "디버깅과 성능 측정",
+    "summary": "JavaScript의 디버깅과 성능 측정 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "디버깅과 성능 측정은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `performance.mark(\"start\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "디버깅과 성능 측정의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "디버깅과 성능 측정의 핵심 개념 설명하기",
+      "디버깅과 성능 측정을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "디버깅과 성능 측정에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 50: 디버깅과 성능 측정\nfunction solveDay50(values) {\n  // TODO: 디버깅과 성능 측정 개념을 적용하세요.\n}\n\nconsole.log(solveDay50([1, 2, 3, 4]));",
+      "solutionCode": "performance.mark(\"start\");\nconst result = Array.from({ length: 1000 }, (_, i) => i ** 2);\nperformance.mark(\"end\"); performance.measure(\"work\", \"start\", \"end\");\nconsole.log(result.length, performance.getEntriesByName(\"work\")[0].duration);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-51",
+    "language": "javascript",
+    "day": 51,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "자료구조 구현",
+    "summary": "JavaScript의 자료구조 구현 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "자료구조 구현은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Stack { #items = []; push(value) { this.#items.push(value); } pop() { return this.#items.pop(); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "자료구조 구현의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "자료구조 구현의 핵심 개념 설명하기",
+      "자료구조 구현을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "자료구조 구현에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 51: 자료구조 구현\nfunction solveDay51(values) {\n  // TODO: 자료구조 구현 개념을 적용하세요.\n}\n\nconsole.log(solveDay51([1, 2, 3, 4]));",
+      "solutionCode": "class Stack { #items = []; push(value) { this.#items.push(value); } pop() { return this.#items.pop(); } }\nconst stack = new Stack(); stack.push(1); console.log(stack.pop());"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-52",
+    "language": "javascript",
+    "day": 52,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "재귀와 백트래킹",
+    "summary": "JavaScript의 재귀와 백트래킹 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "재귀와 백트래킹은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function permutations(values) { if (values.length < 2) return [values]; return values.flatMap((value, index) => permutations(values.filter((_, i) => i !== index)).map((rest) => [value, ...rest])); }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "재귀와 백트래킹의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "재귀와 백트래킹의 핵심 개념 설명하기",
+      "재귀와 백트래킹을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "재귀와 백트래킹에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 52: 재귀와 백트래킹\nfunction solveDay52(values) {\n  // TODO: 재귀와 백트래킹 개념을 적용하세요.\n}\n\nconsole.log(solveDay52([1, 2, 3, 4]));",
+      "solutionCode": "function permutations(values) { if (values.length < 2) return [values]; return values.flatMap((value, index) => permutations(values.filter((_, i) => i !== index)).map((rest) => [value, ...rest])); }\nconsole.log(permutations([1, 2, 3]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-53",
+    "language": "javascript",
+    "day": 53,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "정렬과 탐색",
+    "summary": "JavaScript의 정렬과 탐색 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "정렬과 탐색은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const values = [4, 1, 3, 2];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "정렬과 탐색의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "정렬과 탐색의 핵심 개념 설명하기",
+      "정렬과 탐색을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "정렬과 탐색에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 53: 정렬과 탐색\nfunction solveDay53(values) {\n  // TODO: 정렬과 탐색 개념을 적용하세요.\n}\n\nconsole.log(solveDay53([1, 2, 3, 4]));",
+      "solutionCode": "const values = [4, 1, 3, 2];\nvalues.sort((a, b) => a - b);\nconst index = values.findIndex((value) => value === 3);\nconsole.log(values, index);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-54",
+    "language": "javascript",
+    "day": 54,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "메모이제이션",
+    "summary": "JavaScript의 메모이제이션 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메모이제이션은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const memoize = (fn) => { const cache = new Map(); return (value) => cache.has(value) ? cache.get(value) : (cache.set(value, fn(value)), cache.get(value)); };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "메모이제이션의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메모이제이션의 핵심 개념 설명하기",
+      "메모이제이션을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메모이제이션에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 54: 메모이제이션\nfunction solveDay54(values) {\n  // TODO: 메모이제이션 개념을 적용하세요.\n}\n\nconsole.log(solveDay54([1, 2, 3, 4]));",
+      "solutionCode": "const memoize = (fn) => { const cache = new Map(); return (value) => cache.has(value) ? cache.get(value) : (cache.set(value, fn(value)), cache.get(value)); };\nconst square = memoize((n) => n ** 2); console.log(square(4));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-55",
+    "language": "javascript",
+    "day": 55,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "디자인 패턴",
+    "summary": "JavaScript의 디자인 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "디자인 패턴은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class EventBus { #events = new Map(); on(name, fn) { this.#events.set(name, [...(this.#events.get(name) ?? []), fn]); } emit(name, data) { this.#events.get(name)?.forEach((fn) => fn(data)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "디자인 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "디자인 패턴의 핵심 개념 설명하기",
+      "디자인 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "디자인 패턴에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 55: 디자인 패턴\nfunction solveDay55(values) {\n  // TODO: 디자인 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay55([1, 2, 3, 4]));",
+      "solutionCode": "class EventBus { #events = new Map(); on(name, fn) { this.#events.set(name, [...(this.#events.get(name) ?? []), fn]); } emit(name, data) { this.#events.get(name)?.forEach((fn) => fn(data)); } }\nconst bus = new EventBus(); bus.on(\"study\", console.log); bus.emit(\"study\", \"started\");"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-56",
+    "language": "javascript",
+    "day": 56,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "TypeScript 입문",
+    "summary": "JavaScript의 TypeScript 입문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "TypeScript 입문은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `type Study = { id: number; title: string; completed: boolean };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "TypeScript 입문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "TypeScript 입문의 핵심 개념 설명하기",
+      "TypeScript 입문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "TypeScript 입문에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 56: TypeScript 입문\nfunction solveDay56(values) {\n  // TODO: TypeScript 입문 개념을 적용하세요.\n}\n\nconsole.log(solveDay56([1, 2, 3, 4]));",
+      "solutionCode": "type Study = { id: number; title: string; completed: boolean };\nconst toggle = (study: Study): Study => ({ ...study, completed: !study.completed });\nconsole.log(toggle({ id: 1, title: \"TS\", completed: false }));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-57",
+    "language": "javascript",
+    "day": 57,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "Node.js 기초",
+    "summary": "JavaScript의 Node.js 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Node.js 기초은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import { readFile } from \"node:fs/promises\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Node.js 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Node.js 기초의 핵심 개념 설명하기",
+      "Node.js 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Node.js 기초에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 57: Node.js 기초\nfunction solveDay57(values) {\n  // TODO: Node.js 기초 개념을 적용하세요.\n}\n\nconsole.log(solveDay57([1, 2, 3, 4]));",
+      "solutionCode": "import { readFile } from \"node:fs/promises\";\nconst packageJson = JSON.parse(await readFile(\"package.json\", \"utf8\"));\nconsole.log(packageJson.name);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-58",
+    "language": "javascript",
+    "day": 58,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "REST API 연동",
+    "summary": "JavaScript의 REST API 연동 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "REST API 연동은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const response = await fetch(\"/api/studies\", { method: \"POST\", headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify({ title: \"JavaScript\" }) });` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "REST API 연동의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "REST API 연동의 핵심 개념 설명하기",
+      "REST API 연동을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "REST API 연동에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 58: REST API 연동\nfunction solveDay58(values) {\n  // TODO: REST API 연동 개념을 적용하세요.\n}\n\nconsole.log(solveDay58([1, 2, 3, 4]));",
+      "solutionCode": "const response = await fetch(\"/api/studies\", { method: \"POST\", headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify({ title: \"JavaScript\" }) });\nconsole.log(await response.json());"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-59",
+    "language": "javascript",
+    "day": 59,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "보안과 입력 검증",
+    "summary": "JavaScript의 보안과 입력 검증 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "보안과 입력 검증은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function validate(input) { if (typeof input.title !== \"string\" || input.title.length > 100) throw new Error(\"잘못된 입력\"); return { title: input.title.trim() }; }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "보안과 입력 검증의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "보안과 입력 검증의 핵심 개념 설명하기",
+      "보안과 입력 검증을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "보안과 입력 검증에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 59: 보안과 입력 검증\nfunction solveDay59(values) {\n  // TODO: 보안과 입력 검증 개념을 적용하세요.\n}\n\nconsole.log(solveDay59([1, 2, 3, 4]));",
+      "solutionCode": "function validate(input) { if (typeof input.title !== \"string\" || input.title.length > 100) throw new Error(\"잘못된 입력\"); return { title: input.title.trim() }; }\nconsole.log(validate({ title: \" Study \" }));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-60",
+    "language": "javascript",
+    "day": 60,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "최종 프로젝트: 웹 애플리케이션",
+    "summary": "JavaScript의 최종 프로젝트: 웹 애플리케이션 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "최종 프로젝트: 웹 애플리케이션은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class StudyService { constructor(repository) { this.repository = repository; } async complete(id) { const study = await this.repository.find(id); return this.repository.save({ ...study, completed: true }); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "최종 프로젝트: 웹 애플리케이션의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "최종 프로젝트: 웹 애플리케이션의 핵심 개념 설명하기",
+      "최종 프로젝트: 웹 애플리케이션을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "최종 프로젝트: 웹 애플리케이션에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 60: 최종 프로젝트: 웹 애플리케이션\nfunction solveDay60(values) {\n  // TODO: 최종 프로젝트: 웹 애플리케이션 개념을 적용하세요.\n}\n\nconsole.log(solveDay60([1, 2, 3, 4]));",
+      "solutionCode": "class StudyService { constructor(repository) { this.repository = repository; } async complete(id) { const study = await this.repository.find(id); return this.repository.save({ ...study, completed: true }); } }\nconsole.log(\"UI, service, repository 계층으로 분리\");"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  }
+]

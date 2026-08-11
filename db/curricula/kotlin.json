@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "kotlin-day-01",
+    "language": "kotlin",
+    "day": 1,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "환경 설정과 첫 출력",
+    "summary": "Kotlin의 환경 설정과 첫 출력 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "환경 설정과 첫 출력은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { println(\"Hello, Kotlin!\") }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "환경 설정과 첫 출력의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "환경 설정과 첫 출력의 핵심 개념 설명하기",
+      "환경 설정과 첫 출력을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "환경 설정과 첫 출력에서 배운 개념을 사용해 Day 1 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 1: 환경 설정과 첫 출력\nfun solveDay1(values: List<Int>): Int {\n    // TODO: 환경 설정과 첫 출력 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay1(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { println(\"Hello, Kotlin!\") }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-02",
+    "language": "kotlin",
+    "day": 2,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "val과 var",
+    "summary": "Kotlin의 val과 var 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "val과 var은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val course = \"Kotlin\"; var day = 1; day += 1; println(\"$course Day $day\") }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "val과 var의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "val과 var의 핵심 개념 설명하기",
+      "val과 var을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "val과 var에서 배운 개념을 사용해 Day 2 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 2: val과 var\nfun solveDay2(values: List<Int>): Int {\n    // TODO: val과 var 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay2(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val course = \"Kotlin\"; var day = 1; day += 1; println(\"$course Day $day\") }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-03",
+    "language": "kotlin",
+    "day": 3,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "기본 타입",
+    "summary": "Kotlin의 기본 타입 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "기본 타입은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val count: Int = 10; val rate: Double = 0.5; val active: Boolean = true; println(listOf(count, rate, active)) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "기본 타입의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "기본 타입의 핵심 개념 설명하기",
+      "기본 타입을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "기본 타입에서 배운 개념을 사용해 Day 3 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 3: 기본 타입\nfun solveDay3(values: List<Int>): Int {\n    // TODO: 기본 타입 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay3(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val count: Int = 10; val rate: Double = 0.5; val active: Boolean = true; println(listOf(count, rate, active)) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-04",
+    "language": "kotlin",
+    "day": 4,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "문자열 템플릿",
+    "summary": "Kotlin의 문자열 템플릿 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "문자열 템플릿은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val name = \"Mina\"; val day = 4; println(\"$name님의 $day일차 학습\") }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "문자열 템플릿의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "문자열 템플릿의 핵심 개념 설명하기",
+      "문자열 템플릿을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "문자열 템플릿에서 배운 개념을 사용해 Day 4 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 4: 문자열 템플릿\nfun solveDay4(values: List<Int>): Int {\n    // TODO: 문자열 템플릿 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay4(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val name = \"Mina\"; val day = 4; println(\"$name님의 $day일차 학습\") }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-05",
+    "language": "kotlin",
+    "day": 5,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "Null 안전성",
+    "summary": "Kotlin의 Null 안전성 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Null 안전성은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val nickname: String? = null; val displayName = nickname?.uppercase() ?: \"익명\"; println(displayName) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Null 안전성의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Null 안전성의 핵심 개념 설명하기",
+      "Null 안전성을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Null 안전성에서 배운 개념을 사용해 Day 5 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 5: Null 안전성\nfun solveDay5(values: List<Int>): Int {\n    // TODO: Null 안전성 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay5(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val nickname: String? = null; val displayName = nickname?.uppercase() ?: \"익명\"; println(displayName) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-06",
+    "language": "kotlin",
+    "day": 6,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "조건식",
+    "summary": "Kotlin의 조건식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "조건식은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val score = 85; val grade = if (score >= 90) \"A\" else if (score >= 80) \"B\" else \"C\"; println(grade) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "조건식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "조건식의 핵심 개념 설명하기",
+      "조건식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "조건식에서 배운 개념을 사용해 Day 6 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 6: 조건식\nfun solveDay6(values: List<Int>): Int {\n    // TODO: 조건식 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay6(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val score = 85; val grade = if (score >= 90) \"A\" else if (score >= 80) \"B\" else \"C\"; println(grade) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-07",
+    "language": "kotlin",
+    "day": 7,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "범위와 반복",
+    "summary": "Kotlin의 범위와 반복 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "범위와 반복은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { var total = 0; for (number in 1..10) total += number; println(total) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "범위와 반복의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "범위와 반복의 핵심 개념 설명하기",
+      "범위와 반복을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "범위와 반복에서 배운 개념을 사용해 Day 7 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 7: 범위와 반복\nfun solveDay7(values: List<Int>): Int {\n    // TODO: 범위와 반복 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay7(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { var total = 0; for (number in 1..10) total += number; println(total) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-08",
+    "language": "kotlin",
+    "day": 8,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "when 표현식",
+    "summary": "Kotlin의 when 표현식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "when 표현식은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val command = \"start\"; val message = when (command) { \"start\" -> \"시작\"; \"stop\" -> \"중지\"; else -> \"알 수 없음\" }; println(message) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "when 표현식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "when 표현식의 핵심 개념 설명하기",
+      "when 표현식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "when 표현식에서 배운 개념을 사용해 Day 8 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 8: when 표현식\nfun solveDay8(values: List<Int>): Int {\n    // TODO: when 표현식 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay8(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val command = \"start\"; val message = when (command) { \"start\" -> \"시작\"; \"stop\" -> \"중지\"; else -> \"알 수 없음\" }; println(message) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-09",
+    "language": "kotlin",
+    "day": 9,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "함수 기초",
+    "summary": "Kotlin의 함수 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수 기초은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun greet(name: String): String = \"안녕하세요, $name\"` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "함수 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수 기초의 핵심 개념 설명하기",
+      "함수 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수 기초에서 배운 개념을 사용해 Day 9 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 9: 함수 기초\nfun solveDay9(values: List<Int>): Int {\n    // TODO: 함수 기초 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay9(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun greet(name: String): String = \"안녕하세요, $name\"\nfun main() = println(greet(\"HAMS\"))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-10",
+    "language": "kotlin",
+    "day": 10,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "기초 종합 문제",
+    "summary": "Kotlin의 기초 종합 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "기초 종합 문제은(는) 간결한 문법과 null 안전성으로 값을 표현하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val numbers = (1..10).toList(); val result = numbers.filter { it % 2 == 0 }.sum(); println(result) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "기초 종합 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "기초 종합 문제의 핵심 개념 설명하기",
+      "기초 종합 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "기초 종합 문제에서 배운 개념을 사용해 Day 10 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 10: 기초 종합 문제\nfun solveDay10(values: List<Int>): Int {\n    // TODO: 기초 종합 문제 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay10(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val numbers = (1..10).toList(); val result = numbers.filter { it % 2 == 0 }.sum(); println(result) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-11",
+    "language": "kotlin",
+    "day": 11,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "List와 MutableList",
+    "summary": "Kotlin의 List와 MutableList 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "List와 MutableList은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val immutable = listOf(1, 2); val mutable = mutableListOf(1, 2); mutable += 3; println(immutable to mutable) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "List와 MutableList의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "List와 MutableList의 핵심 개념 설명하기",
+      "List와 MutableList을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "List와 MutableList에서 배운 개념을 사용해 Day 11 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 11: List와 MutableList\nfun solveDay11(values: List<Int>): Int {\n    // TODO: List와 MutableList 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay11(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val immutable = listOf(1, 2); val mutable = mutableListOf(1, 2); mutable += 3; println(immutable to mutable) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-12",
+    "language": "kotlin",
+    "day": 12,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "Set과 Map",
+    "summary": "Kotlin의 Set과 Map 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Set과 Map은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val tags = setOf(\"kotlin\", \"study\", \"kotlin\"); val scores = mapOf(\"Mina\" to 90, \"Jin\" to 80); println(tags); println(scores[\"Mina\"]) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Set과 Map의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Set과 Map의 핵심 개념 설명하기",
+      "Set과 Map을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Set과 Map에서 배운 개념을 사용해 Day 12 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 12: Set과 Map\nfun solveDay12(values: List<Int>): Int {\n    // TODO: Set과 Map 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay12(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val tags = setOf(\"kotlin\", \"study\", \"kotlin\"); val scores = mapOf(\"Mina\" to 90, \"Jin\" to 80); println(tags); println(scores[\"Mina\"]) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-13",
+    "language": "kotlin",
+    "day": 13,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "컬렉션 변환",
+    "summary": "Kotlin의 컬렉션 변환 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션 변환은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val words = listOf(\"a\", \"bb\", \"ccc\"); println(words.groupBy { it.length }.mapValues { it.value.size }) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "컬렉션 변환의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션 변환의 핵심 개념 설명하기",
+      "컬렉션 변환을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션 변환에서 배운 개념을 사용해 Day 13 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 13: 컬렉션 변환\nfun solveDay13(values: List<Int>): Int {\n    // TODO: 컬렉션 변환 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay13(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val words = listOf(\"a\", \"bb\", \"ccc\"); println(words.groupBy { it.length }.mapValues { it.value.size }) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-14",
+    "language": "kotlin",
+    "day": 14,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "filter와 map",
+    "summary": "Kotlin의 filter와 map 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "filter와 map은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val result = (1..5).filter { it % 2 == 1 }.map { it * it }; println(result) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "filter와 map의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "filter와 map의 핵심 개념 설명하기",
+      "filter와 map을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "filter와 map에서 배운 개념을 사용해 Day 14 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 14: filter와 map\nfun solveDay14(values: List<Int>): Int {\n    // TODO: filter와 map 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay14(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val result = (1..5).filter { it % 2 == 1 }.map { it * it }; println(result) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-15",
+    "language": "kotlin",
+    "day": 15,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "구조 분해",
+    "summary": "Kotlin의 구조 분해 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "구조 분해은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class Student(val name: String, val score: Int)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "구조 분해의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "구조 분해의 핵심 개념 설명하기",
+      "구조 분해을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "구조 분해에서 배운 개념을 사용해 Day 15 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 15: 구조 분해\nfun solveDay15(values: List<Int>): Int {\n    // TODO: 구조 분해 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay15(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class Student(val name: String, val score: Int)\nfun main() { val student = Student(\"Mina\", 90); val (name, score) = student; println(\"$name: $score\") }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-16",
+    "language": "kotlin",
+    "day": 16,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "기본 인자와 이름 인자",
+    "summary": "Kotlin의 기본 인자와 이름 인자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "기본 인자와 이름 인자은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun connect(host: String = \"localhost\", port: Int = 8080) = \"http://$host:$port\"` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "기본 인자와 이름 인자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "기본 인자와 이름 인자의 핵심 개념 설명하기",
+      "기본 인자와 이름 인자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "기본 인자와 이름 인자에서 배운 개념을 사용해 Day 16 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 16: 기본 인자와 이름 인자\nfun solveDay16(values: List<Int>): Int {\n    // TODO: 기본 인자와 이름 인자 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay16(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun connect(host: String = \"localhost\", port: Int = 8080) = \"http://$host:$port\"\nfun main() = println(connect(port = 3000))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-17",
+    "language": "kotlin",
+    "day": 17,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "확장 함수",
+    "summary": "Kotlin의 확장 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "확장 함수은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun String.slug(): String = lowercase().trim().replace(\" \", \"-\")` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "확장 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "확장 함수의 핵심 개념 설명하기",
+      "확장 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "확장 함수에서 배운 개념을 사용해 Day 17 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 17: 확장 함수\nfun solveDay17(values: List<Int>): Int {\n    // TODO: 확장 함수 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay17(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun String.slug(): String = lowercase().trim().replace(\" \", \"-\")\nfun main() = println(\"Kotlin Study\".slug())"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-18",
+    "language": "kotlin",
+    "day": 18,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "중위 함수",
+    "summary": "Kotlin의 중위 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "중위 함수은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `infix fun Int.pow(exponent: Int): Int = (1..exponent).fold(1) { acc, _ -> acc * this }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "중위 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "중위 함수의 핵심 개념 설명하기",
+      "중위 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "중위 함수에서 배운 개념을 사용해 Day 18 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 18: 중위 함수\nfun solveDay18(values: List<Int>): Int {\n    // TODO: 중위 함수 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay18(listOf(1, 2, 3, 4)))",
+      "solutionCode": "infix fun Int.pow(exponent: Int): Int = (1..exponent).fold(1) { acc, _ -> acc * this }\nfun main() = println(2 pow 5)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-19",
+    "language": "kotlin",
+    "day": 19,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "고차 함수",
+    "summary": "Kotlin의 고차 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "고차 함수은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun calculate(a: Int, b: Int, operation: (Int, Int) -> Int) = operation(a, b)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "고차 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "고차 함수의 핵심 개념 설명하기",
+      "고차 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "고차 함수에서 배운 개념을 사용해 Day 19 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 19: 고차 함수\nfun solveDay19(values: List<Int>): Int {\n    // TODO: 고차 함수 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay19(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun calculate(a: Int, b: Int, operation: (Int, Int) -> Int) = operation(a, b)\nfun main() = println(calculate(2, 3) { x, y -> x + y })"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-20",
+    "language": "kotlin",
+    "day": 20,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "미니 프로젝트: 지출 분석",
+    "summary": "Kotlin의 미니 프로젝트: 지출 분석 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 지출 분석은(는) 컬렉션과 고차 함수로 데이터를 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class Expense(val category: String, val amount: Int)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "미니 프로젝트: 지출 분석의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 지출 분석의 핵심 개념 설명하기",
+      "미니 프로젝트: 지출 분석을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 지출 분석에서 배운 개념을 사용해 Day 20 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 20: 미니 프로젝트: 지출 분석\nfun solveDay20(values: List<Int>): Int {\n    // TODO: 미니 프로젝트: 지출 분석 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay20(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class Expense(val category: String, val amount: Int)\nfun main() { val expenses = listOf(Expense(\"food\", 10000), Expense(\"book\", 20000)); println(expenses.groupBy { it.category }.mapValues { (_, values) -> values.sumOf { it.amount } }) }"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-21",
+    "language": "kotlin",
+    "day": 21,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "클래스와 객체",
+    "summary": "Kotlin의 클래스와 객체 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "클래스와 객체은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Student(val name: String, var score: Int) { fun passed() = score >= 60 }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "클래스와 객체의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "클래스와 객체의 핵심 개념 설명하기",
+      "클래스와 객체을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "클래스와 객체에서 배운 개념을 사용해 Day 21 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 21: 클래스와 객체\nfun solveDay21(values: List<Int>): Int {\n    // TODO: 클래스와 객체 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay21(listOf(1, 2, 3, 4)))",
+      "solutionCode": "class Student(val name: String, var score: Int) { fun passed() = score >= 60 }\nfun main() = println(Student(\"Mina\", 90).passed())"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-22",
+    "language": "kotlin",
+    "day": 22,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "주 생성자",
+    "summary": "Kotlin의 주 생성자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "주 생성자은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Account(val owner: String, initialBalance: Int = 0) { var balance = initialBalance; private set; fun deposit(amount: Int) { balance += amount } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "주 생성자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "주 생성자의 핵심 개념 설명하기",
+      "주 생성자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "주 생성자에서 배운 개념을 사용해 Day 22 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 22: 주 생성자\nfun solveDay22(values: List<Int>): Int {\n    // TODO: 주 생성자 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay22(listOf(1, 2, 3, 4)))",
+      "solutionCode": "class Account(val owner: String, initialBalance: Int = 0) { var balance = initialBalance; private set; fun deposit(amount: Int) { balance += amount } }\nfun main() { val account = Account(\"Mina\"); account.deposit(1000); println(account.balance) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-23",
+    "language": "kotlin",
+    "day": 23,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "데이터 클래스",
+    "summary": "Kotlin의 데이터 클래스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데이터 클래스은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class Course(val title: String, val days: Int)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "데이터 클래스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "데이터 클래스의 핵심 개념 설명하기",
+      "데이터 클래스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "데이터 클래스에서 배운 개념을 사용해 Day 23 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 23: 데이터 클래스\nfun solveDay23(values: List<Int>): Int {\n    // TODO: 데이터 클래스 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay23(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class Course(val title: String, val days: Int)\nfun main() { val course = Course(\"Kotlin\", 60); println(course.copy(days = 30)) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-24",
+    "language": "kotlin",
+    "day": 24,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "상속",
+    "summary": "Kotlin의 상속 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "상속은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `open class Animal { open fun speak() = \"...\" }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "상속의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "상속의 핵심 개념 설명하기",
+      "상속을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "상속에서 배운 개념을 사용해 Day 24 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 24: 상속\nfun solveDay24(values: List<Int>): Int {\n    // TODO: 상속 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay24(listOf(1, 2, 3, 4)))",
+      "solutionCode": "open class Animal { open fun speak() = \"...\" }\nclass Dog : Animal() { override fun speak() = \"멍멍\" }\nfun main() = println(Dog().speak())"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-25",
+    "language": "kotlin",
+    "day": 25,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "인터페이스",
+    "summary": "Kotlin의 인터페이스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "인터페이스은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `interface Payable { fun pay(): Int }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "인터페이스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "인터페이스의 핵심 개념 설명하기",
+      "인터페이스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "인터페이스에서 배운 개념을 사용해 Day 25 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 25: 인터페이스\nfun solveDay25(values: List<Int>): Int {\n    // TODO: 인터페이스 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay25(listOf(1, 2, 3, 4)))",
+      "solutionCode": "interface Payable { fun pay(): Int }\nclass Order(private val amount: Int) : Payable { override fun pay() = amount }\nfun main() = println(Order(12000).pay())"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-26",
+    "language": "kotlin",
+    "day": 26,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "object와 companion object",
+    "summary": "Kotlin의 object와 companion object 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "object와 companion object은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `object IdGenerator { private var id = 0; fun next() = ++id }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "object와 companion object의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "object와 companion object의 핵심 개념 설명하기",
+      "object와 companion object을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "object와 companion object에서 배운 개념을 사용해 Day 26 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 26: object와 companion object\nfun solveDay26(values: List<Int>): Int {\n    // TODO: object와 companion object 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay26(listOf(1, 2, 3, 4)))",
+      "solutionCode": "object IdGenerator { private var id = 0; fun next() = ++id }\nclass User { companion object { fun guest() = User() } }\nfun main() = println(IdGenerator.next() to User.guest())"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-27",
+    "language": "kotlin",
+    "day": 27,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "sealed 클래스",
+    "summary": "Kotlin의 sealed 클래스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "sealed 클래스은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `sealed interface Result { data class Success(val value: String) : Result; data class Failure(val error: String) : Result }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "sealed 클래스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "sealed 클래스의 핵심 개념 설명하기",
+      "sealed 클래스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "sealed 클래스에서 배운 개념을 사용해 Day 27 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 27: sealed 클래스\nfun solveDay27(values: List<Int>): Int {\n    // TODO: sealed 클래스 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay27(listOf(1, 2, 3, 4)))",
+      "solutionCode": "sealed interface Result { data class Success(val value: String) : Result; data class Failure(val error: String) : Result }\nfun render(result: Result) = when (result) { is Result.Success -> result.value; is Result.Failure -> result.error }\nfun main() = println(render(Result.Success(\"완료\")))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-28",
+    "language": "kotlin",
+    "day": 28,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "enum 클래스",
+    "summary": "Kotlin의 enum 클래스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "enum 클래스은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `enum class Level(val label: String) { BEGINNER(\"입문\"), ADVANCED(\"심화\") }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "enum 클래스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "enum 클래스의 핵심 개념 설명하기",
+      "enum 클래스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "enum 클래스에서 배운 개념을 사용해 Day 28 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 28: enum 클래스\nfun solveDay28(values: List<Int>): Int {\n    // TODO: enum 클래스 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay28(listOf(1, 2, 3, 4)))",
+      "solutionCode": "enum class Level(val label: String) { BEGINNER(\"입문\"), ADVANCED(\"심화\") }\nfun main() = println(Level.BEGINNER.label)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-29",
+    "language": "kotlin",
+    "day": 29,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "제네릭",
+    "summary": "Kotlin의 제네릭 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "제네릭은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Box<T>(private val value: T) { fun get(): T = value }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "제네릭의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "제네릭의 핵심 개념 설명하기",
+      "제네릭을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "제네릭에서 배운 개념을 사용해 Day 29 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 29: 제네릭\nfun solveDay29(values: List<Int>): Int {\n    // TODO: 제네릭 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay29(listOf(1, 2, 3, 4)))",
+      "solutionCode": "class Box<T>(private val value: T) { fun get(): T = value }\nfun main() = println(Box(\"Kotlin\").get())"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-30",
+    "language": "kotlin",
+    "day": 30,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "객체지향 설계 문제",
+    "summary": "Kotlin의 객체지향 설계 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계 문제은(는) 클래스와 함수 확장으로 도메인을 모델링하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `interface Repository<T> { fun save(value: T) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "객체지향 설계 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계 문제의 핵심 개념 설명하기",
+      "객체지향 설계 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계 문제에서 배운 개념을 사용해 Day 30 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 30: 객체지향 설계 문제\nfun solveDay30(values: List<Int>): Int {\n    // TODO: 객체지향 설계 문제 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay30(listOf(1, 2, 3, 4)))",
+      "solutionCode": "interface Repository<T> { fun save(value: T) }\ndata class Study(val title: String)\nclass MemoryRepository : Repository<Study> { override fun save(value: Study) = println(\"saved: ${value.title}\") }\nfun main() = MemoryRepository().save(Study(\"Kotlin\"))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-31",
+    "language": "kotlin",
+    "day": 31,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "스코프 함수 let",
+    "summary": "Kotlin의 스코프 함수 let 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "스코프 함수 let은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val name: String? = \" Mina \"; val result = name?.let { it.trim().uppercase() }; println(result) }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "스코프 함수 let의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "스코프 함수 let의 핵심 개념 설명하기",
+      "스코프 함수 let을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "스코프 함수 let에서 배운 개념을 사용해 Day 31 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 31: 스코프 함수 let\nfun solveDay31(values: List<Int>): Int {\n    // TODO: 스코프 함수 let 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay31(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val name: String? = \" Mina \"; val result = name?.let { it.trim().uppercase() }; println(result) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-32",
+    "language": "kotlin",
+    "day": 32,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "run과 with",
+    "summary": "Kotlin의 run과 with 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "run과 with은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class Config(var host: String = \"\", var port: Int = 0)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "run과 with의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "run과 with의 핵심 개념 설명하기",
+      "run과 with을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "run과 with에서 배운 개념을 사용해 Day 32 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 32: run과 with\nfun solveDay32(values: List<Int>): Int {\n    // TODO: run과 with 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay32(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class Config(var host: String = \"\", var port: Int = 0)\nfun main() { val config = Config().apply { host = \"localhost\"; port = 8080 }; println(config) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-33",
+    "language": "kotlin",
+    "day": 33,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "apply와 also",
+    "summary": "Kotlin의 apply와 also 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "apply와 also은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class User(var name: String, var active: Boolean)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "apply와 also의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "apply와 also의 핵심 개념 설명하기",
+      "apply와 also을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "apply와 also에서 배운 개념을 사용해 Day 33 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 33: apply와 also\nfun solveDay33(values: List<Int>): Int {\n    // TODO: apply와 also 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay33(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class User(var name: String, var active: Boolean)\nfun main() { val user = User(\"Mina\", false).also { println(\"before: $it\") }.apply { active = true }; println(user) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-34",
+    "language": "kotlin",
+    "day": 34,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "위임 프로퍼티",
+    "summary": "Kotlin의 위임 프로퍼티 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "위임 프로퍼티은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlin.properties.Delegates` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "위임 프로퍼티의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "위임 프로퍼티의 핵심 개념 설명하기",
+      "위임 프로퍼티을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "위임 프로퍼티에서 배운 개념을 사용해 Day 34 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 34: 위임 프로퍼티\nfun solveDay34(values: List<Int>): Int {\n    // TODO: 위임 프로퍼티 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay34(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlin.properties.Delegates\nclass Profile { var name: String by Delegates.observable(\"guest\") { _, old, new -> println(\"$old -> $new\") } }\nfun main() { Profile().name = \"Mina\" }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-35",
+    "language": "kotlin",
+    "day": 35,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "지연 초기화",
+    "summary": "Kotlin의 지연 초기화 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "지연 초기화은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Service { val config by lazy { println(\"load\"); \"config\" }; lateinit var token: String }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "지연 초기화의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "지연 초기화의 핵심 개념 설명하기",
+      "지연 초기화을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "지연 초기화에서 배운 개념을 사용해 Day 35 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 35: 지연 초기화\nfun solveDay35(values: List<Int>): Int {\n    // TODO: 지연 초기화 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay35(listOf(1, 2, 3, 4)))",
+      "solutionCode": "class Service { val config by lazy { println(\"load\"); \"config\" }; lateinit var token: String }\nfun main() { val service = Service(); service.token = \"abc\"; println(service.config) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-36",
+    "language": "kotlin",
+    "day": 36,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "예외 처리",
+    "summary": "Kotlin의 예외 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외 처리은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun parse(text: String): Int = try { text.toInt() } catch (error: NumberFormatException) { 0 } finally { println(\"처리 완료\") }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "예외 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외 처리의 핵심 개념 설명하기",
+      "예외 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외 처리에서 배운 개념을 사용해 Day 36 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 36: 예외 처리\nfun solveDay36(values: List<Int>): Int {\n    // TODO: 예외 처리 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay36(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun parse(text: String): Int = try { text.toInt() } catch (error: NumberFormatException) { 0 } finally { println(\"처리 완료\") }\nfun main() = println(parse(\"12a\"))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-37",
+    "language": "kotlin",
+    "day": 37,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "Result 타입",
+    "summary": "Kotlin의 Result 타입 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Result 타입은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun divide(a: Int, b: Int): Result<Int> = runCatching { a / b }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Result 타입의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Result 타입의 핵심 개념 설명하기",
+      "Result 타입을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Result 타입에서 배운 개념을 사용해 Day 37 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 37: Result 타입\nfun solveDay37(values: List<Int>): Int {\n    // TODO: Result 타입 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay37(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun divide(a: Int, b: Int): Result<Int> = runCatching { a / b }\nfun main() { divide(10, 0).onSuccess(::println).onFailure { println(it.message) } }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-38",
+    "language": "kotlin",
+    "day": 38,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "파일 처리",
+    "summary": "Kotlin의 파일 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일 처리은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.nio.file.Files` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "파일 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일 처리의 핵심 개념 설명하기",
+      "파일 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일 처리에서 배운 개념을 사용해 Day 38 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 38: 파일 처리\nfun solveDay38(values: List<Int>): Int {\n    // TODO: 파일 처리 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay38(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import java.nio.file.Files\nimport java.nio.file.Path\nfun main() { val path = Path.of(\"study.txt\"); Files.writeString(path, \"Kotlin I/O\"); println(Files.readString(path)); Files.delete(path) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-39",
+    "language": "kotlin",
+    "day": 39,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "JSON 모델링",
+    "summary": "Kotlin의 JSON 모델링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "JSON 모델링은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class Study(val title: String, val day: Int)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "JSON 모델링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "JSON 모델링의 핵심 개념 설명하기",
+      "JSON 모델링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "JSON 모델링에서 배운 개념을 사용해 Day 39 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 39: JSON 모델링\nfun solveDay39(values: List<Int>): Int {\n    // TODO: JSON 모델링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay39(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class Study(val title: String, val day: Int)\nfun main() { val study = Study(\"Kotlin\", 39); val json = \"\"\"{\"title\":\"${study.title}\",\"day\":${study.day}}\"\"\"; println(json) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-40",
+    "language": "kotlin",
+    "day": 40,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "미니 프로젝트: 설정 관리자",
+    "summary": "Kotlin의 미니 프로젝트: 설정 관리자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 설정 관리자은(는) 스코프 함수와 안전한 자원 처리를 적용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class Setting(val key: String, val value: String)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "미니 프로젝트: 설정 관리자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 설정 관리자의 핵심 개념 설명하기",
+      "미니 프로젝트: 설정 관리자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 설정 관리자에서 배운 개념을 사용해 Day 40 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 40: 미니 프로젝트: 설정 관리자\nfun solveDay40(values: List<Int>): Int {\n    // TODO: 미니 프로젝트: 설정 관리자 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay40(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class Setting(val key: String, val value: String)\nclass Settings { private val values = mutableMapOf<String, String>(); fun put(setting: Setting) { values[setting.key] = setting.value }; fun get(key: String) = values[key] }\nfun main() { val settings = Settings(); settings.put(Setting(\"theme\", \"dark\")); println(settings.get(\"theme\")) }"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-41",
+    "language": "kotlin",
+    "day": 41,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "코루틴 기초",
+    "summary": "Kotlin의 코루틴 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "코루틴 기초은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "코루틴 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "코루틴 기초의 핵심 개념 설명하기",
+      "코루틴 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "코루틴 기초에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 41: 코루틴 기초\nfun solveDay41(values: List<Int>): Int {\n    // TODO: 코루틴 기초 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay41(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.*\nfun main() = runBlocking { launch { delay(100); println(\"coroutine\") }; println(\"main\") }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-42",
+    "language": "kotlin",
+    "day": 42,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "suspend 함수",
+    "summary": "Kotlin의 suspend 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "suspend 함수은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "suspend 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "suspend 함수의 핵심 개념 설명하기",
+      "suspend 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "suspend 함수에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 42: suspend 함수\nfun solveDay42(values: List<Int>): Int {\n    // TODO: suspend 함수 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay42(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.*\nsuspend fun loadStudy(): String { delay(100); return \"Kotlin\" }\nfun main() = runBlocking { println(loadStudy()) }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-43",
+    "language": "kotlin",
+    "day": 43,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "CoroutineScope",
+    "summary": "Kotlin의 CoroutineScope 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "CoroutineScope은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "CoroutineScope의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "CoroutineScope의 핵심 개념 설명하기",
+      "CoroutineScope을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "CoroutineScope에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 43: CoroutineScope\nfun solveDay43(values: List<Int>): Int {\n    // TODO: CoroutineScope 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay43(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.*\nfun main() = runBlocking { coroutineScope { launch { println(\"child: ${coroutineContext.job}\") } } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-44",
+    "language": "kotlin",
+    "day": 44,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Dispatcher",
+    "summary": "Kotlin의 Dispatcher 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Dispatcher은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Dispatcher의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Dispatcher의 핵심 개념 설명하기",
+      "Dispatcher을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Dispatcher에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 44: Dispatcher\nfun solveDay44(values: List<Int>): Int {\n    // TODO: Dispatcher 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay44(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.*\nfun main() = runBlocking { val result = withContext(Dispatchers.Default) { (1..1_000).sum() }; println(result) }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-45",
+    "language": "kotlin",
+    "day": 45,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "구조화된 동시성",
+    "summary": "Kotlin의 구조화된 동시성 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "구조화된 동시성은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "구조화된 동시성의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "구조화된 동시성의 핵심 개념 설명하기",
+      "구조화된 동시성을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "구조화된 동시성에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 45: 구조화된 동시성\nfun solveDay45(values: List<Int>): Int {\n    // TODO: 구조화된 동시성 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay45(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.*\nfun main() = runBlocking { supervisorScope { val a = async { 2 }; val b = async { 3 }; println(a.await() + b.await()) } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-46",
+    "language": "kotlin",
+    "day": 46,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Flow 기초",
+    "summary": "Kotlin의 Flow 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Flow 기초은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.flow.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Flow 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Flow 기초의 핵심 개념 설명하기",
+      "Flow 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Flow 기초에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 46: Flow 기초\nfun solveDay46(values: List<Int>): Int {\n    // TODO: Flow 기초 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay46(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.flow.*\nfun numbers(): Flow<Int> = flow { for (n in 1..3) emit(n) }\nfun main() = kotlinx.coroutines.runBlocking { numbers().collect(::println) }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-47",
+    "language": "kotlin",
+    "day": 47,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Flow 연산자",
+    "summary": "Kotlin의 Flow 연산자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Flow 연산자은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.flow.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Flow 연산자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Flow 연산자의 핵심 개념 설명하기",
+      "Flow 연산자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Flow 연산자에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 47: Flow 연산자\nfun solveDay47(values: List<Int>): Int {\n    // TODO: Flow 연산자 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay47(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.flow.*\nfun main() = kotlinx.coroutines.runBlocking { (1..5).asFlow().filter { it % 2 == 0 }.map { it * it }.collect(::println) }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-48",
+    "language": "kotlin",
+    "day": 48,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "상태 흐름",
+    "summary": "Kotlin의 상태 흐름 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "상태 흐름은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "상태 흐름의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "상태 흐름의 핵심 개념 설명하기",
+      "상태 흐름을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "상태 흐름에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 48: 상태 흐름\nfun solveDay48(values: List<Int>): Int {\n    // TODO: 상태 흐름 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay48(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.*\nimport kotlinx.coroutines.flow.*\nfun main() = runBlocking { val state = MutableStateFlow(0); val job = launch { state.take(3).collect(::println) }; state.value = 1; state.value = 2; job.join() }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-49",
+    "language": "kotlin",
+    "day": 49,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "채널",
+    "summary": "Kotlin의 채널 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "채널은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "채널의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "채널의 핵심 개념 설명하기",
+      "채널을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "채널에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 49: 채널\nfun solveDay49(values: List<Int>): Int {\n    // TODO: 채널 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay49(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.*\nimport kotlinx.coroutines.channels.*\nfun main() = runBlocking { val channel = Channel<Int>(); launch { repeat(3) { channel.send(it) }; channel.close() }; for (value in channel) println(value) }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-50",
+    "language": "kotlin",
+    "day": 50,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 테스트",
+    "summary": "Kotlin의 비동기 테스트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 테스트은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.test.runTest` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "비동기 테스트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 테스트의 핵심 개념 설명하기",
+      "비동기 테스트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 테스트에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 50: 비동기 테스트\nfun solveDay50(values: List<Int>): Int {\n    // TODO: 비동기 테스트 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay50(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlinx.coroutines.test.runTest\nimport kotlin.test.*\nclass StudyTest { @Test fun asyncResult() = runTest { assertEquals(\"done\", loadStudy()) } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-51",
+    "language": "kotlin",
+    "day": 51,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "JUnit과 Kotest",
+    "summary": "Kotlin의 JUnit과 Kotest 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "JUnit과 Kotest은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlin.test.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "JUnit과 Kotest의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "JUnit과 Kotest의 핵심 개념 설명하기",
+      "JUnit과 Kotest을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "JUnit과 Kotest에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 51: JUnit과 Kotest\nfun solveDay51(values: List<Int>): Int {\n    // TODO: JUnit과 Kotest 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay51(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import kotlin.test.*\nclass CalculatorTest { @Test fun adds() { assertEquals(5, 2 + 3) } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-52",
+    "language": "kotlin",
+    "day": 52,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "함수형 설계",
+    "summary": "Kotlin의 함수형 설계 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 설계은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun <T> List<T>.secondOrNull(): T? = getOrNull(1)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "함수형 설계의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수형 설계의 핵심 개념 설명하기",
+      "함수형 설계을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수형 설계에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 52: 함수형 설계\nfun solveDay52(values: List<Int>): Int {\n    // TODO: 함수형 설계 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay52(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun <T> List<T>.secondOrNull(): T? = getOrNull(1)\nfun main() = println(listOf(\"a\", \"b\").secondOrNull())"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-53",
+    "language": "kotlin",
+    "day": 53,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "DSL 만들기",
+    "summary": "Kotlin의 DSL 만들기 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "DSL 만들기은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Html { private val content = StringBuilder(); fun body(block: Html.() -> Unit) { block(); content.append(\"</body>\") }; fun text(value: String) { content.append(value) }; override fun toString() = content.toString() }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "DSL 만들기의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "DSL 만들기의 핵심 개념 설명하기",
+      "DSL 만들기을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "DSL 만들기에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 53: DSL 만들기\nfun solveDay53(values: List<Int>): Int {\n    // TODO: DSL 만들기 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay53(listOf(1, 2, 3, 4)))",
+      "solutionCode": "class Html { private val content = StringBuilder(); fun body(block: Html.() -> Unit) { block(); content.append(\"</body>\") }; fun text(value: String) { content.append(value) }; override fun toString() = content.toString() }\nfun html(block: Html.() -> Unit) = Html().apply(block)\nfun main() = println(html { body { text(\"Study\") } })"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-54",
+    "language": "kotlin",
+    "day": 54,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "Java 상호 운용",
+    "summary": "Kotlin의 Java 상호 운용 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Java 상호 운용은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.Optional` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Java 상호 운용의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Java 상호 운용의 핵심 개념 설명하기",
+      "Java 상호 운용을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Java 상호 운용에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 54: Java 상호 운용\nfun solveDay54(values: List<Int>): Int {\n    // TODO: Java 상호 운용 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay54(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import java.util.Optional\nfun main() { val javaValue: Optional<String> = Optional.of(\"Java\"); val kotlinValue: String? = javaValue.orElse(null); println(kotlinValue) }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-55",
+    "language": "kotlin",
+    "day": 55,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "성능과 메모리",
+    "summary": "Kotlin의 성능과 메모리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "성능과 메모리은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val runtime = Runtime.getRuntime(); val used = runtime.totalMemory() - runtime.freeMemory(); println(\"heap used=$used\") }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "성능과 메모리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "성능과 메모리의 핵심 개념 설명하기",
+      "성능과 메모리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "성능과 메모리에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 55: 성능과 메모리\nfun solveDay55(values: List<Int>): Int {\n    // TODO: 성능과 메모리 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay55(listOf(1, 2, 3, 4)))",
+      "solutionCode": "fun main() { val runtime = Runtime.getRuntime(); val used = runtime.totalMemory() - runtime.freeMemory(); println(\"heap used=$used\") }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-56",
+    "language": "kotlin",
+    "day": 56,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "Android 구성 요소",
+    "summary": "Kotlin의 Android 구성 요소 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Android 구성 요소은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class UiState(val loading: Boolean = false, val items: List<String> = emptyList())` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Android 구성 요소의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Android 구성 요소의 핵심 개념 설명하기",
+      "Android 구성 요소을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Android 구성 요소에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 56: Android 구성 요소\nfun solveDay56(values: List<Int>): Int {\n    // TODO: Android 구성 요소 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay56(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class UiState(val loading: Boolean = false, val items: List<String> = emptyList())\nfun reduce(state: UiState, items: List<String>) = state.copy(loading = false, items = items)\nfun main() = println(reduce(UiState(true), listOf(\"Kotlin\")))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-57",
+    "language": "kotlin",
+    "day": 57,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "Compose 기초",
+    "summary": "Kotlin의 Compose 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Compose 기초은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import androidx.compose.material3.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "Compose 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Compose 기초의 핵심 개념 설명하기",
+      "Compose 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Compose 기초에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 57: Compose 기초\nfun solveDay57(values: List<Int>): Int {\n    // TODO: Compose 기초 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay57(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import androidx.compose.material3.*\nimport androidx.compose.runtime.Composable\n@Composable fun StudyCard(title: String) { Card { Text(title) } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-58",
+    "language": "kotlin",
+    "day": 58,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "상태 관리",
+    "summary": "Kotlin의 상태 관리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "상태 관리은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import androidx.compose.runtime.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "상태 관리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "상태 관리의 핵심 개념 설명하기",
+      "상태 관리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "상태 관리에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 58: 상태 관리\nfun solveDay58(values: List<Int>): Int {\n    // TODO: 상태 관리 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay58(listOf(1, 2, 3, 4)))",
+      "solutionCode": "import androidx.compose.runtime.*\n@Composable fun Counter() { var count by remember { mutableIntStateOf(0) }; Button(onClick = { count++ }) { Text(\"$count\") } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-59",
+    "language": "kotlin",
+    "day": 59,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "네트워크와 저장소",
+    "summary": "Kotlin의 네트워크와 저장소 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "네트워크와 저장소은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class StudyRepository(private val api: StudyApi, private val dao: StudyDao) { suspend fun studies(): List<Study> = runCatching { api.fetch().also { dao.saveAll(it) } }.getOrElse { dao.findAll() } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "네트워크와 저장소의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "네트워크와 저장소의 핵심 개념 설명하기",
+      "네트워크와 저장소을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "네트워크와 저장소에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 59: 네트워크와 저장소\nfun solveDay59(values: List<Int>): Int {\n    // TODO: 네트워크와 저장소 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay59(listOf(1, 2, 3, 4)))",
+      "solutionCode": "class StudyRepository(private val api: StudyApi, private val dao: StudyDao) { suspend fun studies(): List<Study> = runCatching { api.fetch().also { dao.saveAll(it) } }.getOrElse { dao.findAll() } }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-60",
+    "language": "kotlin",
+    "day": 60,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "최종 프로젝트: 학습 앱",
+    "summary": "Kotlin의 최종 프로젝트: 학습 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "최종 프로젝트: 학습 앱은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class Study(val id: Long, val title: String, val completed: Boolean)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "최종 프로젝트: 학습 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "최종 프로젝트: 학습 앱의 핵심 개념 설명하기",
+      "최종 프로젝트: 학습 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "최종 프로젝트: 학습 앱에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 60: 최종 프로젝트: 학습 앱\nfun solveDay60(values: List<Int>): Int {\n    // TODO: 최종 프로젝트: 학습 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay60(listOf(1, 2, 3, 4)))",
+      "solutionCode": "data class Study(val id: Long, val title: String, val completed: Boolean)\nclass StudyViewModel(private val repository: StudyRepository) { val studies = repository.observe(); suspend fun complete(study: Study) = repository.save(study.copy(completed = true)) }"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  }
+]

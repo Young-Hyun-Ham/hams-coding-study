@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "python-day-01",
+    "language": "python",
+    "day": 1,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "개발 환경과 첫 출력",
+    "summary": "Python의 개발 환경과 첫 출력 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "개발 환경과 첫 출력은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `print(\"Hello, Python!\")` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "개발 환경과 첫 출력의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "개발 환경과 첫 출력의 핵심 개념 설명하기",
+      "개발 환경과 첫 출력을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "개발 환경과 첫 출력에서 배운 개념을 사용해 Day 1 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 1: 개발 환경과 첫 출력\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "print(\"Hello, Python!\")"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-02",
+    "language": "python",
+    "day": 2,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "변수와 기본 자료형",
+    "summary": "Python의 변수와 기본 자료형 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "변수와 기본 자료형은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `name = \"HAMS\"` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "변수와 기본 자료형의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "변수와 기본 자료형의 핵심 개념 설명하기",
+      "변수와 기본 자료형을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "변수와 기본 자료형에서 배운 개념을 사용해 Day 2 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 2: 변수와 기본 자료형\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "name = \"HAMS\"\nage = 20\nis_student = True\nprint(name, age, is_student)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-03",
+    "language": "python",
+    "day": 3,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "문자열 다루기",
+    "summary": "Python의 문자열 다루기 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "문자열 다루기은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `text = \"coding study\"` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "문자열 다루기의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "문자열 다루기의 핵심 개념 설명하기",
+      "문자열 다루기을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "문자열 다루기에서 배운 개념을 사용해 Day 3 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 3: 문자열 다루기\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "text = \"coding study\"\nprint(text.upper(), text[0:6], text.replace(\"study\", \"club\"))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-04",
+    "language": "python",
+    "day": 4,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "숫자와 연산자",
+    "summary": "Python의 숫자와 연산자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "숫자와 연산자은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `a, b = 17, 5` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "숫자와 연산자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "숫자와 연산자의 핵심 개념 설명하기",
+      "숫자와 연산자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "숫자와 연산자에서 배운 개념을 사용해 Day 4 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 4: 숫자와 연산자\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "a, b = 17, 5\nprint(a + b, a - b, a * b, a / b, a // b, a % b, a ** 2)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-05",
+    "language": "python",
+    "day": 5,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "입력과 형 변환",
+    "summary": "Python의 입력과 형 변환 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "입력과 형 변환은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `name = input(\"name: \")` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "입력과 형 변환의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "입력과 형 변환의 핵심 개념 설명하기",
+      "입력과 형 변환을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "입력과 형 변환에서 배운 개념을 사용해 Day 5 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 5: 입력과 형 변환\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "name = input(\"name: \")\nage = int(input(\"age: \"))\nprint(f\"{name}은 내년에 {age + 1}살입니다.\")"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-06",
+    "language": "python",
+    "day": 6,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "조건문 기초",
+    "summary": "Python의 조건문 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "조건문 기초은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `score = 82` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "조건문 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "조건문 기초의 핵심 개념 설명하기",
+      "조건문 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "조건문 기초에서 배운 개념을 사용해 Day 6 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 6: 조건문 기초\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "score = 82\nif score >= 90:\n    grade = \"A\"\nelif score >= 80:\n    grade = \"B\"\nelse:\n    grade = \"C\"\nprint(grade)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-07",
+    "language": "python",
+    "day": 7,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "다중 조건과 논리 연산",
+    "summary": "Python의 다중 조건과 논리 연산 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "다중 조건과 논리 연산은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `age, has_ticket = 20, True` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "다중 조건과 논리 연산의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "다중 조건과 논리 연산의 핵심 개념 설명하기",
+      "다중 조건과 논리 연산을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "다중 조건과 논리 연산에서 배운 개념을 사용해 Day 7 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 7: 다중 조건과 논리 연산\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "age, has_ticket = 20, True\nif age >= 19 and has_ticket:\n    print(\"입장 가능\")\nelse:\n    print(\"입장 불가\")"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-08",
+    "language": "python",
+    "day": 8,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "for 반복문",
+    "summary": "Python의 for 반복문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "for 반복문은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `total = 0` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "for 반복문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "for 반복문의 핵심 개념 설명하기",
+      "for 반복문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "for 반복문에서 배운 개념을 사용해 Day 8 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 8: for 반복문\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "total = 0\nfor number in range(1, 11):\n    total += number\nprint(total)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-09",
+    "language": "python",
+    "day": 9,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "while 반복문",
+    "summary": "Python의 while 반복문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "while 반복문은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `number = 1` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "while 반복문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "while 반복문의 핵심 개념 설명하기",
+      "while 반복문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "while 반복문에서 배운 개념을 사용해 Day 9 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 9: while 반복문\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "number = 1\nwhile number <= 5:\n    print(number)\n    number += 1"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-10",
+    "language": "python",
+    "day": 10,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "기초 종합 문제",
+    "summary": "Python의 기초 종합 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "기초 종합 문제은(는) 파이썬 코드의 실행과 기본값 표현을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `numbers = [3, 7, 2, 9, 4]` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "기초 종합 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "기초 종합 문제의 핵심 개념 설명하기",
+      "기초 종합 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "기초 종합 문제에서 배운 개념을 사용해 Day 10 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 10: 기초 종합 문제\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "numbers = [3, 7, 2, 9, 4]\nevens = [n for n in numbers if n % 2 == 0]\nprint(max(numbers), sum(numbers), evens)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-11",
+    "language": "python",
+    "day": 11,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "리스트 생성과 접근",
+    "summary": "Python의 리스트 생성과 접근 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "리스트 생성과 접근은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fruits = [\"apple\", \"banana\", \"cherry\"]` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "리스트 생성과 접근의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "리스트 생성과 접근의 핵심 개념 설명하기",
+      "리스트 생성과 접근을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "리스트 생성과 접근에서 배운 개념을 사용해 Day 11 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 11: 리스트 생성과 접근\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits[0], fruits[-1], fruits[1:])"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-12",
+    "language": "python",
+    "day": 12,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "리스트 메서드",
+    "summary": "Python의 리스트 메서드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "리스트 메서드은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `numbers = [3, 1, 2]` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "리스트 메서드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "리스트 메서드의 핵심 개념 설명하기",
+      "리스트 메서드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "리스트 메서드에서 배운 개념을 사용해 Day 12 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 12: 리스트 메서드\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "numbers = [3, 1, 2]\nnumbers.append(4)\nnumbers.remove(1)\nnumbers.sort(reverse=True)\nprint(numbers)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-13",
+    "language": "python",
+    "day": 13,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "튜플과 불변 데이터",
+    "summary": "Python의 튜플과 불변 데이터 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "튜플과 불변 데이터은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `point = (10, 20)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "튜플과 불변 데이터의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "튜플과 불변 데이터의 핵심 개념 설명하기",
+      "튜플과 불변 데이터을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "튜플과 불변 데이터에서 배운 개념을 사용해 Day 13 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 13: 튜플과 불변 데이터\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "point = (10, 20)\nx, y = point\nprint(f\"x={x}, y={y}\")"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-14",
+    "language": "python",
+    "day": 14,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "딕셔너리 기초",
+    "summary": "Python의 딕셔너리 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "딕셔너리 기초은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `student = {\"name\": \"Mina\", \"score\": 95}` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "딕셔너리 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "딕셔너리 기초의 핵심 개념 설명하기",
+      "딕셔너리 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "딕셔너리 기초에서 배운 개념을 사용해 Day 14 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 14: 딕셔너리 기초\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "student = {\"name\": \"Mina\", \"score\": 95}\nstudent[\"passed\"] = student[\"score\"] >= 60\nfor key, value in student.items():\n    print(key, value)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-15",
+    "language": "python",
+    "day": 15,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "집합과 중복 제거",
+    "summary": "Python의 집합과 중복 제거 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "집합과 중복 제거은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `a = {1, 2, 3}` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "집합과 중복 제거의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "집합과 중복 제거의 핵심 개념 설명하기",
+      "집합과 중복 제거을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "집합과 중복 제거에서 배운 개념을 사용해 Day 15 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 15: 집합과 중복 제거\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "a = {1, 2, 3}\nb = {3, 4, 5}\nprint(a | b, a & b, a - b)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-16",
+    "language": "python",
+    "day": 16,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "중첩 컬렉션",
+    "summary": "Python의 중첩 컬렉션 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "중첩 컬렉션은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `students = [{\"name\": \"A\", \"scores\": [80, 90]}, {\"name\": \"B\", \"scores\": [70, 75]}]` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "중첩 컬렉션의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "중첩 컬렉션의 핵심 개념 설명하기",
+      "중첩 컬렉션을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "중첩 컬렉션에서 배운 개념을 사용해 Day 16 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 16: 중첩 컬렉션\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "students = [{\"name\": \"A\", \"scores\": [80, 90]}, {\"name\": \"B\", \"scores\": [70, 75]}]\nfor student in students:\n    print(student[\"name\"], sum(student[\"scores\"]) / len(student[\"scores\"]))"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-17",
+    "language": "python",
+    "day": 17,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "컴프리헨션",
+    "summary": "Python의 컴프리헨션 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컴프리헨션은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `squares = {number: number ** 2 for number in range(1, 6) if number % 2}` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "컴프리헨션의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컴프리헨션의 핵심 개념 설명하기",
+      "컴프리헨션을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컴프리헨션에서 배운 개념을 사용해 Day 17 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 17: 컴프리헨션\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "squares = {number: number ** 2 for number in range(1, 6) if number % 2}\nprint(squares)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-18",
+    "language": "python",
+    "day": 18,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "문자열 알고리즘",
+    "summary": "Python의 문자열 알고리즘 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "문자열 알고리즘은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `text = \"level\"` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "문자열 알고리즘의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "문자열 알고리즘의 핵심 개념 설명하기",
+      "문자열 알고리즘을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "문자열 알고리즘에서 배운 개념을 사용해 Day 18 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 18: 문자열 알고리즘\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "text = \"level\"\nnormalized = \"\".join(char.lower() for char in text if char.isalnum())\nprint(normalized == normalized[::-1])"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-19",
+    "language": "python",
+    "day": 19,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "컬렉션 종합 문제",
+    "summary": "Python의 컬렉션 종합 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션 종합 문제은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `orders = [{\"item\": \"book\", \"price\": 12000}, {\"item\": \"pen\", \"price\": 1500}]` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "컬렉션 종합 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션 종합 문제의 핵심 개념 설명하기",
+      "컬렉션 종합 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션 종합 문제에서 배운 개념을 사용해 Day 19 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 19: 컬렉션 종합 문제\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "orders = [{\"item\": \"book\", \"price\": 12000}, {\"item\": \"pen\", \"price\": 1500}]\ntotal = sum(order[\"price\"] for order in orders)\nprint({\"count\": len(orders), \"total\": total})"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-20",
+    "language": "python",
+    "day": 20,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "미니 프로젝트: 성적 분석",
+    "summary": "Python의 미니 프로젝트: 성적 분석 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 성적 분석은(는) 컬렉션에 데이터를 저장하고 변환하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `scores = {\"Mina\": [90, 85, 95], \"Jin\": [70, 80, 75]}` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "미니 프로젝트: 성적 분석의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 성적 분석의 핵심 개념 설명하기",
+      "미니 프로젝트: 성적 분석을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 성적 분석에서 배운 개념을 사용해 Day 20 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 20: 미니 프로젝트: 성적 분석\nvalue = int(input() or 0)\n\n# TODO: 학습한 개념으로 result를 완성하세요.\nresult = None\nprint(result)",
+      "solutionCode": "scores = {\"Mina\": [90, 85, 95], \"Jin\": [70, 80, 75]}\nresult = {name: round(sum(values) / len(values), 1) for name, values in scores.items()}\nprint(result)"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "python-day-21",
+    "language": "python",
+    "day": 21,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "함수 선언과 호출",
+    "summary": "Python의 함수 선언과 호출 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수 선언과 호출은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def greet(name):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "함수 선언과 호출의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수 선언과 호출의 핵심 개념 설명하기",
+      "함수 선언과 호출을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수 선언과 호출에서 배운 개념을 사용해 Day 21 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 21: 함수 선언과 호출\ndef solve_day_21(values):\n    # TODO: 함수 선언과 호출 개념을 적용하세요.\n    pass\n\nprint(solve_day_21([1, 2, 3, 4]))",
+      "solutionCode": "def greet(name):\n    return f\"안녕하세요, {name}!\"\nprint(greet(\"HAMS\"))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-22",
+    "language": "python",
+    "day": 22,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "매개변수와 반환값",
+    "summary": "Python의 매개변수와 반환값 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "매개변수와 반환값은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def rectangle(width, height):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "매개변수와 반환값의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "매개변수와 반환값의 핵심 개념 설명하기",
+      "매개변수와 반환값을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "매개변수와 반환값에서 배운 개념을 사용해 Day 22 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 22: 매개변수와 반환값\ndef solve_day_22(values):\n    # TODO: 매개변수와 반환값 개념을 적용하세요.\n    pass\n\nprint(solve_day_22([1, 2, 3, 4]))",
+      "solutionCode": "def rectangle(width, height):\n    return width * height, 2 * (width + height)\narea, perimeter = rectangle(4, 3)\nprint(area, perimeter)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-23",
+    "language": "python",
+    "day": 23,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "기본값과 키워드 인자",
+    "summary": "Python의 기본값과 키워드 인자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "기본값과 키워드 인자은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def connect(host=\"localhost\", port=8080, secure=False):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "기본값과 키워드 인자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "기본값과 키워드 인자의 핵심 개념 설명하기",
+      "기본값과 키워드 인자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "기본값과 키워드 인자에서 배운 개념을 사용해 Day 23 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 23: 기본값과 키워드 인자\ndef solve_day_23(values):\n    # TODO: 기본값과 키워드 인자 개념을 적용하세요.\n    pass\n\nprint(solve_day_23([1, 2, 3, 4]))",
+      "solutionCode": "def connect(host=\"localhost\", port=8080, secure=False):\n    return f\"{'https' if secure else 'http'}://{host}:{port}\"\nprint(connect(port=3000, secure=True))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-24",
+    "language": "python",
+    "day": 24,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "가변 인자",
+    "summary": "Python의 가변 인자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "가변 인자은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def average(*numbers):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "가변 인자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "가변 인자의 핵심 개념 설명하기",
+      "가변 인자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "가변 인자에서 배운 개념을 사용해 Day 24 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 24: 가변 인자\ndef solve_day_24(values):\n    # TODO: 가변 인자 개념을 적용하세요.\n    pass\n\nprint(solve_day_24([1, 2, 3, 4]))",
+      "solutionCode": "def average(*numbers):\n    return sum(numbers) / len(numbers)\ndef profile(**fields):\n    return \", \".join(f\"{k}={v}\" for k, v in fields.items())\nprint(average(1, 2, 3), profile(name=\"Mina\", level=3))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-25",
+    "language": "python",
+    "day": 25,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "스코프와 클로저",
+    "summary": "Python의 스코프와 클로저 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "스코프와 클로저은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def make_counter():` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "스코프와 클로저의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "스코프와 클로저의 핵심 개념 설명하기",
+      "스코프와 클로저을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "스코프와 클로저에서 배운 개념을 사용해 Day 25 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 25: 스코프와 클로저\ndef solve_day_25(values):\n    # TODO: 스코프와 클로저 개념을 적용하세요.\n    pass\n\nprint(solve_day_25([1, 2, 3, 4]))",
+      "solutionCode": "def make_counter():\n    count = 0\n    def increase():\n        nonlocal count\n        count += 1\n        return count\n    return increase\ncounter = make_counter()\nprint(counter(), counter())"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-26",
+    "language": "python",
+    "day": 26,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "람다와 고차 함수",
+    "summary": "Python의 람다와 고차 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "람다와 고차 함수은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `students = [{\"name\": \"A\", \"score\": 80}, {\"name\": \"B\", \"score\": 95}]` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "람다와 고차 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "람다와 고차 함수의 핵심 개념 설명하기",
+      "람다와 고차 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "람다와 고차 함수에서 배운 개념을 사용해 Day 26 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 26: 람다와 고차 함수\ndef solve_day_26(values):\n    # TODO: 람다와 고차 함수 개념을 적용하세요.\n    pass\n\nprint(solve_day_26([1, 2, 3, 4]))",
+      "solutionCode": "students = [{\"name\": \"A\", \"score\": 80}, {\"name\": \"B\", \"score\": 95}]\nprint(sorted(students, key=lambda student: student[\"score\"], reverse=True))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-27",
+    "language": "python",
+    "day": 27,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "재귀 함수",
+    "summary": "Python의 재귀 함수 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "재귀 함수은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def factorial(number):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "재귀 함수의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "재귀 함수의 핵심 개념 설명하기",
+      "재귀 함수을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "재귀 함수에서 배운 개념을 사용해 Day 27 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 27: 재귀 함수\ndef solve_day_27(values):\n    # TODO: 재귀 함수 개념을 적용하세요.\n    pass\n\nprint(solve_day_27([1, 2, 3, 4]))",
+      "solutionCode": "def factorial(number):\n    if number <= 1:\n        return 1\n    return number * factorial(number - 1)\nprint(factorial(5))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-28",
+    "language": "python",
+    "day": 28,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "모듈과 패키지",
+    "summary": "Python의 모듈과 패키지 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "모듈과 패키지은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from statistics import mean` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "모듈과 패키지의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "모듈과 패키지의 핵심 개념 설명하기",
+      "모듈과 패키지을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "모듈과 패키지에서 배운 개념을 사용해 Day 28 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 28: 모듈과 패키지\ndef solve_day_28(values):\n    # TODO: 모듈과 패키지 개념을 적용하세요.\n    pass\n\nprint(solve_day_28([1, 2, 3, 4]))",
+      "solutionCode": "from statistics import mean\nfrom collections import Counter\nvalues = [1, 2, 2, 3, 3, 3]\nprint(mean(values), Counter(values).most_common(1))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-29",
+    "language": "python",
+    "day": 29,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "타입 힌트",
+    "summary": "Python의 타입 힌트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 힌트은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def total(values: list[int]) -> int:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "타입 힌트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "타입 힌트의 핵심 개념 설명하기",
+      "타입 힌트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "타입 힌트에서 배운 개념을 사용해 Day 29 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 29: 타입 힌트\ndef solve_day_29(values):\n    # TODO: 타입 힌트 개념을 적용하세요.\n    pass\n\nprint(solve_day_29([1, 2, 3, 4]))",
+      "solutionCode": "def total(values: list[int]) -> int:\n    return sum(values)\nresult: int = total([1, 2, 3])\nprint(result)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-30",
+    "language": "python",
+    "day": 30,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "함수 설계 문제",
+    "summary": "Python의 함수 설계 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수 설계 문제은(는) 함수로 로직을 분리하고 재사용하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def chunk(values, size):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "함수 설계 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수 설계 문제의 핵심 개념 설명하기",
+      "함수 설계 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수 설계 문제에서 배운 개념을 사용해 Day 30 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 30: 함수 설계 문제\ndef solve_day_30(values):\n    # TODO: 함수 설계 문제 개념을 적용하세요.\n    pass\n\nprint(solve_day_30([1, 2, 3, 4]))",
+      "solutionCode": "def chunk(values, size):\n    return [values[i:i + size] for i in range(0, len(values), size)]\nprint(chunk(list(range(1, 8)), 3))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-31",
+    "language": "python",
+    "day": 31,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "예외 처리",
+    "summary": "Python의 예외 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외 처리은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `try:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "예외 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외 처리의 핵심 개념 설명하기",
+      "예외 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외 처리에서 배운 개념을 사용해 Day 31 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 31: 예외 처리\ndef solve_day_31(values):\n    # TODO: 예외 처리 개념을 적용하세요.\n    pass\n\nprint(solve_day_31([1, 2, 3, 4]))",
+      "solutionCode": "try:\n    number = int(\"12a\")\nexcept ValueError as error:\n    print(f\"숫자 변환 실패: {error}\")\nelse:\n    print(number)\nfinally:\n    print(\"처리 완료\")"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-32",
+    "language": "python",
+    "day": 32,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "파일 읽기와 쓰기",
+    "summary": "Python의 파일 읽기와 쓰기 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일 읽기와 쓰기은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from pathlib import Path` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "파일 읽기와 쓰기의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일 읽기와 쓰기의 핵심 개념 설명하기",
+      "파일 읽기와 쓰기을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일 읽기와 쓰기에서 배운 개념을 사용해 Day 32 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 32: 파일 읽기와 쓰기\ndef solve_day_32(values):\n    # TODO: 파일 읽기와 쓰기 개념을 적용하세요.\n    pass\n\nprint(solve_day_32([1, 2, 3, 4]))",
+      "solutionCode": "from pathlib import Path\npath = Path(\"study.txt\")\npath.write_text(\"Python file I/O\", encoding=\"utf-8\")\nprint(path.read_text(encoding=\"utf-8\"))\npath.unlink()"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-33",
+    "language": "python",
+    "day": 33,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "JSON 데이터 처리",
+    "summary": "Python의 JSON 데이터 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "JSON 데이터 처리은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import json` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "JSON 데이터 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "JSON 데이터 처리의 핵심 개념 설명하기",
+      "JSON 데이터 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "JSON 데이터 처리에서 배운 개념을 사용해 Day 33 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 33: JSON 데이터 처리\ndef solve_day_33(values):\n    # TODO: JSON 데이터 처리 개념을 적용하세요.\n    pass\n\nprint(solve_day_33([1, 2, 3, 4]))",
+      "solutionCode": "import json\ndata = {\"language\": \"Python\", \"days\": 60}\nencoded = json.dumps(data, ensure_ascii=False)\nprint(encoded, json.loads(encoded)[\"days\"])"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-34",
+    "language": "python",
+    "day": 34,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "날짜와 시간",
+    "summary": "Python의 날짜와 시간 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "날짜와 시간은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from datetime import datetime, timedelta` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "날짜와 시간의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "날짜와 시간의 핵심 개념 설명하기",
+      "날짜와 시간을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "날짜와 시간에서 배운 개념을 사용해 Day 34 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 34: 날짜와 시간\ndef solve_day_34(values):\n    # TODO: 날짜와 시간 개념을 적용하세요.\n    pass\n\nprint(solve_day_34([1, 2, 3, 4]))",
+      "solutionCode": "from datetime import datetime, timedelta\ntoday = datetime.now()\ndeadline = today + timedelta(days=7)\nprint(deadline.strftime(\"%Y-%m-%d\"))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-35",
+    "language": "python",
+    "day": 35,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "정규 표현식",
+    "summary": "Python의 정규 표현식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "정규 표현식은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import re` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "정규 표현식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "정규 표현식의 핵심 개념 설명하기",
+      "정규 표현식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "정규 표현식에서 배운 개념을 사용해 Day 35 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 35: 정규 표현식\ndef solve_day_35(values):\n    # TODO: 정규 표현식 개념을 적용하세요.\n    pass\n\nprint(solve_day_35([1, 2, 3, 4]))",
+      "solutionCode": "import re\ntext = \"문의: study@example.com\"\nmatch = re.search(r\"[w.-]+@[w.-]+.w+\", text)\nprint(match.group() if match else \"없음\")"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-36",
+    "language": "python",
+    "day": 36,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "이터레이터와 제너레이터",
+    "summary": "Python의 이터레이터와 제너레이터 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이터레이터와 제너레이터은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def countdown(start):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "이터레이터와 제너레이터의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이터레이터와 제너레이터의 핵심 개념 설명하기",
+      "이터레이터와 제너레이터을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이터레이터와 제너레이터에서 배운 개념을 사용해 Day 36 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 36: 이터레이터와 제너레이터\ndef solve_day_36(values):\n    # TODO: 이터레이터와 제너레이터 개념을 적용하세요.\n    pass\n\nprint(solve_day_36([1, 2, 3, 4]))",
+      "solutionCode": "def countdown(start):\n    while start > 0:\n        yield start\n        start -= 1\nprint(list(countdown(5)))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-37",
+    "language": "python",
+    "day": 37,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "데코레이터",
+    "summary": "Python의 데코레이터 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데코레이터은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from functools import wraps` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "데코레이터의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "데코레이터의 핵심 개념 설명하기",
+      "데코레이터을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "데코레이터에서 배운 개념을 사용해 Day 37 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 37: 데코레이터\ndef solve_day_37(values):\n    # TODO: 데코레이터 개념을 적용하세요.\n    pass\n\nprint(solve_day_37([1, 2, 3, 4]))",
+      "solutionCode": "from functools import wraps\ndef trace(function):\n    @wraps(function)\n    def wrapper(*args, **kwargs):\n        print(f\"call: {function.__name__}\")\n        return function(*args, **kwargs)\n    return wrapper\n@trace\ndef add(a, b): return a + b\nprint(add(2, 3))"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-38",
+    "language": "python",
+    "day": 38,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "컨텍스트 매니저",
+    "summary": "Python의 컨텍스트 매니저 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컨텍스트 매니저은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from contextlib import contextmanager` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "컨텍스트 매니저의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컨텍스트 매니저의 핵심 개념 설명하기",
+      "컨텍스트 매니저을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컨텍스트 매니저에서 배운 개념을 사용해 Day 38 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 38: 컨텍스트 매니저\ndef solve_day_38(values):\n    # TODO: 컨텍스트 매니저 개념을 적용하세요.\n    pass\n\nprint(solve_day_38([1, 2, 3, 4]))",
+      "solutionCode": "from contextlib import contextmanager\n@contextmanager\ndef managed_resource():\n    print(\"open\")\n    try:\n        yield \"resource\"\n    finally:\n        print(\"close\")\nwith managed_resource() as resource:\n    print(resource)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-39",
+    "language": "python",
+    "day": 39,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "표준 라이브러리 활용",
+    "summary": "Python의 표준 라이브러리 활용 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "표준 라이브러리 활용은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from collections import defaultdict, deque` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "표준 라이브러리 활용의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "표준 라이브러리 활용의 핵심 개념 설명하기",
+      "표준 라이브러리 활용을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "표준 라이브러리 활용에서 배운 개념을 사용해 Day 39 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 39: 표준 라이브러리 활용\ndef solve_day_39(values):\n    # TODO: 표준 라이브러리 활용 개념을 적용하세요.\n    pass\n\nprint(solve_day_39([1, 2, 3, 4]))",
+      "solutionCode": "from collections import defaultdict, deque\ngroups = defaultdict(list)\nfor name, team in [(\"Mina\", \"A\"), (\"Jin\", \"A\")]: groups[team].append(name)\nqueue = deque(groups[\"A\"]); print(queue.popleft(), groups)"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-40",
+    "language": "python",
+    "day": 40,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "미니 프로젝트: 로그 분석기",
+    "summary": "Python의 미니 프로젝트: 로그 분석기 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 로그 분석기은(는) 표준 기능과 외부 자원을 안전하게 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import re` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "미니 프로젝트: 로그 분석기의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 로그 분석기의 핵심 개념 설명하기",
+      "미니 프로젝트: 로그 분석기을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 로그 분석기에서 배운 개념을 사용해 Day 40 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 40: 미니 프로젝트: 로그 분석기\ndef solve_day_40(values):\n    # TODO: 미니 프로젝트: 로그 분석기 개념을 적용하세요.\n    pass\n\nprint(solve_day_40([1, 2, 3, 4]))",
+      "solutionCode": "import re\nlogs = [\"INFO login\", \"ERROR timeout\", \"ERROR denied\"]\nerrors = [re.sub(r\"^ERROR\\s+\", \"\", line) for line in logs if line.startswith(\"ERROR\")]\nprint({\"error_count\": len(errors), \"messages\": errors})"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "python-day-41",
+    "language": "python",
+    "day": 41,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "클래스와 인스턴스",
+    "summary": "Python의 클래스와 인스턴스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "클래스와 인스턴스은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Student:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "클래스와 인스턴스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "클래스와 인스턴스의 핵심 개념 설명하기",
+      "클래스와 인스턴스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "클래스와 인스턴스에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 41: 클래스와 인스턴스\nclass Day41Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day41Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "class Student:\n    def __init__(self, name, score):\n        self.name = name\n        self.score = score\n    def passed(self):\n        return self.score >= 60\nprint(Student(\"Mina\", 90).passed())"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-42",
+    "language": "python",
+    "day": 42,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "생성자와 속성",
+    "summary": "Python의 생성자와 속성 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "생성자와 속성은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Account:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "생성자와 속성의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "생성자와 속성의 핵심 개념 설명하기",
+      "생성자와 속성을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "생성자와 속성에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 42: 생성자와 속성\nclass Day42Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day42Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "class Account:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self.balance = balance\n    def deposit(self, amount):\n        self.balance += amount\naccount = Account(\"Mina\"); account.deposit(1000); print(account.balance)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-43",
+    "language": "python",
+    "day": 43,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "상속과 오버라이딩",
+    "summary": "Python의 상속과 오버라이딩 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "상속과 오버라이딩은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Animal:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "상속과 오버라이딩의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "상속과 오버라이딩의 핵심 개념 설명하기",
+      "상속과 오버라이딩을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "상속과 오버라이딩에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 43: 상속과 오버라이딩\nclass Day43Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day43Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "class Animal:\n    def speak(self): return \"...\"\nclass Dog(Animal):\n    def speak(self): return \"멍멍\"\nprint(Dog().speak())"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-44",
+    "language": "python",
+    "day": 44,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "캡슐화와 프로퍼티",
+    "summary": "Python의 캡슐화와 프로퍼티 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "캡슐화와 프로퍼티은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Temperature:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "캡슐화와 프로퍼티의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "캡슐화와 프로퍼티의 핵심 개념 설명하기",
+      "캡슐화와 프로퍼티을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "캡슐화와 프로퍼티에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 44: 캡슐화와 프로퍼티\nclass Day44Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day44Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "class Temperature:\n    def __init__(self, celsius): self._celsius = celsius\n    @property\n    def fahrenheit(self): return self._celsius * 9 / 5 + 32\nprint(Temperature(25).fahrenheit)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-45",
+    "language": "python",
+    "day": 45,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데이터 클래스",
+    "summary": "Python의 데이터 클래스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데이터 클래스은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from dataclasses import dataclass` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "데이터 클래스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "데이터 클래스의 핵심 개념 설명하기",
+      "데이터 클래스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "데이터 클래스에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 45: 데이터 클래스\nclass Day45Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day45Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "from dataclasses import dataclass\n@dataclass(frozen=True)\nclass Product:\n    name: str\n    price: int\nprint(Product(\"keyboard\", 50000))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-46",
+    "language": "python",
+    "day": 46,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "추상 클래스와 프로토콜",
+    "summary": "Python의 추상 클래스와 프로토콜 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "추상 클래스와 프로토콜은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from typing import Protocol` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "추상 클래스와 프로토콜의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "추상 클래스와 프로토콜의 핵심 개념 설명하기",
+      "추상 클래스와 프로토콜을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "추상 클래스와 프로토콜에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 46: 추상 클래스와 프로토콜\nclass Day46Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day46Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "from typing import Protocol\nclass Printable(Protocol):\n    def render(self) -> str: ...\nclass Report:\n    def render(self): return \"report\"\ndef print_item(item: Printable): print(item.render())\nprint_item(Report())"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-47",
+    "language": "python",
+    "day": 47,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "객체지향 설계",
+    "summary": "Python의 객체지향 설계 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Cart:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "객체지향 설계의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계의 핵심 개념 설명하기",
+      "객체지향 설계을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 47: 객체지향 설계\nclass Day47Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day47Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "class Cart:\n    def __init__(self): self._items = []\n    def add(self, name, price): self._items.append((name, price))\n    def total(self): return sum(price for _, price in self._items)\ncart = Cart(); cart.add(\"book\", 12000); print(cart.total())"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-48",
+    "language": "python",
+    "day": 48,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "단위 테스트",
+    "summary": "Python의 단위 테스트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "단위 테스트은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import unittest` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "단위 테스트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "단위 테스트의 핵심 개념 설명하기",
+      "단위 테스트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "단위 테스트에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 48: 단위 테스트\nclass Day48Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day48Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "import unittest\ndef add(a, b): return a + b\nclass AddTest(unittest.TestCase):\n    def test_add(self): self.assertEqual(add(2, 3), 5)\nunittest.TextTestRunner().run(unittest.defaultTestLoader.loadTestsFromTestCase(AddTest))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-49",
+    "language": "python",
+    "day": 49,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "디버깅과 로깅",
+    "summary": "Python의 디버깅과 로깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "디버깅과 로깅은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import logging` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "디버깅과 로깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "디버깅과 로깅의 핵심 개념 설명하기",
+      "디버깅과 로깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "디버깅과 로깅에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 49: 디버깅과 로깅\nclass Day49Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day49Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "import logging\nlogging.basicConfig(level=logging.INFO, format=\"%(levelname)s:%(message)s\")\ndef divide(a, b):\n    logging.info(\"divide %s by %s\", a, b)\n    return a / b\nprint(divide(10, 2))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-50",
+    "language": "python",
+    "day": 50,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "리팩터링 실습",
+    "summary": "Python의 리팩터링 실습 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "리팩터링 실습은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def normalize_names(names):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "리팩터링 실습의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "리팩터링 실습의 핵심 개념 설명하기",
+      "리팩터링 실습을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "리팩터링 실습에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 50: 리팩터링 실습\nclass Day50Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day50Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "def normalize_names(names):\n    cleaned = (name.strip().title() for name in names)\n    return sorted(set(name for name in cleaned if name))\nprint(normalize_names([\" mina \", \"JIN\", \"mina\"]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-51",
+    "language": "python",
+    "day": 51,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "시간 복잡도",
+    "summary": "Python의 시간 복잡도 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "시간 복잡도은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def contains(values, target):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "시간 복잡도의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "시간 복잡도의 핵심 개념 설명하기",
+      "시간 복잡도을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "시간 복잡도에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 51: 시간 복잡도\nclass Day51Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day51Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "def contains(values, target):\n    # 선형 탐색: O(n)\n    return any(value == target for value in values)\nprint(contains(range(1_000), 999))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-52",
+    "language": "python",
+    "day": 52,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "스택과 큐",
+    "summary": "Python의 스택과 큐 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "스택과 큐은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from collections import deque` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "스택과 큐의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "스택과 큐의 핵심 개념 설명하기",
+      "스택과 큐을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "스택과 큐에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 52: 스택과 큐\nclass Day52Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day52Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "from collections import deque\nstack = []; stack.append(1); stack.append(2); print(stack.pop())\nqueue = deque([1, 2]); queue.append(3); print(queue.popleft())"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-53",
+    "language": "python",
+    "day": 53,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "해시 테이블",
+    "summary": "Python의 해시 테이블 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "해시 테이블은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `words = [\"apple\", \"banana\", \"apple\"]` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "해시 테이블의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "해시 테이블의 핵심 개념 설명하기",
+      "해시 테이블을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "해시 테이블에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 53: 해시 테이블\nclass Day53Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day53Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "words = [\"apple\", \"banana\", \"apple\"]\nfrequency = {}\nfor word in words: frequency[word] = frequency.get(word, 0) + 1\nprint(frequency)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-54",
+    "language": "python",
+    "day": 54,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "정렬 알고리즘",
+    "summary": "Python의 정렬 알고리즘 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "정렬 알고리즘은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def merge_sort(values):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "정렬 알고리즘의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "정렬 알고리즘의 핵심 개념 설명하기",
+      "정렬 알고리즘을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "정렬 알고리즘에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 54: 정렬 알고리즘\nclass Day54Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day54Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "def merge_sort(values):\n    if len(values) < 2: return values\n    mid = len(values) // 2\n    left, right = merge_sort(values[:mid]), merge_sort(values[mid:])\n    result = []\n    while left and right: result.append((left if left[0] < right[0] else right).pop(0))\n    return result + left + right\nprint(merge_sort([4, 1, 3, 2]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-55",
+    "language": "python",
+    "day": 55,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "이진 탐색",
+    "summary": "Python의 이진 탐색 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이진 탐색은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def binary_search(values, target):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "이진 탐색의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이진 탐색의 핵심 개념 설명하기",
+      "이진 탐색을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이진 탐색에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 55: 이진 탐색\nclass Day55Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day55Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "def binary_search(values, target):\n    left, right = 0, len(values) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if values[mid] == target: return mid\n        if values[mid] < target: left = mid + 1\n        else: right = mid - 1\n    return -1\nprint(binary_search([1, 3, 5, 7], 5))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-56",
+    "language": "python",
+    "day": 56,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "그래프 탐색",
+    "summary": "Python의 그래프 탐색 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "그래프 탐색은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from collections import deque` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "그래프 탐색의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "그래프 탐색의 핵심 개념 설명하기",
+      "그래프 탐색을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "그래프 탐색에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 56: 그래프 탐색\nclass Day56Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day56Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "from collections import deque\ngraph = {\"A\": [\"B\", \"C\"], \"B\": [\"D\"], \"C\": [], \"D\": []}\nqueue, visited = deque([\"A\"]), set()\nwhile queue:\n    node = queue.popleft()\n    if node in visited: continue\n    visited.add(node); queue.extend(graph[node])\nprint(visited)"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-57",
+    "language": "python",
+    "day": 57,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "동적 계획법 입문",
+    "summary": "Python의 동적 계획법 입문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "동적 계획법 입문은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def fibonacci(n):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "동적 계획법 입문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "동적 계획법 입문의 핵심 개념 설명하기",
+      "동적 계획법 입문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "동적 계획법 입문에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 57: 동적 계획법 입문\nclass Day57Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day57Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "def fibonacci(n):\n    dp = [0, 1]\n    for index in range(2, n + 1): dp.append(dp[-1] + dp[-2])\n    return dp[n]\nprint(fibonacci(10))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-58",
+    "language": "python",
+    "day": 58,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "비동기 프로그래밍",
+    "summary": "Python의 비동기 프로그래밍 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 프로그래밍은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import asyncio` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "비동기 프로그래밍의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 프로그래밍의 핵심 개념 설명하기",
+      "비동기 프로그래밍을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 프로그래밍에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 58: 비동기 프로그래밍\nclass Day58Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day58Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "import asyncio\nasync def fetch(name, delay):\n    await asyncio.sleep(delay)\n    return f\"{name} 완료\"\nasync def main():\n    print(await asyncio.gather(fetch(\"A\", .1), fetch(\"B\", .1)))\nasyncio.run(main())"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-59",
+    "language": "python",
+    "day": 59,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "API 데이터 처리",
+    "summary": "Python의 API 데이터 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "API 데이터 처리은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import json` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "API 데이터 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "API 데이터 처리의 핵심 개념 설명하기",
+      "API 데이터 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "API 데이터 처리에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 59: API 데이터 처리\nclass Day59Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day59Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "import json\nresponse = '{\"studies\":[{\"id\":1,\"title\":\"Python\"}]}'\ndata = json.loads(response)\nprint([study[\"title\"] for study in data[\"studies\"]])"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-60",
+    "language": "python",
+    "day": 60,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "최종 프로젝트: 문제 해결 도구",
+    "summary": "Python의 최종 프로젝트: 문제 해결 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "최종 프로젝트: 문제 해결 도구은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from collections import Counter` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "keyPoints": [
+      "최종 프로젝트: 문제 해결 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "최종 프로젝트: 문제 해결 도구의 핵심 개념 설명하기",
+      "최종 프로젝트: 문제 해결 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "최종 프로젝트: 문제 해결 도구에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 60: 최종 프로젝트: 문제 해결 도구\nclass Day60Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day60Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "from collections import Counter\ndef analyze_submissions(results):\n    scores = [item[\"score\"] for item in results]\n    return {\"average\": sum(scores) / len(scores), \"status\": Counter(item[\"status\"] for item in results)}\nprint(analyze_submissions([{\"score\": 90, \"status\": \"pass\"}, {\"score\": 70, \"status\": \"pass\"}]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  }
+]
