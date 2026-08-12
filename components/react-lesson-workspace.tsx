@@ -8,10 +8,8 @@ import {
   useSandpack,
 } from "@codesandbox/sandpack-react";
 import dynamic from "next/dynamic";
-import * as prettierPluginEstree from "prettier/plugins/estree";
-import * as prettierPluginTypeScript from "prettier/plugins/typescript";
-import { format } from "prettier/standalone";
 import { useEffect, useState } from "react";
+import { formatCode } from "@/lib/code-formatter";
 import { useLessonWorkspaceStore } from "@/stores/lesson-workspace-store";
 
 const MonacoEditor = dynamic(() => import("@monaco-editor/react"), {
@@ -86,25 +84,10 @@ function ReactEditor({ lessonId, starterCode, solutionCode }: Props) {
 
   const handleLoadSolution = async () => {
     setIsFormatting(true);
-    let formattedCode = solutionCode;
-
-    try {
-      formattedCode = await format(solutionCode, {
-        parser: "typescript",
-        plugins: [prettierPluginTypeScript, prettierPluginEstree],
-        printWidth: 80,
-        semi: true,
-        singleQuote: false,
-        tabWidth: 2,
-        trailingComma: "all",
-      });
-    } catch {
-      formattedCode = solutionCode;
-    } finally {
-      setCode(lessonId, formattedCode);
-      updateFile("/App.tsx", formattedCode, false);
-      setIsFormatting(false);
-    }
+    const formattedCode = await formatCode("react", solutionCode);
+    setCode(lessonId, formattedCode);
+    updateFile("/App.tsx", formattedCode, false);
+    setIsFormatting(false);
   };
 
   const handleRun = () => {

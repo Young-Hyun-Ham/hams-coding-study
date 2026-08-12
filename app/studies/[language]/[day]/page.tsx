@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LessonWorkspace } from "@/components/lesson-workspace";
 import { ReactLessonWorkspace } from "@/components/react-lesson-workspace";
+import { FormattedCode } from "@/components/formatted-code";
+import { RecordLessonProgress } from "@/components/study-progress";
 import { getAllLessons, getCurriculum, getLanguage, getLesson } from "@/lib/study-data";
 
 type PageProps = { params: Promise<{ language: string; day: string }> };
@@ -36,12 +38,13 @@ export default async function LessonPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
+      <RecordLessonProgress language={language.slug} day={lesson.day} />
       <div className="mx-auto max-w-[1500px] px-4 py-6 sm:px-6 lg:px-8">
         <header className="mb-6 flex flex-wrap items-center justify-between gap-4">
           <div className="flex min-w-0 items-center gap-3 text-sm">
             <Link href="/" className="font-bold text-sky-400">HAMS</Link>
             <span className="text-slate-700">/</span>
-            <Link href={`/studies/${language.slug}`} className="truncate text-slate-400 transition hover:text-white">{language.name} 60일 코스</Link>
+            <Link href={`/studies/${language.slug}`} className="truncate text-slate-400 transition hover:text-white">{language.name} {language.courseLength}일 코스</Link>
             <span className="text-slate-700">/</span>
             <span className="text-slate-300">Day {lesson.day}</span>
           </div>
@@ -98,12 +101,12 @@ export default async function LessonPage({ params }: PageProps) {
                 </summary>
                 <div className="border-t border-slate-800 p-3">
                   <p className="mb-3 text-xs leading-5 text-amber-300/80">먼저 직접 풀어본 다음 예시 풀이와 비교해 보세요.</p>
-                  <pre className="max-h-80 overflow-auto whitespace-pre rounded-lg bg-black/40 p-4 font-mono text-xs leading-6 text-slate-300"><code>{lesson.practice.solutionCode}</code></pre>
+                  <FormattedCode language={language.slug} code={lesson.practice.solutionCode} />
                 </div>
               </details>
             </section>
 
-            {language.slug !== "python" && language.slug !== "react" && (
+            {language.slug !== "python" && language.slug !== "react" && language.slug !== "c" && language.slug !== "csharp" && (
               <p className="mt-5 rounded-lg border border-amber-400/20 bg-amber-400/5 p-3 text-xs leading-5 text-amber-200/80">
                 현재 브라우저 코드 실행은 순수 Python/Pyodide 과정에서 지원합니다. LangGraph를 포함한 외부 런타임 과정은 Monaco 코드 작성과 자동 저장 상태를 제공합니다.
               </p>
@@ -137,7 +140,7 @@ export default async function LessonPage({ params }: PageProps) {
               <span className="text-xs text-slate-500">다음 학습 →</span><strong className="mt-1 block text-sm">Day {next.day}. {next.title}</strong>
             </Link>
           ) : (
-            <Link href={`/studies/${language.slug}`} className="rounded-xl border border-emerald-400/20 bg-emerald-400/5 p-4 text-right text-emerald-300">60일 과정 완료 · 목록으로 →</Link>
+            <Link href={`/studies/${language.slug}`} className="rounded-xl border border-emerald-400/20 bg-emerald-400/5 p-4 text-right text-emerald-300">{language.courseLength}일 과정 완료 · 목록으로 →</Link>
           )}
         </nav>
       </div>

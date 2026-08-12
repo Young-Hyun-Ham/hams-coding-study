@@ -1086,22 +1086,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "이벤트 루프",
-    "summary": "JavaScript의 이벤트 루프 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "이벤트 루프은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `console.log(\"sync\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "실행 컨텍스트와 스코프: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 실행 컨텍스트와 스코프: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "실행 컨텍스트와 스코프: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "이벤트 루프의 핵심 문법과 실행 흐름",
+      "실행 컨텍스트와 스코프: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "이벤트 루프의 핵심 개념 설명하기",
-      "이벤트 루프을 활용한 코드 작성하기"
+      "실행 컨텍스트와 스코프: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "실행 컨텍스트와 스코프: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "이벤트 루프에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 41: 이벤트 루프\nfunction solveDay41(values) {\n  // TODO: 이벤트 루프 개념을 적용하세요.\n}\n\nconsole.log(solveDay41([1, 2, 3, 4]));",
-      "solutionCode": "console.log(\"sync\");\nsetTimeout(() => console.log(\"task\"), 0);\nqueueMicrotask(() => console.log(\"microtask\"));\nPromise.resolve().then(() => console.log(\"promise\"));"
+      "prompt": "실행 컨텍스트와 스코프: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 41: 실행 컨텍스트와 스코프: 핵심 원리와 내부 동작\nfunction solveDay41(values) {\n  // TODO: 실행 컨텍스트와 스코프: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay41([1, 2, 3, 4]));",
+      "solutionCode": "// Day 41: 실행 컨텍스트와 스코프: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay41(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 41, topic: \"실행 컨텍스트와 스코프: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay41([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1113,22 +1113,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "마이크로태스크",
-    "summary": "JavaScript의 마이크로태스크 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "마이크로태스크은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `console.log(\"start\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "실행 컨텍스트와 스코프: 실전 구현 패턴",
+    "summary": "JavaScript의 실행 컨텍스트와 스코프: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "실행 컨텍스트와 스코프: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "마이크로태스크의 핵심 문법과 실행 흐름",
+      "실행 컨텍스트와 스코프: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "마이크로태스크의 핵심 개념 설명하기",
-      "마이크로태스크을 활용한 코드 작성하기"
+      "실행 컨텍스트와 스코프: 실전 구현 패턴의 핵심 개념 설명하기",
+      "실행 컨텍스트와 스코프: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "마이크로태스크에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 42: 마이크로태스크\nfunction solveDay42(values) {\n  // TODO: 마이크로태스크 개념을 적용하세요.\n}\n\nconsole.log(solveDay42([1, 2, 3, 4]));",
-      "solutionCode": "console.log(\"start\");\nPromise.resolve().then(() => console.log(\"microtask\"));\nsetTimeout(() => console.log(\"macrotask\"), 0);"
+      "prompt": "실행 컨텍스트와 스코프: 실전 구현 패턴에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 42: 실행 컨텍스트와 스코프: 실전 구현 패턴\nfunction solveDay42(values) {\n  // TODO: 실행 컨텍스트와 스코프: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay42([1, 2, 3, 4]));",
+      "solutionCode": "// Day 42: 실행 컨텍스트와 스코프: 실전 구현 패턴 예시 풀이\nfunction solveDay42(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 42, topic: \"실행 컨텍스트와 스코프: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay42([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1140,22 +1140,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "이터레이터",
-    "summary": "JavaScript의 이터레이터 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "이터레이터은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const range = { *[Symbol.iterator]() { for (let i = 1; i <= 3; i += 1) yield i; } };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "실행 컨텍스트와 스코프: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 실행 컨텍스트와 스코프: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "실행 컨텍스트와 스코프: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "이터레이터의 핵심 문법과 실행 흐름",
+      "실행 컨텍스트와 스코프: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "이터레이터의 핵심 개념 설명하기",
-      "이터레이터을 활용한 코드 작성하기"
+      "실행 컨텍스트와 스코프: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "실행 컨텍스트와 스코프: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "이터레이터에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 43: 이터레이터\nfunction solveDay43(values) {\n  // TODO: 이터레이터 개념을 적용하세요.\n}\n\nconsole.log(solveDay43([1, 2, 3, 4]));",
-      "solutionCode": "const range = { *[Symbol.iterator]() { for (let i = 1; i <= 3; i += 1) yield i; } };\nconsole.log([...range]);"
+      "prompt": "실행 컨텍스트와 스코프: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 43: 실행 컨텍스트와 스코프: 오류 처리와 경계 조건\nfunction solveDay43(values) {\n  // TODO: 실행 컨텍스트와 스코프: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay43([1, 2, 3, 4]));",
+      "solutionCode": "// Day 43: 실행 컨텍스트와 스코프: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay43(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 43, topic: \"실행 컨텍스트와 스코프: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay43([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1167,22 +1167,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "제너레이터",
-    "summary": "JavaScript의 제너레이터 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "제너레이터은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function* fibonacci() { let [a, b] = [0, 1]; while (true) { yield a; [a, b] = [b, a + b]; } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "실행 컨텍스트와 스코프: 테스트와 디버깅",
+    "summary": "JavaScript의 실행 컨텍스트와 스코프: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "실행 컨텍스트와 스코프: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "제너레이터의 핵심 문법과 실행 흐름",
+      "실행 컨텍스트와 스코프: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "제너레이터의 핵심 개념 설명하기",
-      "제너레이터을 활용한 코드 작성하기"
+      "실행 컨텍스트와 스코프: 테스트와 디버깅의 핵심 개념 설명하기",
+      "실행 컨텍스트와 스코프: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "제너레이터에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 44: 제너레이터\nfunction solveDay44(values) {\n  // TODO: 제너레이터 개념을 적용하세요.\n}\n\nconsole.log(solveDay44([1, 2, 3, 4]));",
-      "solutionCode": "function* fibonacci() { let [a, b] = [0, 1]; while (true) { yield a; [a, b] = [b, a + b]; } }\nconst sequence = fibonacci(); console.log(sequence.next().value, sequence.next().value);"
+      "prompt": "실행 컨텍스트와 스코프: 테스트와 디버깅에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 44: 실행 컨텍스트와 스코프: 테스트와 디버깅\nfunction solveDay44(values) {\n  // TODO: 실행 컨텍스트와 스코프: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay44([1, 2, 3, 4]));",
+      "solutionCode": "// Day 44: 실행 컨텍스트와 스코프: 테스트와 디버깅 예시 풀이\nfunction solveDay44(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 44, topic: \"실행 컨텍스트와 스코프: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay44([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1194,22 +1194,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "Proxy와 Reflect",
-    "summary": "JavaScript의 Proxy와 Reflect 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "Proxy와 Reflect은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const state = new Proxy({}, { set(target, key, value) { console.log(`${String(key)} 변경`); return Reflect.set(target, key, value); } });` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "실행 컨텍스트와 스코프: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 실행 컨텍스트와 스코프: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "실행 컨텍스트와 스코프: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "Proxy와 Reflect의 핵심 문법과 실행 흐름",
+      "실행 컨텍스트와 스코프: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "Proxy와 Reflect의 핵심 개념 설명하기",
-      "Proxy와 Reflect을 활용한 코드 작성하기"
+      "실행 컨텍스트와 스코프: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "실행 컨텍스트와 스코프: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "Proxy와 Reflect에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 45: Proxy와 Reflect\nfunction solveDay45(values) {\n  // TODO: Proxy와 Reflect 개념을 적용하세요.\n}\n\nconsole.log(solveDay45([1, 2, 3, 4]));",
-      "solutionCode": "const state = new Proxy({}, { set(target, key, value) { console.log(`${String(key)} 변경`); return Reflect.set(target, key, value); } });\nstate.count = 1;"
+      "prompt": "실행 컨텍스트와 스코프: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 45: 실행 컨텍스트와 스코프: 성능 개선과 리팩터링\nfunction solveDay45(values) {\n  // TODO: 실행 컨텍스트와 스코프: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay45([1, 2, 3, 4]));",
+      "solutionCode": "// Day 45: 실행 컨텍스트와 스코프: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay45(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 45, topic: \"실행 컨텍스트와 스코프: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay45([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1221,22 +1221,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "정규 표현식",
-    "summary": "JavaScript의 정규 표현식 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "정규 표현식은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const email = \"study@example.com\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "프로토타입과 객체 모델: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 프로토타입과 객체 모델: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로토타입과 객체 모델: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "정규 표현식의 핵심 문법과 실행 흐름",
+      "프로토타입과 객체 모델: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "정규 표현식의 핵심 개념 설명하기",
-      "정규 표현식을 활용한 코드 작성하기"
+      "프로토타입과 객체 모델: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "프로토타입과 객체 모델: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "정규 표현식에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 46: 정규 표현식\nfunction solveDay46(values) {\n  // TODO: 정규 표현식 개념을 적용하세요.\n}\n\nconsole.log(solveDay46([1, 2, 3, 4]));",
-      "solutionCode": "const email = \"study@example.com\";\nconsole.log(/^[w.-]+@[w.-]+.w+$/.test(email));"
+      "prompt": "프로토타입과 객체 모델: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 46: 프로토타입과 객체 모델: 핵심 원리와 내부 동작\nfunction solveDay46(values) {\n  // TODO: 프로토타입과 객체 모델: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay46([1, 2, 3, 4]));",
+      "solutionCode": "// Day 46: 프로토타입과 객체 모델: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay46(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 46, topic: \"프로토타입과 객체 모델: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay46([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1248,22 +1248,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "날짜와 국제화",
-    "summary": "JavaScript의 날짜와 국제화 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "날짜와 국제화은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const date = new Date(\"2026-08-11T00:00:00Z\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "프로토타입과 객체 모델: 실전 구현 패턴",
+    "summary": "JavaScript의 프로토타입과 객체 모델: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로토타입과 객체 모델: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "날짜와 국제화의 핵심 문법과 실행 흐름",
+      "프로토타입과 객체 모델: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "날짜와 국제화의 핵심 개념 설명하기",
-      "날짜와 국제화을 활용한 코드 작성하기"
+      "프로토타입과 객체 모델: 실전 구현 패턴의 핵심 개념 설명하기",
+      "프로토타입과 객체 모델: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "날짜와 국제화에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 47: 날짜와 국제화\nfunction solveDay47(values) {\n  // TODO: 날짜와 국제화 개념을 적용하세요.\n}\n\nconsole.log(solveDay47([1, 2, 3, 4]));",
-      "solutionCode": "const date = new Date(\"2026-08-11T00:00:00Z\");\nconsole.log(new Intl.DateTimeFormat(\"ko-KR\", { dateStyle: \"long\" }).format(date));"
+      "prompt": "프로토타입과 객체 모델: 실전 구현 패턴에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 47: 프로토타입과 객체 모델: 실전 구현 패턴\nfunction solveDay47(values) {\n  // TODO: 프로토타입과 객체 모델: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay47([1, 2, 3, 4]));",
+      "solutionCode": "// Day 47: 프로토타입과 객체 모델: 실전 구현 패턴 예시 풀이\nfunction solveDay47(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 47, topic: \"프로토타입과 객체 모델: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay47([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1275,22 +1275,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "웹 컴포넌트 기초",
-    "summary": "JavaScript의 웹 컴포넌트 기초 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "웹 컴포넌트 기초은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class StudyCard extends HTMLElement { connectedCallback() { this.innerHTML = `<article><slot></slot></article>`; } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "프로토타입과 객체 모델: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 프로토타입과 객체 모델: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로토타입과 객체 모델: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "웹 컴포넌트 기초의 핵심 문법과 실행 흐름",
+      "프로토타입과 객체 모델: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "웹 컴포넌트 기초의 핵심 개념 설명하기",
-      "웹 컴포넌트 기초을 활용한 코드 작성하기"
+      "프로토타입과 객체 모델: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "프로토타입과 객체 모델: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "웹 컴포넌트 기초에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 48: 웹 컴포넌트 기초\nfunction solveDay48(values) {\n  // TODO: 웹 컴포넌트 기초 개념을 적용하세요.\n}\n\nconsole.log(solveDay48([1, 2, 3, 4]));",
-      "solutionCode": "class StudyCard extends HTMLElement { connectedCallback() { this.innerHTML = `<article><slot></slot></article>`; } }\ncustomElements.define(\"study-card\", StudyCard);"
+      "prompt": "프로토타입과 객체 모델: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 48: 프로토타입과 객체 모델: 오류 처리와 경계 조건\nfunction solveDay48(values) {\n  // TODO: 프로토타입과 객체 모델: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay48([1, 2, 3, 4]));",
+      "solutionCode": "// Day 48: 프로토타입과 객체 모델: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay48(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 48, topic: \"프로토타입과 객체 모델: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay48([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1302,22 +1302,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "단위 테스트",
-    "summary": "JavaScript의 단위 테스트 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "단위 테스트은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import { test, expect } from \"vitest\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "프로토타입과 객체 모델: 테스트와 디버깅",
+    "summary": "JavaScript의 프로토타입과 객체 모델: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로토타입과 객체 모델: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "단위 테스트의 핵심 문법과 실행 흐름",
+      "프로토타입과 객체 모델: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "단위 테스트의 핵심 개념 설명하기",
-      "단위 테스트을 활용한 코드 작성하기"
+      "프로토타입과 객체 모델: 테스트와 디버깅의 핵심 개념 설명하기",
+      "프로토타입과 객체 모델: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "단위 테스트에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 49: 단위 테스트\nfunction solveDay49(values) {\n  // TODO: 단위 테스트 개념을 적용하세요.\n}\n\nconsole.log(solveDay49([1, 2, 3, 4]));",
-      "solutionCode": "import { test, expect } from \"vitest\";\nconst add = (a, b) => a + b;\ntest(\"두 수를 더한다\", () => expect(add(2, 3)).toBe(5));"
+      "prompt": "프로토타입과 객체 모델: 테스트와 디버깅에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 49: 프로토타입과 객체 모델: 테스트와 디버깅\nfunction solveDay49(values) {\n  // TODO: 프로토타입과 객체 모델: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay49([1, 2, 3, 4]));",
+      "solutionCode": "// Day 49: 프로토타입과 객체 모델: 테스트와 디버깅 예시 풀이\nfunction solveDay49(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 49, topic: \"프로토타입과 객체 모델: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay49([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1329,22 +1329,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "디버깅과 성능 측정",
-    "summary": "JavaScript의 디버깅과 성능 측정 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "디버깅과 성능 측정은(는) 언어의 고급 실행 원리와 품질을 다루는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `performance.mark(\"start\");` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "프로토타입과 객체 모델: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 프로토타입과 객체 모델: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로토타입과 객체 모델: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "디버깅과 성능 측정의 핵심 문법과 실행 흐름",
+      "프로토타입과 객체 모델: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "디버깅과 성능 측정의 핵심 개념 설명하기",
-      "디버깅과 성능 측정을 활용한 코드 작성하기"
+      "프로토타입과 객체 모델: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "프로토타입과 객체 모델: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "디버깅과 성능 측정에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 50: 디버깅과 성능 측정\nfunction solveDay50(values) {\n  // TODO: 디버깅과 성능 측정 개념을 적용하세요.\n}\n\nconsole.log(solveDay50([1, 2, 3, 4]));",
-      "solutionCode": "performance.mark(\"start\");\nconst result = Array.from({ length: 1000 }, (_, i) => i ** 2);\nperformance.mark(\"end\"); performance.measure(\"work\", \"start\", \"end\");\nconsole.log(result.length, performance.getEntriesByName(\"work\")[0].duration);"
+      "prompt": "프로토타입과 객체 모델: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 50: 프로토타입과 객체 모델: 성능 개선과 리팩터링\nfunction solveDay50(values) {\n  // TODO: 프로토타입과 객체 모델: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay50([1, 2, 3, 4]));",
+      "solutionCode": "// Day 50: 프로토타입과 객체 모델: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay50(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 50, topic: \"프로토타입과 객체 모델: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay50([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1353,25 +1353,25 @@
     "id": "javascript-day-51",
     "language": "javascript",
     "day": 51,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "자료구조 구현",
-    "summary": "JavaScript의 자료구조 구현 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "자료구조 구현은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Stack { #items = []; push(value) { this.#items.push(value); } pop() { return this.#items.pop(); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 프로그래밍: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 함수형 프로그래밍: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 프로그래밍: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "자료구조 구현의 핵심 문법과 실행 흐름",
+      "함수형 프로그래밍: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "자료구조 구현의 핵심 개념 설명하기",
-      "자료구조 구현을 활용한 코드 작성하기"
+      "함수형 프로그래밍: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "함수형 프로그래밍: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "자료구조 구현에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 51: 자료구조 구현\nfunction solveDay51(values) {\n  // TODO: 자료구조 구현 개념을 적용하세요.\n}\n\nconsole.log(solveDay51([1, 2, 3, 4]));",
-      "solutionCode": "class Stack { #items = []; push(value) { this.#items.push(value); } pop() { return this.#items.pop(); } }\nconst stack = new Stack(); stack.push(1); console.log(stack.pop());"
+      "prompt": "함수형 프로그래밍: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 51: 함수형 프로그래밍: 핵심 원리와 내부 동작\nfunction solveDay51(values) {\n  // TODO: 함수형 프로그래밍: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay51([1, 2, 3, 4]));",
+      "solutionCode": "// Day 51: 함수형 프로그래밍: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay51(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 51, topic: \"함수형 프로그래밍: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay51([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1380,25 +1380,25 @@
     "id": "javascript-day-52",
     "language": "javascript",
     "day": 52,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "재귀와 백트래킹",
-    "summary": "JavaScript의 재귀와 백트래킹 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "재귀와 백트래킹은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function permutations(values) { if (values.length < 2) return [values]; return values.flatMap((value, index) => permutations(values.filter((_, i) => i !== index)).map((rest) => [value, ...rest])); }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 프로그래밍: 실전 구현 패턴",
+    "summary": "JavaScript의 함수형 프로그래밍: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 프로그래밍: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "재귀와 백트래킹의 핵심 문법과 실행 흐름",
+      "함수형 프로그래밍: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "재귀와 백트래킹의 핵심 개념 설명하기",
-      "재귀와 백트래킹을 활용한 코드 작성하기"
+      "함수형 프로그래밍: 실전 구현 패턴의 핵심 개념 설명하기",
+      "함수형 프로그래밍: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "재귀와 백트래킹에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 52: 재귀와 백트래킹\nfunction solveDay52(values) {\n  // TODO: 재귀와 백트래킹 개념을 적용하세요.\n}\n\nconsole.log(solveDay52([1, 2, 3, 4]));",
-      "solutionCode": "function permutations(values) { if (values.length < 2) return [values]; return values.flatMap((value, index) => permutations(values.filter((_, i) => i !== index)).map((rest) => [value, ...rest])); }\nconsole.log(permutations([1, 2, 3]));"
+      "prompt": "함수형 프로그래밍: 실전 구현 패턴에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 52: 함수형 프로그래밍: 실전 구현 패턴\nfunction solveDay52(values) {\n  // TODO: 함수형 프로그래밍: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay52([1, 2, 3, 4]));",
+      "solutionCode": "// Day 52: 함수형 프로그래밍: 실전 구현 패턴 예시 풀이\nfunction solveDay52(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 52, topic: \"함수형 프로그래밍: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay52([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1407,25 +1407,25 @@
     "id": "javascript-day-53",
     "language": "javascript",
     "day": 53,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "정렬과 탐색",
-    "summary": "JavaScript의 정렬과 탐색 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "정렬과 탐색은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const values = [4, 1, 3, 2];` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 프로그래밍: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 함수형 프로그래밍: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 프로그래밍: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "정렬과 탐색의 핵심 문법과 실행 흐름",
+      "함수형 프로그래밍: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "정렬과 탐색의 핵심 개념 설명하기",
-      "정렬과 탐색을 활용한 코드 작성하기"
+      "함수형 프로그래밍: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "함수형 프로그래밍: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "정렬과 탐색에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 53: 정렬과 탐색\nfunction solveDay53(values) {\n  // TODO: 정렬과 탐색 개념을 적용하세요.\n}\n\nconsole.log(solveDay53([1, 2, 3, 4]));",
-      "solutionCode": "const values = [4, 1, 3, 2];\nvalues.sort((a, b) => a - b);\nconst index = values.findIndex((value) => value === 3);\nconsole.log(values, index);"
+      "prompt": "함수형 프로그래밍: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 53: 함수형 프로그래밍: 오류 처리와 경계 조건\nfunction solveDay53(values) {\n  // TODO: 함수형 프로그래밍: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay53([1, 2, 3, 4]));",
+      "solutionCode": "// Day 53: 함수형 프로그래밍: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay53(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 53, topic: \"함수형 프로그래밍: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay53([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1434,25 +1434,25 @@
     "id": "javascript-day-54",
     "language": "javascript",
     "day": 54,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "메모이제이션",
-    "summary": "JavaScript의 메모이제이션 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "메모이제이션은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const memoize = (fn) => { const cache = new Map(); return (value) => cache.has(value) ? cache.get(value) : (cache.set(value, fn(value)), cache.get(value)); };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 프로그래밍: 테스트와 디버깅",
+    "summary": "JavaScript의 함수형 프로그래밍: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 프로그래밍: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "메모이제이션의 핵심 문법과 실행 흐름",
+      "함수형 프로그래밍: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "메모이제이션의 핵심 개념 설명하기",
-      "메모이제이션을 활용한 코드 작성하기"
+      "함수형 프로그래밍: 테스트와 디버깅의 핵심 개념 설명하기",
+      "함수형 프로그래밍: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "메모이제이션에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 54: 메모이제이션\nfunction solveDay54(values) {\n  // TODO: 메모이제이션 개념을 적용하세요.\n}\n\nconsole.log(solveDay54([1, 2, 3, 4]));",
-      "solutionCode": "const memoize = (fn) => { const cache = new Map(); return (value) => cache.has(value) ? cache.get(value) : (cache.set(value, fn(value)), cache.get(value)); };\nconst square = memoize((n) => n ** 2); console.log(square(4));"
+      "prompt": "함수형 프로그래밍: 테스트와 디버깅에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 54: 함수형 프로그래밍: 테스트와 디버깅\nfunction solveDay54(values) {\n  // TODO: 함수형 프로그래밍: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay54([1, 2, 3, 4]));",
+      "solutionCode": "// Day 54: 함수형 프로그래밍: 테스트와 디버깅 예시 풀이\nfunction solveDay54(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 54, topic: \"함수형 프로그래밍: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay54([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1461,25 +1461,25 @@
     "id": "javascript-day-55",
     "language": "javascript",
     "day": 55,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "디자인 패턴",
-    "summary": "JavaScript의 디자인 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "디자인 패턴은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class EventBus { #events = new Map(); on(name, fn) { this.#events.set(name, [...(this.#events.get(name) ?? []), fn]); } emit(name, data) { this.#events.get(name)?.forEach((fn) => fn(data)); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 프로그래밍: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 함수형 프로그래밍: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 프로그래밍: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "디자인 패턴의 핵심 문법과 실행 흐름",
+      "함수형 프로그래밍: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "디자인 패턴의 핵심 개념 설명하기",
-      "디자인 패턴을 활용한 코드 작성하기"
+      "함수형 프로그래밍: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "함수형 프로그래밍: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "디자인 패턴에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 55: 디자인 패턴\nfunction solveDay55(values) {\n  // TODO: 디자인 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay55([1, 2, 3, 4]));",
-      "solutionCode": "class EventBus { #events = new Map(); on(name, fn) { this.#events.set(name, [...(this.#events.get(name) ?? []), fn]); } emit(name, data) { this.#events.get(name)?.forEach((fn) => fn(data)); } }\nconst bus = new EventBus(); bus.on(\"study\", console.log); bus.emit(\"study\", \"started\");"
+      "prompt": "함수형 프로그래밍: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 55: 함수형 프로그래밍: 성능 개선과 리팩터링\nfunction solveDay55(values) {\n  // TODO: 함수형 프로그래밍: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay55([1, 2, 3, 4]));",
+      "solutionCode": "// Day 55: 함수형 프로그래밍: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay55(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 55, topic: \"함수형 프로그래밍: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay55([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1488,25 +1488,25 @@
     "id": "javascript-day-56",
     "language": "javascript",
     "day": 56,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "TypeScript 입문",
-    "summary": "JavaScript의 TypeScript 입문 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "TypeScript 입문은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `type Study = { id: number; title: string; completed: boolean };` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 제어 흐름: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 비동기 제어 흐름: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 제어 흐름: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "TypeScript 입문의 핵심 문법과 실행 흐름",
+      "비동기 제어 흐름: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "TypeScript 입문의 핵심 개념 설명하기",
-      "TypeScript 입문을 활용한 코드 작성하기"
+      "비동기 제어 흐름: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "비동기 제어 흐름: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "TypeScript 입문에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 56: TypeScript 입문\nfunction solveDay56(values) {\n  // TODO: TypeScript 입문 개념을 적용하세요.\n}\n\nconsole.log(solveDay56([1, 2, 3, 4]));",
-      "solutionCode": "type Study = { id: number; title: string; completed: boolean };\nconst toggle = (study: Study): Study => ({ ...study, completed: !study.completed });\nconsole.log(toggle({ id: 1, title: \"TS\", completed: false }));"
+      "prompt": "비동기 제어 흐름: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 56: 비동기 제어 흐름: 핵심 원리와 내부 동작\nfunction solveDay56(values) {\n  // TODO: 비동기 제어 흐름: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay56([1, 2, 3, 4]));",
+      "solutionCode": "// Day 56: 비동기 제어 흐름: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay56(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 56, topic: \"비동기 제어 흐름: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay56([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1515,25 +1515,25 @@
     "id": "javascript-day-57",
     "language": "javascript",
     "day": 57,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "Node.js 기초",
-    "summary": "JavaScript의 Node.js 기초 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "Node.js 기초은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import { readFile } from \"node:fs/promises\";` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 제어 흐름: 실전 구현 패턴",
+    "summary": "JavaScript의 비동기 제어 흐름: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 제어 흐름: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "Node.js 기초의 핵심 문법과 실행 흐름",
+      "비동기 제어 흐름: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "Node.js 기초의 핵심 개념 설명하기",
-      "Node.js 기초을 활용한 코드 작성하기"
+      "비동기 제어 흐름: 실전 구현 패턴의 핵심 개념 설명하기",
+      "비동기 제어 흐름: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "Node.js 기초에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 57: Node.js 기초\nfunction solveDay57(values) {\n  // TODO: Node.js 기초 개념을 적용하세요.\n}\n\nconsole.log(solveDay57([1, 2, 3, 4]));",
-      "solutionCode": "import { readFile } from \"node:fs/promises\";\nconst packageJson = JSON.parse(await readFile(\"package.json\", \"utf8\"));\nconsole.log(packageJson.name);"
+      "prompt": "비동기 제어 흐름: 실전 구현 패턴에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 57: 비동기 제어 흐름: 실전 구현 패턴\nfunction solveDay57(values) {\n  // TODO: 비동기 제어 흐름: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay57([1, 2, 3, 4]));",
+      "solutionCode": "// Day 57: 비동기 제어 흐름: 실전 구현 패턴 예시 풀이\nfunction solveDay57(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 57, topic: \"비동기 제어 흐름: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay57([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1542,25 +1542,25 @@
     "id": "javascript-day-58",
     "language": "javascript",
     "day": 58,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "REST API 연동",
-    "summary": "JavaScript의 REST API 연동 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "REST API 연동은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `const response = await fetch(\"/api/studies\", { method: \"POST\", headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify({ title: \"JavaScript\" }) });` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 제어 흐름: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 비동기 제어 흐름: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 제어 흐름: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "REST API 연동의 핵심 문법과 실행 흐름",
+      "비동기 제어 흐름: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "REST API 연동의 핵심 개념 설명하기",
-      "REST API 연동을 활용한 코드 작성하기"
+      "비동기 제어 흐름: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "비동기 제어 흐름: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "REST API 연동에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 58: REST API 연동\nfunction solveDay58(values) {\n  // TODO: REST API 연동 개념을 적용하세요.\n}\n\nconsole.log(solveDay58([1, 2, 3, 4]));",
-      "solutionCode": "const response = await fetch(\"/api/studies\", { method: \"POST\", headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify({ title: \"JavaScript\" }) });\nconsole.log(await response.json());"
+      "prompt": "비동기 제어 흐름: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 58: 비동기 제어 흐름: 오류 처리와 경계 조건\nfunction solveDay58(values) {\n  // TODO: 비동기 제어 흐름: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay58([1, 2, 3, 4]));",
+      "solutionCode": "// Day 58: 비동기 제어 흐름: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay58(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 58, topic: \"비동기 제어 흐름: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay58([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1569,25 +1569,25 @@
     "id": "javascript-day-59",
     "language": "javascript",
     "day": 59,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "보안과 입력 검증",
-    "summary": "JavaScript의 보안과 입력 검증 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "보안과 입력 검증은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `function validate(input) { if (typeof input.title !== \"string\" || input.title.length > 100) throw new Error(\"잘못된 입력\"); return { title: input.title.trim() }; }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 제어 흐름: 테스트와 디버깅",
+    "summary": "JavaScript의 비동기 제어 흐름: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 제어 흐름: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "보안과 입력 검증의 핵심 문법과 실행 흐름",
+      "비동기 제어 흐름: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "보안과 입력 검증의 핵심 개념 설명하기",
-      "보안과 입력 검증을 활용한 코드 작성하기"
+      "비동기 제어 흐름: 테스트와 디버깅의 핵심 개념 설명하기",
+      "비동기 제어 흐름: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "보안과 입력 검증에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 59: 보안과 입력 검증\nfunction solveDay59(values) {\n  // TODO: 보안과 입력 검증 개념을 적용하세요.\n}\n\nconsole.log(solveDay59([1, 2, 3, 4]));",
-      "solutionCode": "function validate(input) { if (typeof input.title !== \"string\" || input.title.length > 100) throw new Error(\"잘못된 입력\"); return { title: input.title.trim() }; }\nconsole.log(validate({ title: \" Study \" }));"
+      "prompt": "비동기 제어 흐름: 테스트와 디버깅에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 59: 비동기 제어 흐름: 테스트와 디버깅\nfunction solveDay59(values) {\n  // TODO: 비동기 제어 흐름: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay59([1, 2, 3, 4]));",
+      "solutionCode": "// Day 59: 비동기 제어 흐름: 테스트와 디버깅 예시 풀이\nfunction solveDay59(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 59, topic: \"비동기 제어 흐름: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay59([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1596,25 +1596,2725 @@
     "id": "javascript-day-60",
     "language": "javascript",
     "day": 60,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "최종 프로젝트: 웹 애플리케이션",
-    "summary": "JavaScript의 최종 프로젝트: 웹 애플리케이션 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "최종 프로젝트: 웹 애플리케이션은(는) 자료구조·설계·서버 연동을 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class StudyService { constructor(repository) { this.repository = repository; } async complete(id) { const study = await this.repository.find(id); return this.repository.save({ ...study, completed: true }); } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 제어 흐름: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 비동기 제어 흐름: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 제어 흐름: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "최종 프로젝트: 웹 애플리케이션의 핵심 문법과 실행 흐름",
+      "비동기 제어 흐름: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "최종 프로젝트: 웹 애플리케이션의 핵심 개념 설명하기",
-      "최종 프로젝트: 웹 애플리케이션을 활용한 코드 작성하기"
+      "비동기 제어 흐름: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "비동기 제어 흐름: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "최종 프로젝트: 웹 애플리케이션에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 60: 최종 프로젝트: 웹 애플리케이션\nfunction solveDay60(values) {\n  // TODO: 최종 프로젝트: 웹 애플리케이션 개념을 적용하세요.\n}\n\nconsole.log(solveDay60([1, 2, 3, 4]));",
-      "solutionCode": "class StudyService { constructor(repository) { this.repository = repository; } async complete(id) { const study = await this.repository.find(id); return this.repository.save({ ...study, completed: true }); } }\nconsole.log(\"UI, service, repository 계층으로 분리\");"
+      "prompt": "비동기 제어 흐름: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 60: 비동기 제어 흐름: 성능 개선과 리팩터링\nfunction solveDay60(values) {\n  // TODO: 비동기 제어 흐름: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay60([1, 2, 3, 4]));",
+      "solutionCode": "// Day 60: 비동기 제어 흐름: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay60(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 60, topic: \"비동기 제어 흐름: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay60([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-61",
+    "language": "javascript",
+    "day": 61,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이벤트 루프와 작업 큐: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 이벤트 루프와 작업 큐: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이벤트 루프와 작업 큐: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "이벤트 루프와 작업 큐: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이벤트 루프와 작업 큐: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "이벤트 루프와 작업 큐: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이벤트 루프와 작업 큐: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 61 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 61: 이벤트 루프와 작업 큐: 핵심 원리와 내부 동작\nfunction solveDay61(values) {\n  // TODO: 이벤트 루프와 작업 큐: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay61([1, 2, 3, 4]));",
+      "solutionCode": "// Day 61: 이벤트 루프와 작업 큐: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay61(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 61, topic: \"이벤트 루프와 작업 큐: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay61([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-62",
+    "language": "javascript",
+    "day": 62,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이벤트 루프와 작업 큐: 실전 구현 패턴",
+    "summary": "JavaScript의 이벤트 루프와 작업 큐: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이벤트 루프와 작업 큐: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "이벤트 루프와 작업 큐: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이벤트 루프와 작업 큐: 실전 구현 패턴의 핵심 개념 설명하기",
+      "이벤트 루프와 작업 큐: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이벤트 루프와 작업 큐: 실전 구현 패턴에서 배운 개념을 사용해 Day 62 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 62: 이벤트 루프와 작업 큐: 실전 구현 패턴\nfunction solveDay62(values) {\n  // TODO: 이벤트 루프와 작업 큐: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay62([1, 2, 3, 4]));",
+      "solutionCode": "// Day 62: 이벤트 루프와 작업 큐: 실전 구현 패턴 예시 풀이\nfunction solveDay62(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 62, topic: \"이벤트 루프와 작업 큐: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay62([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-63",
+    "language": "javascript",
+    "day": 63,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이벤트 루프와 작업 큐: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 이벤트 루프와 작업 큐: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이벤트 루프와 작업 큐: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "이벤트 루프와 작업 큐: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이벤트 루프와 작업 큐: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "이벤트 루프와 작업 큐: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이벤트 루프와 작업 큐: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 63 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 63: 이벤트 루프와 작업 큐: 오류 처리와 경계 조건\nfunction solveDay63(values) {\n  // TODO: 이벤트 루프와 작업 큐: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay63([1, 2, 3, 4]));",
+      "solutionCode": "// Day 63: 이벤트 루프와 작업 큐: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay63(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 63, topic: \"이벤트 루프와 작업 큐: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay63([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-64",
+    "language": "javascript",
+    "day": 64,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이벤트 루프와 작업 큐: 테스트와 디버깅",
+    "summary": "JavaScript의 이벤트 루프와 작업 큐: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이벤트 루프와 작업 큐: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "이벤트 루프와 작업 큐: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이벤트 루프와 작업 큐: 테스트와 디버깅의 핵심 개념 설명하기",
+      "이벤트 루프와 작업 큐: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이벤트 루프와 작업 큐: 테스트와 디버깅에서 배운 개념을 사용해 Day 64 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 64: 이벤트 루프와 작업 큐: 테스트와 디버깅\nfunction solveDay64(values) {\n  // TODO: 이벤트 루프와 작업 큐: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay64([1, 2, 3, 4]));",
+      "solutionCode": "// Day 64: 이벤트 루프와 작업 큐: 테스트와 디버깅 예시 풀이\nfunction solveDay64(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 64, topic: \"이벤트 루프와 작업 큐: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay64([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-65",
+    "language": "javascript",
+    "day": 65,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이벤트 루프와 작업 큐: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 이벤트 루프와 작업 큐: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이벤트 루프와 작업 큐: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "이벤트 루프와 작업 큐: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이벤트 루프와 작업 큐: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "이벤트 루프와 작업 큐: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이벤트 루프와 작업 큐: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 65 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 65: 이벤트 루프와 작업 큐: 성능 개선과 리팩터링\nfunction solveDay65(values) {\n  // TODO: 이벤트 루프와 작업 큐: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay65([1, 2, 3, 4]));",
+      "solutionCode": "// Day 65: 이벤트 루프와 작업 큐: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay65(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 65, topic: \"이벤트 루프와 작업 큐: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay65([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-66",
+    "language": "javascript",
+    "day": 66,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "모듈과 번들링: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 모듈과 번들링: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "모듈과 번들링: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "모듈과 번들링: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "모듈과 번들링: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "모듈과 번들링: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "모듈과 번들링: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 66 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 66: 모듈과 번들링: 핵심 원리와 내부 동작\nfunction solveDay66(values) {\n  // TODO: 모듈과 번들링: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay66([1, 2, 3, 4]));",
+      "solutionCode": "// Day 66: 모듈과 번들링: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay66(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 66, topic: \"모듈과 번들링: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay66([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-67",
+    "language": "javascript",
+    "day": 67,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "모듈과 번들링: 실전 구현 패턴",
+    "summary": "JavaScript의 모듈과 번들링: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "모듈과 번들링: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "모듈과 번들링: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "모듈과 번들링: 실전 구현 패턴의 핵심 개념 설명하기",
+      "모듈과 번들링: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "모듈과 번들링: 실전 구현 패턴에서 배운 개념을 사용해 Day 67 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 67: 모듈과 번들링: 실전 구현 패턴\nfunction solveDay67(values) {\n  // TODO: 모듈과 번들링: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay67([1, 2, 3, 4]));",
+      "solutionCode": "// Day 67: 모듈과 번들링: 실전 구현 패턴 예시 풀이\nfunction solveDay67(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 67, topic: \"모듈과 번들링: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay67([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-68",
+    "language": "javascript",
+    "day": 68,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "모듈과 번들링: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 모듈과 번들링: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "모듈과 번들링: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "모듈과 번들링: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "모듈과 번들링: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "모듈과 번들링: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "모듈과 번들링: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 68 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 68: 모듈과 번들링: 오류 처리와 경계 조건\nfunction solveDay68(values) {\n  // TODO: 모듈과 번들링: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay68([1, 2, 3, 4]));",
+      "solutionCode": "// Day 68: 모듈과 번들링: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay68(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 68, topic: \"모듈과 번들링: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay68([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-69",
+    "language": "javascript",
+    "day": 69,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "모듈과 번들링: 테스트와 디버깅",
+    "summary": "JavaScript의 모듈과 번들링: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "모듈과 번들링: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "모듈과 번들링: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "모듈과 번들링: 테스트와 디버깅의 핵심 개념 설명하기",
+      "모듈과 번들링: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "모듈과 번들링: 테스트와 디버깅에서 배운 개념을 사용해 Day 69 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 69: 모듈과 번들링: 테스트와 디버깅\nfunction solveDay69(values) {\n  // TODO: 모듈과 번들링: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay69([1, 2, 3, 4]));",
+      "solutionCode": "// Day 69: 모듈과 번들링: 테스트와 디버깅 예시 풀이\nfunction solveDay69(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 69, topic: \"모듈과 번들링: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay69([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-70",
+    "language": "javascript",
+    "day": 70,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "모듈과 번들링: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 모듈과 번들링: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "모듈과 번들링: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "모듈과 번들링: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "모듈과 번들링: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "모듈과 번들링: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "모듈과 번들링: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 70 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 70: 모듈과 번들링: 성능 개선과 리팩터링\nfunction solveDay70(values) {\n  // TODO: 모듈과 번들링: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay70([1, 2, 3, 4]));",
+      "solutionCode": "// Day 70: 모듈과 번들링: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay70(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 70, topic: \"모듈과 번들링: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay70([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-71",
+    "language": "javascript",
+    "day": 71,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "TypeScript 타입 설계: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 TypeScript 타입 설계: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "TypeScript 타입 설계: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "TypeScript 타입 설계: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "TypeScript 타입 설계: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "TypeScript 타입 설계: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "TypeScript 타입 설계: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 71 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 71: TypeScript 타입 설계: 핵심 원리와 내부 동작\nfunction solveDay71(values) {\n  // TODO: TypeScript 타입 설계: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay71([1, 2, 3, 4]));",
+      "solutionCode": "// Day 71: TypeScript 타입 설계: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay71(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 71, topic: \"TypeScript 타입 설계: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay71([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-72",
+    "language": "javascript",
+    "day": 72,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "TypeScript 타입 설계: 실전 구현 패턴",
+    "summary": "JavaScript의 TypeScript 타입 설계: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "TypeScript 타입 설계: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "TypeScript 타입 설계: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "TypeScript 타입 설계: 실전 구현 패턴의 핵심 개념 설명하기",
+      "TypeScript 타입 설계: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "TypeScript 타입 설계: 실전 구현 패턴에서 배운 개념을 사용해 Day 72 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 72: TypeScript 타입 설계: 실전 구현 패턴\nfunction solveDay72(values) {\n  // TODO: TypeScript 타입 설계: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay72([1, 2, 3, 4]));",
+      "solutionCode": "// Day 72: TypeScript 타입 설계: 실전 구현 패턴 예시 풀이\nfunction solveDay72(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 72, topic: \"TypeScript 타입 설계: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay72([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-73",
+    "language": "javascript",
+    "day": 73,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "TypeScript 타입 설계: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 TypeScript 타입 설계: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "TypeScript 타입 설계: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "TypeScript 타입 설계: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "TypeScript 타입 설계: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "TypeScript 타입 설계: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "TypeScript 타입 설계: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 73 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 73: TypeScript 타입 설계: 오류 처리와 경계 조건\nfunction solveDay73(values) {\n  // TODO: TypeScript 타입 설계: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay73([1, 2, 3, 4]));",
+      "solutionCode": "// Day 73: TypeScript 타입 설계: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay73(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 73, topic: \"TypeScript 타입 설계: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay73([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-74",
+    "language": "javascript",
+    "day": 74,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "TypeScript 타입 설계: 테스트와 디버깅",
+    "summary": "JavaScript의 TypeScript 타입 설계: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "TypeScript 타입 설계: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "TypeScript 타입 설계: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "TypeScript 타입 설계: 테스트와 디버깅의 핵심 개념 설명하기",
+      "TypeScript 타입 설계: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "TypeScript 타입 설계: 테스트와 디버깅에서 배운 개념을 사용해 Day 74 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 74: TypeScript 타입 설계: 테스트와 디버깅\nfunction solveDay74(values) {\n  // TODO: TypeScript 타입 설계: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay74([1, 2, 3, 4]));",
+      "solutionCode": "// Day 74: TypeScript 타입 설계: 테스트와 디버깅 예시 풀이\nfunction solveDay74(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 74, topic: \"TypeScript 타입 설계: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay74([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-75",
+    "language": "javascript",
+    "day": 75,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "TypeScript 타입 설계: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 TypeScript 타입 설계: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "TypeScript 타입 설계: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "TypeScript 타입 설계: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "TypeScript 타입 설계: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "TypeScript 타입 설계: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "TypeScript 타입 설계: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 75 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 75: TypeScript 타입 설계: 성능 개선과 리팩터링\nfunction solveDay75(values) {\n  // TODO: TypeScript 타입 설계: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay75([1, 2, 3, 4]));",
+      "solutionCode": "// Day 75: TypeScript 타입 설계: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay75(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 75, topic: \"TypeScript 타입 설계: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay75([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-76",
+    "language": "javascript",
+    "day": 76,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "브라우저 렌더링과 DOM: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 브라우저 렌더링과 DOM: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "브라우저 렌더링과 DOM: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "브라우저 렌더링과 DOM: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "브라우저 렌더링과 DOM: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "브라우저 렌더링과 DOM: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "브라우저 렌더링과 DOM: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 76 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 76: 브라우저 렌더링과 DOM: 핵심 원리와 내부 동작\nfunction solveDay76(values) {\n  // TODO: 브라우저 렌더링과 DOM: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay76([1, 2, 3, 4]));",
+      "solutionCode": "// Day 76: 브라우저 렌더링과 DOM: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay76(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 76, topic: \"브라우저 렌더링과 DOM: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay76([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-77",
+    "language": "javascript",
+    "day": 77,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "브라우저 렌더링과 DOM: 실전 구현 패턴",
+    "summary": "JavaScript의 브라우저 렌더링과 DOM: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "브라우저 렌더링과 DOM: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "브라우저 렌더링과 DOM: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "브라우저 렌더링과 DOM: 실전 구현 패턴의 핵심 개념 설명하기",
+      "브라우저 렌더링과 DOM: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "브라우저 렌더링과 DOM: 실전 구현 패턴에서 배운 개념을 사용해 Day 77 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 77: 브라우저 렌더링과 DOM: 실전 구현 패턴\nfunction solveDay77(values) {\n  // TODO: 브라우저 렌더링과 DOM: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay77([1, 2, 3, 4]));",
+      "solutionCode": "// Day 77: 브라우저 렌더링과 DOM: 실전 구현 패턴 예시 풀이\nfunction solveDay77(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 77, topic: \"브라우저 렌더링과 DOM: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay77([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-78",
+    "language": "javascript",
+    "day": 78,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "브라우저 렌더링과 DOM: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 브라우저 렌더링과 DOM: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "브라우저 렌더링과 DOM: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "브라우저 렌더링과 DOM: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "브라우저 렌더링과 DOM: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "브라우저 렌더링과 DOM: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "브라우저 렌더링과 DOM: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 78 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 78: 브라우저 렌더링과 DOM: 오류 처리와 경계 조건\nfunction solveDay78(values) {\n  // TODO: 브라우저 렌더링과 DOM: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay78([1, 2, 3, 4]));",
+      "solutionCode": "// Day 78: 브라우저 렌더링과 DOM: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay78(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 78, topic: \"브라우저 렌더링과 DOM: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay78([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-79",
+    "language": "javascript",
+    "day": 79,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "브라우저 렌더링과 DOM: 테스트와 디버깅",
+    "summary": "JavaScript의 브라우저 렌더링과 DOM: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "브라우저 렌더링과 DOM: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "브라우저 렌더링과 DOM: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "브라우저 렌더링과 DOM: 테스트와 디버깅의 핵심 개념 설명하기",
+      "브라우저 렌더링과 DOM: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "브라우저 렌더링과 DOM: 테스트와 디버깅에서 배운 개념을 사용해 Day 79 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 79: 브라우저 렌더링과 DOM: 테스트와 디버깅\nfunction solveDay79(values) {\n  // TODO: 브라우저 렌더링과 DOM: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay79([1, 2, 3, 4]));",
+      "solutionCode": "// Day 79: 브라우저 렌더링과 DOM: 테스트와 디버깅 예시 풀이\nfunction solveDay79(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 79, topic: \"브라우저 렌더링과 DOM: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay79([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-80",
+    "language": "javascript",
+    "day": 80,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "브라우저 렌더링과 DOM: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 브라우저 렌더링과 DOM: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "브라우저 렌더링과 DOM: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "브라우저 렌더링과 DOM: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "브라우저 렌더링과 DOM: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "브라우저 렌더링과 DOM: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "브라우저 렌더링과 DOM: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 80 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 80: 브라우저 렌더링과 DOM: 성능 개선과 리팩터링\nfunction solveDay80(values) {\n  // TODO: 브라우저 렌더링과 DOM: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay80([1, 2, 3, 4]));",
+      "solutionCode": "// Day 80: 브라우저 렌더링과 DOM: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay80(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 80, topic: \"브라우저 렌더링과 DOM: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay80([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-81",
+    "language": "javascript",
+    "day": 81,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "네트워크와 캐시: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 네트워크와 캐시: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "네트워크와 캐시: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "네트워크와 캐시: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "네트워크와 캐시: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "네트워크와 캐시: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "네트워크와 캐시: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 81 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 81: 네트워크와 캐시: 핵심 원리와 내부 동작\nfunction solveDay81(values) {\n  // TODO: 네트워크와 캐시: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay81([1, 2, 3, 4]));",
+      "solutionCode": "// Day 81: 네트워크와 캐시: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay81(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 81, topic: \"네트워크와 캐시: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay81([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-82",
+    "language": "javascript",
+    "day": 82,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "네트워크와 캐시: 실전 구현 패턴",
+    "summary": "JavaScript의 네트워크와 캐시: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "네트워크와 캐시: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "네트워크와 캐시: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "네트워크와 캐시: 실전 구현 패턴의 핵심 개념 설명하기",
+      "네트워크와 캐시: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "네트워크와 캐시: 실전 구현 패턴에서 배운 개념을 사용해 Day 82 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 82: 네트워크와 캐시: 실전 구현 패턴\nfunction solveDay82(values) {\n  // TODO: 네트워크와 캐시: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay82([1, 2, 3, 4]));",
+      "solutionCode": "// Day 82: 네트워크와 캐시: 실전 구현 패턴 예시 풀이\nfunction solveDay82(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 82, topic: \"네트워크와 캐시: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay82([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-83",
+    "language": "javascript",
+    "day": 83,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "네트워크와 캐시: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 네트워크와 캐시: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "네트워크와 캐시: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "네트워크와 캐시: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "네트워크와 캐시: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "네트워크와 캐시: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "네트워크와 캐시: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 83 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 83: 네트워크와 캐시: 오류 처리와 경계 조건\nfunction solveDay83(values) {\n  // TODO: 네트워크와 캐시: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay83([1, 2, 3, 4]));",
+      "solutionCode": "// Day 83: 네트워크와 캐시: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay83(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 83, topic: \"네트워크와 캐시: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay83([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-84",
+    "language": "javascript",
+    "day": 84,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "네트워크와 캐시: 테스트와 디버깅",
+    "summary": "JavaScript의 네트워크와 캐시: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "네트워크와 캐시: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "네트워크와 캐시: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "네트워크와 캐시: 테스트와 디버깅의 핵심 개념 설명하기",
+      "네트워크와 캐시: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "네트워크와 캐시: 테스트와 디버깅에서 배운 개념을 사용해 Day 84 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 84: 네트워크와 캐시: 테스트와 디버깅\nfunction solveDay84(values) {\n  // TODO: 네트워크와 캐시: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay84([1, 2, 3, 4]));",
+      "solutionCode": "// Day 84: 네트워크와 캐시: 테스트와 디버깅 예시 풀이\nfunction solveDay84(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 84, topic: \"네트워크와 캐시: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay84([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-85",
+    "language": "javascript",
+    "day": 85,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "네트워크와 캐시: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 네트워크와 캐시: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "네트워크와 캐시: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "네트워크와 캐시: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "네트워크와 캐시: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "네트워크와 캐시: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "네트워크와 캐시: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 85 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 85: 네트워크와 캐시: 성능 개선과 리팩터링\nfunction solveDay85(values) {\n  // TODO: 네트워크와 캐시: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay85([1, 2, 3, 4]));",
+      "solutionCode": "// Day 85: 네트워크와 캐시: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay85(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 85, topic: \"네트워크와 캐시: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay85([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-86",
+    "language": "javascript",
+    "day": 86,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 테스트 자동화: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "테스트 자동화: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 86 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 86: 테스트 자동화: 핵심 원리와 내부 동작\nfunction solveDay86(values) {\n  // TODO: 테스트 자동화: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay86([1, 2, 3, 4]));",
+      "solutionCode": "// Day 86: 테스트 자동화: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay86(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 86, topic: \"테스트 자동화: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay86([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-87",
+    "language": "javascript",
+    "day": 87,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 실전 구현 패턴",
+    "summary": "JavaScript의 테스트 자동화: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 실전 구현 패턴의 핵심 개념 설명하기",
+      "테스트 자동화: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 실전 구현 패턴에서 배운 개념을 사용해 Day 87 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 87: 테스트 자동화: 실전 구현 패턴\nfunction solveDay87(values) {\n  // TODO: 테스트 자동화: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay87([1, 2, 3, 4]));",
+      "solutionCode": "// Day 87: 테스트 자동화: 실전 구현 패턴 예시 풀이\nfunction solveDay87(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 87, topic: \"테스트 자동화: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay87([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-88",
+    "language": "javascript",
+    "day": 88,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 테스트 자동화: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "테스트 자동화: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 88 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 88: 테스트 자동화: 오류 처리와 경계 조건\nfunction solveDay88(values) {\n  // TODO: 테스트 자동화: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay88([1, 2, 3, 4]));",
+      "solutionCode": "// Day 88: 테스트 자동화: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay88(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 88, topic: \"테스트 자동화: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay88([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-89",
+    "language": "javascript",
+    "day": 89,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 테스트와 디버깅",
+    "summary": "JavaScript의 테스트 자동화: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 테스트와 디버깅의 핵심 개념 설명하기",
+      "테스트 자동화: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 테스트와 디버깅에서 배운 개념을 사용해 Day 89 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 89: 테스트 자동화: 테스트와 디버깅\nfunction solveDay89(values) {\n  // TODO: 테스트 자동화: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay89([1, 2, 3, 4]));",
+      "solutionCode": "// Day 89: 테스트 자동화: 테스트와 디버깅 예시 풀이\nfunction solveDay89(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 89, topic: \"테스트 자동화: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay89([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-90",
+    "language": "javascript",
+    "day": 90,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 테스트 자동화: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "테스트 자동화: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 90 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 90: 테스트 자동화: 성능 개선과 리팩터링\nfunction solveDay90(values) {\n  // TODO: 테스트 자동화: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay90([1, 2, 3, 4]));",
+      "solutionCode": "// Day 90: 테스트 자동화: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay90(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 90, topic: \"테스트 자동화: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay90([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-91",
+    "language": "javascript",
+    "day": 91,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Node.js 서버 설계: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 Node.js 서버 설계: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Node.js 서버 설계: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Node.js 서버 설계: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Node.js 서버 설계: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "Node.js 서버 설계: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Node.js 서버 설계: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 91 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 91: Node.js 서버 설계: 핵심 원리와 내부 동작\nfunction solveDay91(values) {\n  // TODO: Node.js 서버 설계: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay91([1, 2, 3, 4]));",
+      "solutionCode": "// Day 91: Node.js 서버 설계: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay91(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 91, topic: \"Node.js 서버 설계: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay91([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-92",
+    "language": "javascript",
+    "day": 92,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Node.js 서버 설계: 실전 구현 패턴",
+    "summary": "JavaScript의 Node.js 서버 설계: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Node.js 서버 설계: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Node.js 서버 설계: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Node.js 서버 설계: 실전 구현 패턴의 핵심 개념 설명하기",
+      "Node.js 서버 설계: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Node.js 서버 설계: 실전 구현 패턴에서 배운 개념을 사용해 Day 92 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 92: Node.js 서버 설계: 실전 구현 패턴\nfunction solveDay92(values) {\n  // TODO: Node.js 서버 설계: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay92([1, 2, 3, 4]));",
+      "solutionCode": "// Day 92: Node.js 서버 설계: 실전 구현 패턴 예시 풀이\nfunction solveDay92(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 92, topic: \"Node.js 서버 설계: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay92([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-93",
+    "language": "javascript",
+    "day": 93,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Node.js 서버 설계: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 Node.js 서버 설계: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Node.js 서버 설계: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Node.js 서버 설계: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Node.js 서버 설계: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "Node.js 서버 설계: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Node.js 서버 설계: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 93 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 93: Node.js 서버 설계: 오류 처리와 경계 조건\nfunction solveDay93(values) {\n  // TODO: Node.js 서버 설계: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay93([1, 2, 3, 4]));",
+      "solutionCode": "// Day 93: Node.js 서버 설계: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay93(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 93, topic: \"Node.js 서버 설계: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay93([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-94",
+    "language": "javascript",
+    "day": 94,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Node.js 서버 설계: 테스트와 디버깅",
+    "summary": "JavaScript의 Node.js 서버 설계: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Node.js 서버 설계: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Node.js 서버 설계: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Node.js 서버 설계: 테스트와 디버깅의 핵심 개념 설명하기",
+      "Node.js 서버 설계: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Node.js 서버 설계: 테스트와 디버깅에서 배운 개념을 사용해 Day 94 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 94: Node.js 서버 설계: 테스트와 디버깅\nfunction solveDay94(values) {\n  // TODO: Node.js 서버 설계: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay94([1, 2, 3, 4]));",
+      "solutionCode": "// Day 94: Node.js 서버 설계: 테스트와 디버깅 예시 풀이\nfunction solveDay94(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 94, topic: \"Node.js 서버 설계: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay94([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-95",
+    "language": "javascript",
+    "day": 95,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Node.js 서버 설계: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 Node.js 서버 설계: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Node.js 서버 설계: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Node.js 서버 설계: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Node.js 서버 설계: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "Node.js 서버 설계: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Node.js 서버 설계: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 95 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 95: Node.js 서버 설계: 성능 개선과 리팩터링\nfunction solveDay95(values) {\n  // TODO: Node.js 서버 설계: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay95([1, 2, 3, 4]));",
+      "solutionCode": "// Day 95: Node.js 서버 설계: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay95(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 95, topic: \"Node.js 서버 설계: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay95([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-96",
+    "language": "javascript",
+    "day": 96,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "보안과 성능 분석: 핵심 원리와 내부 동작",
+    "summary": "JavaScript의 보안과 성능 분석: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "보안과 성능 분석: 핵심 원리와 내부 동작은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "보안과 성능 분석: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "보안과 성능 분석: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "보안과 성능 분석: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "보안과 성능 분석: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 96 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 96: 보안과 성능 분석: 핵심 원리와 내부 동작\nfunction solveDay96(values) {\n  // TODO: 보안과 성능 분석: 핵심 원리와 내부 동작 개념을 적용하세요.\n}\n\nconsole.log(solveDay96([1, 2, 3, 4]));",
+      "solutionCode": "// Day 96: 보안과 성능 분석: 핵심 원리와 내부 동작 예시 풀이\nfunction solveDay96(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 96, topic: \"보안과 성능 분석: 핵심 원리와 내부 동작\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay96([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-97",
+    "language": "javascript",
+    "day": 97,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "보안과 성능 분석: 실전 구현 패턴",
+    "summary": "JavaScript의 보안과 성능 분석: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "보안과 성능 분석: 실전 구현 패턴은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "보안과 성능 분석: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "보안과 성능 분석: 실전 구현 패턴의 핵심 개념 설명하기",
+      "보안과 성능 분석: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "보안과 성능 분석: 실전 구현 패턴에서 배운 개념을 사용해 Day 97 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 97: 보안과 성능 분석: 실전 구현 패턴\nfunction solveDay97(values) {\n  // TODO: 보안과 성능 분석: 실전 구현 패턴 개념을 적용하세요.\n}\n\nconsole.log(solveDay97([1, 2, 3, 4]));",
+      "solutionCode": "// Day 97: 보안과 성능 분석: 실전 구현 패턴 예시 풀이\nfunction solveDay97(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 97, topic: \"보안과 성능 분석: 실전 구현 패턴\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay97([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-98",
+    "language": "javascript",
+    "day": 98,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "보안과 성능 분석: 오류 처리와 경계 조건",
+    "summary": "JavaScript의 보안과 성능 분석: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "보안과 성능 분석: 오류 처리와 경계 조건은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "보안과 성능 분석: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "보안과 성능 분석: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "보안과 성능 분석: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "보안과 성능 분석: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 98 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 98: 보안과 성능 분석: 오류 처리와 경계 조건\nfunction solveDay98(values) {\n  // TODO: 보안과 성능 분석: 오류 처리와 경계 조건 개념을 적용하세요.\n}\n\nconsole.log(solveDay98([1, 2, 3, 4]));",
+      "solutionCode": "// Day 98: 보안과 성능 분석: 오류 처리와 경계 조건 예시 풀이\nfunction solveDay98(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 98, topic: \"보안과 성능 분석: 오류 처리와 경계 조건\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay98([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-99",
+    "language": "javascript",
+    "day": 99,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "보안과 성능 분석: 테스트와 디버깅",
+    "summary": "JavaScript의 보안과 성능 분석: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "보안과 성능 분석: 테스트와 디버깅은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "보안과 성능 분석: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "보안과 성능 분석: 테스트와 디버깅의 핵심 개념 설명하기",
+      "보안과 성능 분석: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "보안과 성능 분석: 테스트와 디버깅에서 배운 개념을 사용해 Day 99 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 99: 보안과 성능 분석: 테스트와 디버깅\nfunction solveDay99(values) {\n  // TODO: 보안과 성능 분석: 테스트와 디버깅 개념을 적용하세요.\n}\n\nconsole.log(solveDay99([1, 2, 3, 4]));",
+      "solutionCode": "// Day 99: 보안과 성능 분석: 테스트와 디버깅 예시 풀이\nfunction solveDay99(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 99, topic: \"보안과 성능 분석: 테스트와 디버깅\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay99([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-100",
+    "language": "javascript",
+    "day": 100,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "보안과 성능 분석: 성능 개선과 리팩터링",
+    "summary": "JavaScript의 보안과 성능 분석: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "보안과 성능 분석: 성능 개선과 리팩터링은(는) JavaScript 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "보안과 성능 분석: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "보안과 성능 분석: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "보안과 성능 분석: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "보안과 성능 분석: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 100 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 100: 보안과 성능 분석: 성능 개선과 리팩터링\nfunction solveDay100(values) {\n  // TODO: 보안과 성능 분석: 성능 개선과 리팩터링 개념을 적용하세요.\n}\n\nconsole.log(solveDay100([1, 2, 3, 4]));",
+      "solutionCode": "// Day 100: 보안과 성능 분석: 성능 개선과 리팩터링 예시 풀이\nfunction solveDay100(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 100, topic: \"보안과 성능 분석: 성능 개선과 리팩터링\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay100([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-101",
+    "language": "javascript",
+    "day": 101,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 할 일 협업 대시보드",
+    "summary": "JavaScript의 프로젝트: 할 일 협업 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 할 일 협업 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 할 일 협업 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 할 일 협업 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 할 일 협업 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 할 일 협업 대시보드에서 배운 개념을 사용해 Day 101 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 101: 프로젝트: 할 일 협업 대시보드\nfunction solveDay101(values) {\n  // TODO: 프로젝트: 할 일 협업 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay101([1, 2, 3, 4]));",
+      "solutionCode": "// Day 101: 프로젝트: 할 일 협업 대시보드 예시 풀이\nfunction solveDay101(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 101, topic: \"프로젝트: 할 일 협업 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay101([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-102",
+    "language": "javascript",
+    "day": 102,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 할 일 협업 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 할 일 협업 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 할 일 협업 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 할 일 협업 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 할 일 협업 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 할 일 협업 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 할 일 협업 자동화 도구에서 배운 개념을 사용해 Day 102 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 102: 프로젝트: 할 일 협업 자동화 도구\nfunction solveDay102(values) {\n  // TODO: 프로젝트: 할 일 협업 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay102([1, 2, 3, 4]));",
+      "solutionCode": "// Day 102: 프로젝트: 할 일 협업 자동화 도구 예시 풀이\nfunction solveDay102(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 102, topic: \"프로젝트: 할 일 협업 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay102([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-103",
+    "language": "javascript",
+    "day": 103,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 할 일 협업 API 서비스",
+    "summary": "JavaScript의 프로젝트: 할 일 협업 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 할 일 협업 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 할 일 협업 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 할 일 협업 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 할 일 협업 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 할 일 협업 API 서비스에서 배운 개념을 사용해 Day 103 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 103: 프로젝트: 할 일 협업 API 서비스\nfunction solveDay103(values) {\n  // TODO: 프로젝트: 할 일 협업 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay103([1, 2, 3, 4]));",
+      "solutionCode": "// Day 103: 프로젝트: 할 일 협업 API 서비스 예시 풀이\nfunction solveDay103(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 103, topic: \"프로젝트: 할 일 협업 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay103([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-104",
+    "language": "javascript",
+    "day": 104,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 할 일 협업 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 할 일 협업 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 할 일 협업 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 할 일 협업 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 할 일 협업 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 할 일 협업 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 할 일 협업 분석 리포트에서 배운 개념을 사용해 Day 104 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 104: 프로젝트: 할 일 협업 분석 리포트\nfunction solveDay104(values) {\n  // TODO: 프로젝트: 할 일 협업 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay104([1, 2, 3, 4]));",
+      "solutionCode": "// Day 104: 프로젝트: 할 일 협업 분석 리포트 예시 풀이\nfunction solveDay104(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 104, topic: \"프로젝트: 할 일 협업 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay104([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-105",
+    "language": "javascript",
+    "day": 105,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 할 일 협업 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 할 일 협업 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 할 일 협업 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 할 일 협업 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 할 일 협업 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 할 일 협업 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 할 일 협업 운영 콘솔에서 배운 개념을 사용해 Day 105 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 105: 프로젝트: 할 일 협업 운영 콘솔\nfunction solveDay105(values) {\n  // TODO: 프로젝트: 할 일 협업 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay105([1, 2, 3, 4]));",
+      "solutionCode": "// Day 105: 프로젝트: 할 일 협업 운영 콘솔 예시 풀이\nfunction solveDay105(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 105, topic: \"프로젝트: 할 일 협업 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay105([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-106",
+    "language": "javascript",
+    "day": 106,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 상품 검색 대시보드",
+    "summary": "JavaScript의 프로젝트: 상품 검색 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 상품 검색 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 상품 검색 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 상품 검색 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 상품 검색 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 상품 검색 대시보드에서 배운 개념을 사용해 Day 106 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 106: 프로젝트: 상품 검색 대시보드\nfunction solveDay106(values) {\n  // TODO: 프로젝트: 상품 검색 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay106([1, 2, 3, 4]));",
+      "solutionCode": "// Day 106: 프로젝트: 상품 검색 대시보드 예시 풀이\nfunction solveDay106(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 106, topic: \"프로젝트: 상품 검색 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay106([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-107",
+    "language": "javascript",
+    "day": 107,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 상품 검색 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 상품 검색 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 상품 검색 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 상품 검색 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 상품 검색 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 상품 검색 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 상품 검색 자동화 도구에서 배운 개념을 사용해 Day 107 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 107: 프로젝트: 상품 검색 자동화 도구\nfunction solveDay107(values) {\n  // TODO: 프로젝트: 상품 검색 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay107([1, 2, 3, 4]));",
+      "solutionCode": "// Day 107: 프로젝트: 상품 검색 자동화 도구 예시 풀이\nfunction solveDay107(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 107, topic: \"프로젝트: 상품 검색 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay107([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-108",
+    "language": "javascript",
+    "day": 108,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 상품 검색 API 서비스",
+    "summary": "JavaScript의 프로젝트: 상품 검색 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 상품 검색 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 상품 검색 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 상품 검색 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 상품 검색 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 상품 검색 API 서비스에서 배운 개념을 사용해 Day 108 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 108: 프로젝트: 상품 검색 API 서비스\nfunction solveDay108(values) {\n  // TODO: 프로젝트: 상품 검색 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay108([1, 2, 3, 4]));",
+      "solutionCode": "// Day 108: 프로젝트: 상품 검색 API 서비스 예시 풀이\nfunction solveDay108(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 108, topic: \"프로젝트: 상품 검색 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay108([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-109",
+    "language": "javascript",
+    "day": 109,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 상품 검색 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 상품 검색 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 상품 검색 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 상품 검색 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 상품 검색 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 상품 검색 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 상품 검색 분석 리포트에서 배운 개념을 사용해 Day 109 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 109: 프로젝트: 상품 검색 분석 리포트\nfunction solveDay109(values) {\n  // TODO: 프로젝트: 상품 검색 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay109([1, 2, 3, 4]));",
+      "solutionCode": "// Day 109: 프로젝트: 상품 검색 분석 리포트 예시 풀이\nfunction solveDay109(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 109, topic: \"프로젝트: 상품 검색 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay109([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-110",
+    "language": "javascript",
+    "day": 110,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 상품 검색 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 상품 검색 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 상품 검색 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 상품 검색 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 상품 검색 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 상품 검색 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 상품 검색 운영 콘솔에서 배운 개념을 사용해 Day 110 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 110: 프로젝트: 상품 검색 운영 콘솔\nfunction solveDay110(values) {\n  // TODO: 프로젝트: 상품 검색 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay110([1, 2, 3, 4]));",
+      "solutionCode": "// Day 110: 프로젝트: 상품 검색 운영 콘솔 예시 풀이\nfunction solveDay110(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 110, topic: \"프로젝트: 상품 검색 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay110([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-111",
+    "language": "javascript",
+    "day": 111,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 실시간 채팅 대시보드",
+    "summary": "JavaScript의 프로젝트: 실시간 채팅 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 실시간 채팅 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 실시간 채팅 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 실시간 채팅 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 실시간 채팅 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 실시간 채팅 대시보드에서 배운 개념을 사용해 Day 111 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 111: 프로젝트: 실시간 채팅 대시보드\nfunction solveDay111(values) {\n  // TODO: 프로젝트: 실시간 채팅 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay111([1, 2, 3, 4]));",
+      "solutionCode": "// Day 111: 프로젝트: 실시간 채팅 대시보드 예시 풀이\nfunction solveDay111(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 111, topic: \"프로젝트: 실시간 채팅 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay111([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-112",
+    "language": "javascript",
+    "day": 112,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 실시간 채팅 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 실시간 채팅 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 실시간 채팅 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 실시간 채팅 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 실시간 채팅 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 실시간 채팅 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 실시간 채팅 자동화 도구에서 배운 개념을 사용해 Day 112 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 112: 프로젝트: 실시간 채팅 자동화 도구\nfunction solveDay112(values) {\n  // TODO: 프로젝트: 실시간 채팅 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay112([1, 2, 3, 4]));",
+      "solutionCode": "// Day 112: 프로젝트: 실시간 채팅 자동화 도구 예시 풀이\nfunction solveDay112(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 112, topic: \"프로젝트: 실시간 채팅 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay112([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-113",
+    "language": "javascript",
+    "day": 113,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 실시간 채팅 API 서비스",
+    "summary": "JavaScript의 프로젝트: 실시간 채팅 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 실시간 채팅 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 실시간 채팅 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 실시간 채팅 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 실시간 채팅 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 실시간 채팅 API 서비스에서 배운 개념을 사용해 Day 113 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 113: 프로젝트: 실시간 채팅 API 서비스\nfunction solveDay113(values) {\n  // TODO: 프로젝트: 실시간 채팅 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay113([1, 2, 3, 4]));",
+      "solutionCode": "// Day 113: 프로젝트: 실시간 채팅 API 서비스 예시 풀이\nfunction solveDay113(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 113, topic: \"프로젝트: 실시간 채팅 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay113([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-114",
+    "language": "javascript",
+    "day": 114,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 실시간 채팅 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 실시간 채팅 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 실시간 채팅 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 실시간 채팅 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 실시간 채팅 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 실시간 채팅 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 실시간 채팅 분석 리포트에서 배운 개념을 사용해 Day 114 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 114: 프로젝트: 실시간 채팅 분석 리포트\nfunction solveDay114(values) {\n  // TODO: 프로젝트: 실시간 채팅 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay114([1, 2, 3, 4]));",
+      "solutionCode": "// Day 114: 프로젝트: 실시간 채팅 분석 리포트 예시 풀이\nfunction solveDay114(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 114, topic: \"프로젝트: 실시간 채팅 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay114([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-115",
+    "language": "javascript",
+    "day": 115,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 실시간 채팅 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 실시간 채팅 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 실시간 채팅 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 실시간 채팅 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 실시간 채팅 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 실시간 채팅 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 실시간 채팅 운영 콘솔에서 배운 개념을 사용해 Day 115 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 115: 프로젝트: 실시간 채팅 운영 콘솔\nfunction solveDay115(values) {\n  // TODO: 프로젝트: 실시간 채팅 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay115([1, 2, 3, 4]));",
+      "solutionCode": "// Day 115: 프로젝트: 실시간 채팅 운영 콘솔 예시 풀이\nfunction solveDay115(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 115, topic: \"프로젝트: 실시간 채팅 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay115([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-116",
+    "language": "javascript",
+    "day": 116,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 대시보드",
+    "summary": "JavaScript의 프로젝트: 예약 관리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 대시보드에서 배운 개념을 사용해 Day 116 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 116: 프로젝트: 예약 관리 대시보드\nfunction solveDay116(values) {\n  // TODO: 프로젝트: 예약 관리 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay116([1, 2, 3, 4]));",
+      "solutionCode": "// Day 116: 프로젝트: 예약 관리 대시보드 예시 풀이\nfunction solveDay116(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 116, topic: \"프로젝트: 예약 관리 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay116([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-117",
+    "language": "javascript",
+    "day": 117,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 예약 관리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 자동화 도구에서 배운 개념을 사용해 Day 117 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 117: 프로젝트: 예약 관리 자동화 도구\nfunction solveDay117(values) {\n  // TODO: 프로젝트: 예약 관리 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay117([1, 2, 3, 4]));",
+      "solutionCode": "// Day 117: 프로젝트: 예약 관리 자동화 도구 예시 풀이\nfunction solveDay117(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 117, topic: \"프로젝트: 예약 관리 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay117([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-118",
+    "language": "javascript",
+    "day": 118,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 API 서비스",
+    "summary": "JavaScript의 프로젝트: 예약 관리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 API 서비스에서 배운 개념을 사용해 Day 118 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 118: 프로젝트: 예약 관리 API 서비스\nfunction solveDay118(values) {\n  // TODO: 프로젝트: 예약 관리 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay118([1, 2, 3, 4]));",
+      "solutionCode": "// Day 118: 프로젝트: 예약 관리 API 서비스 예시 풀이\nfunction solveDay118(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 118, topic: \"프로젝트: 예약 관리 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay118([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-119",
+    "language": "javascript",
+    "day": 119,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 예약 관리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 분석 리포트에서 배운 개념을 사용해 Day 119 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 119: 프로젝트: 예약 관리 분석 리포트\nfunction solveDay119(values) {\n  // TODO: 프로젝트: 예약 관리 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay119([1, 2, 3, 4]));",
+      "solutionCode": "// Day 119: 프로젝트: 예약 관리 분석 리포트 예시 풀이\nfunction solveDay119(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 119, topic: \"프로젝트: 예약 관리 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay119([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-120",
+    "language": "javascript",
+    "day": 120,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 예약 관리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 운영 콘솔에서 배운 개념을 사용해 Day 120 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 120: 프로젝트: 예약 관리 운영 콘솔\nfunction solveDay120(values) {\n  // TODO: 프로젝트: 예약 관리 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay120([1, 2, 3, 4]));",
+      "solutionCode": "// Day 120: 프로젝트: 예약 관리 운영 콘솔 예시 풀이\nfunction solveDay120(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 120, topic: \"프로젝트: 예약 관리 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay120([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-121",
+    "language": "javascript",
+    "day": 121,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 브라우저 북마크 대시보드",
+    "summary": "JavaScript의 프로젝트: 브라우저 북마크 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 브라우저 북마크 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 브라우저 북마크 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 브라우저 북마크 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 브라우저 북마크 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 브라우저 북마크 대시보드에서 배운 개념을 사용해 Day 121 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 121: 프로젝트: 브라우저 북마크 대시보드\nfunction solveDay121(values) {\n  // TODO: 프로젝트: 브라우저 북마크 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay121([1, 2, 3, 4]));",
+      "solutionCode": "// Day 121: 프로젝트: 브라우저 북마크 대시보드 예시 풀이\nfunction solveDay121(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 121, topic: \"프로젝트: 브라우저 북마크 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay121([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-122",
+    "language": "javascript",
+    "day": 122,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 브라우저 북마크 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 브라우저 북마크 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 브라우저 북마크 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 브라우저 북마크 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 브라우저 북마크 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 브라우저 북마크 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 브라우저 북마크 자동화 도구에서 배운 개념을 사용해 Day 122 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 122: 프로젝트: 브라우저 북마크 자동화 도구\nfunction solveDay122(values) {\n  // TODO: 프로젝트: 브라우저 북마크 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay122([1, 2, 3, 4]));",
+      "solutionCode": "// Day 122: 프로젝트: 브라우저 북마크 자동화 도구 예시 풀이\nfunction solveDay122(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 122, topic: \"프로젝트: 브라우저 북마크 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay122([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-123",
+    "language": "javascript",
+    "day": 123,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 브라우저 북마크 API 서비스",
+    "summary": "JavaScript의 프로젝트: 브라우저 북마크 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 브라우저 북마크 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 브라우저 북마크 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 브라우저 북마크 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 브라우저 북마크 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 브라우저 북마크 API 서비스에서 배운 개념을 사용해 Day 123 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 123: 프로젝트: 브라우저 북마크 API 서비스\nfunction solveDay123(values) {\n  // TODO: 프로젝트: 브라우저 북마크 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay123([1, 2, 3, 4]));",
+      "solutionCode": "// Day 123: 프로젝트: 브라우저 북마크 API 서비스 예시 풀이\nfunction solveDay123(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 123, topic: \"프로젝트: 브라우저 북마크 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay123([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-124",
+    "language": "javascript",
+    "day": 124,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 브라우저 북마크 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 브라우저 북마크 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 브라우저 북마크 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 브라우저 북마크 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 브라우저 북마크 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 브라우저 북마크 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 브라우저 북마크 분석 리포트에서 배운 개념을 사용해 Day 124 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 124: 프로젝트: 브라우저 북마크 분석 리포트\nfunction solveDay124(values) {\n  // TODO: 프로젝트: 브라우저 북마크 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay124([1, 2, 3, 4]));",
+      "solutionCode": "// Day 124: 프로젝트: 브라우저 북마크 분석 리포트 예시 풀이\nfunction solveDay124(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 124, topic: \"프로젝트: 브라우저 북마크 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay124([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-125",
+    "language": "javascript",
+    "day": 125,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 브라우저 북마크 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 브라우저 북마크 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 브라우저 북마크 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 브라우저 북마크 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 브라우저 북마크 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 브라우저 북마크 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 브라우저 북마크 운영 콘솔에서 배운 개념을 사용해 Day 125 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 125: 프로젝트: 브라우저 북마크 운영 콘솔\nfunction solveDay125(values) {\n  // TODO: 프로젝트: 브라우저 북마크 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay125([1, 2, 3, 4]));",
+      "solutionCode": "// Day 125: 프로젝트: 브라우저 북마크 운영 콘솔 예시 풀이\nfunction solveDay125(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 125, topic: \"프로젝트: 브라우저 북마크 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay125([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-126",
+    "language": "javascript",
+    "day": 126,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 날씨 정보 대시보드",
+    "summary": "JavaScript의 프로젝트: 날씨 정보 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 날씨 정보 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 날씨 정보 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 날씨 정보 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 날씨 정보 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 날씨 정보 대시보드에서 배운 개념을 사용해 Day 126 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 126: 프로젝트: 날씨 정보 대시보드\nfunction solveDay126(values) {\n  // TODO: 프로젝트: 날씨 정보 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay126([1, 2, 3, 4]));",
+      "solutionCode": "// Day 126: 프로젝트: 날씨 정보 대시보드 예시 풀이\nfunction solveDay126(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 126, topic: \"프로젝트: 날씨 정보 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay126([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-127",
+    "language": "javascript",
+    "day": 127,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 날씨 정보 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 날씨 정보 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 날씨 정보 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 날씨 정보 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 날씨 정보 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 날씨 정보 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 날씨 정보 자동화 도구에서 배운 개념을 사용해 Day 127 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 127: 프로젝트: 날씨 정보 자동화 도구\nfunction solveDay127(values) {\n  // TODO: 프로젝트: 날씨 정보 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay127([1, 2, 3, 4]));",
+      "solutionCode": "// Day 127: 프로젝트: 날씨 정보 자동화 도구 예시 풀이\nfunction solveDay127(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 127, topic: \"프로젝트: 날씨 정보 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay127([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-128",
+    "language": "javascript",
+    "day": 128,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 날씨 정보 API 서비스",
+    "summary": "JavaScript의 프로젝트: 날씨 정보 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 날씨 정보 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 날씨 정보 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 날씨 정보 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 날씨 정보 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 날씨 정보 API 서비스에서 배운 개념을 사용해 Day 128 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 128: 프로젝트: 날씨 정보 API 서비스\nfunction solveDay128(values) {\n  // TODO: 프로젝트: 날씨 정보 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay128([1, 2, 3, 4]));",
+      "solutionCode": "// Day 128: 프로젝트: 날씨 정보 API 서비스 예시 풀이\nfunction solveDay128(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 128, topic: \"프로젝트: 날씨 정보 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay128([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-129",
+    "language": "javascript",
+    "day": 129,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 날씨 정보 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 날씨 정보 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 날씨 정보 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 날씨 정보 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 날씨 정보 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 날씨 정보 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 날씨 정보 분석 리포트에서 배운 개념을 사용해 Day 129 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 129: 프로젝트: 날씨 정보 분석 리포트\nfunction solveDay129(values) {\n  // TODO: 프로젝트: 날씨 정보 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay129([1, 2, 3, 4]));",
+      "solutionCode": "// Day 129: 프로젝트: 날씨 정보 분석 리포트 예시 풀이\nfunction solveDay129(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 129, topic: \"프로젝트: 날씨 정보 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay129([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-130",
+    "language": "javascript",
+    "day": 130,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 날씨 정보 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 날씨 정보 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 날씨 정보 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 날씨 정보 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 날씨 정보 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 날씨 정보 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 날씨 정보 운영 콘솔에서 배운 개념을 사용해 Day 130 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 130: 프로젝트: 날씨 정보 운영 콘솔\nfunction solveDay130(values) {\n  // TODO: 프로젝트: 날씨 정보 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay130([1, 2, 3, 4]));",
+      "solutionCode": "// Day 130: 프로젝트: 날씨 정보 운영 콘솔 예시 풀이\nfunction solveDay130(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 130, topic: \"프로젝트: 날씨 정보 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay130([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-131",
+    "language": "javascript",
+    "day": 131,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 콘텐츠 추천 대시보드",
+    "summary": "JavaScript의 프로젝트: 콘텐츠 추천 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 콘텐츠 추천 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 콘텐츠 추천 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 콘텐츠 추천 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 콘텐츠 추천 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 콘텐츠 추천 대시보드에서 배운 개념을 사용해 Day 131 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 131: 프로젝트: 콘텐츠 추천 대시보드\nfunction solveDay131(values) {\n  // TODO: 프로젝트: 콘텐츠 추천 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay131([1, 2, 3, 4]));",
+      "solutionCode": "// Day 131: 프로젝트: 콘텐츠 추천 대시보드 예시 풀이\nfunction solveDay131(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 131, topic: \"프로젝트: 콘텐츠 추천 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay131([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-132",
+    "language": "javascript",
+    "day": 132,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 콘텐츠 추천 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 콘텐츠 추천 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 콘텐츠 추천 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 콘텐츠 추천 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 콘텐츠 추천 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 콘텐츠 추천 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 콘텐츠 추천 자동화 도구에서 배운 개념을 사용해 Day 132 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 132: 프로젝트: 콘텐츠 추천 자동화 도구\nfunction solveDay132(values) {\n  // TODO: 프로젝트: 콘텐츠 추천 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay132([1, 2, 3, 4]));",
+      "solutionCode": "// Day 132: 프로젝트: 콘텐츠 추천 자동화 도구 예시 풀이\nfunction solveDay132(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 132, topic: \"프로젝트: 콘텐츠 추천 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay132([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-133",
+    "language": "javascript",
+    "day": 133,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 콘텐츠 추천 API 서비스",
+    "summary": "JavaScript의 프로젝트: 콘텐츠 추천 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 콘텐츠 추천 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 콘텐츠 추천 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 콘텐츠 추천 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 콘텐츠 추천 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 콘텐츠 추천 API 서비스에서 배운 개념을 사용해 Day 133 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 133: 프로젝트: 콘텐츠 추천 API 서비스\nfunction solveDay133(values) {\n  // TODO: 프로젝트: 콘텐츠 추천 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay133([1, 2, 3, 4]));",
+      "solutionCode": "// Day 133: 프로젝트: 콘텐츠 추천 API 서비스 예시 풀이\nfunction solveDay133(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 133, topic: \"프로젝트: 콘텐츠 추천 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay133([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-134",
+    "language": "javascript",
+    "day": 134,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 콘텐츠 추천 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 콘텐츠 추천 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 콘텐츠 추천 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 콘텐츠 추천 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 콘텐츠 추천 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 콘텐츠 추천 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 콘텐츠 추천 분석 리포트에서 배운 개념을 사용해 Day 134 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 134: 프로젝트: 콘텐츠 추천 분석 리포트\nfunction solveDay134(values) {\n  // TODO: 프로젝트: 콘텐츠 추천 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay134([1, 2, 3, 4]));",
+      "solutionCode": "// Day 134: 프로젝트: 콘텐츠 추천 분석 리포트 예시 풀이\nfunction solveDay134(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 134, topic: \"프로젝트: 콘텐츠 추천 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay134([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-135",
+    "language": "javascript",
+    "day": 135,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 콘텐츠 추천 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 콘텐츠 추천 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 콘텐츠 추천 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 콘텐츠 추천 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 콘텐츠 추천 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 콘텐츠 추천 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 콘텐츠 추천 운영 콘솔에서 배운 개념을 사용해 Day 135 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 135: 프로젝트: 콘텐츠 추천 운영 콘솔\nfunction solveDay135(values) {\n  // TODO: 프로젝트: 콘텐츠 추천 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay135([1, 2, 3, 4]));",
+      "solutionCode": "// Day 135: 프로젝트: 콘텐츠 추천 운영 콘솔 예시 풀이\nfunction solveDay135(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 135, topic: \"프로젝트: 콘텐츠 추천 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay135([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-136",
+    "language": "javascript",
+    "day": 136,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 조사 대시보드",
+    "summary": "JavaScript의 프로젝트: 설문 조사 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 조사 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 조사 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 조사 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 설문 조사 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 조사 대시보드에서 배운 개념을 사용해 Day 136 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 136: 프로젝트: 설문 조사 대시보드\nfunction solveDay136(values) {\n  // TODO: 프로젝트: 설문 조사 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay136([1, 2, 3, 4]));",
+      "solutionCode": "// Day 136: 프로젝트: 설문 조사 대시보드 예시 풀이\nfunction solveDay136(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 136, topic: \"프로젝트: 설문 조사 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay136([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-137",
+    "language": "javascript",
+    "day": 137,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 조사 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 설문 조사 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 조사 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 조사 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 조사 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 설문 조사 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 조사 자동화 도구에서 배운 개념을 사용해 Day 137 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 137: 프로젝트: 설문 조사 자동화 도구\nfunction solveDay137(values) {\n  // TODO: 프로젝트: 설문 조사 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay137([1, 2, 3, 4]));",
+      "solutionCode": "// Day 137: 프로젝트: 설문 조사 자동화 도구 예시 풀이\nfunction solveDay137(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 137, topic: \"프로젝트: 설문 조사 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay137([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-138",
+    "language": "javascript",
+    "day": 138,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 조사 API 서비스",
+    "summary": "JavaScript의 프로젝트: 설문 조사 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 조사 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 조사 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 조사 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 설문 조사 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 조사 API 서비스에서 배운 개념을 사용해 Day 138 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 138: 프로젝트: 설문 조사 API 서비스\nfunction solveDay138(values) {\n  // TODO: 프로젝트: 설문 조사 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay138([1, 2, 3, 4]));",
+      "solutionCode": "// Day 138: 프로젝트: 설문 조사 API 서비스 예시 풀이\nfunction solveDay138(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 138, topic: \"프로젝트: 설문 조사 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay138([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-139",
+    "language": "javascript",
+    "day": 139,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 조사 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 설문 조사 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 조사 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 조사 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 조사 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 설문 조사 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 조사 분석 리포트에서 배운 개념을 사용해 Day 139 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 139: 프로젝트: 설문 조사 분석 리포트\nfunction solveDay139(values) {\n  // TODO: 프로젝트: 설문 조사 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay139([1, 2, 3, 4]));",
+      "solutionCode": "// Day 139: 프로젝트: 설문 조사 분석 리포트 예시 풀이\nfunction solveDay139(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 139, topic: \"프로젝트: 설문 조사 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay139([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-140",
+    "language": "javascript",
+    "day": 140,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 조사 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 설문 조사 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 조사 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 조사 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 조사 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 설문 조사 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 조사 운영 콘솔에서 배운 개념을 사용해 Day 140 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 140: 프로젝트: 설문 조사 운영 콘솔\nfunction solveDay140(values) {\n  // TODO: 프로젝트: 설문 조사 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay140([1, 2, 3, 4]));",
+      "solutionCode": "// Day 140: 프로젝트: 설문 조사 운영 콘솔 예시 풀이\nfunction solveDay140(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 140, topic: \"프로젝트: 설문 조사 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay140([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-141",
+    "language": "javascript",
+    "day": 141,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 업로드 대시보드",
+    "summary": "JavaScript의 프로젝트: 파일 업로드 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 업로드 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 업로드 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 업로드 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 파일 업로드 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 업로드 대시보드에서 배운 개념을 사용해 Day 141 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 141: 프로젝트: 파일 업로드 대시보드\nfunction solveDay141(values) {\n  // TODO: 프로젝트: 파일 업로드 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay141([1, 2, 3, 4]));",
+      "solutionCode": "// Day 141: 프로젝트: 파일 업로드 대시보드 예시 풀이\nfunction solveDay141(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 141, topic: \"프로젝트: 파일 업로드 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay141([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-142",
+    "language": "javascript",
+    "day": 142,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 업로드 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 파일 업로드 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 업로드 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 업로드 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 업로드 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 파일 업로드 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 업로드 자동화 도구에서 배운 개념을 사용해 Day 142 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 142: 프로젝트: 파일 업로드 자동화 도구\nfunction solveDay142(values) {\n  // TODO: 프로젝트: 파일 업로드 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay142([1, 2, 3, 4]));",
+      "solutionCode": "// Day 142: 프로젝트: 파일 업로드 자동화 도구 예시 풀이\nfunction solveDay142(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 142, topic: \"프로젝트: 파일 업로드 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay142([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-143",
+    "language": "javascript",
+    "day": 143,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 업로드 API 서비스",
+    "summary": "JavaScript의 프로젝트: 파일 업로드 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 업로드 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 업로드 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 업로드 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 파일 업로드 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 업로드 API 서비스에서 배운 개념을 사용해 Day 143 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 143: 프로젝트: 파일 업로드 API 서비스\nfunction solveDay143(values) {\n  // TODO: 프로젝트: 파일 업로드 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay143([1, 2, 3, 4]));",
+      "solutionCode": "// Day 143: 프로젝트: 파일 업로드 API 서비스 예시 풀이\nfunction solveDay143(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 143, topic: \"프로젝트: 파일 업로드 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay143([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-144",
+    "language": "javascript",
+    "day": 144,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 업로드 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 파일 업로드 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 업로드 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 업로드 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 업로드 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 파일 업로드 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 업로드 분석 리포트에서 배운 개념을 사용해 Day 144 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 144: 프로젝트: 파일 업로드 분석 리포트\nfunction solveDay144(values) {\n  // TODO: 프로젝트: 파일 업로드 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay144([1, 2, 3, 4]));",
+      "solutionCode": "// Day 144: 프로젝트: 파일 업로드 분석 리포트 예시 풀이\nfunction solveDay144(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 144, topic: \"프로젝트: 파일 업로드 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay144([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-145",
+    "language": "javascript",
+    "day": 145,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 업로드 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 파일 업로드 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 업로드 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 업로드 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 업로드 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 파일 업로드 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 업로드 운영 콘솔에서 배운 개념을 사용해 Day 145 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 145: 프로젝트: 파일 업로드 운영 콘솔\nfunction solveDay145(values) {\n  // TODO: 프로젝트: 파일 업로드 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay145([1, 2, 3, 4]));",
+      "solutionCode": "// Day 145: 프로젝트: 파일 업로드 운영 콘솔 예시 풀이\nfunction solveDay145(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 145, topic: \"프로젝트: 파일 업로드 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay145([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-146",
+    "language": "javascript",
+    "day": 146,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 센터 대시보드",
+    "summary": "JavaScript의 프로젝트: 알림 센터 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 센터 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 센터 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 센터 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 알림 센터 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 센터 대시보드에서 배운 개념을 사용해 Day 146 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 146: 프로젝트: 알림 센터 대시보드\nfunction solveDay146(values) {\n  // TODO: 프로젝트: 알림 센터 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay146([1, 2, 3, 4]));",
+      "solutionCode": "// Day 146: 프로젝트: 알림 센터 대시보드 예시 풀이\nfunction solveDay146(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 146, topic: \"프로젝트: 알림 센터 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay146([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-147",
+    "language": "javascript",
+    "day": 147,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 센터 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 알림 센터 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 센터 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 센터 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 센터 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 알림 센터 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 센터 자동화 도구에서 배운 개념을 사용해 Day 147 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 147: 프로젝트: 알림 센터 자동화 도구\nfunction solveDay147(values) {\n  // TODO: 프로젝트: 알림 센터 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay147([1, 2, 3, 4]));",
+      "solutionCode": "// Day 147: 프로젝트: 알림 센터 자동화 도구 예시 풀이\nfunction solveDay147(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 147, topic: \"프로젝트: 알림 센터 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay147([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-148",
+    "language": "javascript",
+    "day": 148,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 센터 API 서비스",
+    "summary": "JavaScript의 프로젝트: 알림 센터 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 센터 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 센터 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 센터 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 알림 센터 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 센터 API 서비스에서 배운 개념을 사용해 Day 148 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 148: 프로젝트: 알림 센터 API 서비스\nfunction solveDay148(values) {\n  // TODO: 프로젝트: 알림 센터 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay148([1, 2, 3, 4]));",
+      "solutionCode": "// Day 148: 프로젝트: 알림 센터 API 서비스 예시 풀이\nfunction solveDay148(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 148, topic: \"프로젝트: 알림 센터 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay148([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-149",
+    "language": "javascript",
+    "day": 149,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 센터 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 알림 센터 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 센터 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 센터 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 센터 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 알림 센터 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 센터 분석 리포트에서 배운 개념을 사용해 Day 149 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 149: 프로젝트: 알림 센터 분석 리포트\nfunction solveDay149(values) {\n  // TODO: 프로젝트: 알림 센터 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay149([1, 2, 3, 4]));",
+      "solutionCode": "// Day 149: 프로젝트: 알림 센터 분석 리포트 예시 풀이\nfunction solveDay149(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 149, topic: \"프로젝트: 알림 센터 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay149([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-150",
+    "language": "javascript",
+    "day": 150,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 센터 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 알림 센터 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 센터 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 센터 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 센터 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 알림 센터 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 센터 운영 콘솔에서 배운 개념을 사용해 Day 150 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 150: 프로젝트: 알림 센터 운영 콘솔\nfunction solveDay150(values) {\n  // TODO: 프로젝트: 알림 센터 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay150([1, 2, 3, 4]));",
+      "solutionCode": "// Day 150: 프로젝트: 알림 센터 운영 콘솔 예시 풀이\nfunction solveDay150(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 150, topic: \"프로젝트: 알림 센터 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay150([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-151",
+    "language": "javascript",
+    "day": 151,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 접근성 점검 대시보드",
+    "summary": "JavaScript의 프로젝트: 접근성 점검 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 접근성 점검 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 접근성 점검 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 접근성 점검 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 접근성 점검 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 접근성 점검 대시보드에서 배운 개념을 사용해 Day 151 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 151: 프로젝트: 접근성 점검 대시보드\nfunction solveDay151(values) {\n  // TODO: 프로젝트: 접근성 점검 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay151([1, 2, 3, 4]));",
+      "solutionCode": "// Day 151: 프로젝트: 접근성 점검 대시보드 예시 풀이\nfunction solveDay151(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 151, topic: \"프로젝트: 접근성 점검 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay151([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-152",
+    "language": "javascript",
+    "day": 152,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 접근성 점검 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 접근성 점검 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 접근성 점검 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 접근성 점검 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 접근성 점검 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 접근성 점검 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 접근성 점검 자동화 도구에서 배운 개념을 사용해 Day 152 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 152: 프로젝트: 접근성 점검 자동화 도구\nfunction solveDay152(values) {\n  // TODO: 프로젝트: 접근성 점검 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay152([1, 2, 3, 4]));",
+      "solutionCode": "// Day 152: 프로젝트: 접근성 점검 자동화 도구 예시 풀이\nfunction solveDay152(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 152, topic: \"프로젝트: 접근성 점검 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay152([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-153",
+    "language": "javascript",
+    "day": 153,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 접근성 점검 API 서비스",
+    "summary": "JavaScript의 프로젝트: 접근성 점검 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 접근성 점검 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 접근성 점검 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 접근성 점검 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 접근성 점검 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 접근성 점검 API 서비스에서 배운 개념을 사용해 Day 153 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 153: 프로젝트: 접근성 점검 API 서비스\nfunction solveDay153(values) {\n  // TODO: 프로젝트: 접근성 점검 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay153([1, 2, 3, 4]));",
+      "solutionCode": "// Day 153: 프로젝트: 접근성 점검 API 서비스 예시 풀이\nfunction solveDay153(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 153, topic: \"프로젝트: 접근성 점검 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay153([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-154",
+    "language": "javascript",
+    "day": 154,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 접근성 점검 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 접근성 점검 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 접근성 점검 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 접근성 점검 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 접근성 점검 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 접근성 점검 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 접근성 점검 분석 리포트에서 배운 개념을 사용해 Day 154 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 154: 프로젝트: 접근성 점검 분석 리포트\nfunction solveDay154(values) {\n  // TODO: 프로젝트: 접근성 점검 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay154([1, 2, 3, 4]));",
+      "solutionCode": "// Day 154: 프로젝트: 접근성 점검 분석 리포트 예시 풀이\nfunction solveDay154(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 154, topic: \"프로젝트: 접근성 점검 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay154([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-155",
+    "language": "javascript",
+    "day": 155,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 접근성 점검 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 접근성 점검 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 접근성 점검 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 접근성 점검 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 접근성 점검 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 접근성 점검 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 접근성 점검 운영 콘솔에서 배운 개념을 사용해 Day 155 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 155: 프로젝트: 접근성 점검 운영 콘솔\nfunction solveDay155(values) {\n  // TODO: 프로젝트: 접근성 점검 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay155([1, 2, 3, 4]));",
+      "solutionCode": "// Day 155: 프로젝트: 접근성 점검 운영 콘솔 예시 풀이\nfunction solveDay155(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 155, topic: \"프로젝트: 접근성 점검 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay155([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-156",
+    "language": "javascript",
+    "day": 156,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 웹 성능 대시보드",
+    "summary": "JavaScript의 프로젝트: 웹 성능 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 웹 성능 대시보드은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 웹 성능 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 웹 성능 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 웹 성능 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 웹 성능 대시보드에서 배운 개념을 사용해 Day 156 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 156: 프로젝트: 웹 성능 대시보드\nfunction solveDay156(values) {\n  // TODO: 프로젝트: 웹 성능 대시보드 개념을 적용하세요.\n}\n\nconsole.log(solveDay156([1, 2, 3, 4]));",
+      "solutionCode": "// Day 156: 프로젝트: 웹 성능 대시보드 예시 풀이\nfunction solveDay156(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 156, topic: \"프로젝트: 웹 성능 대시보드\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay156([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-157",
+    "language": "javascript",
+    "day": 157,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 웹 성능 자동화 도구",
+    "summary": "JavaScript의 프로젝트: 웹 성능 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 웹 성능 자동화 도구은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 웹 성능 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 웹 성능 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 웹 성능 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 웹 성능 자동화 도구에서 배운 개념을 사용해 Day 157 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 157: 프로젝트: 웹 성능 자동화 도구\nfunction solveDay157(values) {\n  // TODO: 프로젝트: 웹 성능 자동화 도구 개념을 적용하세요.\n}\n\nconsole.log(solveDay157([1, 2, 3, 4]));",
+      "solutionCode": "// Day 157: 프로젝트: 웹 성능 자동화 도구 예시 풀이\nfunction solveDay157(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 157, topic: \"프로젝트: 웹 성능 자동화 도구\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay157([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-158",
+    "language": "javascript",
+    "day": 158,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 웹 성능 API 서비스",
+    "summary": "JavaScript의 프로젝트: 웹 성능 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 웹 성능 API 서비스은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 웹 성능 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 웹 성능 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 웹 성능 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 웹 성능 API 서비스에서 배운 개념을 사용해 Day 158 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 158: 프로젝트: 웹 성능 API 서비스\nfunction solveDay158(values) {\n  // TODO: 프로젝트: 웹 성능 API 서비스 개념을 적용하세요.\n}\n\nconsole.log(solveDay158([1, 2, 3, 4]));",
+      "solutionCode": "// Day 158: 프로젝트: 웹 성능 API 서비스 예시 풀이\nfunction solveDay158(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 158, topic: \"프로젝트: 웹 성능 API 서비스\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay158([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-159",
+    "language": "javascript",
+    "day": 159,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 웹 성능 분석 리포트",
+    "summary": "JavaScript의 프로젝트: 웹 성능 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 웹 성능 분석 리포트은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 웹 성능 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 웹 성능 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 웹 성능 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 웹 성능 분석 리포트에서 배운 개념을 사용해 Day 159 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 159: 프로젝트: 웹 성능 분석 리포트\nfunction solveDay159(values) {\n  // TODO: 프로젝트: 웹 성능 분석 리포트 개념을 적용하세요.\n}\n\nconsole.log(solveDay159([1, 2, 3, 4]));",
+      "solutionCode": "// Day 159: 프로젝트: 웹 성능 분석 리포트 예시 풀이\nfunction solveDay159(values) {\n  const selected = values.filter((value) => value % 2 === 1);\n  return { day: 159, topic: \"프로젝트: 웹 성능 분석 리포트\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay159([1, 2, 3, 4]));"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "javascript-day-160",
+    "language": "javascript",
+    "day": 160,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 웹 성능 운영 콘솔",
+    "summary": "JavaScript의 프로젝트: 웹 성능 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 웹 성능 운영 콘솔은(는) JavaScript 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 웹 성능 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 웹 성능 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 웹 성능 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 웹 성능 운영 콘솔에서 배운 개념을 사용해 Day 160 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 160: 프로젝트: 웹 성능 운영 콘솔\nfunction solveDay160(values) {\n  // TODO: 프로젝트: 웹 성능 운영 콘솔 개념을 적용하세요.\n}\n\nconsole.log(solveDay160([1, 2, 3, 4]));",
+      "solutionCode": "// Day 160: 프로젝트: 웹 성능 운영 콘솔 예시 풀이\nfunction solveDay160(values) {\n  const selected = values.filter((value) => value % 2 === 0);\n  return { day: 160, topic: \"프로젝트: 웹 성능 운영 콘솔\", total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay160([1, 2, 3, 4]));"
     },
     "estimatedMinutes": 60,
     "published": true

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+import { CSharpRuntimeLoader } from "@/components/csharp-runtime-loader";
 
 export const metadata: Metadata = {
   title: "HAMS Coding Study",
@@ -10,7 +11,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ko" className="h-full antialiased">
+      <head>
+        <base href="/" />
+      </head>
       <body className="min-h-full flex flex-col">
+        <CSharpRuntimeLoader />
         <Providers>{children}</Providers>
       </body>
     </html>

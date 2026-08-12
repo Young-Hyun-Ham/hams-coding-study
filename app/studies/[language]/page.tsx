@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getCurriculum, getLanguage, languages, type Lesson } from "@/lib/study-data";
+import { LastLearnedDay } from "@/components/study-progress";
+import { getCurriculum, getLanguage, languages } from "@/lib/study-data";
+import { Lesson } from "@/lib/types";
 
 type PageProps = { params: Promise<{ language: string }> };
 
@@ -20,7 +22,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const language = getLanguage((await params).language);
   return language
-    ? { title: `${language.name} 60일 코스 | HAMS Coding Study`, description: language.description }
+    ? { title: `${language.name} ${language.courseLength}일 코스 | HAMS Coding Study`, description: language.description }
     : {};
 }
 
@@ -29,9 +31,10 @@ export default async function StudyPage({ params }: PageProps) {
   if (!language) notFound();
 
   const lessons = getCurriculum(language.slug);
-  const stages = Array.from({ length: 6 }, (_, index) => ({
-    number: index + 1,
-    lessons: lessons.filter((lesson) => lesson.stage === index + 1),
+  const stageNumbers = [...new Set(lessons.map((lesson) => lesson.stage))].sort((a, b) => a - b);
+  const stages = stageNumbers.map((number) => ({
+    number,
+    lessons: lessons.filter((lesson) => lesson.stage === number),
   }));
 
   return (
@@ -44,13 +47,13 @@ export default async function StudyPage({ params }: PageProps) {
         <header className="mt-8 rounded-3xl border border-slate-800 bg-slate-900 p-7 sm:p-10">
           <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm font-bold tracking-[0.18em] text-sky-400 uppercase">60 Day Curriculum</p>
+              <p className="text-sm font-bold tracking-[0.18em] text-sky-400 uppercase">{language.courseLength} Day Curriculum</p>
               <h1 className="mt-3 text-4xl font-bold">{language.name} 스터디</h1>
               <p className="mt-4 max-w-2xl leading-7 text-slate-400">{language.description}</p>
             </div>
             <div className="grid grid-cols-2 gap-3 text-center">
-              <div className="rounded-xl bg-slate-950 px-5 py-3"><strong className="block text-xl">60</strong><span className="text-xs text-slate-500">학습 일수</span></div>
-              <div className="rounded-xl bg-slate-950 px-5 py-3"><strong className="block text-xl">6</strong><span className="text-xs text-slate-500">학습 단계</span></div>
+              <div className="rounded-xl bg-slate-950 px-5 py-3"><strong className="block text-xl">{language.courseLength}</strong><span className="text-xs text-slate-500">학습 총 수</span></div>
+              <div className="rounded-xl bg-slate-950 px-5 py-3"><LastLearnedDay language={language.slug} /><span className="text-xs text-slate-500">마지막 학습</span></div>
             </div>
           </div>
         </header>

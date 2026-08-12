@@ -5,38 +5,9 @@ import kotlinJson from "@/db/curricula/kotlin.json";
 import pythonJson from "@/db/curricula/python.json";
 import reactJson from "@/db/curricula/react.json";
 import pythonLangGraphJson from "@/db/curricula/python-langgraph.json";
-
-export type LanguageSlug = "python" | "javascript" | "react" | "java" | "kotlin" | "python-langgraph";
-
-export type StudyLanguage = {
-  slug: LanguageSlug;
-  name: string;
-  shortName: string;
-  description: string;
-  courseLength: number;
-  accent: "sky" | "amber" | "cyan" | "orange" | "violet" | "emerald";
-};
-
-export type Lesson = {
-  id: string;
-  language: LanguageSlug;
-  day: number;
-  stage: number;
-  stageName: string;
-  level: "beginner" | "elementary" | "intermediate" | "advanced" | "project";
-  title: string;
-  summary: string;
-  detailedExplanation: string;
-  keyPoints: string[];
-  objectives: string[];
-  practice: {
-    prompt: string;
-    starterCode: string;
-    solutionCode: string;
-  };
-  estimatedMinutes: number;
-  published: boolean;
-};
+import cJson from "@/db/curricula/c.json";
+import csharpJson from "@/db/curricula/csharp.json";
+import { LanguageSlug, Lesson, StudyLanguage } from "./types";
 
 const curricula: Record<LanguageSlug, Lesson[]> = {
   python: pythonJson as Lesson[],
@@ -45,6 +16,8 @@ const curricula: Record<LanguageSlug, Lesson[]> = {
   java: javaJson as Lesson[],
   kotlin: kotlinJson as Lesson[],
   "python-langgraph": pythonLangGraphJson as Lesson[],
+  c: cJson as Lesson[],
+  csharp: csharpJson as Lesson[],
 };
 
 export const languages = languagesJson as StudyLanguage[];

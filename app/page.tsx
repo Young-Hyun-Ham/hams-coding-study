@@ -8,6 +8,8 @@ const accentStyles = {
   orange: { badge: "bg-orange-400/10 text-orange-300 ring-orange-400/20", glow: "group-hover:border-orange-400/50" },
   violet: { badge: "bg-violet-400/10 text-violet-300 ring-violet-400/20", glow: "group-hover:border-violet-400/50" },
   emerald: { badge: "bg-emerald-400/10 text-emerald-300 ring-emerald-400/20", glow: "group-hover:border-emerald-400/50" },
+  rose: { badge: "bg-rose-400/10 text-rose-300 ring-rose-400/20", glow: "group-hover:border-rose-400/50" },
+  indigo: { badge: "bg-indigo-400/10 text-indigo-300 ring-indigo-400/20", glow: "group-hover:border-indigo-400/50" },
 };
 
 export default function Home() {
@@ -17,10 +19,10 @@ export default function Home() {
         <header className="max-w-3xl">
           <p className="text-sm font-bold tracking-[0.2em] text-sky-400 uppercase">Hams Coding Study</p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-            매일 한 단계씩,<br />60일 동안 완성하세요.
+            기초부터 실전까지,<br />160일 동안 완성하세요.
           </h1>
           <p className="mt-5 text-lg leading-8 text-slate-400">
-            배우고 싶은 언어를 선택하세요. 입문부터 프로젝트까지 여섯 단계로 구성된 학습 코스를 제공합니다.
+            배우고 싶은 언어를 선택하세요. 40일 기본 과정과 심화 60일, 프로젝트 60일로 구성된 학습 코스를 제공합니다.
           </p>
         </header>
 
@@ -28,7 +30,7 @@ export default function Home() {
           <div className="mb-6 flex items-end justify-between gap-4">
             <div>
               <h2 id="courses-heading" className="text-2xl font-bold">언어별 스터디</h2>
-              <p className="mt-1 text-sm text-slate-500">6개 과정 · 총 360개 학습</p>
+              <p className="mt-1 text-sm text-slate-500">{languages.length}개 과정 · 총 {languages.reduce((total, language) => total + language.courseLength, 0)}개 학습</p>
             </div>
             <span className="rounded-full bg-slate-900 px-3 py-1 text-xs text-slate-400 ring-1 ring-slate-800">하루 30–60분</span>
           </div>
@@ -51,7 +53,7 @@ export default function Home() {
                   <h3 className="mt-7 text-2xl font-bold">{language.name}</h3>
                   <p className="mt-2 grow text-sm leading-6 text-slate-400">{language.description}</p>
                   <div className="mt-6 flex items-center gap-3 text-xs font-medium text-slate-500">
-                    <span>{language.courseLength}일 코스</span><span>·</span><span>6단계</span>
+                    <span>{language.courseLength}일 코스</span><span>·</span><span>심화 60 + 프로젝트 60</span>
                   </div>
                 </Link>
               );

@@ -1,0 +1,4322 @@
+[
+  {
+    "id": "csharp-day-01",
+    "language": "csharp",
+    "day": 1,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": ".NET과 첫 출력",
+    "summary": "C#의 .NET과 첫 출력 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": ".NET과 첫 출력은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      ".NET과 첫 출력의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      ".NET과 첫 출력의 핵심 개념 설명하기",
+      ".NET과 첫 출력을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": ".NET과 첫 출력에서 배운 개념을 사용해 Day 1 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 1: .NET과 첫 출력\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: .NET과 첫 출력 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 1: .NET과 첫 출력 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\".NET과 첫 출력: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-02",
+    "language": "csharp",
+    "day": 2,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "변수와 기본 형식",
+    "summary": "C#의 변수와 기본 형식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "변수와 기본 형식은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "변수와 기본 형식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "변수와 기본 형식의 핵심 개념 설명하기",
+      "변수와 기본 형식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "변수와 기본 형식에서 배운 개념을 사용해 Day 2 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 2: 변수와 기본 형식\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 변수와 기본 형식 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 2: 변수와 기본 형식 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"변수와 기본 형식: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-03",
+    "language": "csharp",
+    "day": 3,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "문자열과 보간",
+    "summary": "C#의 문자열과 보간 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "문자열과 보간은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "문자열과 보간의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "문자열과 보간의 핵심 개념 설명하기",
+      "문자열과 보간을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "문자열과 보간에서 배운 개념을 사용해 Day 3 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 3: 문자열과 보간\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 문자열과 보간 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 3: 문자열과 보간 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"문자열과 보간: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-04",
+    "language": "csharp",
+    "day": 4,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "연산자",
+    "summary": "C#의 연산자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "연산자은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "연산자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "연산자의 핵심 개념 설명하기",
+      "연산자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "연산자에서 배운 개념을 사용해 Day 4 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 4: 연산자\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 연산자 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 4: 연산자 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"연산자: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-05",
+    "language": "csharp",
+    "day": 5,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "콘솔 입력과 출력",
+    "summary": "C#의 콘솔 입력과 출력 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "콘솔 입력과 출력은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "콘솔 입력과 출력의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "콘솔 입력과 출력의 핵심 개념 설명하기",
+      "콘솔 입력과 출력을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "콘솔 입력과 출력에서 배운 개념을 사용해 Day 5 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 5: 콘솔 입력과 출력\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 콘솔 입력과 출력 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 5: 콘솔 입력과 출력 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"콘솔 입력과 출력: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-06",
+    "language": "csharp",
+    "day": 6,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "조건문",
+    "summary": "C#의 조건문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "조건문은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "조건문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "조건문의 핵심 개념 설명하기",
+      "조건문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "조건문에서 배운 개념을 사용해 Day 6 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 6: 조건문\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 조건문 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 6: 조건문 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"조건문: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-07",
+    "language": "csharp",
+    "day": 7,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "switch 식",
+    "summary": "C#의 switch 식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "switch 식은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "switch 식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "switch 식의 핵심 개념 설명하기",
+      "switch 식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "switch 식에서 배운 개념을 사용해 Day 7 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 7: switch 식\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: switch 식 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 7: switch 식 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"switch 식: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-08",
+    "language": "csharp",
+    "day": 8,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "for 반복문",
+    "summary": "C#의 for 반복문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "for 반복문은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "for 반복문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "for 반복문의 핵심 개념 설명하기",
+      "for 반복문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "for 반복문에서 배운 개념을 사용해 Day 8 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 8: for 반복문\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: for 반복문 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 8: for 반복문 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"for 반복문: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-09",
+    "language": "csharp",
+    "day": 9,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "while 반복문",
+    "summary": "C#의 while 반복문 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "while 반복문은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "while 반복문의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "while 반복문의 핵심 개념 설명하기",
+      "while 반복문을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "while 반복문에서 배운 개념을 사용해 Day 9 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 9: while 반복문\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: while 반복문 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 9: while 반복문 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"while 반복문: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-10",
+    "language": "csharp",
+    "day": 10,
+    "stage": 1,
+    "stageName": "입문",
+    "level": "beginner",
+    "title": "기초 종합 문제",
+    "summary": "C#의 기초 종합 문제 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "기초 종합 문제은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "기초 종합 문제의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "기초 종합 문제의 핵심 개념 설명하기",
+      "기초 종합 문제을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "기초 종합 문제에서 배운 개념을 사용해 Day 10 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 10: 기초 종합 문제\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 기초 종합 문제 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 10: 기초 종합 문제 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"기초 종합 문제: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-11",
+    "language": "csharp",
+    "day": 11,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "메서드 선언과 호출",
+    "summary": "C#의 메서드 선언과 호출 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메서드 선언과 호출은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "메서드 선언과 호출의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메서드 선언과 호출의 핵심 개념 설명하기",
+      "메서드 선언과 호출을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메서드 선언과 호출에서 배운 개념을 사용해 Day 11 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 11: 메서드 선언과 호출\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 메서드 선언과 호출 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 11: 메서드 선언과 호출 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"메서드 선언과 호출: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-12",
+    "language": "csharp",
+    "day": 12,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "매개변수와 반환값",
+    "summary": "C#의 매개변수와 반환값 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "매개변수와 반환값은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "매개변수와 반환값의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "매개변수와 반환값의 핵심 개념 설명하기",
+      "매개변수와 반환값을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "매개변수와 반환값에서 배운 개념을 사용해 Day 12 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 12: 매개변수와 반환값\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 매개변수와 반환값 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 12: 매개변수와 반환값 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"매개변수와 반환값: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-13",
+    "language": "csharp",
+    "day": 13,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "배열",
+    "summary": "C#의 배열 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "배열은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "배열의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "배열의 핵심 개념 설명하기",
+      "배열을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "배열에서 배운 개념을 사용해 Day 13 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 13: 배열\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 배열 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 13: 배열 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"배열: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-14",
+    "language": "csharp",
+    "day": 14,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "List 컬렉션",
+    "summary": "C#의 List 컬렉션 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "List 컬렉션은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "List 컬렉션의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "List 컬렉션의 핵심 개념 설명하기",
+      "List 컬렉션을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "List 컬렉션에서 배운 개념을 사용해 Day 14 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 14: List 컬렉션\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: List 컬렉션 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 14: List 컬렉션 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"List 컬렉션: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-15",
+    "language": "csharp",
+    "day": 15,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "Dictionary",
+    "summary": "C#의 Dictionary 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Dictionary은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Dictionary의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Dictionary의 핵심 개념 설명하기",
+      "Dictionary을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Dictionary에서 배운 개념을 사용해 Day 15 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 15: Dictionary\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: Dictionary 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 15: Dictionary 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"Dictionary: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-16",
+    "language": "csharp",
+    "day": 16,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "LINQ 기초",
+    "summary": "C#의 LINQ 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "LINQ 기초은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "LINQ 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "LINQ 기초의 핵심 개념 설명하기",
+      "LINQ 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "LINQ 기초에서 배운 개념을 사용해 Day 16 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 16: LINQ 기초\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: LINQ 기초 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 16: LINQ 기초 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"LINQ 기초: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-17",
+    "language": "csharp",
+    "day": 17,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "예외 처리",
+    "summary": "C#의 예외 처리 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외 처리은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "예외 처리의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외 처리의 핵심 개념 설명하기",
+      "예외 처리을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외 처리에서 배운 개념을 사용해 Day 17 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 17: 예외 처리\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 예외 처리 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 17: 예외 처리 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"예외 처리: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-18",
+    "language": "csharp",
+    "day": 18,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "nullable 형식",
+    "summary": "C#의 nullable 형식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "nullable 형식은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "nullable 형식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "nullable 형식의 핵심 개념 설명하기",
+      "nullable 형식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "nullable 형식에서 배운 개념을 사용해 Day 18 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 18: nullable 형식\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: nullable 형식 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 18: nullable 형식 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"nullable 형식: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-19",
+    "language": "csharp",
+    "day": 19,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "튜플",
+    "summary": "C#의 튜플 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "튜플은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "튜플의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "튜플의 핵심 개념 설명하기",
+      "튜플을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "튜플에서 배운 개념을 사용해 Day 19 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 19: 튜플\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 튜플 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 19: 튜플 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"튜플: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-20",
+    "language": "csharp",
+    "day": 20,
+    "stage": 2,
+    "stageName": "기초",
+    "level": "beginner",
+    "title": "미니 프로젝트: 성적 계산기",
+    "summary": "C#의 미니 프로젝트: 성적 계산기 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 성적 계산기은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "미니 프로젝트: 성적 계산기의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 성적 계산기의 핵심 개념 설명하기",
+      "미니 프로젝트: 성적 계산기을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 성적 계산기에서 배운 개념을 사용해 Day 20 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 20: 미니 프로젝트: 성적 계산기\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 미니 프로젝트: 성적 계산기 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 20: 미니 프로젝트: 성적 계산기 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"미니 프로젝트: 성적 계산기: \" + total);"
+    },
+    "estimatedMinutes": 30,
+    "published": true
+  },
+  {
+    "id": "csharp-day-21",
+    "language": "csharp",
+    "day": 21,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "클래스와 객체",
+    "summary": "C#의 클래스와 객체 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "클래스와 객체은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "클래스와 객체의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "클래스와 객체의 핵심 개념 설명하기",
+      "클래스와 객체을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "클래스와 객체에서 배운 개념을 사용해 Day 21 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 21: 클래스와 객체\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 클래스와 객체 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 21: 클래스와 객체 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"클래스와 객체: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-22",
+    "language": "csharp",
+    "day": 22,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "생성자",
+    "summary": "C#의 생성자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "생성자은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "생성자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "생성자의 핵심 개념 설명하기",
+      "생성자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "생성자에서 배운 개념을 사용해 Day 22 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 22: 생성자\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 생성자 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 22: 생성자 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"생성자: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-23",
+    "language": "csharp",
+    "day": 23,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "프로퍼티",
+    "summary": "C#의 프로퍼티 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로퍼티은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로퍼티의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로퍼티의 핵심 개념 설명하기",
+      "프로퍼티을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로퍼티에서 배운 개념을 사용해 Day 23 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 23: 프로퍼티\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로퍼티 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 23: 프로퍼티 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로퍼티: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-24",
+    "language": "csharp",
+    "day": 24,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "캡슐화",
+    "summary": "C#의 캡슐화 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "캡슐화은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "캡슐화의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "캡슐화의 핵심 개념 설명하기",
+      "캡슐화을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "캡슐화에서 배운 개념을 사용해 Day 24 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 24: 캡슐화\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 캡슐화 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 24: 캡슐화 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"캡슐화: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-25",
+    "language": "csharp",
+    "day": 25,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "상속",
+    "summary": "C#의 상속 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "상속은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "상속의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "상속의 핵심 개념 설명하기",
+      "상속을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "상속에서 배운 개념을 사용해 Day 25 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 25: 상속\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 상속 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 25: 상속 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"상속: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-26",
+    "language": "csharp",
+    "day": 26,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "다형성",
+    "summary": "C#의 다형성 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "다형성은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "다형성의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "다형성의 핵심 개념 설명하기",
+      "다형성을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "다형성에서 배운 개념을 사용해 Day 26 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 26: 다형성\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 다형성 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 26: 다형성 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"다형성: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-27",
+    "language": "csharp",
+    "day": 27,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "인터페이스",
+    "summary": "C#의 인터페이스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "인터페이스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "인터페이스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "인터페이스의 핵심 개념 설명하기",
+      "인터페이스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "인터페이스에서 배운 개념을 사용해 Day 27 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 27: 인터페이스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 인터페이스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 27: 인터페이스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"인터페이스: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-28",
+    "language": "csharp",
+    "day": 28,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "record",
+    "summary": "C#의 record 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "record은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "record의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "record의 핵심 개념 설명하기",
+      "record을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "record에서 배운 개념을 사용해 Day 28 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 28: record\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: record 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 28: record 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"record: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-29",
+    "language": "csharp",
+    "day": 29,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "enum",
+    "summary": "C#의 enum 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "enum은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "enum의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "enum의 핵심 개념 설명하기",
+      "enum을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "enum에서 배운 개념을 사용해 Day 29 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 29: enum\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: enum 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 29: enum 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"enum: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-30",
+    "language": "csharp",
+    "day": 30,
+    "stage": 3,
+    "stageName": "활용",
+    "level": "elementary",
+    "title": "객체지향 설계 실습",
+    "summary": "C#의 객체지향 설계 실습 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계 실습은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "객체지향 설계 실습의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계 실습의 핵심 개념 설명하기",
+      "객체지향 설계 실습을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계 실습에서 배운 개념을 사용해 Day 30 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 30: 객체지향 설계 실습\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 객체지향 설계 실습 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 30: 객체지향 설계 실습 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"객체지향 설계 실습: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-31",
+    "language": "csharp",
+    "day": 31,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "제네릭",
+    "summary": "C#의 제네릭 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "제네릭은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "제네릭의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "제네릭의 핵심 개념 설명하기",
+      "제네릭을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "제네릭에서 배운 개념을 사용해 Day 31 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 31: 제네릭\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 제네릭 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 31: 제네릭 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"제네릭: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-32",
+    "language": "csharp",
+    "day": 32,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "델리게이트",
+    "summary": "C#의 델리게이트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "델리게이트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "델리게이트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "델리게이트의 핵심 개념 설명하기",
+      "델리게이트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "델리게이트에서 배운 개념을 사용해 Day 32 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 32: 델리게이트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 델리게이트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 32: 델리게이트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"델리게이트: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-33",
+    "language": "csharp",
+    "day": 33,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "람다식",
+    "summary": "C#의 람다식 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "람다식은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "람다식의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "람다식의 핵심 개념 설명하기",
+      "람다식을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "람다식에서 배운 개념을 사용해 Day 33 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 33: 람다식\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 람다식 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 33: 람다식 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"람다식: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-34",
+    "language": "csharp",
+    "day": 34,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "이벤트",
+    "summary": "C#의 이벤트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이벤트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "이벤트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "이벤트의 핵심 개념 설명하기",
+      "이벤트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "이벤트에서 배운 개념을 사용해 Day 34 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 34: 이벤트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 이벤트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 34: 이벤트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"이벤트: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-35",
+    "language": "csharp",
+    "day": 35,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "파일 입출력",
+    "summary": "C#의 파일 입출력 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일 입출력은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "파일 입출력의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일 입출력의 핵심 개념 설명하기",
+      "파일 입출력을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일 입출력에서 배운 개념을 사용해 Day 35 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 35: 파일 입출력\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 파일 입출력 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 35: 파일 입출력 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"파일 입출력: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-36",
+    "language": "csharp",
+    "day": 36,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "JSON 직렬화",
+    "summary": "C#의 JSON 직렬화 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "JSON 직렬화은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "JSON 직렬화의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "JSON 직렬화의 핵심 개념 설명하기",
+      "JSON 직렬화을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "JSON 직렬화에서 배운 개념을 사용해 Day 36 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 36: JSON 직렬화\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: JSON 직렬화 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 36: JSON 직렬화 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"JSON 직렬화: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-37",
+    "language": "csharp",
+    "day": 37,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "비동기 Task",
+    "summary": "C#의 비동기 Task 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 Task은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 Task의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 Task의 핵심 개념 설명하기",
+      "비동기 Task을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 Task에서 배운 개념을 사용해 Day 37 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 37: 비동기 Task\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 비동기 Task 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 37: 비동기 Task 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"비동기 Task: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-38",
+    "language": "csharp",
+    "day": 38,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "async와 await",
+    "summary": "C#의 async와 await 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "async와 await은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "async와 await의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "async와 await의 핵심 개념 설명하기",
+      "async와 await을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "async와 await에서 배운 개념을 사용해 Day 38 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 38: async와 await\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: async와 await 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 38: async와 await 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"async와 await: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-39",
+    "language": "csharp",
+    "day": 39,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "단위 테스트 기초",
+    "summary": "C#의 단위 테스트 기초 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "단위 테스트 기초은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "단위 테스트 기초의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "단위 테스트 기초의 핵심 개념 설명하기",
+      "단위 테스트 기초을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "단위 테스트 기초에서 배운 개념을 사용해 Day 39 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 39: 단위 테스트 기초\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 단위 테스트 기초 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 39: 단위 테스트 기초 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"단위 테스트 기초: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-40",
+    "language": "csharp",
+    "day": 40,
+    "stage": 4,
+    "stageName": "중급",
+    "level": "intermediate",
+    "title": "미니 프로젝트: 일정 관리자",
+    "summary": "C#의 미니 프로젝트: 일정 관리자 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "미니 프로젝트: 일정 관리자은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "미니 프로젝트: 일정 관리자의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "미니 프로젝트: 일정 관리자의 핵심 개념 설명하기",
+      "미니 프로젝트: 일정 관리자을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "미니 프로젝트: 일정 관리자에서 배운 개념을 사용해 Day 40 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 40: 미니 프로젝트: 일정 관리자\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 미니 프로젝트: 일정 관리자 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 40: 미니 프로젝트: 일정 관리자 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"미니 프로젝트: 일정 관리자: \" + total);"
+    },
+    "estimatedMinutes": 45,
+    "published": true
+  },
+  {
+    "id": "csharp-day-41",
+    "language": "csharp",
+    "day": 41,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "타입 시스템과 제네릭: 핵심 원리와 내부 동작",
+    "summary": "C#의 타입 시스템과 제네릭: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 제네릭: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "타입 시스템과 제네릭: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "타입 시스템과 제네릭: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "타입 시스템과 제네릭: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "타입 시스템과 제네릭: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 41: 타입 시스템과 제네릭: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 타입 시스템과 제네릭: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 41: 타입 시스템과 제네릭: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"타입 시스템과 제네릭: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-42",
+    "language": "csharp",
+    "day": 42,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "타입 시스템과 제네릭: 실전 구현 패턴",
+    "summary": "C#의 타입 시스템과 제네릭: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 제네릭: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "타입 시스템과 제네릭: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "타입 시스템과 제네릭: 실전 구현 패턴의 핵심 개념 설명하기",
+      "타입 시스템과 제네릭: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "타입 시스템과 제네릭: 실전 구현 패턴에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 42: 타입 시스템과 제네릭: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 타입 시스템과 제네릭: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 42: 타입 시스템과 제네릭: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"타입 시스템과 제네릭: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-43",
+    "language": "csharp",
+    "day": 43,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "타입 시스템과 제네릭: 오류 처리와 경계 조건",
+    "summary": "C#의 타입 시스템과 제네릭: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 제네릭: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "타입 시스템과 제네릭: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "타입 시스템과 제네릭: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "타입 시스템과 제네릭: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "타입 시스템과 제네릭: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 43: 타입 시스템과 제네릭: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 타입 시스템과 제네릭: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 43: 타입 시스템과 제네릭: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"타입 시스템과 제네릭: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-44",
+    "language": "csharp",
+    "day": 44,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "타입 시스템과 제네릭: 테스트와 디버깅",
+    "summary": "C#의 타입 시스템과 제네릭: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 제네릭: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "타입 시스템과 제네릭: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "타입 시스템과 제네릭: 테스트와 디버깅의 핵심 개념 설명하기",
+      "타입 시스템과 제네릭: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "타입 시스템과 제네릭: 테스트와 디버깅에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 44: 타입 시스템과 제네릭: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 타입 시스템과 제네릭: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 44: 타입 시스템과 제네릭: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"타입 시스템과 제네릭: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-45",
+    "language": "csharp",
+    "day": 45,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "타입 시스템과 제네릭: 성능 개선과 리팩터링",
+    "summary": "C#의 타입 시스템과 제네릭: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 제네릭: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "타입 시스템과 제네릭: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "타입 시스템과 제네릭: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "타입 시스템과 제네릭: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "타입 시스템과 제네릭: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 45: 타입 시스템과 제네릭: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 타입 시스템과 제네릭: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 45: 타입 시스템과 제네릭: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"타입 시스템과 제네릭: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-46",
+    "language": "csharp",
+    "day": 46,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "객체지향 설계: 핵심 원리와 내부 동작",
+    "summary": "C#의 객체지향 설계: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "객체지향 설계: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "객체지향 설계: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 46: 객체지향 설계: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 객체지향 설계: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 46: 객체지향 설계: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"객체지향 설계: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-47",
+    "language": "csharp",
+    "day": 47,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "객체지향 설계: 실전 구현 패턴",
+    "summary": "C#의 객체지향 설계: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "객체지향 설계: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계: 실전 구현 패턴의 핵심 개념 설명하기",
+      "객체지향 설계: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계: 실전 구현 패턴에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 47: 객체지향 설계: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 객체지향 설계: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 47: 객체지향 설계: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"객체지향 설계: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-48",
+    "language": "csharp",
+    "day": 48,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "객체지향 설계: 오류 처리와 경계 조건",
+    "summary": "C#의 객체지향 설계: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "객체지향 설계: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "객체지향 설계: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 48: 객체지향 설계: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 객체지향 설계: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 48: 객체지향 설계: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"객체지향 설계: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-49",
+    "language": "csharp",
+    "day": 49,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "객체지향 설계: 테스트와 디버깅",
+    "summary": "C#의 객체지향 설계: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "객체지향 설계: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계: 테스트와 디버깅의 핵심 개념 설명하기",
+      "객체지향 설계: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계: 테스트와 디버깅에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 49: 객체지향 설계: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 객체지향 설계: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 49: 객체지향 설계: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"객체지향 설계: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-50",
+    "language": "csharp",
+    "day": 50,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "객체지향 설계: 성능 개선과 리팩터링",
+    "summary": "C#의 객체지향 설계: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체지향 설계: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "객체지향 설계: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "객체지향 설계: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "객체지향 설계: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "객체지향 설계: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 50: 객체지향 설계: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 객체지향 설계: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 50: 객체지향 설계: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"객체지향 설계: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-51",
+    "language": "csharp",
+    "day": 51,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컬렉션과 LINQ: 핵심 원리와 내부 동작",
+    "summary": "C#의 컬렉션과 LINQ: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션과 LINQ: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컬렉션과 LINQ: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션과 LINQ: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "컬렉션과 LINQ: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션과 LINQ: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 51: 컬렉션과 LINQ: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 컬렉션과 LINQ: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 51: 컬렉션과 LINQ: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"컬렉션과 LINQ: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-52",
+    "language": "csharp",
+    "day": 52,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컬렉션과 LINQ: 실전 구현 패턴",
+    "summary": "C#의 컬렉션과 LINQ: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션과 LINQ: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컬렉션과 LINQ: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션과 LINQ: 실전 구현 패턴의 핵심 개념 설명하기",
+      "컬렉션과 LINQ: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션과 LINQ: 실전 구현 패턴에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 52: 컬렉션과 LINQ: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 컬렉션과 LINQ: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 52: 컬렉션과 LINQ: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"컬렉션과 LINQ: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-53",
+    "language": "csharp",
+    "day": 53,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컬렉션과 LINQ: 오류 처리와 경계 조건",
+    "summary": "C#의 컬렉션과 LINQ: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션과 LINQ: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컬렉션과 LINQ: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션과 LINQ: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "컬렉션과 LINQ: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션과 LINQ: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 53: 컬렉션과 LINQ: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 컬렉션과 LINQ: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 53: 컬렉션과 LINQ: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"컬렉션과 LINQ: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-54",
+    "language": "csharp",
+    "day": 54,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컬렉션과 LINQ: 테스트와 디버깅",
+    "summary": "C#의 컬렉션과 LINQ: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션과 LINQ: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컬렉션과 LINQ: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션과 LINQ: 테스트와 디버깅의 핵심 개념 설명하기",
+      "컬렉션과 LINQ: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션과 LINQ: 테스트와 디버깅에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 54: 컬렉션과 LINQ: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 컬렉션과 LINQ: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 54: 컬렉션과 LINQ: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"컬렉션과 LINQ: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-55",
+    "language": "csharp",
+    "day": 55,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컬렉션과 LINQ: 성능 개선과 리팩터링",
+    "summary": "C#의 컬렉션과 LINQ: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컬렉션과 LINQ: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컬렉션과 LINQ: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컬렉션과 LINQ: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "컬렉션과 LINQ: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컬렉션과 LINQ: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 55: 컬렉션과 LINQ: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 컬렉션과 LINQ: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 55: 컬렉션과 LINQ: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"컬렉션과 LINQ: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-56",
+    "language": "csharp",
+    "day": 56,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "델리게이트와 이벤트: 핵심 원리와 내부 동작",
+    "summary": "C#의 델리게이트와 이벤트: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "델리게이트와 이벤트: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "델리게이트와 이벤트: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "델리게이트와 이벤트: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "델리게이트와 이벤트: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "델리게이트와 이벤트: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 56: 델리게이트와 이벤트: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 델리게이트와 이벤트: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 56: 델리게이트와 이벤트: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"델리게이트와 이벤트: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-57",
+    "language": "csharp",
+    "day": 57,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "델리게이트와 이벤트: 실전 구현 패턴",
+    "summary": "C#의 델리게이트와 이벤트: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "델리게이트와 이벤트: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "델리게이트와 이벤트: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "델리게이트와 이벤트: 실전 구현 패턴의 핵심 개념 설명하기",
+      "델리게이트와 이벤트: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "델리게이트와 이벤트: 실전 구현 패턴에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 57: 델리게이트와 이벤트: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 델리게이트와 이벤트: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 57: 델리게이트와 이벤트: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"델리게이트와 이벤트: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-58",
+    "language": "csharp",
+    "day": 58,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "델리게이트와 이벤트: 오류 처리와 경계 조건",
+    "summary": "C#의 델리게이트와 이벤트: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "델리게이트와 이벤트: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "델리게이트와 이벤트: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "델리게이트와 이벤트: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "델리게이트와 이벤트: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "델리게이트와 이벤트: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 58: 델리게이트와 이벤트: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 델리게이트와 이벤트: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 58: 델리게이트와 이벤트: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"델리게이트와 이벤트: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-59",
+    "language": "csharp",
+    "day": 59,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "델리게이트와 이벤트: 테스트와 디버깅",
+    "summary": "C#의 델리게이트와 이벤트: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "델리게이트와 이벤트: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "델리게이트와 이벤트: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "델리게이트와 이벤트: 테스트와 디버깅의 핵심 개념 설명하기",
+      "델리게이트와 이벤트: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "델리게이트와 이벤트: 테스트와 디버깅에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 59: 델리게이트와 이벤트: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 델리게이트와 이벤트: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 59: 델리게이트와 이벤트: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"델리게이트와 이벤트: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-60",
+    "language": "csharp",
+    "day": 60,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "델리게이트와 이벤트: 성능 개선과 리팩터링",
+    "summary": "C#의 델리게이트와 이벤트: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "델리게이트와 이벤트: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "델리게이트와 이벤트: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "델리게이트와 이벤트: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "델리게이트와 이벤트: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "델리게이트와 이벤트: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 60: 델리게이트와 이벤트: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 델리게이트와 이벤트: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 60: 델리게이트와 이벤트: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"델리게이트와 이벤트: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-61",
+    "language": "csharp",
+    "day": 61,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "예외와 자원 관리: 핵심 원리와 내부 동작",
+    "summary": "C#의 예외와 자원 관리: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외와 자원 관리: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "예외와 자원 관리: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외와 자원 관리: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "예외와 자원 관리: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외와 자원 관리: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 61 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 61: 예외와 자원 관리: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 예외와 자원 관리: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 61: 예외와 자원 관리: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"예외와 자원 관리: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-62",
+    "language": "csharp",
+    "day": 62,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "예외와 자원 관리: 실전 구현 패턴",
+    "summary": "C#의 예외와 자원 관리: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외와 자원 관리: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "예외와 자원 관리: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외와 자원 관리: 실전 구현 패턴의 핵심 개념 설명하기",
+      "예외와 자원 관리: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외와 자원 관리: 실전 구현 패턴에서 배운 개념을 사용해 Day 62 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 62: 예외와 자원 관리: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 예외와 자원 관리: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 62: 예외와 자원 관리: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"예외와 자원 관리: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-63",
+    "language": "csharp",
+    "day": 63,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "예외와 자원 관리: 오류 처리와 경계 조건",
+    "summary": "C#의 예외와 자원 관리: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외와 자원 관리: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "예외와 자원 관리: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외와 자원 관리: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "예외와 자원 관리: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외와 자원 관리: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 63 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 63: 예외와 자원 관리: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 예외와 자원 관리: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 63: 예외와 자원 관리: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"예외와 자원 관리: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-64",
+    "language": "csharp",
+    "day": 64,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "예외와 자원 관리: 테스트와 디버깅",
+    "summary": "C#의 예외와 자원 관리: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외와 자원 관리: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "예외와 자원 관리: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외와 자원 관리: 테스트와 디버깅의 핵심 개념 설명하기",
+      "예외와 자원 관리: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외와 자원 관리: 테스트와 디버깅에서 배운 개념을 사용해 Day 64 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 64: 예외와 자원 관리: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 예외와 자원 관리: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 64: 예외와 자원 관리: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"예외와 자원 관리: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-65",
+    "language": "csharp",
+    "day": 65,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "예외와 자원 관리: 성능 개선과 리팩터링",
+    "summary": "C#의 예외와 자원 관리: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "예외와 자원 관리: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "예외와 자원 관리: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "예외와 자원 관리: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "예외와 자원 관리: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "예외와 자원 관리: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 65 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 65: 예외와 자원 관리: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 예외와 자원 관리: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 65: 예외와 자원 관리: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"예외와 자원 관리: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-66",
+    "language": "csharp",
+    "day": 66,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 프로그래밍: 핵심 원리와 내부 동작",
+    "summary": "C#의 비동기 프로그래밍: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 프로그래밍: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 프로그래밍: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 프로그래밍: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "비동기 프로그래밍: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 프로그래밍: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 66 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 66: 비동기 프로그래밍: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 비동기 프로그래밍: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 66: 비동기 프로그래밍: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"비동기 프로그래밍: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-67",
+    "language": "csharp",
+    "day": 67,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 프로그래밍: 실전 구현 패턴",
+    "summary": "C#의 비동기 프로그래밍: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 프로그래밍: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 프로그래밍: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 프로그래밍: 실전 구현 패턴의 핵심 개념 설명하기",
+      "비동기 프로그래밍: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 프로그래밍: 실전 구현 패턴에서 배운 개념을 사용해 Day 67 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 67: 비동기 프로그래밍: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 비동기 프로그래밍: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 67: 비동기 프로그래밍: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"비동기 프로그래밍: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-68",
+    "language": "csharp",
+    "day": 68,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 프로그래밍: 오류 처리와 경계 조건",
+    "summary": "C#의 비동기 프로그래밍: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 프로그래밍: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 프로그래밍: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 프로그래밍: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "비동기 프로그래밍: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 프로그래밍: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 68 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 68: 비동기 프로그래밍: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 비동기 프로그래밍: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 68: 비동기 프로그래밍: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"비동기 프로그래밍: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-69",
+    "language": "csharp",
+    "day": 69,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 프로그래밍: 테스트와 디버깅",
+    "summary": "C#의 비동기 프로그래밍: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 프로그래밍: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 프로그래밍: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 프로그래밍: 테스트와 디버깅의 핵심 개념 설명하기",
+      "비동기 프로그래밍: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 프로그래밍: 테스트와 디버깅에서 배운 개념을 사용해 Day 69 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 69: 비동기 프로그래밍: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 비동기 프로그래밍: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 69: 비동기 프로그래밍: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"비동기 프로그래밍: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-70",
+    "language": "csharp",
+    "day": 70,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 프로그래밍: 성능 개선과 리팩터링",
+    "summary": "C#의 비동기 프로그래밍: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 프로그래밍: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 프로그래밍: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 프로그래밍: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "비동기 프로그래밍: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 프로그래밍: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 70 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 70: 비동기 프로그래밍: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 비동기 프로그래밍: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 70: 비동기 프로그래밍: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"비동기 프로그래밍: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-71",
+    "language": "csharp",
+    "day": 71,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "파일과 직렬화: 핵심 원리와 내부 동작",
+    "summary": "C#의 파일과 직렬화: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일과 직렬화: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "파일과 직렬화: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일과 직렬화: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "파일과 직렬화: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일과 직렬화: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 71 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 71: 파일과 직렬화: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 파일과 직렬화: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 71: 파일과 직렬화: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"파일과 직렬화: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-72",
+    "language": "csharp",
+    "day": 72,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "파일과 직렬화: 실전 구현 패턴",
+    "summary": "C#의 파일과 직렬화: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일과 직렬화: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "파일과 직렬화: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일과 직렬화: 실전 구현 패턴의 핵심 개념 설명하기",
+      "파일과 직렬화: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일과 직렬화: 실전 구현 패턴에서 배운 개념을 사용해 Day 72 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 72: 파일과 직렬화: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 파일과 직렬화: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 72: 파일과 직렬화: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"파일과 직렬화: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-73",
+    "language": "csharp",
+    "day": 73,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "파일과 직렬화: 오류 처리와 경계 조건",
+    "summary": "C#의 파일과 직렬화: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일과 직렬화: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "파일과 직렬화: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일과 직렬화: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "파일과 직렬화: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일과 직렬화: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 73 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 73: 파일과 직렬화: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 파일과 직렬화: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 73: 파일과 직렬화: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"파일과 직렬화: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-74",
+    "language": "csharp",
+    "day": 74,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "파일과 직렬화: 테스트와 디버깅",
+    "summary": "C#의 파일과 직렬화: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일과 직렬화: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "파일과 직렬화: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일과 직렬화: 테스트와 디버깅의 핵심 개념 설명하기",
+      "파일과 직렬화: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일과 직렬화: 테스트와 디버깅에서 배운 개념을 사용해 Day 74 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 74: 파일과 직렬화: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 파일과 직렬화: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 74: 파일과 직렬화: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"파일과 직렬화: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-75",
+    "language": "csharp",
+    "day": 75,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "파일과 직렬화: 성능 개선과 리팩터링",
+    "summary": "C#의 파일과 직렬화: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "파일과 직렬화: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "파일과 직렬화: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "파일과 직렬화: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "파일과 직렬화: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "파일과 직렬화: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 75 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 75: 파일과 직렬화: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 파일과 직렬화: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 75: 파일과 직렬화: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"파일과 직렬화: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-76",
+    "language": "csharp",
+    "day": 76,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 핵심 원리와 내부 동작",
+    "summary": "C#의 테스트 자동화: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "테스트 자동화: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 76 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 76: 테스트 자동화: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 테스트 자동화: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 76: 테스트 자동화: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"테스트 자동화: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-77",
+    "language": "csharp",
+    "day": 77,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 실전 구현 패턴",
+    "summary": "C#의 테스트 자동화: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 실전 구현 패턴의 핵심 개념 설명하기",
+      "테스트 자동화: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 실전 구현 패턴에서 배운 개념을 사용해 Day 77 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 77: 테스트 자동화: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 테스트 자동화: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 77: 테스트 자동화: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"테스트 자동화: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-78",
+    "language": "csharp",
+    "day": 78,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 오류 처리와 경계 조건",
+    "summary": "C#의 테스트 자동화: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "테스트 자동화: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 78 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 78: 테스트 자동화: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 테스트 자동화: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 78: 테스트 자동화: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"테스트 자동화: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-79",
+    "language": "csharp",
+    "day": 79,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 테스트와 디버깅",
+    "summary": "C#의 테스트 자동화: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 테스트와 디버깅의 핵심 개념 설명하기",
+      "테스트 자동화: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 테스트와 디버깅에서 배운 개념을 사용해 Day 79 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 79: 테스트 자동화: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 테스트 자동화: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 79: 테스트 자동화: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"테스트 자동화: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-80",
+    "language": "csharp",
+    "day": 80,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 성능 개선과 리팩터링",
+    "summary": "C#의 테스트 자동화: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "테스트 자동화: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 80 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 80: 테스트 자동화: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 테스트 자동화: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 80: 테스트 자동화: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"테스트 자동화: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-81",
+    "language": "csharp",
+    "day": 81,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "메모리와 성능: 핵심 원리와 내부 동작",
+    "summary": "C#의 메모리와 성능: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메모리와 성능: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "메모리와 성능: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메모리와 성능: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "메모리와 성능: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메모리와 성능: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 81 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 81: 메모리와 성능: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 메모리와 성능: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 81: 메모리와 성능: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"메모리와 성능: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-82",
+    "language": "csharp",
+    "day": 82,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "메모리와 성능: 실전 구현 패턴",
+    "summary": "C#의 메모리와 성능: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메모리와 성능: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "메모리와 성능: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메모리와 성능: 실전 구현 패턴의 핵심 개념 설명하기",
+      "메모리와 성능: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메모리와 성능: 실전 구현 패턴에서 배운 개념을 사용해 Day 82 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 82: 메모리와 성능: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 메모리와 성능: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 82: 메모리와 성능: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"메모리와 성능: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-83",
+    "language": "csharp",
+    "day": 83,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "메모리와 성능: 오류 처리와 경계 조건",
+    "summary": "C#의 메모리와 성능: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메모리와 성능: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "메모리와 성능: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메모리와 성능: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "메모리와 성능: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메모리와 성능: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 83 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 83: 메모리와 성능: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 메모리와 성능: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 83: 메모리와 성능: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"메모리와 성능: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-84",
+    "language": "csharp",
+    "day": 84,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "메모리와 성능: 테스트와 디버깅",
+    "summary": "C#의 메모리와 성능: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메모리와 성능: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "메모리와 성능: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메모리와 성능: 테스트와 디버깅의 핵심 개념 설명하기",
+      "메모리와 성능: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메모리와 성능: 테스트와 디버깅에서 배운 개념을 사용해 Day 84 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 84: 메모리와 성능: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 메모리와 성능: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 84: 메모리와 성능: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"메모리와 성능: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-85",
+    "language": "csharp",
+    "day": 85,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "메모리와 성능: 성능 개선과 리팩터링",
+    "summary": "C#의 메모리와 성능: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "메모리와 성능: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "메모리와 성능: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "메모리와 성능: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "메모리와 성능: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "메모리와 성능: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 85 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 85: 메모리와 성능: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 메모리와 성능: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 85: 메모리와 성능: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"메모리와 성능: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-86",
+    "language": "csharp",
+    "day": 86,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 패턴: 핵심 원리와 내부 동작",
+    "summary": "C#의 함수형 패턴: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 패턴: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "함수형 패턴: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수형 패턴: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "함수형 패턴: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수형 패턴: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 86 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 86: 함수형 패턴: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 함수형 패턴: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 86: 함수형 패턴: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"함수형 패턴: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-87",
+    "language": "csharp",
+    "day": 87,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 패턴: 실전 구현 패턴",
+    "summary": "C#의 함수형 패턴: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 패턴: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "함수형 패턴: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수형 패턴: 실전 구현 패턴의 핵심 개념 설명하기",
+      "함수형 패턴: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수형 패턴: 실전 구현 패턴에서 배운 개념을 사용해 Day 87 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 87: 함수형 패턴: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 함수형 패턴: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 87: 함수형 패턴: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"함수형 패턴: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-88",
+    "language": "csharp",
+    "day": 88,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 패턴: 오류 처리와 경계 조건",
+    "summary": "C#의 함수형 패턴: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 패턴: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "함수형 패턴: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수형 패턴: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "함수형 패턴: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수형 패턴: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 88 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 88: 함수형 패턴: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 함수형 패턴: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 88: 함수형 패턴: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"함수형 패턴: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-89",
+    "language": "csharp",
+    "day": 89,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 패턴: 테스트와 디버깅",
+    "summary": "C#의 함수형 패턴: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 패턴: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "함수형 패턴: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수형 패턴: 테스트와 디버깅의 핵심 개념 설명하기",
+      "함수형 패턴: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수형 패턴: 테스트와 디버깅에서 배운 개념을 사용해 Day 89 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 89: 함수형 패턴: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 함수형 패턴: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 89: 함수형 패턴: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"함수형 패턴: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-90",
+    "language": "csharp",
+    "day": 90,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "함수형 패턴: 성능 개선과 리팩터링",
+    "summary": "C#의 함수형 패턴: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 패턴: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "함수형 패턴: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "함수형 패턴: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "함수형 패턴: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "함수형 패턴: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 90 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 90: 함수형 패턴: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 함수형 패턴: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 90: 함수형 패턴: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"함수형 패턴: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-91",
+    "language": "csharp",
+    "day": 91,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "애플리케이션 아키텍처: 핵심 원리와 내부 동작",
+    "summary": "C#의 애플리케이션 아키텍처: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "애플리케이션 아키텍처: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "애플리케이션 아키텍처: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "애플리케이션 아키텍처: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "애플리케이션 아키텍처: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "애플리케이션 아키텍처: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 91 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 91: 애플리케이션 아키텍처: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 애플리케이션 아키텍처: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 91: 애플리케이션 아키텍처: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"애플리케이션 아키텍처: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-92",
+    "language": "csharp",
+    "day": 92,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "애플리케이션 아키텍처: 실전 구현 패턴",
+    "summary": "C#의 애플리케이션 아키텍처: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "애플리케이션 아키텍처: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "애플리케이션 아키텍처: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "애플리케이션 아키텍처: 실전 구현 패턴의 핵심 개념 설명하기",
+      "애플리케이션 아키텍처: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "애플리케이션 아키텍처: 실전 구현 패턴에서 배운 개념을 사용해 Day 92 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 92: 애플리케이션 아키텍처: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 애플리케이션 아키텍처: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 92: 애플리케이션 아키텍처: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"애플리케이션 아키텍처: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-93",
+    "language": "csharp",
+    "day": 93,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "애플리케이션 아키텍처: 오류 처리와 경계 조건",
+    "summary": "C#의 애플리케이션 아키텍처: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "애플리케이션 아키텍처: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "애플리케이션 아키텍처: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "애플리케이션 아키텍처: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "애플리케이션 아키텍처: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "애플리케이션 아키텍처: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 93 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 93: 애플리케이션 아키텍처: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 애플리케이션 아키텍처: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 93: 애플리케이션 아키텍처: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"애플리케이션 아키텍처: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-94",
+    "language": "csharp",
+    "day": 94,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "애플리케이션 아키텍처: 테스트와 디버깅",
+    "summary": "C#의 애플리케이션 아키텍처: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "애플리케이션 아키텍처: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "애플리케이션 아키텍처: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "애플리케이션 아키텍처: 테스트와 디버깅의 핵심 개념 설명하기",
+      "애플리케이션 아키텍처: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "애플리케이션 아키텍처: 테스트와 디버깅에서 배운 개념을 사용해 Day 94 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 94: 애플리케이션 아키텍처: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 애플리케이션 아키텍처: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 94: 애플리케이션 아키텍처: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"애플리케이션 아키텍처: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-95",
+    "language": "csharp",
+    "day": 95,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "애플리케이션 아키텍처: 성능 개선과 리팩터링",
+    "summary": "C#의 애플리케이션 아키텍처: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "애플리케이션 아키텍처: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "애플리케이션 아키텍처: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "애플리케이션 아키텍처: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "애플리케이션 아키텍처: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "애플리케이션 아키텍처: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 95 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 95: 애플리케이션 아키텍처: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 애플리케이션 아키텍처: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 95: 애플리케이션 아키텍처: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"애플리케이션 아키텍처: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-96",
+    "language": "csharp",
+    "day": 96,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": ".NET 서비스 설계: 핵심 원리와 내부 동작",
+    "summary": "C#의 .NET 서비스 설계: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": ".NET 서비스 설계: 핵심 원리와 내부 동작은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      ".NET 서비스 설계: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      ".NET 서비스 설계: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      ".NET 서비스 설계: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": ".NET 서비스 설계: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 96 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 96: .NET 서비스 설계: 핵심 원리와 내부 동작\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: .NET 서비스 설계: 핵심 원리와 내부 동작 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 96: .NET 서비스 설계: 핵심 원리와 내부 동작 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\".NET 서비스 설계: 핵심 원리와 내부 동작: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-97",
+    "language": "csharp",
+    "day": 97,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": ".NET 서비스 설계: 실전 구현 패턴",
+    "summary": "C#의 .NET 서비스 설계: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": ".NET 서비스 설계: 실전 구현 패턴은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      ".NET 서비스 설계: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      ".NET 서비스 설계: 실전 구현 패턴의 핵심 개념 설명하기",
+      ".NET 서비스 설계: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": ".NET 서비스 설계: 실전 구현 패턴에서 배운 개념을 사용해 Day 97 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 97: .NET 서비스 설계: 실전 구현 패턴\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: .NET 서비스 설계: 실전 구현 패턴 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 97: .NET 서비스 설계: 실전 구현 패턴 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\".NET 서비스 설계: 실전 구현 패턴: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-98",
+    "language": "csharp",
+    "day": 98,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": ".NET 서비스 설계: 오류 처리와 경계 조건",
+    "summary": "C#의 .NET 서비스 설계: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": ".NET 서비스 설계: 오류 처리와 경계 조건은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      ".NET 서비스 설계: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      ".NET 서비스 설계: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      ".NET 서비스 설계: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": ".NET 서비스 설계: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 98 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 98: .NET 서비스 설계: 오류 처리와 경계 조건\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: .NET 서비스 설계: 오류 처리와 경계 조건 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 98: .NET 서비스 설계: 오류 처리와 경계 조건 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\".NET 서비스 설계: 오류 처리와 경계 조건: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-99",
+    "language": "csharp",
+    "day": 99,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": ".NET 서비스 설계: 테스트와 디버깅",
+    "summary": "C#의 .NET 서비스 설계: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": ".NET 서비스 설계: 테스트와 디버깅은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      ".NET 서비스 설계: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      ".NET 서비스 설계: 테스트와 디버깅의 핵심 개념 설명하기",
+      ".NET 서비스 설계: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": ".NET 서비스 설계: 테스트와 디버깅에서 배운 개념을 사용해 Day 99 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 99: .NET 서비스 설계: 테스트와 디버깅\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: .NET 서비스 설계: 테스트와 디버깅 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 99: .NET 서비스 설계: 테스트와 디버깅 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\".NET 서비스 설계: 테스트와 디버깅: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-100",
+    "language": "csharp",
+    "day": 100,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": ".NET 서비스 설계: 성능 개선과 리팩터링",
+    "summary": "C#의 .NET 서비스 설계: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": ".NET 서비스 설계: 성능 개선과 리팩터링은(는) C# 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      ".NET 서비스 설계: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      ".NET 서비스 설계: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      ".NET 서비스 설계: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": ".NET 서비스 설계: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 100 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 100: .NET 서비스 설계: 성능 개선과 리팩터링\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: .NET 서비스 설계: 성능 개선과 리팩터링 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 100: .NET 서비스 설계: 성능 개선과 리팩터링 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\".NET 서비스 설계: 성능 개선과 리팩터링: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-101",
+    "language": "csharp",
+    "day": 101,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 관리 대시보드",
+    "summary": "C#의 프로젝트: 학습 관리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 관리 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 관리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 관리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 학습 관리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 관리 대시보드에서 배운 개념을 사용해 Day 101 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 101: 프로젝트: 학습 관리 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 학습 관리 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 101: 프로젝트: 학습 관리 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 학습 관리 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-102",
+    "language": "csharp",
+    "day": 102,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 관리 자동화 도구",
+    "summary": "C#의 프로젝트: 학습 관리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 관리 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 관리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 관리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 학습 관리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 관리 자동화 도구에서 배운 개념을 사용해 Day 102 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 102: 프로젝트: 학습 관리 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 학습 관리 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 102: 프로젝트: 학습 관리 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 학습 관리 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-103",
+    "language": "csharp",
+    "day": 103,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 관리 API 서비스",
+    "summary": "C#의 프로젝트: 학습 관리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 관리 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 관리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 관리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 학습 관리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 관리 API 서비스에서 배운 개념을 사용해 Day 103 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 103: 프로젝트: 학습 관리 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 학습 관리 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 103: 프로젝트: 학습 관리 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 학습 관리 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-104",
+    "language": "csharp",
+    "day": 104,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 관리 분석 리포트",
+    "summary": "C#의 프로젝트: 학습 관리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 관리 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 관리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 관리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 학습 관리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 관리 분석 리포트에서 배운 개념을 사용해 Day 104 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 104: 프로젝트: 학습 관리 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 학습 관리 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 104: 프로젝트: 학습 관리 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 학습 관리 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-105",
+    "language": "csharp",
+    "day": 105,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 관리 운영 콘솔",
+    "summary": "C#의 프로젝트: 학습 관리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 관리 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 관리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 관리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 학습 관리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 관리 운영 콘솔에서 배운 개념을 사용해 Day 105 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 105: 프로젝트: 학습 관리 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 학습 관리 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 105: 프로젝트: 학습 관리 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 학습 관리 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-106",
+    "language": "csharp",
+    "day": 106,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 주문 처리 대시보드",
+    "summary": "C#의 프로젝트: 주문 처리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 주문 처리 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 주문 처리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 주문 처리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 주문 처리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 주문 처리 대시보드에서 배운 개념을 사용해 Day 106 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 106: 프로젝트: 주문 처리 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 주문 처리 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 106: 프로젝트: 주문 처리 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 주문 처리 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-107",
+    "language": "csharp",
+    "day": 107,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 주문 처리 자동화 도구",
+    "summary": "C#의 프로젝트: 주문 처리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 주문 처리 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 주문 처리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 주문 처리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 주문 처리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 주문 처리 자동화 도구에서 배운 개념을 사용해 Day 107 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 107: 프로젝트: 주문 처리 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 주문 처리 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 107: 프로젝트: 주문 처리 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 주문 처리 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-108",
+    "language": "csharp",
+    "day": 108,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 주문 처리 API 서비스",
+    "summary": "C#의 프로젝트: 주문 처리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 주문 처리 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 주문 처리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 주문 처리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 주문 처리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 주문 처리 API 서비스에서 배운 개념을 사용해 Day 108 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 108: 프로젝트: 주문 처리 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 주문 처리 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 108: 프로젝트: 주문 처리 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 주문 처리 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-109",
+    "language": "csharp",
+    "day": 109,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 주문 처리 분석 리포트",
+    "summary": "C#의 프로젝트: 주문 처리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 주문 처리 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 주문 처리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 주문 처리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 주문 처리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 주문 처리 분석 리포트에서 배운 개념을 사용해 Day 109 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 109: 프로젝트: 주문 처리 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 주문 처리 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 109: 프로젝트: 주문 처리 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 주문 처리 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-110",
+    "language": "csharp",
+    "day": 110,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 주문 처리 운영 콘솔",
+    "summary": "C#의 프로젝트: 주문 처리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 주문 처리 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 주문 처리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 주문 처리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 주문 처리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 주문 처리 운영 콘솔에서 배운 개념을 사용해 Day 110 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 110: 프로젝트: 주문 처리 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 주문 처리 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 110: 프로젝트: 주문 처리 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 주문 처리 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-111",
+    "language": "csharp",
+    "day": 111,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 대시보드",
+    "summary": "C#의 프로젝트: 예약 관리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 대시보드에서 배운 개념을 사용해 Day 111 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 111: 프로젝트: 예약 관리 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 예약 관리 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 111: 프로젝트: 예약 관리 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 예약 관리 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-112",
+    "language": "csharp",
+    "day": 112,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 자동화 도구",
+    "summary": "C#의 프로젝트: 예약 관리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 자동화 도구에서 배운 개념을 사용해 Day 112 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 112: 프로젝트: 예약 관리 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 예약 관리 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 112: 프로젝트: 예약 관리 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 예약 관리 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-113",
+    "language": "csharp",
+    "day": 113,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 API 서비스",
+    "summary": "C#의 프로젝트: 예약 관리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 API 서비스에서 배운 개념을 사용해 Day 113 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 113: 프로젝트: 예약 관리 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 예약 관리 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 113: 프로젝트: 예약 관리 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 예약 관리 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-114",
+    "language": "csharp",
+    "day": 114,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 분석 리포트",
+    "summary": "C#의 프로젝트: 예약 관리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 분석 리포트에서 배운 개념을 사용해 Day 114 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 114: 프로젝트: 예약 관리 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 예약 관리 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 114: 프로젝트: 예약 관리 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 예약 관리 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-115",
+    "language": "csharp",
+    "day": 115,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 예약 관리 운영 콘솔",
+    "summary": "C#의 프로젝트: 예약 관리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 예약 관리 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 예약 관리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 예약 관리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 예약 관리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 예약 관리 운영 콘솔에서 배운 개념을 사용해 Day 115 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 115: 프로젝트: 예약 관리 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 예약 관리 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 115: 프로젝트: 예약 관리 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 예약 관리 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-116",
+    "language": "csharp",
+    "day": 116,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 대시보드",
+    "summary": "C#의 프로젝트: 가계부 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 가계부 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 대시보드에서 배운 개념을 사용해 Day 116 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 116: 프로젝트: 가계부 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 가계부 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 116: 프로젝트: 가계부 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 가계부 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-117",
+    "language": "csharp",
+    "day": 117,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 자동화 도구",
+    "summary": "C#의 프로젝트: 가계부 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 가계부 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 자동화 도구에서 배운 개념을 사용해 Day 117 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 117: 프로젝트: 가계부 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 가계부 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 117: 프로젝트: 가계부 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 가계부 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-118",
+    "language": "csharp",
+    "day": 118,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 API 서비스",
+    "summary": "C#의 프로젝트: 가계부 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 가계부 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 API 서비스에서 배운 개념을 사용해 Day 118 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 118: 프로젝트: 가계부 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 가계부 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 118: 프로젝트: 가계부 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 가계부 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-119",
+    "language": "csharp",
+    "day": 119,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 분석 리포트",
+    "summary": "C#의 프로젝트: 가계부 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 가계부 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 분석 리포트에서 배운 개념을 사용해 Day 119 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 119: 프로젝트: 가계부 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 가계부 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 119: 프로젝트: 가계부 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 가계부 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-120",
+    "language": "csharp",
+    "day": 120,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 운영 콘솔",
+    "summary": "C#의 프로젝트: 가계부 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 가계부 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 운영 콘솔에서 배운 개념을 사용해 Day 120 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 120: 프로젝트: 가계부 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 가계부 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 120: 프로젝트: 가계부 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 가계부 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-121",
+    "language": "csharp",
+    "day": 121,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 대시보드",
+    "summary": "C#의 프로젝트: 문서 검색 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 대시보드에서 배운 개념을 사용해 Day 121 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 121: 프로젝트: 문서 검색 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 문서 검색 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 121: 프로젝트: 문서 검색 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 문서 검색 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-122",
+    "language": "csharp",
+    "day": 122,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 자동화 도구",
+    "summary": "C#의 프로젝트: 문서 검색 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 자동화 도구에서 배운 개념을 사용해 Day 122 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 122: 프로젝트: 문서 검색 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 문서 검색 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 122: 프로젝트: 문서 검색 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 문서 검색 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-123",
+    "language": "csharp",
+    "day": 123,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 API 서비스",
+    "summary": "C#의 프로젝트: 문서 검색 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 API 서비스에서 배운 개념을 사용해 Day 123 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 123: 프로젝트: 문서 검색 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 문서 검색 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 123: 프로젝트: 문서 검색 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 문서 검색 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-124",
+    "language": "csharp",
+    "day": 124,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 분석 리포트",
+    "summary": "C#의 프로젝트: 문서 검색 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 분석 리포트에서 배운 개념을 사용해 Day 124 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 124: 프로젝트: 문서 검색 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 문서 검색 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 124: 프로젝트: 문서 검색 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 문서 검색 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-125",
+    "language": "csharp",
+    "day": 125,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 운영 콘솔",
+    "summary": "C#의 프로젝트: 문서 검색 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 운영 콘솔에서 배운 개념을 사용해 Day 125 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 125: 프로젝트: 문서 검색 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 문서 검색 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 125: 프로젝트: 문서 검색 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 문서 검색 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-126",
+    "language": "csharp",
+    "day": 126,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 분석 대시보드",
+    "summary": "C#의 프로젝트: 로그 분석 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 분석 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 분석 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 분석 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 로그 분석 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 분석 대시보드에서 배운 개념을 사용해 Day 126 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 126: 프로젝트: 로그 분석 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 로그 분석 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 126: 프로젝트: 로그 분석 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 로그 분석 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-127",
+    "language": "csharp",
+    "day": 127,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 분석 자동화 도구",
+    "summary": "C#의 프로젝트: 로그 분석 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 분석 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 분석 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 분석 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 로그 분석 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 분석 자동화 도구에서 배운 개념을 사용해 Day 127 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 127: 프로젝트: 로그 분석 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 로그 분석 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 127: 프로젝트: 로그 분석 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 로그 분석 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-128",
+    "language": "csharp",
+    "day": 128,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 분석 API 서비스",
+    "summary": "C#의 프로젝트: 로그 분석 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 분석 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 분석 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 분석 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 로그 분석 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 분석 API 서비스에서 배운 개념을 사용해 Day 128 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 128: 프로젝트: 로그 분석 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 로그 분석 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 128: 프로젝트: 로그 분석 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 로그 분석 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-129",
+    "language": "csharp",
+    "day": 129,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 분석 분석 리포트",
+    "summary": "C#의 프로젝트: 로그 분석 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 분석 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 분석 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 분석 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 로그 분석 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 분석 분석 리포트에서 배운 개념을 사용해 Day 129 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 129: 프로젝트: 로그 분석 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 로그 분석 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 129: 프로젝트: 로그 분석 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 로그 분석 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-130",
+    "language": "csharp",
+    "day": 130,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 분석 운영 콘솔",
+    "summary": "C#의 프로젝트: 로그 분석 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 분석 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 분석 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 분석 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 로그 분석 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 분석 운영 콘솔에서 배운 개념을 사용해 Day 130 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 130: 프로젝트: 로그 분석 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 로그 분석 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 130: 프로젝트: 로그 분석 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 로그 분석 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-131",
+    "language": "csharp",
+    "day": 131,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 대시보드",
+    "summary": "C#의 프로젝트: 재고 관리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 대시보드에서 배운 개념을 사용해 Day 131 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 131: 프로젝트: 재고 관리 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 재고 관리 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 131: 프로젝트: 재고 관리 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 재고 관리 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-132",
+    "language": "csharp",
+    "day": 132,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 자동화 도구",
+    "summary": "C#의 프로젝트: 재고 관리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 자동화 도구에서 배운 개념을 사용해 Day 132 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 132: 프로젝트: 재고 관리 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 재고 관리 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 132: 프로젝트: 재고 관리 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 재고 관리 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-133",
+    "language": "csharp",
+    "day": 133,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 API 서비스",
+    "summary": "C#의 프로젝트: 재고 관리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 API 서비스에서 배운 개념을 사용해 Day 133 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 133: 프로젝트: 재고 관리 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 재고 관리 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 133: 프로젝트: 재고 관리 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 재고 관리 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-134",
+    "language": "csharp",
+    "day": 134,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 분석 리포트",
+    "summary": "C#의 프로젝트: 재고 관리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 분석 리포트에서 배운 개념을 사용해 Day 134 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 134: 프로젝트: 재고 관리 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 재고 관리 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 134: 프로젝트: 재고 관리 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 재고 관리 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-135",
+    "language": "csharp",
+    "day": 135,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 운영 콘솔",
+    "summary": "C#의 프로젝트: 재고 관리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 운영 콘솔에서 배운 개념을 사용해 Day 135 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 135: 프로젝트: 재고 관리 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 재고 관리 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 135: 프로젝트: 재고 관리 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 재고 관리 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-136",
+    "language": "csharp",
+    "day": 136,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 고객 지원 대시보드",
+    "summary": "C#의 프로젝트: 고객 지원 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 고객 지원 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 고객 지원 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 고객 지원 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 고객 지원 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 고객 지원 대시보드에서 배운 개념을 사용해 Day 136 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 136: 프로젝트: 고객 지원 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 고객 지원 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 136: 프로젝트: 고객 지원 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 고객 지원 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-137",
+    "language": "csharp",
+    "day": 137,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 고객 지원 자동화 도구",
+    "summary": "C#의 프로젝트: 고객 지원 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 고객 지원 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 고객 지원 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 고객 지원 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 고객 지원 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 고객 지원 자동화 도구에서 배운 개념을 사용해 Day 137 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 137: 프로젝트: 고객 지원 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 고객 지원 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 137: 프로젝트: 고객 지원 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 고객 지원 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-138",
+    "language": "csharp",
+    "day": 138,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 고객 지원 API 서비스",
+    "summary": "C#의 프로젝트: 고객 지원 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 고객 지원 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 고객 지원 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 고객 지원 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 고객 지원 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 고객 지원 API 서비스에서 배운 개념을 사용해 Day 138 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 138: 프로젝트: 고객 지원 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 고객 지원 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 138: 프로젝트: 고객 지원 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 고객 지원 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-139",
+    "language": "csharp",
+    "day": 139,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 고객 지원 분석 리포트",
+    "summary": "C#의 프로젝트: 고객 지원 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 고객 지원 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 고객 지원 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 고객 지원 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 고객 지원 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 고객 지원 분석 리포트에서 배운 개념을 사용해 Day 139 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 139: 프로젝트: 고객 지원 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 고객 지원 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 139: 프로젝트: 고객 지원 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 고객 지원 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-140",
+    "language": "csharp",
+    "day": 140,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 고객 지원 운영 콘솔",
+    "summary": "C#의 프로젝트: 고객 지원 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 고객 지원 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 고객 지원 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 고객 지원 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 고객 지원 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 고객 지원 운영 콘솔에서 배운 개념을 사용해 Day 140 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 140: 프로젝트: 고객 지원 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 고객 지원 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 140: 프로젝트: 고객 지원 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 고객 지원 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-141",
+    "language": "csharp",
+    "day": 141,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 처리 대시보드",
+    "summary": "C#의 프로젝트: 알림 처리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 처리 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 처리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 처리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 알림 처리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 처리 대시보드에서 배운 개념을 사용해 Day 141 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 141: 프로젝트: 알림 처리 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 알림 처리 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 141: 프로젝트: 알림 처리 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 알림 처리 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-142",
+    "language": "csharp",
+    "day": 142,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 처리 자동화 도구",
+    "summary": "C#의 프로젝트: 알림 처리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 처리 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 처리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 처리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 알림 처리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 처리 자동화 도구에서 배운 개념을 사용해 Day 142 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 142: 프로젝트: 알림 처리 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 알림 처리 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 142: 프로젝트: 알림 처리 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 알림 처리 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-143",
+    "language": "csharp",
+    "day": 143,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 처리 API 서비스",
+    "summary": "C#의 프로젝트: 알림 처리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 처리 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 처리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 처리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 알림 처리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 처리 API 서비스에서 배운 개념을 사용해 Day 143 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 143: 프로젝트: 알림 처리 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 알림 처리 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 143: 프로젝트: 알림 처리 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 알림 처리 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-144",
+    "language": "csharp",
+    "day": 144,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 처리 분석 리포트",
+    "summary": "C#의 프로젝트: 알림 처리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 처리 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 처리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 처리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 알림 처리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 처리 분석 리포트에서 배운 개념을 사용해 Day 144 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 144: 프로젝트: 알림 처리 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 알림 처리 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 144: 프로젝트: 알림 처리 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 알림 처리 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-145",
+    "language": "csharp",
+    "day": 145,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 알림 처리 운영 콘솔",
+    "summary": "C#의 프로젝트: 알림 처리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 알림 처리 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 알림 처리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 알림 처리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 알림 처리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 알림 처리 운영 콘솔에서 배운 개념을 사용해 Day 145 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 145: 프로젝트: 알림 처리 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 알림 처리 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 145: 프로젝트: 알림 처리 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 알림 처리 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-146",
+    "language": "csharp",
+    "day": 146,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 데이터 변환 대시보드",
+    "summary": "C#의 프로젝트: 데이터 변환 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 데이터 변환 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 데이터 변환 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 데이터 변환 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 데이터 변환 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 데이터 변환 대시보드에서 배운 개념을 사용해 Day 146 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 146: 프로젝트: 데이터 변환 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 데이터 변환 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 146: 프로젝트: 데이터 변환 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 데이터 변환 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-147",
+    "language": "csharp",
+    "day": 147,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 데이터 변환 자동화 도구",
+    "summary": "C#의 프로젝트: 데이터 변환 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 데이터 변환 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 데이터 변환 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 데이터 변환 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 데이터 변환 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 데이터 변환 자동화 도구에서 배운 개념을 사용해 Day 147 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 147: 프로젝트: 데이터 변환 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 데이터 변환 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 147: 프로젝트: 데이터 변환 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 데이터 변환 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-148",
+    "language": "csharp",
+    "day": 148,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 데이터 변환 API 서비스",
+    "summary": "C#의 프로젝트: 데이터 변환 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 데이터 변환 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 데이터 변환 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 데이터 변환 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 데이터 변환 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 데이터 변환 API 서비스에서 배운 개념을 사용해 Day 148 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 148: 프로젝트: 데이터 변환 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 데이터 변환 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 148: 프로젝트: 데이터 변환 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 데이터 변환 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-149",
+    "language": "csharp",
+    "day": 149,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 데이터 변환 분석 리포트",
+    "summary": "C#의 프로젝트: 데이터 변환 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 데이터 변환 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 데이터 변환 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 데이터 변환 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 데이터 변환 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 데이터 변환 분석 리포트에서 배운 개념을 사용해 Day 149 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 149: 프로젝트: 데이터 변환 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 데이터 변환 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 149: 프로젝트: 데이터 변환 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 데이터 변환 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-150",
+    "language": "csharp",
+    "day": 150,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 데이터 변환 운영 콘솔",
+    "summary": "C#의 프로젝트: 데이터 변환 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 데이터 변환 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 데이터 변환 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 데이터 변환 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 데이터 변환 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 데이터 변환 운영 콘솔에서 배운 개념을 사용해 Day 150 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 150: 프로젝트: 데이터 변환 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 데이터 변환 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 150: 프로젝트: 데이터 변환 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 데이터 변환 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-151",
+    "language": "csharp",
+    "day": 151,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 업무 자동화 대시보드",
+    "summary": "C#의 프로젝트: 업무 자동화 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 업무 자동화 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 업무 자동화 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 업무 자동화 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 업무 자동화 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 업무 자동화 대시보드에서 배운 개념을 사용해 Day 151 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 151: 프로젝트: 업무 자동화 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 업무 자동화 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 151: 프로젝트: 업무 자동화 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 업무 자동화 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-152",
+    "language": "csharp",
+    "day": 152,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 업무 자동화 자동화 도구",
+    "summary": "C#의 프로젝트: 업무 자동화 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 업무 자동화 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 업무 자동화 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 업무 자동화 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 업무 자동화 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 업무 자동화 자동화 도구에서 배운 개념을 사용해 Day 152 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 152: 프로젝트: 업무 자동화 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 업무 자동화 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 152: 프로젝트: 업무 자동화 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 업무 자동화 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-153",
+    "language": "csharp",
+    "day": 153,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 업무 자동화 API 서비스",
+    "summary": "C#의 프로젝트: 업무 자동화 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 업무 자동화 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 업무 자동화 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 업무 자동화 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 업무 자동화 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 업무 자동화 API 서비스에서 배운 개념을 사용해 Day 153 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 153: 프로젝트: 업무 자동화 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 업무 자동화 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 153: 프로젝트: 업무 자동화 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 업무 자동화 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-154",
+    "language": "csharp",
+    "day": 154,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 업무 자동화 분석 리포트",
+    "summary": "C#의 프로젝트: 업무 자동화 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 업무 자동화 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 업무 자동화 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 업무 자동화 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 업무 자동화 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 업무 자동화 분석 리포트에서 배운 개념을 사용해 Day 154 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 154: 프로젝트: 업무 자동화 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 업무 자동화 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 154: 프로젝트: 업무 자동화 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 업무 자동화 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-155",
+    "language": "csharp",
+    "day": 155,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 업무 자동화 운영 콘솔",
+    "summary": "C#의 프로젝트: 업무 자동화 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 업무 자동화 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 업무 자동화 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 업무 자동화 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 업무 자동화 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 업무 자동화 운영 콘솔에서 배운 개념을 사용해 Day 155 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 155: 프로젝트: 업무 자동화 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 업무 자동화 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 155: 프로젝트: 업무 자동화 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 업무 자동화 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-156",
+    "language": "csharp",
+    "day": 156,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 서비스 모니터링 대시보드",
+    "summary": "C#의 프로젝트: 서비스 모니터링 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 서비스 모니터링 대시보드은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 서비스 모니터링 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 서비스 모니터링 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 서비스 모니터링 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 서비스 모니터링 대시보드에서 배운 개념을 사용해 Day 156 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 156: 프로젝트: 서비스 모니터링 대시보드\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 서비스 모니터링 대시보드 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 156: 프로젝트: 서비스 모니터링 대시보드 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 서비스 모니터링 대시보드: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-157",
+    "language": "csharp",
+    "day": 157,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 서비스 모니터링 자동화 도구",
+    "summary": "C#의 프로젝트: 서비스 모니터링 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 서비스 모니터링 자동화 도구은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 서비스 모니터링 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 서비스 모니터링 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 서비스 모니터링 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 서비스 모니터링 자동화 도구에서 배운 개념을 사용해 Day 157 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 157: 프로젝트: 서비스 모니터링 자동화 도구\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 서비스 모니터링 자동화 도구 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 157: 프로젝트: 서비스 모니터링 자동화 도구 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 서비스 모니터링 자동화 도구: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-158",
+    "language": "csharp",
+    "day": 158,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 서비스 모니터링 API 서비스",
+    "summary": "C#의 프로젝트: 서비스 모니터링 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 서비스 모니터링 API 서비스은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 서비스 모니터링 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 서비스 모니터링 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 서비스 모니터링 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 서비스 모니터링 API 서비스에서 배운 개념을 사용해 Day 158 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 158: 프로젝트: 서비스 모니터링 API 서비스\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 서비스 모니터링 API 서비스 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 158: 프로젝트: 서비스 모니터링 API 서비스 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 서비스 모니터링 API 서비스: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-159",
+    "language": "csharp",
+    "day": 159,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 서비스 모니터링 분석 리포트",
+    "summary": "C#의 프로젝트: 서비스 모니터링 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 서비스 모니터링 분석 리포트은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 서비스 모니터링 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 서비스 모니터링 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 서비스 모니터링 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 서비스 모니터링 분석 리포트에서 배운 개념을 사용해 Day 159 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 159: 프로젝트: 서비스 모니터링 분석 리포트\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 서비스 모니터링 분석 리포트 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 159: 프로젝트: 서비스 모니터링 분석 리포트 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 서비스 모니터링 분석 리포트: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "csharp-day-160",
+    "language": "csharp",
+    "day": 160,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 서비스 모니터링 운영 콘솔",
+    "summary": "C#의 프로젝트: 서비스 모니터링 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 서비스 모니터링 운영 콘솔은(는) C# 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 서비스 모니터링 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 서비스 모니터링 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 서비스 모니터링 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 서비스 모니터링 운영 콘솔에서 배운 개념을 사용해 Day 160 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 160: 프로젝트: 서비스 모니터링 운영 콘솔\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: 프로젝트: 서비스 모니터링 운영 콘솔 개념을 적용하세요.\nConsole.WriteLine(values.Length);",
+      "solutionCode": "// Day 160: 프로젝트: 서비스 모니터링 운영 콘솔 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine(\"프로젝트: 서비스 모니터링 운영 콘솔: \" + total);"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  }
+]

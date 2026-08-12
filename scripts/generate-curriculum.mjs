@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { langGraphExplanations, solutionCatalog } from "./curriculum-solutions.mjs";
 import { makeDetailedExplanation } from "./curriculum-explanations.mjs";
+import { makeAdvancedTopics, makeProjectTopics } from "./curriculum-extension.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -90,10 +91,22 @@ const curricula = {
     "Store 기반 장기 메모리", "메모리 네임스페이스", "의미 기반 메모리 검색", "메모리 관리 정책", "미니 프로젝트: 개인화 어시스턴트",
     "interrupt로 실행 중단", "Command resume으로 재개", "승인·거절 Human-in-the-loop", "사용자 수정 후 상태 반영", "서브그래프 구성",
     "서브그래프 지속성 전략", "ToolNode와 tools_condition", "멀티 에이전트 오케스트레이션", "테스트와 LangSmith 추적", "최종 프로젝트: 운영형 에이전트 시스템"
+  ],
+  c: [
+    "개발 환경과 첫 출력", "변수와 기본 자료형", "상수와 형 변환", "연산자", "표준 입력과 출력", "조건문", "switch 문", "for 반복문", "while 반복문", "기초 종합 문제",
+    "함수 선언과 호출", "매개변수와 반환값", "변수의 범위", "배열 기초", "문자 배열과 문자열", "다차원 배열", "포인터 기초", "배열과 포인터", "문자열 함수", "미니 프로젝트: 성적 계산기",
+    "구조체", "열거형", "typedef", "동적 메모리 할당", "포인터 연산", "함수 포인터", "재귀 함수", "헤더와 소스 분리", "전처리기", "메모리 안전성",
+    "파일 읽기와 쓰기", "명령행 인자", "오류 코드와 errno", "비트 연산", "연결 리스트", "스택과 큐", "정렬과 탐색", "디버깅", "단위 테스트 기초", "미니 프로젝트: 연락처 관리"
+  ],
+  csharp: [
+    ".NET과 첫 출력", "변수와 기본 형식", "문자열과 보간", "연산자", "콘솔 입력과 출력", "조건문", "switch 식", "for 반복문", "while 반복문", "기초 종합 문제",
+    "메서드 선언과 호출", "매개변수와 반환값", "배열", "List 컬렉션", "Dictionary", "LINQ 기초", "예외 처리", "nullable 형식", "튜플", "미니 프로젝트: 성적 계산기",
+    "클래스와 객체", "생성자", "프로퍼티", "캡슐화", "상속", "다형성", "인터페이스", "record", "enum", "객체지향 설계 실습",
+    "제네릭", "델리게이트", "람다식", "이벤트", "파일 입출력", "JSON 직렬화", "비동기 Task", "async와 await", "단위 테스트 기초", "미니 프로젝트: 일정 관리자"
   ]
 };
 
-const languageNames = { python: "Python", javascript: "JavaScript", react: "React", java: "Java", kotlin: "Kotlin", "python-langgraph": "Python LangGraph" };
+const languageNames = { python: "Python", javascript: "JavaScript", react: "React", java: "Java", kotlin: "Kotlin", "python-langgraph": "Python LangGraph", c: "C", csharp: "C#" };
 const stageNames = ["입문", "기초", "활용", "중급", "심화", "프로젝트"];
 const levels = ["beginner", "beginner", "elementary", "intermediate", "advanced", "project"];
 
@@ -119,7 +132,7 @@ function makePractice(language, day, stage, title) {
     return {
       prompt,
       starterCode: `# Day ${day}: ${title}\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n\ndef study_node(state: State):\n    # TODO: ${title} 개념을 적용하세요.\n    return {"value": state["value"]}\n\nbuilder = StateGraph(State)\nbuilder.add_node("study", study_node)\nbuilder.add_edge(START, "study")\nbuilder.add_edge("study", END)\ngraph = builder.compile()\nprint(graph.invoke({"value": "start"}))`,
-      solutionCode: "",
+      solutionCode: `# Day ${day}: ${title} 예시 풀이\nfrom typing_extensions import TypedDict\nfrom langgraph.graph import StateGraph, START, END\n\nclass State(TypedDict):\n    value: str\n    history: list[str]\n\ndef study_node(state: State):\n    return {"value": f"${title} 완료", "history": [*state.get("history", []), ${safeTitle}]}\n\nbuilder = StateGraph(State)\nbuilder.add_node("study", study_node)\nbuilder.add_edge(START, "study")\nbuilder.add_edge("study", END)\ngraph = builder.compile()\nprint(graph.invoke({"value": "start", "history": []}))`,
     };
   }
 
@@ -128,6 +141,22 @@ function makePractice(language, day, stage, title) {
       prompt,
       starterCode: `// Day ${day}: ${title}\nfunction solveDay${day}(values) {\n  // TODO: ${title} 개념을 적용하세요.\n}\n\nconsole.log(solveDay${day}([1, 2, 3, 4]));`,
       solutionCode: `// Day ${day}: ${title} 예시 풀이\nfunction solveDay${day}(values) {\n  const selected = values.filter((value) => value % 2 === ${day % 2});\n  return { day: ${day}, topic: ${safeTitle}, total: selected.reduce((sum, value) => sum + value, 0) };\n}\n\nconsole.log(solveDay${day}([1, 2, 3, 4]));`
+    };
+  }
+
+  if (language === "c") {
+    return {
+      prompt,
+      starterCode: `// Day ${day}: ${title}\n#include <stdio.h>\n\nint main(void) {\n    // TODO: ${title} 개념을 적용하세요.\n    return 0;\n}`,
+      solutionCode: `// Day ${day}: ${title} 예시 풀이\n#include <stdio.h>\n\nint main(void) {\n    int values[] = {1, 2, 3, 4};\n    int total = 0;\n    for (int i = 0; i < 4; i++) {\n        total += values[i];\n    }\n    printf("${title}: %d\\n", total);\n    return 0;\n}`,
+    };
+  }
+
+  if (language === "csharp") {
+    return {
+      prompt,
+      starterCode: `// Day ${day}: ${title}\nvar values = new[] { 1, 2, 3, 4 };\n\n// TODO: ${title} 개념을 적용하세요.\nConsole.WriteLine(values.Length);`,
+      solutionCode: `// Day ${day}: ${title} 예시 풀이\nvar values = new[] { 1, 2, 3, 4 };\nvar total = values.Sum();\nConsole.WriteLine("${title}: " + total);`,
     };
   }
 
@@ -154,17 +183,33 @@ function makePractice(language, day, stage, title) {
   };
 }
 
+function makeExpansionExplanation(language, title, stage) {
+  const kind = stage === 5 ? "심화 주제" : "실전 프로젝트";
+  const focus = stage === 5
+    ? "내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증"
+    : "요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성";
+  return `${title}은(는) ${languageNames[language]} ${kind}입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 ${focus}하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.`;
+}
+
 await mkdir(path.join(root, "db", "curricula"), { recursive: true });
 
 for (const [language, topics] of Object.entries(curricula)) {
-  if (topics.length !== 60) throw new Error(`${language} 과정은 정확히 60개여야 합니다.`);
+  const expandedTopics = [
+    ...topics.slice(0, 40),
+    ...makeAdvancedTopics(language),
+    ...makeProjectTopics(language),
+  ];
+  if (expandedTopics.length !== 160) throw new Error(`${language} 과정은 정확히 160개여야 합니다.`);
 
-  const lessons = topics.map((title, index) => {
+  const lessons = expandedTopics.map((title, index) => {
     const day = index + 1;
-    const stage = Math.ceil(day / 10);
+    const stage = day <= 40 ? Math.ceil(day / 10) : day <= 100 ? 5 : 6;
+    const generatedPractice = makePractice(language, day, stage, title);
     const practice = {
-      ...makePractice(language, day, stage, title),
-      solutionCode: solutionCatalog[language][index],
+      ...generatedPractice,
+      solutionCode: index < 40 && solutionCatalog[language]
+        ? solutionCatalog[language][index]
+        : generatedPractice.solutionCode,
     };
     return {
       id: `${language}-day-${String(day).padStart(2, "0")}`,
@@ -175,9 +220,11 @@ for (const [language, topics] of Object.entries(curricula)) {
       level: levels[stage - 1],
       title,
       summary: `${languageNames[language]}의 ${title} 개념을 이해하고 단계별 예제로 익힙니다.`,
-      detailedExplanation: language === "python-langgraph"
-        ? langGraphExplanations[index]
-        : makeDetailedExplanation(language, index, title, stage, practice.solutionCode),
+      detailedExplanation: index >= 40 || language === "c" || language === "csharp"
+        ? makeExpansionExplanation(language, title, stage)
+        : language === "python-langgraph"
+          ? langGraphExplanations[index]
+          : makeDetailedExplanation(language, index, title, stage, practice.solutionCode),
       keyPoints: [
         `${title}의 핵심 문법과 실행 흐름`,
         `입력값과 경계 조건에 따른 결과 차이`,
@@ -197,4 +244,4 @@ for (const [language, topics] of Object.entries(curricula)) {
   );
 }
 
-console.log(`${Object.keys(curricula).length}개 과정, 총 ${Object.values(curricula).reduce((total, topics) => total + topics.length, 0)}개 학습 데이터를 생성했습니다.`);
+console.log(`${Object.keys(curricula).length}개 과정, 총 ${Object.keys(curricula).length * 160}개 학습 데이터를 생성했습니다.`);

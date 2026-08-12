@@ -1086,22 +1086,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "코루틴 기초",
-    "summary": "Kotlin의 코루틴 기초 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "코루틴 기초은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 시스템과 Null 안전성: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 타입 시스템과 Null 안전성: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 Null 안전성: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "코루틴 기초의 핵심 문법과 실행 흐름",
+      "타입 시스템과 Null 안전성: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "코루틴 기초의 핵심 개념 설명하기",
-      "코루틴 기초을 활용한 코드 작성하기"
+      "타입 시스템과 Null 안전성: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "타입 시스템과 Null 안전성: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "코루틴 기초에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 41: 코루틴 기초\nfun solveDay41(values: List<Int>): Int {\n    // TODO: 코루틴 기초 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay41(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.*\nfun main() = runBlocking { launch { delay(100); println(\"coroutine\") }; println(\"main\") }"
+      "prompt": "타입 시스템과 Null 안전성: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 41: 타입 시스템과 Null 안전성: 핵심 원리와 내부 동작\nfun solveDay41(values: List<Int>): Int {\n    // TODO: 타입 시스템과 Null 안전성: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay41(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 41: 타입 시스템과 Null 안전성: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay41(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"타입 시스템과 Null 안전성: 핵심 원리와 내부 동작\")\n    println(solveDay41(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1113,22 +1113,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "suspend 함수",
-    "summary": "Kotlin의 suspend 함수 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "suspend 함수은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 시스템과 Null 안전성: 실전 구현 패턴",
+    "summary": "Kotlin의 타입 시스템과 Null 안전성: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 Null 안전성: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "suspend 함수의 핵심 문법과 실행 흐름",
+      "타입 시스템과 Null 안전성: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "suspend 함수의 핵심 개념 설명하기",
-      "suspend 함수을 활용한 코드 작성하기"
+      "타입 시스템과 Null 안전성: 실전 구현 패턴의 핵심 개념 설명하기",
+      "타입 시스템과 Null 안전성: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "suspend 함수에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 42: suspend 함수\nfun solveDay42(values: List<Int>): Int {\n    // TODO: suspend 함수 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay42(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.*\nsuspend fun loadStudy(): String { delay(100); return \"Kotlin\" }\nfun main() = runBlocking { println(loadStudy()) }"
+      "prompt": "타입 시스템과 Null 안전성: 실전 구현 패턴에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 42: 타입 시스템과 Null 안전성: 실전 구현 패턴\nfun solveDay42(values: List<Int>): Int {\n    // TODO: 타입 시스템과 Null 안전성: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay42(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 42: 타입 시스템과 Null 안전성: 실전 구현 패턴 예시 풀이\nfun solveDay42(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"타입 시스템과 Null 안전성: 실전 구현 패턴\")\n    println(solveDay42(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1140,22 +1140,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "CoroutineScope",
-    "summary": "Kotlin의 CoroutineScope 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "CoroutineScope은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 시스템과 Null 안전성: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 타입 시스템과 Null 안전성: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 Null 안전성: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "CoroutineScope의 핵심 문법과 실행 흐름",
+      "타입 시스템과 Null 안전성: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "CoroutineScope의 핵심 개념 설명하기",
-      "CoroutineScope을 활용한 코드 작성하기"
+      "타입 시스템과 Null 안전성: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "타입 시스템과 Null 안전성: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "CoroutineScope에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 43: CoroutineScope\nfun solveDay43(values: List<Int>): Int {\n    // TODO: CoroutineScope 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay43(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.*\nfun main() = runBlocking { coroutineScope { launch { println(\"child: ${coroutineContext.job}\") } } }"
+      "prompt": "타입 시스템과 Null 안전성: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 43: 타입 시스템과 Null 안전성: 오류 처리와 경계 조건\nfun solveDay43(values: List<Int>): Int {\n    // TODO: 타입 시스템과 Null 안전성: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay43(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 43: 타입 시스템과 Null 안전성: 오류 처리와 경계 조건 예시 풀이\nfun solveDay43(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"타입 시스템과 Null 안전성: 오류 처리와 경계 조건\")\n    println(solveDay43(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1167,22 +1167,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "Dispatcher",
-    "summary": "Kotlin의 Dispatcher 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "Dispatcher은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 시스템과 Null 안전성: 테스트와 디버깅",
+    "summary": "Kotlin의 타입 시스템과 Null 안전성: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 Null 안전성: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "Dispatcher의 핵심 문법과 실행 흐름",
+      "타입 시스템과 Null 안전성: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "Dispatcher의 핵심 개념 설명하기",
-      "Dispatcher을 활용한 코드 작성하기"
+      "타입 시스템과 Null 안전성: 테스트와 디버깅의 핵심 개념 설명하기",
+      "타입 시스템과 Null 안전성: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "Dispatcher에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 44: Dispatcher\nfun solveDay44(values: List<Int>): Int {\n    // TODO: Dispatcher 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay44(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.*\nfun main() = runBlocking { val result = withContext(Dispatchers.Default) { (1..1_000).sum() }; println(result) }"
+      "prompt": "타입 시스템과 Null 안전성: 테스트와 디버깅에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 44: 타입 시스템과 Null 안전성: 테스트와 디버깅\nfun solveDay44(values: List<Int>): Int {\n    // TODO: 타입 시스템과 Null 안전성: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay44(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 44: 타입 시스템과 Null 안전성: 테스트와 디버깅 예시 풀이\nfun solveDay44(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"타입 시스템과 Null 안전성: 테스트와 디버깅\")\n    println(solveDay44(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1194,22 +1194,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "구조화된 동시성",
-    "summary": "Kotlin의 구조화된 동시성 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "구조화된 동시성은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 시스템과 Null 안전성: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 타입 시스템과 Null 안전성: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 시스템과 Null 안전성: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "구조화된 동시성의 핵심 문법과 실행 흐름",
+      "타입 시스템과 Null 안전성: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "구조화된 동시성의 핵심 개념 설명하기",
-      "구조화된 동시성을 활용한 코드 작성하기"
+      "타입 시스템과 Null 안전성: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "타입 시스템과 Null 안전성: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "구조화된 동시성에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 45: 구조화된 동시성\nfun solveDay45(values: List<Int>): Int {\n    // TODO: 구조화된 동시성 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay45(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.*\nfun main() = runBlocking { supervisorScope { val a = async { 2 }; val b = async { 3 }; println(a.await() + b.await()) } }"
+      "prompt": "타입 시스템과 Null 안전성: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 45: 타입 시스템과 Null 안전성: 성능 개선과 리팩터링\nfun solveDay45(values: List<Int>): Int {\n    // TODO: 타입 시스템과 Null 안전성: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay45(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 45: 타입 시스템과 Null 안전성: 성능 개선과 리팩터링 예시 풀이\nfun solveDay45(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"타입 시스템과 Null 안전성: 성능 개선과 리팩터링\")\n    println(solveDay45(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1221,22 +1221,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "Flow 기초",
-    "summary": "Kotlin의 Flow 기초 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "Flow 기초은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.flow.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "함수형 컬렉션 처리: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 함수형 컬렉션 처리: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 컬렉션 처리: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "Flow 기초의 핵심 문법과 실행 흐름",
+      "함수형 컬렉션 처리: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "Flow 기초의 핵심 개념 설명하기",
-      "Flow 기초을 활용한 코드 작성하기"
+      "함수형 컬렉션 처리: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "함수형 컬렉션 처리: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "Flow 기초에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 46: Flow 기초\nfun solveDay46(values: List<Int>): Int {\n    // TODO: Flow 기초 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay46(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.flow.*\nfun numbers(): Flow<Int> = flow { for (n in 1..3) emit(n) }\nfun main() = kotlinx.coroutines.runBlocking { numbers().collect(::println) }"
+      "prompt": "함수형 컬렉션 처리: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 46: 함수형 컬렉션 처리: 핵심 원리와 내부 동작\nfun solveDay46(values: List<Int>): Int {\n    // TODO: 함수형 컬렉션 처리: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay46(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 46: 함수형 컬렉션 처리: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay46(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"함수형 컬렉션 처리: 핵심 원리와 내부 동작\")\n    println(solveDay46(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1248,22 +1248,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "Flow 연산자",
-    "summary": "Kotlin의 Flow 연산자 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "Flow 연산자은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.flow.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "함수형 컬렉션 처리: 실전 구현 패턴",
+    "summary": "Kotlin의 함수형 컬렉션 처리: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 컬렉션 처리: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "Flow 연산자의 핵심 문법과 실행 흐름",
+      "함수형 컬렉션 처리: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "Flow 연산자의 핵심 개념 설명하기",
-      "Flow 연산자을 활용한 코드 작성하기"
+      "함수형 컬렉션 처리: 실전 구현 패턴의 핵심 개념 설명하기",
+      "함수형 컬렉션 처리: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "Flow 연산자에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 47: Flow 연산자\nfun solveDay47(values: List<Int>): Int {\n    // TODO: Flow 연산자 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay47(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.flow.*\nfun main() = kotlinx.coroutines.runBlocking { (1..5).asFlow().filter { it % 2 == 0 }.map { it * it }.collect(::println) }"
+      "prompt": "함수형 컬렉션 처리: 실전 구현 패턴에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 47: 함수형 컬렉션 처리: 실전 구현 패턴\nfun solveDay47(values: List<Int>): Int {\n    // TODO: 함수형 컬렉션 처리: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay47(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 47: 함수형 컬렉션 처리: 실전 구현 패턴 예시 풀이\nfun solveDay47(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"함수형 컬렉션 처리: 실전 구현 패턴\")\n    println(solveDay47(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1275,22 +1275,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "상태 흐름",
-    "summary": "Kotlin의 상태 흐름 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "상태 흐름은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "함수형 컬렉션 처리: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 함수형 컬렉션 처리: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 컬렉션 처리: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "상태 흐름의 핵심 문법과 실행 흐름",
+      "함수형 컬렉션 처리: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "상태 흐름의 핵심 개념 설명하기",
-      "상태 흐름을 활용한 코드 작성하기"
+      "함수형 컬렉션 처리: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "함수형 컬렉션 처리: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "상태 흐름에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 48: 상태 흐름\nfun solveDay48(values: List<Int>): Int {\n    // TODO: 상태 흐름 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay48(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.*\nimport kotlinx.coroutines.flow.*\nfun main() = runBlocking { val state = MutableStateFlow(0); val job = launch { state.take(3).collect(::println) }; state.value = 1; state.value = 2; job.join() }"
+      "prompt": "함수형 컬렉션 처리: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 48: 함수형 컬렉션 처리: 오류 처리와 경계 조건\nfun solveDay48(values: List<Int>): Int {\n    // TODO: 함수형 컬렉션 처리: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay48(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 48: 함수형 컬렉션 처리: 오류 처리와 경계 조건 예시 풀이\nfun solveDay48(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"함수형 컬렉션 처리: 오류 처리와 경계 조건\")\n    println(solveDay48(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1302,22 +1302,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "채널",
-    "summary": "Kotlin의 채널 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "채널은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "함수형 컬렉션 처리: 테스트와 디버깅",
+    "summary": "Kotlin의 함수형 컬렉션 처리: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 컬렉션 처리: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "채널의 핵심 문법과 실행 흐름",
+      "함수형 컬렉션 처리: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "채널의 핵심 개념 설명하기",
-      "채널을 활용한 코드 작성하기"
+      "함수형 컬렉션 처리: 테스트와 디버깅의 핵심 개념 설명하기",
+      "함수형 컬렉션 처리: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "채널에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 49: 채널\nfun solveDay49(values: List<Int>): Int {\n    // TODO: 채널 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay49(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.*\nimport kotlinx.coroutines.channels.*\nfun main() = runBlocking { val channel = Channel<Int>(); launch { repeat(3) { channel.send(it) }; channel.close() }; for (value in channel) println(value) }"
+      "prompt": "함수형 컬렉션 처리: 테스트와 디버깅에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 49: 함수형 컬렉션 처리: 테스트와 디버깅\nfun solveDay49(values: List<Int>): Int {\n    // TODO: 함수형 컬렉션 처리: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay49(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 49: 함수형 컬렉션 처리: 테스트와 디버깅 예시 풀이\nfun solveDay49(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"함수형 컬렉션 처리: 테스트와 디버깅\")\n    println(solveDay49(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1329,22 +1329,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "비동기 테스트",
-    "summary": "Kotlin의 비동기 테스트 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "비동기 테스트은(는) 코루틴과 Flow로 비동기 흐름을 구조화하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlinx.coroutines.test.runTest` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "함수형 컬렉션 처리: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 함수형 컬렉션 처리: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "함수형 컬렉션 처리: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "비동기 테스트의 핵심 문법과 실행 흐름",
+      "함수형 컬렉션 처리: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "비동기 테스트의 핵심 개념 설명하기",
-      "비동기 테스트을 활용한 코드 작성하기"
+      "함수형 컬렉션 처리: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "함수형 컬렉션 처리: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "비동기 테스트에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 50: 비동기 테스트\nfun solveDay50(values: List<Int>): Int {\n    // TODO: 비동기 테스트 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay50(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlinx.coroutines.test.runTest\nimport kotlin.test.*\nclass StudyTest { @Test fun asyncResult() = runTest { assertEquals(\"done\", loadStudy()) } }"
+      "prompt": "함수형 컬렉션 처리: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 50: 함수형 컬렉션 처리: 성능 개선과 리팩터링\nfun solveDay50(values: List<Int>): Int {\n    // TODO: 함수형 컬렉션 처리: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay50(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 50: 함수형 컬렉션 처리: 성능 개선과 리팩터링 예시 풀이\nfun solveDay50(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"함수형 컬렉션 처리: 성능 개선과 리팩터링\")\n    println(solveDay50(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1353,25 +1353,25 @@
     "id": "kotlin-day-51",
     "language": "kotlin",
     "day": 51,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "JUnit과 Kotest",
-    "summary": "Kotlin의 JUnit과 Kotest 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "JUnit과 Kotest은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import kotlin.test.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "확장 함수와 위임: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 확장 함수와 위임: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "확장 함수와 위임: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "JUnit과 Kotest의 핵심 문법과 실행 흐름",
+      "확장 함수와 위임: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "JUnit과 Kotest의 핵심 개념 설명하기",
-      "JUnit과 Kotest을 활용한 코드 작성하기"
+      "확장 함수와 위임: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "확장 함수와 위임: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "JUnit과 Kotest에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 51: JUnit과 Kotest\nfun solveDay51(values: List<Int>): Int {\n    // TODO: JUnit과 Kotest 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay51(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import kotlin.test.*\nclass CalculatorTest { @Test fun adds() { assertEquals(5, 2 + 3) } }"
+      "prompt": "확장 함수와 위임: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 51: 확장 함수와 위임: 핵심 원리와 내부 동작\nfun solveDay51(values: List<Int>): Int {\n    // TODO: 확장 함수와 위임: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay51(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 51: 확장 함수와 위임: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay51(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"확장 함수와 위임: 핵심 원리와 내부 동작\")\n    println(solveDay51(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1380,25 +1380,25 @@
     "id": "kotlin-day-52",
     "language": "kotlin",
     "day": 52,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "함수형 설계",
-    "summary": "Kotlin의 함수형 설계 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "함수형 설계은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun <T> List<T>.secondOrNull(): T? = getOrNull(1)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "확장 함수와 위임: 실전 구현 패턴",
+    "summary": "Kotlin의 확장 함수와 위임: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "확장 함수와 위임: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "함수형 설계의 핵심 문법과 실행 흐름",
+      "확장 함수와 위임: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "함수형 설계의 핵심 개념 설명하기",
-      "함수형 설계을 활용한 코드 작성하기"
+      "확장 함수와 위임: 실전 구현 패턴의 핵심 개념 설명하기",
+      "확장 함수와 위임: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "함수형 설계에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 52: 함수형 설계\nfun solveDay52(values: List<Int>): Int {\n    // TODO: 함수형 설계 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay52(listOf(1, 2, 3, 4)))",
-      "solutionCode": "fun <T> List<T>.secondOrNull(): T? = getOrNull(1)\nfun main() = println(listOf(\"a\", \"b\").secondOrNull())"
+      "prompt": "확장 함수와 위임: 실전 구현 패턴에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 52: 확장 함수와 위임: 실전 구현 패턴\nfun solveDay52(values: List<Int>): Int {\n    // TODO: 확장 함수와 위임: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay52(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 52: 확장 함수와 위임: 실전 구현 패턴 예시 풀이\nfun solveDay52(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"확장 함수와 위임: 실전 구현 패턴\")\n    println(solveDay52(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1407,25 +1407,25 @@
     "id": "kotlin-day-53",
     "language": "kotlin",
     "day": 53,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "DSL 만들기",
-    "summary": "Kotlin의 DSL 만들기 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "DSL 만들기은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Html { private val content = StringBuilder(); fun body(block: Html.() -> Unit) { block(); content.append(\"</body>\") }; fun text(value: String) { content.append(value) }; override fun toString() = content.toString() }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "확장 함수와 위임: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 확장 함수와 위임: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "확장 함수와 위임: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "DSL 만들기의 핵심 문법과 실행 흐름",
+      "확장 함수와 위임: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "DSL 만들기의 핵심 개념 설명하기",
-      "DSL 만들기을 활용한 코드 작성하기"
+      "확장 함수와 위임: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "확장 함수와 위임: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "DSL 만들기에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 53: DSL 만들기\nfun solveDay53(values: List<Int>): Int {\n    // TODO: DSL 만들기 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay53(listOf(1, 2, 3, 4)))",
-      "solutionCode": "class Html { private val content = StringBuilder(); fun body(block: Html.() -> Unit) { block(); content.append(\"</body>\") }; fun text(value: String) { content.append(value) }; override fun toString() = content.toString() }\nfun html(block: Html.() -> Unit) = Html().apply(block)\nfun main() = println(html { body { text(\"Study\") } })"
+      "prompt": "확장 함수와 위임: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 53: 확장 함수와 위임: 오류 처리와 경계 조건\nfun solveDay53(values: List<Int>): Int {\n    // TODO: 확장 함수와 위임: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay53(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 53: 확장 함수와 위임: 오류 처리와 경계 조건 예시 풀이\nfun solveDay53(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"확장 함수와 위임: 오류 처리와 경계 조건\")\n    println(solveDay53(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1434,25 +1434,25 @@
     "id": "kotlin-day-54",
     "language": "kotlin",
     "day": 54,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "Java 상호 운용",
-    "summary": "Kotlin의 Java 상호 운용 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "Java 상호 운용은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import java.util.Optional` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "확장 함수와 위임: 테스트와 디버깅",
+    "summary": "Kotlin의 확장 함수와 위임: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "확장 함수와 위임: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "Java 상호 운용의 핵심 문법과 실행 흐름",
+      "확장 함수와 위임: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "Java 상호 운용의 핵심 개념 설명하기",
-      "Java 상호 운용을 활용한 코드 작성하기"
+      "확장 함수와 위임: 테스트와 디버깅의 핵심 개념 설명하기",
+      "확장 함수와 위임: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "Java 상호 운용에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 54: Java 상호 운용\nfun solveDay54(values: List<Int>): Int {\n    // TODO: Java 상호 운용 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay54(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import java.util.Optional\nfun main() { val javaValue: Optional<String> = Optional.of(\"Java\"); val kotlinValue: String? = javaValue.orElse(null); println(kotlinValue) }"
+      "prompt": "확장 함수와 위임: 테스트와 디버깅에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 54: 확장 함수와 위임: 테스트와 디버깅\nfun solveDay54(values: List<Int>): Int {\n    // TODO: 확장 함수와 위임: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay54(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 54: 확장 함수와 위임: 테스트와 디버깅 예시 풀이\nfun solveDay54(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"확장 함수와 위임: 테스트와 디버깅\")\n    println(solveDay54(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1461,25 +1461,25 @@
     "id": "kotlin-day-55",
     "language": "kotlin",
     "day": 55,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "성능과 메모리",
-    "summary": "Kotlin의 성능과 메모리 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "성능과 메모리은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `fun main() { val runtime = Runtime.getRuntime(); val used = runtime.totalMemory() - runtime.freeMemory(); println(\"heap used=$used\") }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "확장 함수와 위임: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 확장 함수와 위임: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "확장 함수와 위임: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "성능과 메모리의 핵심 문법과 실행 흐름",
+      "확장 함수와 위임: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "성능과 메모리의 핵심 개념 설명하기",
-      "성능과 메모리을 활용한 코드 작성하기"
+      "확장 함수와 위임: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "확장 함수와 위임: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "성능과 메모리에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 55: 성능과 메모리\nfun solveDay55(values: List<Int>): Int {\n    // TODO: 성능과 메모리 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay55(listOf(1, 2, 3, 4)))",
-      "solutionCode": "fun main() { val runtime = Runtime.getRuntime(); val used = runtime.totalMemory() - runtime.freeMemory(); println(\"heap used=$used\") }"
+      "prompt": "확장 함수와 위임: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 55: 확장 함수와 위임: 성능 개선과 리팩터링\nfun solveDay55(values: List<Int>): Int {\n    // TODO: 확장 함수와 위임: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay55(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 55: 확장 함수와 위임: 성능 개선과 리팩터링 예시 풀이\nfun solveDay55(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"확장 함수와 위임: 성능 개선과 리팩터링\")\n    println(solveDay55(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1488,25 +1488,25 @@
     "id": "kotlin-day-56",
     "language": "kotlin",
     "day": 56,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "Android 구성 요소",
-    "summary": "Kotlin의 Android 구성 요소 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "Android 구성 요소은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class UiState(val loading: Boolean = false, val items: List<String> = emptyList())` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "DSL 설계: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 DSL 설계: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "DSL 설계: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "Android 구성 요소의 핵심 문법과 실행 흐름",
+      "DSL 설계: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "Android 구성 요소의 핵심 개념 설명하기",
-      "Android 구성 요소을 활용한 코드 작성하기"
+      "DSL 설계: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "DSL 설계: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "Android 구성 요소에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 56: Android 구성 요소\nfun solveDay56(values: List<Int>): Int {\n    // TODO: Android 구성 요소 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay56(listOf(1, 2, 3, 4)))",
-      "solutionCode": "data class UiState(val loading: Boolean = false, val items: List<String> = emptyList())\nfun reduce(state: UiState, items: List<String>) = state.copy(loading = false, items = items)\nfun main() = println(reduce(UiState(true), listOf(\"Kotlin\")))"
+      "prompt": "DSL 설계: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 56: DSL 설계: 핵심 원리와 내부 동작\nfun solveDay56(values: List<Int>): Int {\n    // TODO: DSL 설계: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay56(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 56: DSL 설계: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay56(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"DSL 설계: 핵심 원리와 내부 동작\")\n    println(solveDay56(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1515,25 +1515,25 @@
     "id": "kotlin-day-57",
     "language": "kotlin",
     "day": 57,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "Compose 기초",
-    "summary": "Kotlin의 Compose 기초 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "Compose 기초은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import androidx.compose.material3.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "DSL 설계: 실전 구현 패턴",
+    "summary": "Kotlin의 DSL 설계: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "DSL 설계: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "Compose 기초의 핵심 문법과 실행 흐름",
+      "DSL 설계: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "Compose 기초의 핵심 개념 설명하기",
-      "Compose 기초을 활용한 코드 작성하기"
+      "DSL 설계: 실전 구현 패턴의 핵심 개념 설명하기",
+      "DSL 설계: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "Compose 기초에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 57: Compose 기초\nfun solveDay57(values: List<Int>): Int {\n    // TODO: Compose 기초 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay57(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import androidx.compose.material3.*\nimport androidx.compose.runtime.Composable\n@Composable fun StudyCard(title: String) { Card { Text(title) } }"
+      "prompt": "DSL 설계: 실전 구현 패턴에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 57: DSL 설계: 실전 구현 패턴\nfun solveDay57(values: List<Int>): Int {\n    // TODO: DSL 설계: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay57(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 57: DSL 설계: 실전 구현 패턴 예시 풀이\nfun solveDay57(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"DSL 설계: 실전 구현 패턴\")\n    println(solveDay57(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1542,25 +1542,25 @@
     "id": "kotlin-day-58",
     "language": "kotlin",
     "day": 58,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "상태 관리",
-    "summary": "Kotlin의 상태 관리 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "상태 관리은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import androidx.compose.runtime.*` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "DSL 설계: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 DSL 설계: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "DSL 설계: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "상태 관리의 핵심 문법과 실행 흐름",
+      "DSL 설계: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "상태 관리의 핵심 개념 설명하기",
-      "상태 관리을 활용한 코드 작성하기"
+      "DSL 설계: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "DSL 설계: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "상태 관리에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 58: 상태 관리\nfun solveDay58(values: List<Int>): Int {\n    // TODO: 상태 관리 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay58(listOf(1, 2, 3, 4)))",
-      "solutionCode": "import androidx.compose.runtime.*\n@Composable fun Counter() { var count by remember { mutableIntStateOf(0) }; Button(onClick = { count++ }) { Text(\"$count\") } }"
+      "prompt": "DSL 설계: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 58: DSL 설계: 오류 처리와 경계 조건\nfun solveDay58(values: List<Int>): Int {\n    // TODO: DSL 설계: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay58(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 58: DSL 설계: 오류 처리와 경계 조건 예시 풀이\nfun solveDay58(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"DSL 설계: 오류 처리와 경계 조건\")\n    println(solveDay58(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1569,25 +1569,25 @@
     "id": "kotlin-day-59",
     "language": "kotlin",
     "day": 59,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "네트워크와 저장소",
-    "summary": "Kotlin의 네트워크와 저장소 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "네트워크와 저장소은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class StudyRepository(private val api: StudyApi, private val dao: StudyDao) { suspend fun studies(): List<Study> = runCatching { api.fetch().also { dao.saveAll(it) } }.getOrElse { dao.findAll() } }` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "DSL 설계: 테스트와 디버깅",
+    "summary": "Kotlin의 DSL 설계: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "DSL 설계: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "네트워크와 저장소의 핵심 문법과 실행 흐름",
+      "DSL 설계: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "네트워크와 저장소의 핵심 개념 설명하기",
-      "네트워크와 저장소을 활용한 코드 작성하기"
+      "DSL 설계: 테스트와 디버깅의 핵심 개념 설명하기",
+      "DSL 설계: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "네트워크와 저장소에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 59: 네트워크와 저장소\nfun solveDay59(values: List<Int>): Int {\n    // TODO: 네트워크와 저장소 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay59(listOf(1, 2, 3, 4)))",
-      "solutionCode": "class StudyRepository(private val api: StudyApi, private val dao: StudyDao) { suspend fun studies(): List<Study> = runCatching { api.fetch().also { dao.saveAll(it) } }.getOrElse { dao.findAll() } }"
+      "prompt": "DSL 설계: 테스트와 디버깅에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 59: DSL 설계: 테스트와 디버깅\nfun solveDay59(values: List<Int>): Int {\n    // TODO: DSL 설계: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay59(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 59: DSL 설계: 테스트와 디버깅 예시 풀이\nfun solveDay59(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"DSL 설계: 테스트와 디버깅\")\n    println(solveDay59(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1596,25 +1596,2725 @@
     "id": "kotlin-day-60",
     "language": "kotlin",
     "day": 60,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "최종 프로젝트: 학습 앱",
-    "summary": "Kotlin의 최종 프로젝트: 학습 앱 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "최종 프로젝트: 학습 앱은(는) 테스트·DSL·Android 구성 요소를 통합하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `data class Study(val id: Long, val title: String, val completed: Boolean)` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "DSL 설계: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 DSL 설계: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "DSL 설계: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "최종 프로젝트: 학습 앱의 핵심 문법과 실행 흐름",
+      "DSL 설계: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "최종 프로젝트: 학습 앱의 핵심 개념 설명하기",
-      "최종 프로젝트: 학습 앱을 활용한 코드 작성하기"
+      "DSL 설계: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "DSL 설계: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "최종 프로젝트: 학습 앱에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "// Day 60: 최종 프로젝트: 학습 앱\nfun solveDay60(values: List<Int>): Int {\n    // TODO: 최종 프로젝트: 학습 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay60(listOf(1, 2, 3, 4)))",
-      "solutionCode": "data class Study(val id: Long, val title: String, val completed: Boolean)\nclass StudyViewModel(private val repository: StudyRepository) { val studies = repository.observe(); suspend fun complete(study: Study) = repository.save(study.copy(completed = true)) }"
+      "prompt": "DSL 설계: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 60: DSL 설계: 성능 개선과 리팩터링\nfun solveDay60(values: List<Int>): Int {\n    // TODO: DSL 설계: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay60(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 60: DSL 설계: 성능 개선과 리팩터링 예시 풀이\nfun solveDay60(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"DSL 설계: 성능 개선과 리팩터링\")\n    println(solveDay60(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-61",
+    "language": "kotlin",
+    "day": 61,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "코루틴 구조화 동시성: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 코루틴 구조화 동시성: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "코루틴 구조화 동시성: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "코루틴 구조화 동시성: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "코루틴 구조화 동시성: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "코루틴 구조화 동시성: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "코루틴 구조화 동시성: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 61 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 61: 코루틴 구조화 동시성: 핵심 원리와 내부 동작\nfun solveDay61(values: List<Int>): Int {\n    // TODO: 코루틴 구조화 동시성: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay61(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 61: 코루틴 구조화 동시성: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay61(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"코루틴 구조화 동시성: 핵심 원리와 내부 동작\")\n    println(solveDay61(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-62",
+    "language": "kotlin",
+    "day": 62,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "코루틴 구조화 동시성: 실전 구현 패턴",
+    "summary": "Kotlin의 코루틴 구조화 동시성: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "코루틴 구조화 동시성: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "코루틴 구조화 동시성: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "코루틴 구조화 동시성: 실전 구현 패턴의 핵심 개념 설명하기",
+      "코루틴 구조화 동시성: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "코루틴 구조화 동시성: 실전 구현 패턴에서 배운 개념을 사용해 Day 62 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 62: 코루틴 구조화 동시성: 실전 구현 패턴\nfun solveDay62(values: List<Int>): Int {\n    // TODO: 코루틴 구조화 동시성: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay62(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 62: 코루틴 구조화 동시성: 실전 구현 패턴 예시 풀이\nfun solveDay62(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"코루틴 구조화 동시성: 실전 구현 패턴\")\n    println(solveDay62(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-63",
+    "language": "kotlin",
+    "day": 63,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "코루틴 구조화 동시성: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 코루틴 구조화 동시성: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "코루틴 구조화 동시성: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "코루틴 구조화 동시성: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "코루틴 구조화 동시성: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "코루틴 구조화 동시성: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "코루틴 구조화 동시성: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 63 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 63: 코루틴 구조화 동시성: 오류 처리와 경계 조건\nfun solveDay63(values: List<Int>): Int {\n    // TODO: 코루틴 구조화 동시성: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay63(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 63: 코루틴 구조화 동시성: 오류 처리와 경계 조건 예시 풀이\nfun solveDay63(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"코루틴 구조화 동시성: 오류 처리와 경계 조건\")\n    println(solveDay63(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-64",
+    "language": "kotlin",
+    "day": 64,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "코루틴 구조화 동시성: 테스트와 디버깅",
+    "summary": "Kotlin의 코루틴 구조화 동시성: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "코루틴 구조화 동시성: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "코루틴 구조화 동시성: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "코루틴 구조화 동시성: 테스트와 디버깅의 핵심 개념 설명하기",
+      "코루틴 구조화 동시성: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "코루틴 구조화 동시성: 테스트와 디버깅에서 배운 개념을 사용해 Day 64 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 64: 코루틴 구조화 동시성: 테스트와 디버깅\nfun solveDay64(values: List<Int>): Int {\n    // TODO: 코루틴 구조화 동시성: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay64(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 64: 코루틴 구조화 동시성: 테스트와 디버깅 예시 풀이\nfun solveDay64(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"코루틴 구조화 동시성: 테스트와 디버깅\")\n    println(solveDay64(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-65",
+    "language": "kotlin",
+    "day": 65,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "코루틴 구조화 동시성: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 코루틴 구조화 동시성: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "코루틴 구조화 동시성: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "코루틴 구조화 동시성: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "코루틴 구조화 동시성: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "코루틴 구조화 동시성: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "코루틴 구조화 동시성: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 65 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 65: 코루틴 구조화 동시성: 성능 개선과 리팩터링\nfun solveDay65(values: List<Int>): Int {\n    // TODO: 코루틴 구조화 동시성: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay65(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 65: 코루틴 구조화 동시성: 성능 개선과 리팩터링 예시 풀이\nfun solveDay65(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"코루틴 구조화 동시성: 성능 개선과 리팩터링\")\n    println(solveDay65(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-66",
+    "language": "kotlin",
+    "day": 66,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Flow 스트림 처리: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 Flow 스트림 처리: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Flow 스트림 처리: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Flow 스트림 처리: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Flow 스트림 처리: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "Flow 스트림 처리: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Flow 스트림 처리: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 66 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 66: Flow 스트림 처리: 핵심 원리와 내부 동작\nfun solveDay66(values: List<Int>): Int {\n    // TODO: Flow 스트림 처리: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay66(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 66: Flow 스트림 처리: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay66(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"Flow 스트림 처리: 핵심 원리와 내부 동작\")\n    println(solveDay66(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-67",
+    "language": "kotlin",
+    "day": 67,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Flow 스트림 처리: 실전 구현 패턴",
+    "summary": "Kotlin의 Flow 스트림 처리: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Flow 스트림 처리: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Flow 스트림 처리: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Flow 스트림 처리: 실전 구현 패턴의 핵심 개념 설명하기",
+      "Flow 스트림 처리: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Flow 스트림 처리: 실전 구현 패턴에서 배운 개념을 사용해 Day 67 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 67: Flow 스트림 처리: 실전 구현 패턴\nfun solveDay67(values: List<Int>): Int {\n    // TODO: Flow 스트림 처리: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay67(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 67: Flow 스트림 처리: 실전 구현 패턴 예시 풀이\nfun solveDay67(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"Flow 스트림 처리: 실전 구현 패턴\")\n    println(solveDay67(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-68",
+    "language": "kotlin",
+    "day": 68,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Flow 스트림 처리: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 Flow 스트림 처리: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Flow 스트림 처리: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Flow 스트림 처리: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Flow 스트림 처리: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "Flow 스트림 처리: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Flow 스트림 처리: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 68 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 68: Flow 스트림 처리: 오류 처리와 경계 조건\nfun solveDay68(values: List<Int>): Int {\n    // TODO: Flow 스트림 처리: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay68(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 68: Flow 스트림 처리: 오류 처리와 경계 조건 예시 풀이\nfun solveDay68(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"Flow 스트림 처리: 오류 처리와 경계 조건\")\n    println(solveDay68(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-69",
+    "language": "kotlin",
+    "day": 69,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Flow 스트림 처리: 테스트와 디버깅",
+    "summary": "Kotlin의 Flow 스트림 처리: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Flow 스트림 처리: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Flow 스트림 처리: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Flow 스트림 처리: 테스트와 디버깅의 핵심 개념 설명하기",
+      "Flow 스트림 처리: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Flow 스트림 처리: 테스트와 디버깅에서 배운 개념을 사용해 Day 69 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 69: Flow 스트림 처리: 테스트와 디버깅\nfun solveDay69(values: List<Int>): Int {\n    // TODO: Flow 스트림 처리: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay69(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 69: Flow 스트림 처리: 테스트와 디버깅 예시 풀이\nfun solveDay69(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"Flow 스트림 처리: 테스트와 디버깅\")\n    println(solveDay69(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-70",
+    "language": "kotlin",
+    "day": 70,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Flow 스트림 처리: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 Flow 스트림 처리: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Flow 스트림 처리: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Flow 스트림 처리: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Flow 스트림 처리: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "Flow 스트림 처리: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Flow 스트림 처리: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 70 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 70: Flow 스트림 처리: 성능 개선과 리팩터링\nfun solveDay70(values: List<Int>): Int {\n    // TODO: Flow 스트림 처리: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay70(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 70: Flow 스트림 처리: 성능 개선과 리팩터링 예시 풀이\nfun solveDay70(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"Flow 스트림 처리: 성능 개선과 리팩터링\")\n    println(solveDay70(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-71",
+    "language": "kotlin",
+    "day": 71,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "채널과 동기화: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 채널과 동기화: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "채널과 동기화: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "채널과 동기화: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "채널과 동기화: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "채널과 동기화: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "채널과 동기화: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 71 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 71: 채널과 동기화: 핵심 원리와 내부 동작\nfun solveDay71(values: List<Int>): Int {\n    // TODO: 채널과 동기화: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay71(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 71: 채널과 동기화: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay71(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"채널과 동기화: 핵심 원리와 내부 동작\")\n    println(solveDay71(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-72",
+    "language": "kotlin",
+    "day": 72,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "채널과 동기화: 실전 구현 패턴",
+    "summary": "Kotlin의 채널과 동기화: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "채널과 동기화: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "채널과 동기화: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "채널과 동기화: 실전 구현 패턴의 핵심 개념 설명하기",
+      "채널과 동기화: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "채널과 동기화: 실전 구현 패턴에서 배운 개념을 사용해 Day 72 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 72: 채널과 동기화: 실전 구현 패턴\nfun solveDay72(values: List<Int>): Int {\n    // TODO: 채널과 동기화: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay72(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 72: 채널과 동기화: 실전 구현 패턴 예시 풀이\nfun solveDay72(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"채널과 동기화: 실전 구현 패턴\")\n    println(solveDay72(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-73",
+    "language": "kotlin",
+    "day": 73,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "채널과 동기화: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 채널과 동기화: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "채널과 동기화: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "채널과 동기화: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "채널과 동기화: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "채널과 동기화: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "채널과 동기화: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 73 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 73: 채널과 동기화: 오류 처리와 경계 조건\nfun solveDay73(values: List<Int>): Int {\n    // TODO: 채널과 동기화: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay73(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 73: 채널과 동기화: 오류 처리와 경계 조건 예시 풀이\nfun solveDay73(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"채널과 동기화: 오류 처리와 경계 조건\")\n    println(solveDay73(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-74",
+    "language": "kotlin",
+    "day": 74,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "채널과 동기화: 테스트와 디버깅",
+    "summary": "Kotlin의 채널과 동기화: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "채널과 동기화: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "채널과 동기화: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "채널과 동기화: 테스트와 디버깅의 핵심 개념 설명하기",
+      "채널과 동기화: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "채널과 동기화: 테스트와 디버깅에서 배운 개념을 사용해 Day 74 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 74: 채널과 동기화: 테스트와 디버깅\nfun solveDay74(values: List<Int>): Int {\n    // TODO: 채널과 동기화: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay74(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 74: 채널과 동기화: 테스트와 디버깅 예시 풀이\nfun solveDay74(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"채널과 동기화: 테스트와 디버깅\")\n    println(solveDay74(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-75",
+    "language": "kotlin",
+    "day": 75,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "채널과 동기화: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 채널과 동기화: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "채널과 동기화: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "채널과 동기화: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "채널과 동기화: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "채널과 동기화: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "채널과 동기화: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 75 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 75: 채널과 동기화: 성능 개선과 리팩터링\nfun solveDay75(values: List<Int>): Int {\n    // TODO: 채널과 동기화: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay75(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 75: 채널과 동기화: 성능 개선과 리팩터링 예시 풀이\nfun solveDay75(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"채널과 동기화: 성능 개선과 리팩터링\")\n    println(solveDay75(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-76",
+    "language": "kotlin",
+    "day": 76,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "직렬화와 네트워크: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 직렬화와 네트워크: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "직렬화와 네트워크: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "직렬화와 네트워크: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "직렬화와 네트워크: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "직렬화와 네트워크: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "직렬화와 네트워크: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 76 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 76: 직렬화와 네트워크: 핵심 원리와 내부 동작\nfun solveDay76(values: List<Int>): Int {\n    // TODO: 직렬화와 네트워크: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay76(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 76: 직렬화와 네트워크: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay76(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"직렬화와 네트워크: 핵심 원리와 내부 동작\")\n    println(solveDay76(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-77",
+    "language": "kotlin",
+    "day": 77,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "직렬화와 네트워크: 실전 구현 패턴",
+    "summary": "Kotlin의 직렬화와 네트워크: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "직렬화와 네트워크: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "직렬화와 네트워크: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "직렬화와 네트워크: 실전 구현 패턴의 핵심 개념 설명하기",
+      "직렬화와 네트워크: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "직렬화와 네트워크: 실전 구현 패턴에서 배운 개념을 사용해 Day 77 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 77: 직렬화와 네트워크: 실전 구현 패턴\nfun solveDay77(values: List<Int>): Int {\n    // TODO: 직렬화와 네트워크: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay77(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 77: 직렬화와 네트워크: 실전 구현 패턴 예시 풀이\nfun solveDay77(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"직렬화와 네트워크: 실전 구현 패턴\")\n    println(solveDay77(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-78",
+    "language": "kotlin",
+    "day": 78,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "직렬화와 네트워크: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 직렬화와 네트워크: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "직렬화와 네트워크: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "직렬화와 네트워크: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "직렬화와 네트워크: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "직렬화와 네트워크: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "직렬화와 네트워크: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 78 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 78: 직렬화와 네트워크: 오류 처리와 경계 조건\nfun solveDay78(values: List<Int>): Int {\n    // TODO: 직렬화와 네트워크: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay78(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 78: 직렬화와 네트워크: 오류 처리와 경계 조건 예시 풀이\nfun solveDay78(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"직렬화와 네트워크: 오류 처리와 경계 조건\")\n    println(solveDay78(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-79",
+    "language": "kotlin",
+    "day": 79,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "직렬화와 네트워크: 테스트와 디버깅",
+    "summary": "Kotlin의 직렬화와 네트워크: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "직렬화와 네트워크: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "직렬화와 네트워크: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "직렬화와 네트워크: 테스트와 디버깅의 핵심 개념 설명하기",
+      "직렬화와 네트워크: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "직렬화와 네트워크: 테스트와 디버깅에서 배운 개념을 사용해 Day 79 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 79: 직렬화와 네트워크: 테스트와 디버깅\nfun solveDay79(values: List<Int>): Int {\n    // TODO: 직렬화와 네트워크: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay79(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 79: 직렬화와 네트워크: 테스트와 디버깅 예시 풀이\nfun solveDay79(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"직렬화와 네트워크: 테스트와 디버깅\")\n    println(solveDay79(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-80",
+    "language": "kotlin",
+    "day": 80,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "직렬화와 네트워크: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 직렬화와 네트워크: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "직렬화와 네트워크: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "직렬화와 네트워크: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "직렬화와 네트워크: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "직렬화와 네트워크: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "직렬화와 네트워크: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 80 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 80: 직렬화와 네트워크: 성능 개선과 리팩터링\nfun solveDay80(values: List<Int>): Int {\n    // TODO: 직렬화와 네트워크: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay80(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 80: 직렬화와 네트워크: 성능 개선과 리팩터링 예시 풀이\nfun solveDay80(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"직렬화와 네트워크: 성능 개선과 리팩터링\")\n    println(solveDay80(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-81",
+    "language": "kotlin",
+    "day": 81,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 테스트 자동화: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "테스트 자동화: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 81 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 81: 테스트 자동화: 핵심 원리와 내부 동작\nfun solveDay81(values: List<Int>): Int {\n    // TODO: 테스트 자동화: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay81(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 81: 테스트 자동화: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay81(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"테스트 자동화: 핵심 원리와 내부 동작\")\n    println(solveDay81(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-82",
+    "language": "kotlin",
+    "day": 82,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 실전 구현 패턴",
+    "summary": "Kotlin의 테스트 자동화: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 실전 구현 패턴의 핵심 개념 설명하기",
+      "테스트 자동화: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 실전 구현 패턴에서 배운 개념을 사용해 Day 82 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 82: 테스트 자동화: 실전 구현 패턴\nfun solveDay82(values: List<Int>): Int {\n    // TODO: 테스트 자동화: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay82(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 82: 테스트 자동화: 실전 구현 패턴 예시 풀이\nfun solveDay82(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"테스트 자동화: 실전 구현 패턴\")\n    println(solveDay82(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-83",
+    "language": "kotlin",
+    "day": 83,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 테스트 자동화: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "테스트 자동화: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 83 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 83: 테스트 자동화: 오류 처리와 경계 조건\nfun solveDay83(values: List<Int>): Int {\n    // TODO: 테스트 자동화: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay83(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 83: 테스트 자동화: 오류 처리와 경계 조건 예시 풀이\nfun solveDay83(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"테스트 자동화: 오류 처리와 경계 조건\")\n    println(solveDay83(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-84",
+    "language": "kotlin",
+    "day": 84,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 테스트와 디버깅",
+    "summary": "Kotlin의 테스트 자동화: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 테스트와 디버깅의 핵심 개념 설명하기",
+      "테스트 자동화: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 테스트와 디버깅에서 배운 개념을 사용해 Day 84 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 84: 테스트 자동화: 테스트와 디버깅\nfun solveDay84(values: List<Int>): Int {\n    // TODO: 테스트 자동화: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay84(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 84: 테스트 자동화: 테스트와 디버깅 예시 풀이\nfun solveDay84(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"테스트 자동화: 테스트와 디버깅\")\n    println(solveDay84(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-85",
+    "language": "kotlin",
+    "day": 85,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 테스트 자동화: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "테스트 자동화: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 85 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 85: 테스트 자동화: 성능 개선과 리팩터링\nfun solveDay85(values: List<Int>): Int {\n    // TODO: 테스트 자동화: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay85(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 85: 테스트 자동화: 성능 개선과 리팩터링 예시 풀이\nfun solveDay85(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"테스트 자동화: 성능 개선과 리팩터링\")\n    println(solveDay85(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-86",
+    "language": "kotlin",
+    "day": 86,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "성능과 Java 상호 운용: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 성능과 Java 상호 운용: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "성능과 Java 상호 운용: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "성능과 Java 상호 운용: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "성능과 Java 상호 운용: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "성능과 Java 상호 운용: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "성능과 Java 상호 운용: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 86 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 86: 성능과 Java 상호 운용: 핵심 원리와 내부 동작\nfun solveDay86(values: List<Int>): Int {\n    // TODO: 성능과 Java 상호 운용: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay86(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 86: 성능과 Java 상호 운용: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay86(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"성능과 Java 상호 운용: 핵심 원리와 내부 동작\")\n    println(solveDay86(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-87",
+    "language": "kotlin",
+    "day": 87,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "성능과 Java 상호 운용: 실전 구현 패턴",
+    "summary": "Kotlin의 성능과 Java 상호 운용: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "성능과 Java 상호 운용: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "성능과 Java 상호 운용: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "성능과 Java 상호 운용: 실전 구현 패턴의 핵심 개념 설명하기",
+      "성능과 Java 상호 운용: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "성능과 Java 상호 운용: 실전 구현 패턴에서 배운 개념을 사용해 Day 87 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 87: 성능과 Java 상호 운용: 실전 구현 패턴\nfun solveDay87(values: List<Int>): Int {\n    // TODO: 성능과 Java 상호 운용: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay87(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 87: 성능과 Java 상호 운용: 실전 구현 패턴 예시 풀이\nfun solveDay87(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"성능과 Java 상호 운용: 실전 구현 패턴\")\n    println(solveDay87(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-88",
+    "language": "kotlin",
+    "day": 88,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "성능과 Java 상호 운용: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 성능과 Java 상호 운용: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "성능과 Java 상호 운용: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "성능과 Java 상호 운용: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "성능과 Java 상호 운용: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "성능과 Java 상호 운용: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "성능과 Java 상호 운용: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 88 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 88: 성능과 Java 상호 운용: 오류 처리와 경계 조건\nfun solveDay88(values: List<Int>): Int {\n    // TODO: 성능과 Java 상호 운용: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay88(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 88: 성능과 Java 상호 운용: 오류 처리와 경계 조건 예시 풀이\nfun solveDay88(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"성능과 Java 상호 운용: 오류 처리와 경계 조건\")\n    println(solveDay88(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-89",
+    "language": "kotlin",
+    "day": 89,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "성능과 Java 상호 운용: 테스트와 디버깅",
+    "summary": "Kotlin의 성능과 Java 상호 운용: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "성능과 Java 상호 운용: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "성능과 Java 상호 운용: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "성능과 Java 상호 운용: 테스트와 디버깅의 핵심 개념 설명하기",
+      "성능과 Java 상호 운용: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "성능과 Java 상호 운용: 테스트와 디버깅에서 배운 개념을 사용해 Day 89 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 89: 성능과 Java 상호 운용: 테스트와 디버깅\nfun solveDay89(values: List<Int>): Int {\n    // TODO: 성능과 Java 상호 운용: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay89(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 89: 성능과 Java 상호 운용: 테스트와 디버깅 예시 풀이\nfun solveDay89(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"성능과 Java 상호 운용: 테스트와 디버깅\")\n    println(solveDay89(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-90",
+    "language": "kotlin",
+    "day": 90,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "성능과 Java 상호 운용: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 성능과 Java 상호 운용: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "성능과 Java 상호 운용: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "성능과 Java 상호 운용: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "성능과 Java 상호 운용: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "성능과 Java 상호 운용: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "성능과 Java 상호 운용: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 90 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 90: 성능과 Java 상호 운용: 성능 개선과 리팩터링\nfun solveDay90(values: List<Int>): Int {\n    // TODO: 성능과 Java 상호 운용: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay90(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 90: 성능과 Java 상호 운용: 성능 개선과 리팩터링 예시 풀이\nfun solveDay90(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"성능과 Java 상호 운용: 성능 개선과 리팩터링\")\n    println(solveDay90(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-91",
+    "language": "kotlin",
+    "day": 91,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Android 아키텍처: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 Android 아키텍처: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Android 아키텍처: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Android 아키텍처: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Android 아키텍처: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "Android 아키텍처: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Android 아키텍처: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 91 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 91: Android 아키텍처: 핵심 원리와 내부 동작\nfun solveDay91(values: List<Int>): Int {\n    // TODO: Android 아키텍처: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay91(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 91: Android 아키텍처: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay91(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"Android 아키텍처: 핵심 원리와 내부 동작\")\n    println(solveDay91(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-92",
+    "language": "kotlin",
+    "day": 92,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Android 아키텍처: 실전 구현 패턴",
+    "summary": "Kotlin의 Android 아키텍처: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Android 아키텍처: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Android 아키텍처: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Android 아키텍처: 실전 구현 패턴의 핵심 개념 설명하기",
+      "Android 아키텍처: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Android 아키텍처: 실전 구현 패턴에서 배운 개념을 사용해 Day 92 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 92: Android 아키텍처: 실전 구현 패턴\nfun solveDay92(values: List<Int>): Int {\n    // TODO: Android 아키텍처: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay92(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 92: Android 아키텍처: 실전 구현 패턴 예시 풀이\nfun solveDay92(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"Android 아키텍처: 실전 구현 패턴\")\n    println(solveDay92(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-93",
+    "language": "kotlin",
+    "day": 93,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Android 아키텍처: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 Android 아키텍처: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Android 아키텍처: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Android 아키텍처: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Android 아키텍처: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "Android 아키텍처: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Android 아키텍처: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 93 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 93: Android 아키텍처: 오류 처리와 경계 조건\nfun solveDay93(values: List<Int>): Int {\n    // TODO: Android 아키텍처: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay93(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 93: Android 아키텍처: 오류 처리와 경계 조건 예시 풀이\nfun solveDay93(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"Android 아키텍처: 오류 처리와 경계 조건\")\n    println(solveDay93(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-94",
+    "language": "kotlin",
+    "day": 94,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Android 아키텍처: 테스트와 디버깅",
+    "summary": "Kotlin의 Android 아키텍처: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Android 아키텍처: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Android 아키텍처: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Android 아키텍처: 테스트와 디버깅의 핵심 개념 설명하기",
+      "Android 아키텍처: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Android 아키텍처: 테스트와 디버깅에서 배운 개념을 사용해 Day 94 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 94: Android 아키텍처: 테스트와 디버깅\nfun solveDay94(values: List<Int>): Int {\n    // TODO: Android 아키텍처: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay94(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 94: Android 아키텍처: 테스트와 디버깅 예시 풀이\nfun solveDay94(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"Android 아키텍처: 테스트와 디버깅\")\n    println(solveDay94(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-95",
+    "language": "kotlin",
+    "day": 95,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Android 아키텍처: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 Android 아키텍처: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Android 아키텍처: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Android 아키텍처: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Android 아키텍처: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "Android 아키텍처: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Android 아키텍처: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 95 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 95: Android 아키텍처: 성능 개선과 리팩터링\nfun solveDay95(values: List<Int>): Int {\n    // TODO: Android 아키텍처: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay95(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 95: Android 아키텍처: 성능 개선과 리팩터링 예시 풀이\nfun solveDay95(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"Android 아키텍처: 성능 개선과 리팩터링\")\n    println(solveDay95(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-96",
+    "language": "kotlin",
+    "day": 96,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Compose 상태와 UI 설계: 핵심 원리와 내부 동작",
+    "summary": "Kotlin의 Compose 상태와 UI 설계: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Compose 상태와 UI 설계: 핵심 원리와 내부 동작은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Compose 상태와 UI 설계: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Compose 상태와 UI 설계: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "Compose 상태와 UI 설계: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Compose 상태와 UI 설계: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 96 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 96: Compose 상태와 UI 설계: 핵심 원리와 내부 동작\nfun solveDay96(values: List<Int>): Int {\n    // TODO: Compose 상태와 UI 설계: 핵심 원리와 내부 동작 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay96(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 96: Compose 상태와 UI 설계: 핵심 원리와 내부 동작 예시 풀이\nfun solveDay96(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"Compose 상태와 UI 설계: 핵심 원리와 내부 동작\")\n    println(solveDay96(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-97",
+    "language": "kotlin",
+    "day": 97,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Compose 상태와 UI 설계: 실전 구현 패턴",
+    "summary": "Kotlin의 Compose 상태와 UI 설계: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Compose 상태와 UI 설계: 실전 구현 패턴은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Compose 상태와 UI 설계: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Compose 상태와 UI 설계: 실전 구현 패턴의 핵심 개념 설명하기",
+      "Compose 상태와 UI 설계: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Compose 상태와 UI 설계: 실전 구현 패턴에서 배운 개념을 사용해 Day 97 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 97: Compose 상태와 UI 설계: 실전 구현 패턴\nfun solveDay97(values: List<Int>): Int {\n    // TODO: Compose 상태와 UI 설계: 실전 구현 패턴 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay97(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 97: Compose 상태와 UI 설계: 실전 구현 패턴 예시 풀이\nfun solveDay97(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"Compose 상태와 UI 설계: 실전 구현 패턴\")\n    println(solveDay97(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-98",
+    "language": "kotlin",
+    "day": 98,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Compose 상태와 UI 설계: 오류 처리와 경계 조건",
+    "summary": "Kotlin의 Compose 상태와 UI 설계: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Compose 상태와 UI 설계: 오류 처리와 경계 조건은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Compose 상태와 UI 설계: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Compose 상태와 UI 설계: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "Compose 상태와 UI 설계: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Compose 상태와 UI 설계: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 98 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 98: Compose 상태와 UI 설계: 오류 처리와 경계 조건\nfun solveDay98(values: List<Int>): Int {\n    // TODO: Compose 상태와 UI 설계: 오류 처리와 경계 조건 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay98(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 98: Compose 상태와 UI 설계: 오류 처리와 경계 조건 예시 풀이\nfun solveDay98(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"Compose 상태와 UI 설계: 오류 처리와 경계 조건\")\n    println(solveDay98(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-99",
+    "language": "kotlin",
+    "day": 99,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Compose 상태와 UI 설계: 테스트와 디버깅",
+    "summary": "Kotlin의 Compose 상태와 UI 설계: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Compose 상태와 UI 설계: 테스트와 디버깅은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Compose 상태와 UI 설계: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Compose 상태와 UI 설계: 테스트와 디버깅의 핵심 개념 설명하기",
+      "Compose 상태와 UI 설계: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Compose 상태와 UI 설계: 테스트와 디버깅에서 배운 개념을 사용해 Day 99 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 99: Compose 상태와 UI 설계: 테스트와 디버깅\nfun solveDay99(values: List<Int>): Int {\n    // TODO: Compose 상태와 UI 설계: 테스트와 디버깅 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay99(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 99: Compose 상태와 UI 설계: 테스트와 디버깅 예시 풀이\nfun solveDay99(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"Compose 상태와 UI 설계: 테스트와 디버깅\")\n    println(solveDay99(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-100",
+    "language": "kotlin",
+    "day": 100,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "Compose 상태와 UI 설계: 성능 개선과 리팩터링",
+    "summary": "Kotlin의 Compose 상태와 UI 설계: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "Compose 상태와 UI 설계: 성능 개선과 리팩터링은(는) Kotlin 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "Compose 상태와 UI 설계: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "Compose 상태와 UI 설계: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "Compose 상태와 UI 설계: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "Compose 상태와 UI 설계: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 100 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 100: Compose 상태와 UI 설계: 성능 개선과 리팩터링\nfun solveDay100(values: List<Int>): Int {\n    // TODO: Compose 상태와 UI 설계: 성능 개선과 리팩터링 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay100(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 100: Compose 상태와 UI 설계: 성능 개선과 리팩터링 예시 풀이\nfun solveDay100(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"Compose 상태와 UI 설계: 성능 개선과 리팩터링\")\n    println(solveDay100(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-101",
+    "language": "kotlin",
+    "day": 101,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 습관 기록 Android 앱",
+    "summary": "Kotlin의 프로젝트: 습관 기록 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 습관 기록 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 습관 기록 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 습관 기록 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 습관 기록 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 습관 기록 Android 앱에서 배운 개념을 사용해 Day 101 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 101: 프로젝트: 습관 기록 Android 앱\nfun solveDay101(values: List<Int>): Int {\n    // TODO: 프로젝트: 습관 기록 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay101(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 101: 프로젝트: 습관 기록 Android 앱 예시 풀이\nfun solveDay101(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 습관 기록 Android 앱\")\n    println(solveDay101(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-102",
+    "language": "kotlin",
+    "day": 102,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 습관 기록 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 습관 기록 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 습관 기록 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 습관 기록 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 습관 기록 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 습관 기록 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 습관 기록 Compose 대시보드에서 배운 개념을 사용해 Day 102 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 102: 프로젝트: 습관 기록 Compose 대시보드\nfun solveDay102(values: List<Int>): Int {\n    // TODO: 프로젝트: 습관 기록 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay102(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 102: 프로젝트: 습관 기록 Compose 대시보드 예시 풀이\nfun solveDay102(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 습관 기록 Compose 대시보드\")\n    println(solveDay102(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-103",
+    "language": "kotlin",
+    "day": 103,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 습관 기록 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 습관 기록 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 습관 기록 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 습관 기록 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 습관 기록 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 습관 기록 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 습관 기록 오프라인 우선 앱에서 배운 개념을 사용해 Day 103 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 103: 프로젝트: 습관 기록 오프라인 우선 앱\nfun solveDay103(values: List<Int>): Int {\n    // TODO: 프로젝트: 습관 기록 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay103(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 103: 프로젝트: 습관 기록 오프라인 우선 앱 예시 풀이\nfun solveDay103(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 습관 기록 오프라인 우선 앱\")\n    println(solveDay103(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-104",
+    "language": "kotlin",
+    "day": 104,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 습관 기록 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 습관 기록 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 습관 기록 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 습관 기록 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 습관 기록 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 습관 기록 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 습관 기록 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 104 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 104: 프로젝트: 습관 기록 백그라운드 동기화 앱\nfun solveDay104(values: List<Int>): Int {\n    // TODO: 프로젝트: 습관 기록 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay104(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 104: 프로젝트: 습관 기록 백그라운드 동기화 앱 예시 풀이\nfun solveDay104(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 습관 기록 백그라운드 동기화 앱\")\n    println(solveDay104(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-105",
+    "language": "kotlin",
+    "day": 105,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 습관 기록 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 습관 기록 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 습관 기록 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 습관 기록 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 습관 기록 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 습관 기록 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 습관 기록 운영 태블릿 앱에서 배운 개념을 사용해 Day 105 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 105: 프로젝트: 습관 기록 운영 태블릿 앱\nfun solveDay105(values: List<Int>): Int {\n    // TODO: 프로젝트: 습관 기록 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay105(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 105: 프로젝트: 습관 기록 운영 태블릿 앱 예시 풀이\nfun solveDay105(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 습관 기록 운영 태블릿 앱\")\n    println(solveDay105(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-106",
+    "language": "kotlin",
+    "day": 106,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 여행 일정 Android 앱",
+    "summary": "Kotlin의 프로젝트: 여행 일정 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 여행 일정 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 여행 일정 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 여행 일정 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 여행 일정 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 여행 일정 Android 앱에서 배운 개념을 사용해 Day 106 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 106: 프로젝트: 여행 일정 Android 앱\nfun solveDay106(values: List<Int>): Int {\n    // TODO: 프로젝트: 여행 일정 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay106(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 106: 프로젝트: 여행 일정 Android 앱 예시 풀이\nfun solveDay106(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 여행 일정 Android 앱\")\n    println(solveDay106(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-107",
+    "language": "kotlin",
+    "day": 107,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 여행 일정 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 여행 일정 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 여행 일정 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 여행 일정 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 여행 일정 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 여행 일정 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 여행 일정 Compose 대시보드에서 배운 개념을 사용해 Day 107 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 107: 프로젝트: 여행 일정 Compose 대시보드\nfun solveDay107(values: List<Int>): Int {\n    // TODO: 프로젝트: 여행 일정 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay107(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 107: 프로젝트: 여행 일정 Compose 대시보드 예시 풀이\nfun solveDay107(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 여행 일정 Compose 대시보드\")\n    println(solveDay107(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-108",
+    "language": "kotlin",
+    "day": 108,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 여행 일정 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 여행 일정 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 여행 일정 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 여행 일정 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 여행 일정 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 여행 일정 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 여행 일정 오프라인 우선 앱에서 배운 개념을 사용해 Day 108 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 108: 프로젝트: 여행 일정 오프라인 우선 앱\nfun solveDay108(values: List<Int>): Int {\n    // TODO: 프로젝트: 여행 일정 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay108(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 108: 프로젝트: 여행 일정 오프라인 우선 앱 예시 풀이\nfun solveDay108(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 여행 일정 오프라인 우선 앱\")\n    println(solveDay108(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-109",
+    "language": "kotlin",
+    "day": 109,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 여행 일정 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 여행 일정 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 여행 일정 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 여행 일정 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 여행 일정 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 여행 일정 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 여행 일정 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 109 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 109: 프로젝트: 여행 일정 백그라운드 동기화 앱\nfun solveDay109(values: List<Int>): Int {\n    // TODO: 프로젝트: 여행 일정 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay109(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 109: 프로젝트: 여행 일정 백그라운드 동기화 앱 예시 풀이\nfun solveDay109(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 여행 일정 백그라운드 동기화 앱\")\n    println(solveDay109(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-110",
+    "language": "kotlin",
+    "day": 110,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 여행 일정 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 여행 일정 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 여행 일정 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 여행 일정 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 여행 일정 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 여행 일정 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 여행 일정 운영 태블릿 앱에서 배운 개념을 사용해 Day 110 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 110: 프로젝트: 여행 일정 운영 태블릿 앱\nfun solveDay110(values: List<Int>): Int {\n    // TODO: 프로젝트: 여행 일정 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay110(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 110: 프로젝트: 여행 일정 운영 태블릿 앱 예시 풀이\nfun solveDay110(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 여행 일정 운영 태블릿 앱\")\n    println(solveDay110(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-111",
+    "language": "kotlin",
+    "day": 111,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 Android 앱",
+    "summary": "Kotlin의 프로젝트: 가계부 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 가계부 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 Android 앱에서 배운 개념을 사용해 Day 111 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 111: 프로젝트: 가계부 Android 앱\nfun solveDay111(values: List<Int>): Int {\n    // TODO: 프로젝트: 가계부 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay111(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 111: 프로젝트: 가계부 Android 앱 예시 풀이\nfun solveDay111(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 가계부 Android 앱\")\n    println(solveDay111(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-112",
+    "language": "kotlin",
+    "day": 112,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 가계부 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 가계부 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 Compose 대시보드에서 배운 개념을 사용해 Day 112 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 112: 프로젝트: 가계부 Compose 대시보드\nfun solveDay112(values: List<Int>): Int {\n    // TODO: 프로젝트: 가계부 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay112(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 112: 프로젝트: 가계부 Compose 대시보드 예시 풀이\nfun solveDay112(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 가계부 Compose 대시보드\")\n    println(solveDay112(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-113",
+    "language": "kotlin",
+    "day": 113,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 가계부 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 가계부 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 오프라인 우선 앱에서 배운 개념을 사용해 Day 113 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 113: 프로젝트: 가계부 오프라인 우선 앱\nfun solveDay113(values: List<Int>): Int {\n    // TODO: 프로젝트: 가계부 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay113(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 113: 프로젝트: 가계부 오프라인 우선 앱 예시 풀이\nfun solveDay113(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 가계부 오프라인 우선 앱\")\n    println(solveDay113(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-114",
+    "language": "kotlin",
+    "day": 114,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 가계부 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 가계부 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 114 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 114: 프로젝트: 가계부 백그라운드 동기화 앱\nfun solveDay114(values: List<Int>): Int {\n    // TODO: 프로젝트: 가계부 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay114(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 114: 프로젝트: 가계부 백그라운드 동기화 앱 예시 풀이\nfun solveDay114(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 가계부 백그라운드 동기화 앱\")\n    println(solveDay114(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-115",
+    "language": "kotlin",
+    "day": 115,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 가계부 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 가계부 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 운영 태블릿 앱에서 배운 개념을 사용해 Day 115 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 115: 프로젝트: 가계부 운영 태블릿 앱\nfun solveDay115(values: List<Int>): Int {\n    // TODO: 프로젝트: 가계부 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay115(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 115: 프로젝트: 가계부 운영 태블릿 앱 예시 풀이\nfun solveDay115(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 가계부 운영 태블릿 앱\")\n    println(solveDay115(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-116",
+    "language": "kotlin",
+    "day": 116,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 운동 코칭 Android 앱",
+    "summary": "Kotlin의 프로젝트: 운동 코칭 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 운동 코칭 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 운동 코칭 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 운동 코칭 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 운동 코칭 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 운동 코칭 Android 앱에서 배운 개념을 사용해 Day 116 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 116: 프로젝트: 운동 코칭 Android 앱\nfun solveDay116(values: List<Int>): Int {\n    // TODO: 프로젝트: 운동 코칭 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay116(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 116: 프로젝트: 운동 코칭 Android 앱 예시 풀이\nfun solveDay116(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 운동 코칭 Android 앱\")\n    println(solveDay116(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-117",
+    "language": "kotlin",
+    "day": 117,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 운동 코칭 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 운동 코칭 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 운동 코칭 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 운동 코칭 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 운동 코칭 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 운동 코칭 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 운동 코칭 Compose 대시보드에서 배운 개념을 사용해 Day 117 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 117: 프로젝트: 운동 코칭 Compose 대시보드\nfun solveDay117(values: List<Int>): Int {\n    // TODO: 프로젝트: 운동 코칭 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay117(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 117: 프로젝트: 운동 코칭 Compose 대시보드 예시 풀이\nfun solveDay117(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 운동 코칭 Compose 대시보드\")\n    println(solveDay117(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-118",
+    "language": "kotlin",
+    "day": 118,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 운동 코칭 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 운동 코칭 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 운동 코칭 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 운동 코칭 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 운동 코칭 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 운동 코칭 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 운동 코칭 오프라인 우선 앱에서 배운 개념을 사용해 Day 118 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 118: 프로젝트: 운동 코칭 오프라인 우선 앱\nfun solveDay118(values: List<Int>): Int {\n    // TODO: 프로젝트: 운동 코칭 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay118(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 118: 프로젝트: 운동 코칭 오프라인 우선 앱 예시 풀이\nfun solveDay118(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 운동 코칭 오프라인 우선 앱\")\n    println(solveDay118(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-119",
+    "language": "kotlin",
+    "day": 119,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 운동 코칭 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 운동 코칭 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 운동 코칭 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 운동 코칭 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 운동 코칭 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 운동 코칭 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 운동 코칭 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 119 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 119: 프로젝트: 운동 코칭 백그라운드 동기화 앱\nfun solveDay119(values: List<Int>): Int {\n    // TODO: 프로젝트: 운동 코칭 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay119(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 119: 프로젝트: 운동 코칭 백그라운드 동기화 앱 예시 풀이\nfun solveDay119(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 운동 코칭 백그라운드 동기화 앱\")\n    println(solveDay119(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-120",
+    "language": "kotlin",
+    "day": 120,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 운동 코칭 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 운동 코칭 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 운동 코칭 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 운동 코칭 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 운동 코칭 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 운동 코칭 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 운동 코칭 운영 태블릿 앱에서 배운 개념을 사용해 Day 120 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 120: 프로젝트: 운동 코칭 운영 태블릿 앱\nfun solveDay120(values: List<Int>): Int {\n    // TODO: 프로젝트: 운동 코칭 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay120(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 120: 프로젝트: 운동 코칭 운영 태블릿 앱 예시 풀이\nfun solveDay120(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 운동 코칭 운영 태블릿 앱\")\n    println(solveDay120(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-121",
+    "language": "kotlin",
+    "day": 121,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 독서 기록 Android 앱",
+    "summary": "Kotlin의 프로젝트: 독서 기록 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 독서 기록 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 독서 기록 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 독서 기록 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 독서 기록 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 독서 기록 Android 앱에서 배운 개념을 사용해 Day 121 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 121: 프로젝트: 독서 기록 Android 앱\nfun solveDay121(values: List<Int>): Int {\n    // TODO: 프로젝트: 독서 기록 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay121(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 121: 프로젝트: 독서 기록 Android 앱 예시 풀이\nfun solveDay121(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 독서 기록 Android 앱\")\n    println(solveDay121(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-122",
+    "language": "kotlin",
+    "day": 122,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 독서 기록 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 독서 기록 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 독서 기록 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 독서 기록 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 독서 기록 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 독서 기록 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 독서 기록 Compose 대시보드에서 배운 개념을 사용해 Day 122 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 122: 프로젝트: 독서 기록 Compose 대시보드\nfun solveDay122(values: List<Int>): Int {\n    // TODO: 프로젝트: 독서 기록 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay122(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 122: 프로젝트: 독서 기록 Compose 대시보드 예시 풀이\nfun solveDay122(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 독서 기록 Compose 대시보드\")\n    println(solveDay122(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-123",
+    "language": "kotlin",
+    "day": 123,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 독서 기록 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 독서 기록 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 독서 기록 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 독서 기록 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 독서 기록 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 독서 기록 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 독서 기록 오프라인 우선 앱에서 배운 개념을 사용해 Day 123 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 123: 프로젝트: 독서 기록 오프라인 우선 앱\nfun solveDay123(values: List<Int>): Int {\n    // TODO: 프로젝트: 독서 기록 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay123(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 123: 프로젝트: 독서 기록 오프라인 우선 앱 예시 풀이\nfun solveDay123(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 독서 기록 오프라인 우선 앱\")\n    println(solveDay123(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-124",
+    "language": "kotlin",
+    "day": 124,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 독서 기록 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 독서 기록 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 독서 기록 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 독서 기록 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 독서 기록 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 독서 기록 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 독서 기록 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 124 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 124: 프로젝트: 독서 기록 백그라운드 동기화 앱\nfun solveDay124(values: List<Int>): Int {\n    // TODO: 프로젝트: 독서 기록 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay124(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 124: 프로젝트: 독서 기록 백그라운드 동기화 앱 예시 풀이\nfun solveDay124(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 독서 기록 백그라운드 동기화 앱\")\n    println(solveDay124(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-125",
+    "language": "kotlin",
+    "day": 125,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 독서 기록 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 독서 기록 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 독서 기록 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 독서 기록 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 독서 기록 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 독서 기록 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 독서 기록 운영 태블릿 앱에서 배운 개념을 사용해 Day 125 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 125: 프로젝트: 독서 기록 운영 태블릿 앱\nfun solveDay125(values: List<Int>): Int {\n    // TODO: 프로젝트: 독서 기록 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay125(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 125: 프로젝트: 독서 기록 운영 태블릿 앱 예시 풀이\nfun solveDay125(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 독서 기록 운영 태블릿 앱\")\n    println(solveDay125(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-126",
+    "language": "kotlin",
+    "day": 126,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 음식 주문 Android 앱",
+    "summary": "Kotlin의 프로젝트: 음식 주문 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 음식 주문 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 음식 주문 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 음식 주문 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 음식 주문 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 음식 주문 Android 앱에서 배운 개념을 사용해 Day 126 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 126: 프로젝트: 음식 주문 Android 앱\nfun solveDay126(values: List<Int>): Int {\n    // TODO: 프로젝트: 음식 주문 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay126(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 126: 프로젝트: 음식 주문 Android 앱 예시 풀이\nfun solveDay126(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 음식 주문 Android 앱\")\n    println(solveDay126(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-127",
+    "language": "kotlin",
+    "day": 127,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 음식 주문 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 음식 주문 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 음식 주문 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 음식 주문 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 음식 주문 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 음식 주문 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 음식 주문 Compose 대시보드에서 배운 개념을 사용해 Day 127 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 127: 프로젝트: 음식 주문 Compose 대시보드\nfun solveDay127(values: List<Int>): Int {\n    // TODO: 프로젝트: 음식 주문 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay127(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 127: 프로젝트: 음식 주문 Compose 대시보드 예시 풀이\nfun solveDay127(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 음식 주문 Compose 대시보드\")\n    println(solveDay127(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-128",
+    "language": "kotlin",
+    "day": 128,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 음식 주문 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 음식 주문 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 음식 주문 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 음식 주문 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 음식 주문 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 음식 주문 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 음식 주문 오프라인 우선 앱에서 배운 개념을 사용해 Day 128 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 128: 프로젝트: 음식 주문 오프라인 우선 앱\nfun solveDay128(values: List<Int>): Int {\n    // TODO: 프로젝트: 음식 주문 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay128(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 128: 프로젝트: 음식 주문 오프라인 우선 앱 예시 풀이\nfun solveDay128(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 음식 주문 오프라인 우선 앱\")\n    println(solveDay128(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-129",
+    "language": "kotlin",
+    "day": 129,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 음식 주문 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 음식 주문 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 음식 주문 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 음식 주문 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 음식 주문 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 음식 주문 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 음식 주문 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 129 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 129: 프로젝트: 음식 주문 백그라운드 동기화 앱\nfun solveDay129(values: List<Int>): Int {\n    // TODO: 프로젝트: 음식 주문 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay129(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 129: 프로젝트: 음식 주문 백그라운드 동기화 앱 예시 풀이\nfun solveDay129(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 음식 주문 백그라운드 동기화 앱\")\n    println(solveDay129(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-130",
+    "language": "kotlin",
+    "day": 130,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 음식 주문 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 음식 주문 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 음식 주문 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 음식 주문 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 음식 주문 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 음식 주문 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 음식 주문 운영 태블릿 앱에서 배운 개념을 사용해 Day 130 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 130: 프로젝트: 음식 주문 운영 태블릿 앱\nfun solveDay130(values: List<Int>): Int {\n    // TODO: 프로젝트: 음식 주문 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay130(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 130: 프로젝트: 음식 주문 운영 태블릿 앱 예시 풀이\nfun solveDay130(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 음식 주문 운영 태블릿 앱\")\n    println(solveDay130(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-131",
+    "language": "kotlin",
+    "day": 131,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 위치 기반 알림 Android 앱",
+    "summary": "Kotlin의 프로젝트: 위치 기반 알림 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 위치 기반 알림 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 위치 기반 알림 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 위치 기반 알림 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 위치 기반 알림 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 위치 기반 알림 Android 앱에서 배운 개념을 사용해 Day 131 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 131: 프로젝트: 위치 기반 알림 Android 앱\nfun solveDay131(values: List<Int>): Int {\n    // TODO: 프로젝트: 위치 기반 알림 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay131(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 131: 프로젝트: 위치 기반 알림 Android 앱 예시 풀이\nfun solveDay131(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 위치 기반 알림 Android 앱\")\n    println(solveDay131(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-132",
+    "language": "kotlin",
+    "day": 132,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 위치 기반 알림 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 위치 기반 알림 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 위치 기반 알림 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 위치 기반 알림 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 위치 기반 알림 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 위치 기반 알림 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 위치 기반 알림 Compose 대시보드에서 배운 개념을 사용해 Day 132 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 132: 프로젝트: 위치 기반 알림 Compose 대시보드\nfun solveDay132(values: List<Int>): Int {\n    // TODO: 프로젝트: 위치 기반 알림 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay132(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 132: 프로젝트: 위치 기반 알림 Compose 대시보드 예시 풀이\nfun solveDay132(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 위치 기반 알림 Compose 대시보드\")\n    println(solveDay132(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-133",
+    "language": "kotlin",
+    "day": 133,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 위치 기반 알림 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 위치 기반 알림 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 위치 기반 알림 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 위치 기반 알림 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 위치 기반 알림 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 위치 기반 알림 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 위치 기반 알림 오프라인 우선 앱에서 배운 개념을 사용해 Day 133 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 133: 프로젝트: 위치 기반 알림 오프라인 우선 앱\nfun solveDay133(values: List<Int>): Int {\n    // TODO: 프로젝트: 위치 기반 알림 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay133(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 133: 프로젝트: 위치 기반 알림 오프라인 우선 앱 예시 풀이\nfun solveDay133(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 위치 기반 알림 오프라인 우선 앱\")\n    println(solveDay133(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-134",
+    "language": "kotlin",
+    "day": 134,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 위치 기반 알림 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 위치 기반 알림 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 위치 기반 알림 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 위치 기반 알림 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 위치 기반 알림 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 위치 기반 알림 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 위치 기반 알림 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 134 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 134: 프로젝트: 위치 기반 알림 백그라운드 동기화 앱\nfun solveDay134(values: List<Int>): Int {\n    // TODO: 프로젝트: 위치 기반 알림 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay134(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 134: 프로젝트: 위치 기반 알림 백그라운드 동기화 앱 예시 풀이\nfun solveDay134(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 위치 기반 알림 백그라운드 동기화 앱\")\n    println(solveDay134(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-135",
+    "language": "kotlin",
+    "day": 135,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 위치 기반 알림 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 위치 기반 알림 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 위치 기반 알림 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 위치 기반 알림 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 위치 기반 알림 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 위치 기반 알림 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 위치 기반 알림 운영 태블릿 앱에서 배운 개념을 사용해 Day 135 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 135: 프로젝트: 위치 기반 알림 운영 태블릿 앱\nfun solveDay135(values: List<Int>): Int {\n    // TODO: 프로젝트: 위치 기반 알림 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay135(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 135: 프로젝트: 위치 기반 알림 운영 태블릿 앱 예시 풀이\nfun solveDay135(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 위치 기반 알림 운영 태블릿 앱\")\n    println(solveDay135(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-136",
+    "language": "kotlin",
+    "day": 136,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 오프라인 메모 Android 앱",
+    "summary": "Kotlin의 프로젝트: 오프라인 메모 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 오프라인 메모 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 오프라인 메모 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 오프라인 메모 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 오프라인 메모 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 오프라인 메모 Android 앱에서 배운 개념을 사용해 Day 136 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 136: 프로젝트: 오프라인 메모 Android 앱\nfun solveDay136(values: List<Int>): Int {\n    // TODO: 프로젝트: 오프라인 메모 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay136(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 136: 프로젝트: 오프라인 메모 Android 앱 예시 풀이\nfun solveDay136(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 오프라인 메모 Android 앱\")\n    println(solveDay136(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-137",
+    "language": "kotlin",
+    "day": 137,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 오프라인 메모 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 오프라인 메모 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 오프라인 메모 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 오프라인 메모 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 오프라인 메모 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 오프라인 메모 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 오프라인 메모 Compose 대시보드에서 배운 개념을 사용해 Day 137 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 137: 프로젝트: 오프라인 메모 Compose 대시보드\nfun solveDay137(values: List<Int>): Int {\n    // TODO: 프로젝트: 오프라인 메모 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay137(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 137: 프로젝트: 오프라인 메모 Compose 대시보드 예시 풀이\nfun solveDay137(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 오프라인 메모 Compose 대시보드\")\n    println(solveDay137(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-138",
+    "language": "kotlin",
+    "day": 138,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 오프라인 메모 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 오프라인 메모 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 오프라인 메모 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 오프라인 메모 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 오프라인 메모 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 오프라인 메모 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 오프라인 메모 오프라인 우선 앱에서 배운 개념을 사용해 Day 138 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 138: 프로젝트: 오프라인 메모 오프라인 우선 앱\nfun solveDay138(values: List<Int>): Int {\n    // TODO: 프로젝트: 오프라인 메모 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay138(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 138: 프로젝트: 오프라인 메모 오프라인 우선 앱 예시 풀이\nfun solveDay138(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 오프라인 메모 오프라인 우선 앱\")\n    println(solveDay138(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-139",
+    "language": "kotlin",
+    "day": 139,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 오프라인 메모 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 오프라인 메모 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 오프라인 메모 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 오프라인 메모 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 오프라인 메모 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 오프라인 메모 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 오프라인 메모 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 139 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 139: 프로젝트: 오프라인 메모 백그라운드 동기화 앱\nfun solveDay139(values: List<Int>): Int {\n    // TODO: 프로젝트: 오프라인 메모 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay139(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 139: 프로젝트: 오프라인 메모 백그라운드 동기화 앱 예시 풀이\nfun solveDay139(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 오프라인 메모 백그라운드 동기화 앱\")\n    println(solveDay139(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-140",
+    "language": "kotlin",
+    "day": 140,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 오프라인 메모 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 오프라인 메모 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 오프라인 메모 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 오프라인 메모 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 오프라인 메모 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 오프라인 메모 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 오프라인 메모 운영 태블릿 앱에서 배운 개념을 사용해 Day 140 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 140: 프로젝트: 오프라인 메모 운영 태블릿 앱\nfun solveDay140(values: List<Int>): Int {\n    // TODO: 프로젝트: 오프라인 메모 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay140(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 140: 프로젝트: 오프라인 메모 운영 태블릿 앱 예시 풀이\nfun solveDay140(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 오프라인 메모 운영 태블릿 앱\")\n    println(solveDay140(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-141",
+    "language": "kotlin",
+    "day": 141,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 사진 정리 Android 앱",
+    "summary": "Kotlin의 프로젝트: 사진 정리 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 사진 정리 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 사진 정리 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 사진 정리 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 사진 정리 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 사진 정리 Android 앱에서 배운 개념을 사용해 Day 141 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 141: 프로젝트: 사진 정리 Android 앱\nfun solveDay141(values: List<Int>): Int {\n    // TODO: 프로젝트: 사진 정리 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay141(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 141: 프로젝트: 사진 정리 Android 앱 예시 풀이\nfun solveDay141(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 사진 정리 Android 앱\")\n    println(solveDay141(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-142",
+    "language": "kotlin",
+    "day": 142,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 사진 정리 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 사진 정리 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 사진 정리 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 사진 정리 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 사진 정리 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 사진 정리 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 사진 정리 Compose 대시보드에서 배운 개념을 사용해 Day 142 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 142: 프로젝트: 사진 정리 Compose 대시보드\nfun solveDay142(values: List<Int>): Int {\n    // TODO: 프로젝트: 사진 정리 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay142(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 142: 프로젝트: 사진 정리 Compose 대시보드 예시 풀이\nfun solveDay142(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 사진 정리 Compose 대시보드\")\n    println(solveDay142(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-143",
+    "language": "kotlin",
+    "day": 143,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 사진 정리 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 사진 정리 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 사진 정리 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 사진 정리 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 사진 정리 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 사진 정리 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 사진 정리 오프라인 우선 앱에서 배운 개념을 사용해 Day 143 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 143: 프로젝트: 사진 정리 오프라인 우선 앱\nfun solveDay143(values: List<Int>): Int {\n    // TODO: 프로젝트: 사진 정리 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay143(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 143: 프로젝트: 사진 정리 오프라인 우선 앱 예시 풀이\nfun solveDay143(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 사진 정리 오프라인 우선 앱\")\n    println(solveDay143(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-144",
+    "language": "kotlin",
+    "day": 144,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 사진 정리 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 사진 정리 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 사진 정리 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 사진 정리 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 사진 정리 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 사진 정리 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 사진 정리 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 144 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 144: 프로젝트: 사진 정리 백그라운드 동기화 앱\nfun solveDay144(values: List<Int>): Int {\n    // TODO: 프로젝트: 사진 정리 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay144(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 144: 프로젝트: 사진 정리 백그라운드 동기화 앱 예시 풀이\nfun solveDay144(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 사진 정리 백그라운드 동기화 앱\")\n    println(solveDay144(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-145",
+    "language": "kotlin",
+    "day": 145,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 사진 정리 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 사진 정리 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 사진 정리 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 사진 정리 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 사진 정리 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 사진 정리 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 사진 정리 운영 태블릿 앱에서 배운 개념을 사용해 Day 145 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 145: 프로젝트: 사진 정리 운영 태블릿 앱\nfun solveDay145(values: List<Int>): Int {\n    // TODO: 프로젝트: 사진 정리 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay145(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 145: 프로젝트: 사진 정리 운영 태블릿 앱 예시 풀이\nfun solveDay145(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 사진 정리 운영 태블릿 앱\")\n    println(solveDay145(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-146",
+    "language": "kotlin",
+    "day": 146,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 채팅 Android 앱",
+    "summary": "Kotlin의 프로젝트: 채팅 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 채팅 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 채팅 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 채팅 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 채팅 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 채팅 Android 앱에서 배운 개념을 사용해 Day 146 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 146: 프로젝트: 채팅 Android 앱\nfun solveDay146(values: List<Int>): Int {\n    // TODO: 프로젝트: 채팅 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay146(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 146: 프로젝트: 채팅 Android 앱 예시 풀이\nfun solveDay146(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 채팅 Android 앱\")\n    println(solveDay146(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-147",
+    "language": "kotlin",
+    "day": 147,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 채팅 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 채팅 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 채팅 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 채팅 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 채팅 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 채팅 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 채팅 Compose 대시보드에서 배운 개념을 사용해 Day 147 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 147: 프로젝트: 채팅 Compose 대시보드\nfun solveDay147(values: List<Int>): Int {\n    // TODO: 프로젝트: 채팅 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay147(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 147: 프로젝트: 채팅 Compose 대시보드 예시 풀이\nfun solveDay147(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 채팅 Compose 대시보드\")\n    println(solveDay147(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-148",
+    "language": "kotlin",
+    "day": 148,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 채팅 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 채팅 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 채팅 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 채팅 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 채팅 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 채팅 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 채팅 오프라인 우선 앱에서 배운 개념을 사용해 Day 148 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 148: 프로젝트: 채팅 오프라인 우선 앱\nfun solveDay148(values: List<Int>): Int {\n    // TODO: 프로젝트: 채팅 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay148(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 148: 프로젝트: 채팅 오프라인 우선 앱 예시 풀이\nfun solveDay148(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 채팅 오프라인 우선 앱\")\n    println(solveDay148(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-149",
+    "language": "kotlin",
+    "day": 149,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 채팅 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 채팅 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 채팅 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 채팅 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 채팅 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 채팅 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 채팅 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 149 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 149: 프로젝트: 채팅 백그라운드 동기화 앱\nfun solveDay149(values: List<Int>): Int {\n    // TODO: 프로젝트: 채팅 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay149(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 149: 프로젝트: 채팅 백그라운드 동기화 앱 예시 풀이\nfun solveDay149(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 채팅 백그라운드 동기화 앱\")\n    println(solveDay149(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-150",
+    "language": "kotlin",
+    "day": 150,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 채팅 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 채팅 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 채팅 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 채팅 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 채팅 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 채팅 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 채팅 운영 태블릿 앱에서 배운 개념을 사용해 Day 150 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 150: 프로젝트: 채팅 운영 태블릿 앱\nfun solveDay150(values: List<Int>): Int {\n    // TODO: 프로젝트: 채팅 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay150(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 150: 프로젝트: 채팅 운영 태블릿 앱 예시 풀이\nfun solveDay150(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 채팅 운영 태블릿 앱\")\n    println(solveDay150(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-151",
+    "language": "kotlin",
+    "day": 151,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 퀴즈 Android 앱",
+    "summary": "Kotlin의 프로젝트: 학습 퀴즈 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 퀴즈 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 퀴즈 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 퀴즈 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 학습 퀴즈 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 퀴즈 Android 앱에서 배운 개념을 사용해 Day 151 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 151: 프로젝트: 학습 퀴즈 Android 앱\nfun solveDay151(values: List<Int>): Int {\n    // TODO: 프로젝트: 학습 퀴즈 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay151(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 151: 프로젝트: 학습 퀴즈 Android 앱 예시 풀이\nfun solveDay151(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 학습 퀴즈 Android 앱\")\n    println(solveDay151(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-152",
+    "language": "kotlin",
+    "day": 152,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 퀴즈 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 학습 퀴즈 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 퀴즈 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 퀴즈 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 퀴즈 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 학습 퀴즈 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 퀴즈 Compose 대시보드에서 배운 개념을 사용해 Day 152 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 152: 프로젝트: 학습 퀴즈 Compose 대시보드\nfun solveDay152(values: List<Int>): Int {\n    // TODO: 프로젝트: 학습 퀴즈 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay152(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 152: 프로젝트: 학습 퀴즈 Compose 대시보드 예시 풀이\nfun solveDay152(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 학습 퀴즈 Compose 대시보드\")\n    println(solveDay152(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-153",
+    "language": "kotlin",
+    "day": 153,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 퀴즈 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 학습 퀴즈 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 퀴즈 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 퀴즈 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 퀴즈 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 학습 퀴즈 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 퀴즈 오프라인 우선 앱에서 배운 개념을 사용해 Day 153 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 153: 프로젝트: 학습 퀴즈 오프라인 우선 앱\nfun solveDay153(values: List<Int>): Int {\n    // TODO: 프로젝트: 학습 퀴즈 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay153(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 153: 프로젝트: 학습 퀴즈 오프라인 우선 앱 예시 풀이\nfun solveDay153(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 학습 퀴즈 오프라인 우선 앱\")\n    println(solveDay153(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-154",
+    "language": "kotlin",
+    "day": 154,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 퀴즈 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 학습 퀴즈 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 퀴즈 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 퀴즈 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 퀴즈 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 학습 퀴즈 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 퀴즈 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 154 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 154: 프로젝트: 학습 퀴즈 백그라운드 동기화 앱\nfun solveDay154(values: List<Int>): Int {\n    // TODO: 프로젝트: 학습 퀴즈 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay154(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 154: 프로젝트: 학습 퀴즈 백그라운드 동기화 앱 예시 풀이\nfun solveDay154(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 학습 퀴즈 백그라운드 동기화 앱\")\n    println(solveDay154(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-155",
+    "language": "kotlin",
+    "day": 155,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 퀴즈 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 학습 퀴즈 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 퀴즈 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 퀴즈 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 퀴즈 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 학습 퀴즈 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 퀴즈 운영 태블릿 앱에서 배운 개념을 사용해 Day 155 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 155: 프로젝트: 학습 퀴즈 운영 태블릿 앱\nfun solveDay155(values: List<Int>): Int {\n    // TODO: 프로젝트: 학습 퀴즈 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay155(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 155: 프로젝트: 학습 퀴즈 운영 태블릿 앱 예시 풀이\nfun solveDay155(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 학습 퀴즈 운영 태블릿 앱\")\n    println(solveDay155(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-156",
+    "language": "kotlin",
+    "day": 156,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 매장 관리 Android 앱",
+    "summary": "Kotlin의 프로젝트: 매장 관리 Android 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 매장 관리 Android 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 매장 관리 Android 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 매장 관리 Android 앱의 핵심 개념 설명하기",
+      "프로젝트: 매장 관리 Android 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 매장 관리 Android 앱에서 배운 개념을 사용해 Day 156 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 156: 프로젝트: 매장 관리 Android 앱\nfun solveDay156(values: List<Int>): Int {\n    // TODO: 프로젝트: 매장 관리 Android 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay156(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 156: 프로젝트: 매장 관리 Android 앱 예시 풀이\nfun solveDay156(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 매장 관리 Android 앱\")\n    println(solveDay156(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-157",
+    "language": "kotlin",
+    "day": 157,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 매장 관리 Compose 대시보드",
+    "summary": "Kotlin의 프로젝트: 매장 관리 Compose 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 매장 관리 Compose 대시보드은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 매장 관리 Compose 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 매장 관리 Compose 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 매장 관리 Compose 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 매장 관리 Compose 대시보드에서 배운 개념을 사용해 Day 157 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 157: 프로젝트: 매장 관리 Compose 대시보드\nfun solveDay157(values: List<Int>): Int {\n    // TODO: 프로젝트: 매장 관리 Compose 대시보드 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay157(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 157: 프로젝트: 매장 관리 Compose 대시보드 예시 풀이\nfun solveDay157(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 매장 관리 Compose 대시보드\")\n    println(solveDay157(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-158",
+    "language": "kotlin",
+    "day": 158,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 매장 관리 오프라인 우선 앱",
+    "summary": "Kotlin의 프로젝트: 매장 관리 오프라인 우선 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 매장 관리 오프라인 우선 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 매장 관리 오프라인 우선 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 매장 관리 오프라인 우선 앱의 핵심 개념 설명하기",
+      "프로젝트: 매장 관리 오프라인 우선 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 매장 관리 오프라인 우선 앱에서 배운 개념을 사용해 Day 158 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 158: 프로젝트: 매장 관리 오프라인 우선 앱\nfun solveDay158(values: List<Int>): Int {\n    // TODO: 프로젝트: 매장 관리 오프라인 우선 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay158(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 158: 프로젝트: 매장 관리 오프라인 우선 앱 예시 풀이\nfun solveDay158(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 매장 관리 오프라인 우선 앱\")\n    println(solveDay158(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-159",
+    "language": "kotlin",
+    "day": 159,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 매장 관리 백그라운드 동기화 앱",
+    "summary": "Kotlin의 프로젝트: 매장 관리 백그라운드 동기화 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 매장 관리 백그라운드 동기화 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 매장 관리 백그라운드 동기화 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 매장 관리 백그라운드 동기화 앱의 핵심 개념 설명하기",
+      "프로젝트: 매장 관리 백그라운드 동기화 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 매장 관리 백그라운드 동기화 앱에서 배운 개념을 사용해 Day 159 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 159: 프로젝트: 매장 관리 백그라운드 동기화 앱\nfun solveDay159(values: List<Int>): Int {\n    // TODO: 프로젝트: 매장 관리 백그라운드 동기화 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay159(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 159: 프로젝트: 매장 관리 백그라운드 동기화 앱 예시 풀이\nfun solveDay159(values: List<Int>): Int = values.filter { it % 2 == 1 }.sum()\n\nfun main() {\n    println(\"프로젝트: 매장 관리 백그라운드 동기화 앱\")\n    println(solveDay159(listOf(1, 2, 3, 4)))\n}"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "kotlin-day-160",
+    "language": "kotlin",
+    "day": 160,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 매장 관리 운영 태블릿 앱",
+    "summary": "Kotlin의 프로젝트: 매장 관리 운영 태블릿 앱 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 매장 관리 운영 태블릿 앱은(는) Kotlin 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 매장 관리 운영 태블릿 앱의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 매장 관리 운영 태블릿 앱의 핵심 개념 설명하기",
+      "프로젝트: 매장 관리 운영 태블릿 앱을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 매장 관리 운영 태블릿 앱에서 배운 개념을 사용해 Day 160 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "// Day 160: 프로젝트: 매장 관리 운영 태블릿 앱\nfun solveDay160(values: List<Int>): Int {\n    // TODO: 프로젝트: 매장 관리 운영 태블릿 앱 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay160(listOf(1, 2, 3, 4)))",
+      "solutionCode": "// Day 160: 프로젝트: 매장 관리 운영 태블릿 앱 예시 풀이\nfun solveDay160(values: List<Int>): Int = values.filter { it % 2 == 0 }.sum()\n\nfun main() {\n    println(\"프로젝트: 매장 관리 운영 태블릿 앱\")\n    println(solveDay160(listOf(1, 2, 3, 4)))\n}"
     },
     "estimatedMinutes": 60,
     "published": true

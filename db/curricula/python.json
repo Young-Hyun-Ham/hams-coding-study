@@ -1086,22 +1086,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "클래스와 인스턴스",
-    "summary": "Python의 클래스와 인스턴스 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "클래스와 인스턴스은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Student:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "객체 모델과 데이터 클래스: 핵심 원리와 내부 동작",
+    "summary": "Python의 객체 모델과 데이터 클래스: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체 모델과 데이터 클래스: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "클래스와 인스턴스의 핵심 문법과 실행 흐름",
+      "객체 모델과 데이터 클래스: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "클래스와 인스턴스의 핵심 개념 설명하기",
-      "클래스와 인스턴스을 활용한 코드 작성하기"
+      "객체 모델과 데이터 클래스: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "객체 모델과 데이터 클래스: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "클래스와 인스턴스에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 41: 클래스와 인스턴스\nclass Day41Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day41Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "class Student:\n    def __init__(self, name, score):\n        self.name = name\n        self.score = score\n    def passed(self):\n        return self.score >= 60\nprint(Student(\"Mina\", 90).passed())"
+      "prompt": "객체 모델과 데이터 클래스: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 41 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 41: 객체 모델과 데이터 클래스: 핵심 원리와 내부 동작\nclass Day41Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day41Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 41: 객체 모델과 데이터 클래스: 핵심 원리와 내부 동작 예시 풀이\nclass Day41Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"객체 모델과 데이터 클래스: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day41Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1113,22 +1113,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "생성자와 속성",
-    "summary": "Python의 생성자와 속성 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "생성자와 속성은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Account:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "객체 모델과 데이터 클래스: 실전 구현 패턴",
+    "summary": "Python의 객체 모델과 데이터 클래스: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체 모델과 데이터 클래스: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "생성자와 속성의 핵심 문법과 실행 흐름",
+      "객체 모델과 데이터 클래스: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "생성자와 속성의 핵심 개념 설명하기",
-      "생성자와 속성을 활용한 코드 작성하기"
+      "객체 모델과 데이터 클래스: 실전 구현 패턴의 핵심 개념 설명하기",
+      "객체 모델과 데이터 클래스: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "생성자와 속성에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 42: 생성자와 속성\nclass Day42Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day42Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "class Account:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self.balance = balance\n    def deposit(self, amount):\n        self.balance += amount\naccount = Account(\"Mina\"); account.deposit(1000); print(account.balance)"
+      "prompt": "객체 모델과 데이터 클래스: 실전 구현 패턴에서 배운 개념을 사용해 Day 42 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 42: 객체 모델과 데이터 클래스: 실전 구현 패턴\nclass Day42Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day42Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 42: 객체 모델과 데이터 클래스: 실전 구현 패턴 예시 풀이\nclass Day42Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"객체 모델과 데이터 클래스: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day42Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1140,22 +1140,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "상속과 오버라이딩",
-    "summary": "Python의 상속과 오버라이딩 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "상속과 오버라이딩은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Animal:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "객체 모델과 데이터 클래스: 오류 처리와 경계 조건",
+    "summary": "Python의 객체 모델과 데이터 클래스: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체 모델과 데이터 클래스: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "상속과 오버라이딩의 핵심 문법과 실행 흐름",
+      "객체 모델과 데이터 클래스: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "상속과 오버라이딩의 핵심 개념 설명하기",
-      "상속과 오버라이딩을 활용한 코드 작성하기"
+      "객체 모델과 데이터 클래스: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "객체 모델과 데이터 클래스: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "상속과 오버라이딩에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 43: 상속과 오버라이딩\nclass Day43Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day43Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "class Animal:\n    def speak(self): return \"...\"\nclass Dog(Animal):\n    def speak(self): return \"멍멍\"\nprint(Dog().speak())"
+      "prompt": "객체 모델과 데이터 클래스: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 43 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 43: 객체 모델과 데이터 클래스: 오류 처리와 경계 조건\nclass Day43Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day43Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 43: 객체 모델과 데이터 클래스: 오류 처리와 경계 조건 예시 풀이\nclass Day43Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"객체 모델과 데이터 클래스: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day43Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1167,22 +1167,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "캡슐화와 프로퍼티",
-    "summary": "Python의 캡슐화와 프로퍼티 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "캡슐화와 프로퍼티은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Temperature:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "객체 모델과 데이터 클래스: 테스트와 디버깅",
+    "summary": "Python의 객체 모델과 데이터 클래스: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체 모델과 데이터 클래스: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "캡슐화와 프로퍼티의 핵심 문법과 실행 흐름",
+      "객체 모델과 데이터 클래스: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "캡슐화와 프로퍼티의 핵심 개념 설명하기",
-      "캡슐화와 프로퍼티을 활용한 코드 작성하기"
+      "객체 모델과 데이터 클래스: 테스트와 디버깅의 핵심 개념 설명하기",
+      "객체 모델과 데이터 클래스: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "캡슐화와 프로퍼티에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 44: 캡슐화와 프로퍼티\nclass Day44Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day44Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "class Temperature:\n    def __init__(self, celsius): self._celsius = celsius\n    @property\n    def fahrenheit(self): return self._celsius * 9 / 5 + 32\nprint(Temperature(25).fahrenheit)"
+      "prompt": "객체 모델과 데이터 클래스: 테스트와 디버깅에서 배운 개념을 사용해 Day 44 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 44: 객체 모델과 데이터 클래스: 테스트와 디버깅\nclass Day44Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day44Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 44: 객체 모델과 데이터 클래스: 테스트와 디버깅 예시 풀이\nclass Day44Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"객체 모델과 데이터 클래스: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day44Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1194,22 +1194,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "데이터 클래스",
-    "summary": "Python의 데이터 클래스 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "데이터 클래스은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from dataclasses import dataclass` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "객체 모델과 데이터 클래스: 성능 개선과 리팩터링",
+    "summary": "Python의 객체 모델과 데이터 클래스: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "객체 모델과 데이터 클래스: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "데이터 클래스의 핵심 문법과 실행 흐름",
+      "객체 모델과 데이터 클래스: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "데이터 클래스의 핵심 개념 설명하기",
-      "데이터 클래스을 활용한 코드 작성하기"
+      "객체 모델과 데이터 클래스: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "객체 모델과 데이터 클래스: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "데이터 클래스에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 45: 데이터 클래스\nclass Day45Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day45Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "from dataclasses import dataclass\n@dataclass(frozen=True)\nclass Product:\n    name: str\n    price: int\nprint(Product(\"keyboard\", 50000))"
+      "prompt": "객체 모델과 데이터 클래스: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 45 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 45: 객체 모델과 데이터 클래스: 성능 개선과 리팩터링\nclass Day45Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day45Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 45: 객체 모델과 데이터 클래스: 성능 개선과 리팩터링 예시 풀이\nclass Day45Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"객체 모델과 데이터 클래스: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day45Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1221,22 +1221,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "추상 클래스와 프로토콜",
-    "summary": "Python의 추상 클래스와 프로토콜 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "추상 클래스와 프로토콜은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from typing import Protocol` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 힌트와 정적 검사: 핵심 원리와 내부 동작",
+    "summary": "Python의 타입 힌트와 정적 검사: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 힌트와 정적 검사: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "추상 클래스와 프로토콜의 핵심 문법과 실행 흐름",
+      "타입 힌트와 정적 검사: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "추상 클래스와 프로토콜의 핵심 개념 설명하기",
-      "추상 클래스와 프로토콜을 활용한 코드 작성하기"
+      "타입 힌트와 정적 검사: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "타입 힌트와 정적 검사: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "추상 클래스와 프로토콜에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 46: 추상 클래스와 프로토콜\nclass Day46Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day46Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "from typing import Protocol\nclass Printable(Protocol):\n    def render(self) -> str: ...\nclass Report:\n    def render(self): return \"report\"\ndef print_item(item: Printable): print(item.render())\nprint_item(Report())"
+      "prompt": "타입 힌트와 정적 검사: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 46 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 46: 타입 힌트와 정적 검사: 핵심 원리와 내부 동작\nclass Day46Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day46Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 46: 타입 힌트와 정적 검사: 핵심 원리와 내부 동작 예시 풀이\nclass Day46Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"타입 힌트와 정적 검사: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day46Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1248,22 +1248,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "객체지향 설계",
-    "summary": "Python의 객체지향 설계 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "객체지향 설계은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `class Cart:` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 힌트와 정적 검사: 실전 구현 패턴",
+    "summary": "Python의 타입 힌트와 정적 검사: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 힌트와 정적 검사: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "객체지향 설계의 핵심 문법과 실행 흐름",
+      "타입 힌트와 정적 검사: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "객체지향 설계의 핵심 개념 설명하기",
-      "객체지향 설계을 활용한 코드 작성하기"
+      "타입 힌트와 정적 검사: 실전 구현 패턴의 핵심 개념 설명하기",
+      "타입 힌트와 정적 검사: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "객체지향 설계에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 47: 객체지향 설계\nclass Day47Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day47Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "class Cart:\n    def __init__(self): self._items = []\n    def add(self, name, price): self._items.append((name, price))\n    def total(self): return sum(price for _, price in self._items)\ncart = Cart(); cart.add(\"book\", 12000); print(cart.total())"
+      "prompt": "타입 힌트와 정적 검사: 실전 구현 패턴에서 배운 개념을 사용해 Day 47 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 47: 타입 힌트와 정적 검사: 실전 구현 패턴\nclass Day47Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day47Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 47: 타입 힌트와 정적 검사: 실전 구현 패턴 예시 풀이\nclass Day47Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"타입 힌트와 정적 검사: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day47Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1275,22 +1275,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "단위 테스트",
-    "summary": "Python의 단위 테스트 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "단위 테스트은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import unittest` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 힌트와 정적 검사: 오류 처리와 경계 조건",
+    "summary": "Python의 타입 힌트와 정적 검사: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 힌트와 정적 검사: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "단위 테스트의 핵심 문법과 실행 흐름",
+      "타입 힌트와 정적 검사: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "단위 테스트의 핵심 개념 설명하기",
-      "단위 테스트을 활용한 코드 작성하기"
+      "타입 힌트와 정적 검사: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "타입 힌트와 정적 검사: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "단위 테스트에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 48: 단위 테스트\nclass Day48Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day48Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "import unittest\ndef add(a, b): return a + b\nclass AddTest(unittest.TestCase):\n    def test_add(self): self.assertEqual(add(2, 3), 5)\nunittest.TextTestRunner().run(unittest.defaultTestLoader.loadTestsFromTestCase(AddTest))"
+      "prompt": "타입 힌트와 정적 검사: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 48 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 48: 타입 힌트와 정적 검사: 오류 처리와 경계 조건\nclass Day48Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day48Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 48: 타입 힌트와 정적 검사: 오류 처리와 경계 조건 예시 풀이\nclass Day48Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"타입 힌트와 정적 검사: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day48Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1302,22 +1302,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "디버깅과 로깅",
-    "summary": "Python의 디버깅과 로깅 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "디버깅과 로깅은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import logging` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 힌트와 정적 검사: 테스트와 디버깅",
+    "summary": "Python의 타입 힌트와 정적 검사: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 힌트와 정적 검사: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "디버깅과 로깅의 핵심 문법과 실행 흐름",
+      "타입 힌트와 정적 검사: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "디버깅과 로깅의 핵심 개념 설명하기",
-      "디버깅과 로깅을 활용한 코드 작성하기"
+      "타입 힌트와 정적 검사: 테스트와 디버깅의 핵심 개념 설명하기",
+      "타입 힌트와 정적 검사: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "디버깅과 로깅에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 49: 디버깅과 로깅\nclass Day49Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day49Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "import logging\nlogging.basicConfig(level=logging.INFO, format=\"%(levelname)s:%(message)s\")\ndef divide(a, b):\n    logging.info(\"divide %s by %s\", a, b)\n    return a / b\nprint(divide(10, 2))"
+      "prompt": "타입 힌트와 정적 검사: 테스트와 디버깅에서 배운 개념을 사용해 Day 49 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 49: 타입 힌트와 정적 검사: 테스트와 디버깅\nclass Day49Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day49Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 49: 타입 힌트와 정적 검사: 테스트와 디버깅 예시 풀이\nclass Day49Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"타입 힌트와 정적 검사: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day49Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1329,22 +1329,22 @@
     "stage": 5,
     "stageName": "심화",
     "level": "advanced",
-    "title": "리팩터링 실습",
-    "summary": "Python의 리팩터링 실습 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "리팩터링 실습은(는) 객체 모델로 책임과 데이터를 구성하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def normalize_names(names):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "title": "타입 힌트와 정적 검사: 성능 개선과 리팩터링",
+    "summary": "Python의 타입 힌트와 정적 검사: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "타입 힌트와 정적 검사: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "리팩터링 실습의 핵심 문법과 실행 흐름",
+      "타입 힌트와 정적 검사: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "리팩터링 실습의 핵심 개념 설명하기",
-      "리팩터링 실습을 활용한 코드 작성하기"
+      "타입 힌트와 정적 검사: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "타입 힌트와 정적 검사: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "리팩터링 실습에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 50: 리팩터링 실습\nclass Day50Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day50Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "def normalize_names(names):\n    cleaned = (name.strip().title() for name in names)\n    return sorted(set(name for name in cleaned if name))\nprint(normalize_names([\" mina \", \"JIN\", \"mina\"]))"
+      "prompt": "타입 힌트와 정적 검사: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 50 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 50: 타입 힌트와 정적 검사: 성능 개선과 리팩터링\nclass Day50Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day50Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 50: 타입 힌트와 정적 검사: 성능 개선과 리팩터링 예시 풀이\nclass Day50Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"타입 힌트와 정적 검사: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day50Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1353,25 +1353,25 @@
     "id": "python-day-51",
     "language": "python",
     "day": 51,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "시간 복잡도",
-    "summary": "Python의 시간 복잡도 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "시간 복잡도은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def contains(values, target):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이터레이터와 제너레이터: 핵심 원리와 내부 동작",
+    "summary": "Python의 이터레이터와 제너레이터: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이터레이터와 제너레이터: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "시간 복잡도의 핵심 문법과 실행 흐름",
+      "이터레이터와 제너레이터: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "시간 복잡도의 핵심 개념 설명하기",
-      "시간 복잡도을 활용한 코드 작성하기"
+      "이터레이터와 제너레이터: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "이터레이터와 제너레이터: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "시간 복잡도에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 51: 시간 복잡도\nclass Day51Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day51Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "def contains(values, target):\n    # 선형 탐색: O(n)\n    return any(value == target for value in values)\nprint(contains(range(1_000), 999))"
+      "prompt": "이터레이터와 제너레이터: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 51 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 51: 이터레이터와 제너레이터: 핵심 원리와 내부 동작\nclass Day51Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day51Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 51: 이터레이터와 제너레이터: 핵심 원리와 내부 동작 예시 풀이\nclass Day51Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"이터레이터와 제너레이터: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day51Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1380,25 +1380,25 @@
     "id": "python-day-52",
     "language": "python",
     "day": 52,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "스택과 큐",
-    "summary": "Python의 스택과 큐 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "스택과 큐은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from collections import deque` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이터레이터와 제너레이터: 실전 구현 패턴",
+    "summary": "Python의 이터레이터와 제너레이터: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이터레이터와 제너레이터: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "스택과 큐의 핵심 문법과 실행 흐름",
+      "이터레이터와 제너레이터: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "스택과 큐의 핵심 개념 설명하기",
-      "스택과 큐을 활용한 코드 작성하기"
+      "이터레이터와 제너레이터: 실전 구현 패턴의 핵심 개념 설명하기",
+      "이터레이터와 제너레이터: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "스택과 큐에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 52: 스택과 큐\nclass Day52Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day52Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "from collections import deque\nstack = []; stack.append(1); stack.append(2); print(stack.pop())\nqueue = deque([1, 2]); queue.append(3); print(queue.popleft())"
+      "prompt": "이터레이터와 제너레이터: 실전 구현 패턴에서 배운 개념을 사용해 Day 52 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 52: 이터레이터와 제너레이터: 실전 구현 패턴\nclass Day52Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day52Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 52: 이터레이터와 제너레이터: 실전 구현 패턴 예시 풀이\nclass Day52Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"이터레이터와 제너레이터: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day52Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1407,25 +1407,25 @@
     "id": "python-day-53",
     "language": "python",
     "day": 53,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "해시 테이블",
-    "summary": "Python의 해시 테이블 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "해시 테이블은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `words = [\"apple\", \"banana\", \"apple\"]` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이터레이터와 제너레이터: 오류 처리와 경계 조건",
+    "summary": "Python의 이터레이터와 제너레이터: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이터레이터와 제너레이터: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "해시 테이블의 핵심 문법과 실행 흐름",
+      "이터레이터와 제너레이터: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "해시 테이블의 핵심 개념 설명하기",
-      "해시 테이블을 활용한 코드 작성하기"
+      "이터레이터와 제너레이터: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "이터레이터와 제너레이터: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "해시 테이블에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 53: 해시 테이블\nclass Day53Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day53Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "words = [\"apple\", \"banana\", \"apple\"]\nfrequency = {}\nfor word in words: frequency[word] = frequency.get(word, 0) + 1\nprint(frequency)"
+      "prompt": "이터레이터와 제너레이터: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 53 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 53: 이터레이터와 제너레이터: 오류 처리와 경계 조건\nclass Day53Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day53Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 53: 이터레이터와 제너레이터: 오류 처리와 경계 조건 예시 풀이\nclass Day53Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"이터레이터와 제너레이터: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day53Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1434,25 +1434,25 @@
     "id": "python-day-54",
     "language": "python",
     "day": 54,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "정렬 알고리즘",
-    "summary": "Python의 정렬 알고리즘 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "정렬 알고리즘은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def merge_sort(values):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이터레이터와 제너레이터: 테스트와 디버깅",
+    "summary": "Python의 이터레이터와 제너레이터: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이터레이터와 제너레이터: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "정렬 알고리즘의 핵심 문법과 실행 흐름",
+      "이터레이터와 제너레이터: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "정렬 알고리즘의 핵심 개념 설명하기",
-      "정렬 알고리즘을 활용한 코드 작성하기"
+      "이터레이터와 제너레이터: 테스트와 디버깅의 핵심 개념 설명하기",
+      "이터레이터와 제너레이터: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "정렬 알고리즘에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 54: 정렬 알고리즘\nclass Day54Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day54Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "def merge_sort(values):\n    if len(values) < 2: return values\n    mid = len(values) // 2\n    left, right = merge_sort(values[:mid]), merge_sort(values[mid:])\n    result = []\n    while left and right: result.append((left if left[0] < right[0] else right).pop(0))\n    return result + left + right\nprint(merge_sort([4, 1, 3, 2]))"
+      "prompt": "이터레이터와 제너레이터: 테스트와 디버깅에서 배운 개념을 사용해 Day 54 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 54: 이터레이터와 제너레이터: 테스트와 디버깅\nclass Day54Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day54Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 54: 이터레이터와 제너레이터: 테스트와 디버깅 예시 풀이\nclass Day54Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"이터레이터와 제너레이터: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day54Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1461,25 +1461,25 @@
     "id": "python-day-55",
     "language": "python",
     "day": 55,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "이진 탐색",
-    "summary": "Python의 이진 탐색 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "이진 탐색은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def binary_search(values, target):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "이터레이터와 제너레이터: 성능 개선과 리팩터링",
+    "summary": "Python의 이터레이터와 제너레이터: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "이터레이터와 제너레이터: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "이진 탐색의 핵심 문법과 실행 흐름",
+      "이터레이터와 제너레이터: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "이진 탐색의 핵심 개념 설명하기",
-      "이진 탐색을 활용한 코드 작성하기"
+      "이터레이터와 제너레이터: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "이터레이터와 제너레이터: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "이진 탐색에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 55: 이진 탐색\nclass Day55Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day55Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "def binary_search(values, target):\n    left, right = 0, len(values) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if values[mid] == target: return mid\n        if values[mid] < target: left = mid + 1\n        else: right = mid - 1\n    return -1\nprint(binary_search([1, 3, 5, 7], 5))"
+      "prompt": "이터레이터와 제너레이터: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 55 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 55: 이터레이터와 제너레이터: 성능 개선과 리팩터링\nclass Day55Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day55Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 55: 이터레이터와 제너레이터: 성능 개선과 리팩터링 예시 풀이\nclass Day55Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"이터레이터와 제너레이터: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day55Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1488,25 +1488,25 @@
     "id": "python-day-56",
     "language": "python",
     "day": 56,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "그래프 탐색",
-    "summary": "Python의 그래프 탐색 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "그래프 탐색은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from collections import deque` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작",
+    "summary": "Python의 데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "그래프 탐색의 핵심 문법과 실행 흐름",
+      "데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "그래프 탐색의 핵심 개념 설명하기",
-      "그래프 탐색을 활용한 코드 작성하기"
+      "데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "그래프 탐색에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 56: 그래프 탐색\nclass Day56Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day56Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "from collections import deque\ngraph = {\"A\": [\"B\", \"C\"], \"B\": [\"D\"], \"C\": [], \"D\": []}\nqueue, visited = deque([\"A\"]), set()\nwhile queue:\n    node = queue.popleft()\n    if node in visited: continue\n    visited.add(node); queue.extend(graph[node])\nprint(visited)"
+      "prompt": "데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 56 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 56: 데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작\nclass Day56Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day56Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 56: 데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작 예시 풀이\nclass Day56Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"데코레이터와 메타프로그래밍: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day56Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1515,25 +1515,25 @@
     "id": "python-day-57",
     "language": "python",
     "day": 57,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "동적 계획법 입문",
-    "summary": "Python의 동적 계획법 입문 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "동적 계획법 입문은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `def fibonacci(n):` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데코레이터와 메타프로그래밍: 실전 구현 패턴",
+    "summary": "Python의 데코레이터와 메타프로그래밍: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데코레이터와 메타프로그래밍: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "동적 계획법 입문의 핵심 문법과 실행 흐름",
+      "데코레이터와 메타프로그래밍: 실전 구현 패턴의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "동적 계획법 입문의 핵심 개념 설명하기",
-      "동적 계획법 입문을 활용한 코드 작성하기"
+      "데코레이터와 메타프로그래밍: 실전 구현 패턴의 핵심 개념 설명하기",
+      "데코레이터와 메타프로그래밍: 실전 구현 패턴을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "동적 계획법 입문에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 57: 동적 계획법 입문\nclass Day57Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day57Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "def fibonacci(n):\n    dp = [0, 1]\n    for index in range(2, n + 1): dp.append(dp[-1] + dp[-2])\n    return dp[n]\nprint(fibonacci(10))"
+      "prompt": "데코레이터와 메타프로그래밍: 실전 구현 패턴에서 배운 개념을 사용해 Day 57 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 57: 데코레이터와 메타프로그래밍: 실전 구현 패턴\nclass Day57Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day57Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 57: 데코레이터와 메타프로그래밍: 실전 구현 패턴 예시 풀이\nclass Day57Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"데코레이터와 메타프로그래밍: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day57Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1542,25 +1542,25 @@
     "id": "python-day-58",
     "language": "python",
     "day": 58,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "비동기 프로그래밍",
-    "summary": "Python의 비동기 프로그래밍 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "비동기 프로그래밍은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import asyncio` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데코레이터와 메타프로그래밍: 오류 처리와 경계 조건",
+    "summary": "Python의 데코레이터와 메타프로그래밍: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데코레이터와 메타프로그래밍: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "비동기 프로그래밍의 핵심 문법과 실행 흐름",
+      "데코레이터와 메타프로그래밍: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "비동기 프로그래밍의 핵심 개념 설명하기",
-      "비동기 프로그래밍을 활용한 코드 작성하기"
+      "데코레이터와 메타프로그래밍: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "데코레이터와 메타프로그래밍: 오류 처리와 경계 조건을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "비동기 프로그래밍에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 58: 비동기 프로그래밍\nclass Day58Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day58Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "import asyncio\nasync def fetch(name, delay):\n    await asyncio.sleep(delay)\n    return f\"{name} 완료\"\nasync def main():\n    print(await asyncio.gather(fetch(\"A\", .1), fetch(\"B\", .1)))\nasyncio.run(main())"
+      "prompt": "데코레이터와 메타프로그래밍: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 58 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 58: 데코레이터와 메타프로그래밍: 오류 처리와 경계 조건\nclass Day58Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day58Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 58: 데코레이터와 메타프로그래밍: 오류 처리와 경계 조건 예시 풀이\nclass Day58Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"데코레이터와 메타프로그래밍: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day58Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1569,25 +1569,25 @@
     "id": "python-day-59",
     "language": "python",
     "day": 59,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "API 데이터 처리",
-    "summary": "Python의 API 데이터 처리 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "API 데이터 처리은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `import json` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데코레이터와 메타프로그래밍: 테스트와 디버깅",
+    "summary": "Python의 데코레이터와 메타프로그래밍: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데코레이터와 메타프로그래밍: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "API 데이터 처리의 핵심 문법과 실행 흐름",
+      "데코레이터와 메타프로그래밍: 테스트와 디버깅의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "API 데이터 처리의 핵심 개념 설명하기",
-      "API 데이터 처리을 활용한 코드 작성하기"
+      "데코레이터와 메타프로그래밍: 테스트와 디버깅의 핵심 개념 설명하기",
+      "데코레이터와 메타프로그래밍: 테스트와 디버깅을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "API 데이터 처리에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 59: API 데이터 처리\nclass Day59Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day59Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "import json\nresponse = '{\"studies\":[{\"id\":1,\"title\":\"Python\"}]}'\ndata = json.loads(response)\nprint([study[\"title\"] for study in data[\"studies\"]])"
+      "prompt": "데코레이터와 메타프로그래밍: 테스트와 디버깅에서 배운 개념을 사용해 Day 59 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 59: 데코레이터와 메타프로그래밍: 테스트와 디버깅\nclass Day59Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day59Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 59: 데코레이터와 메타프로그래밍: 테스트와 디버깅 예시 풀이\nclass Day59Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"데코레이터와 메타프로그래밍: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day59Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
@@ -1596,25 +1596,2725 @@
     "id": "python-day-60",
     "language": "python",
     "day": 60,
-    "stage": 6,
-    "stageName": "프로젝트",
-    "level": "project",
-    "title": "최종 프로젝트: 문제 해결 도구",
-    "summary": "Python의 최종 프로젝트: 문제 해결 도구 개념을 이해하고 단계별 예제로 익힙니다.",
-    "detailedExplanation": "최종 프로젝트: 문제 해결 도구은(는) 자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 `from collections import Counter` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.",
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데코레이터와 메타프로그래밍: 성능 개선과 리팩터링",
+    "summary": "Python의 데코레이터와 메타프로그래밍: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데코레이터와 메타프로그래밍: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
     "keyPoints": [
-      "최종 프로젝트: 문제 해결 도구의 핵심 문법과 실행 흐름",
+      "데코레이터와 메타프로그래밍: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
     "objectives": [
-      "최종 프로젝트: 문제 해결 도구의 핵심 개념 설명하기",
-      "최종 프로젝트: 문제 해결 도구을 활용한 코드 작성하기"
+      "데코레이터와 메타프로그래밍: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "데코레이터와 메타프로그래밍: 성능 개선과 리팩터링을 활용한 코드 작성하기"
     ],
     "practice": {
-      "prompt": "최종 프로젝트: 문제 해결 도구에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
-      "starterCode": "# Day 60: 최종 프로젝트: 문제 해결 도구\nclass Day60Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day60Practice().solve([1, 2, 3, 4]))",
-      "solutionCode": "from collections import Counter\ndef analyze_submissions(results):\n    scores = [item[\"score\"] for item in results]\n    return {\"average\": sum(scores) / len(scores), \"status\": Counter(item[\"status\"] for item in results)}\nprint(analyze_submissions([{\"score\": 90, \"status\": \"pass\"}, {\"score\": 70, \"status\": \"pass\"}]))"
+      "prompt": "데코레이터와 메타프로그래밍: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 60 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 60: 데코레이터와 메타프로그래밍: 성능 개선과 리팩터링\nclass Day60Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day60Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 60: 데코레이터와 메타프로그래밍: 성능 개선과 리팩터링 예시 풀이\nclass Day60Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"데코레이터와 메타프로그래밍: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day60Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-61",
+    "language": "python",
+    "day": 61,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작",
+    "summary": "Python의 컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 61 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 61: 컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작\nclass Day61Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day61Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 61: 컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작 예시 풀이\nclass Day61Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"컨텍스트 관리와 자원 안전성: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day61Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-62",
+    "language": "python",
+    "day": 62,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컨텍스트 관리와 자원 안전성: 실전 구현 패턴",
+    "summary": "Python의 컨텍스트 관리와 자원 안전성: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컨텍스트 관리와 자원 안전성: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컨텍스트 관리와 자원 안전성: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컨텍스트 관리와 자원 안전성: 실전 구현 패턴의 핵심 개념 설명하기",
+      "컨텍스트 관리와 자원 안전성: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컨텍스트 관리와 자원 안전성: 실전 구현 패턴에서 배운 개념을 사용해 Day 62 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 62: 컨텍스트 관리와 자원 안전성: 실전 구현 패턴\nclass Day62Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day62Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 62: 컨텍스트 관리와 자원 안전성: 실전 구현 패턴 예시 풀이\nclass Day62Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"컨텍스트 관리와 자원 안전성: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day62Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-63",
+    "language": "python",
+    "day": 63,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건",
+    "summary": "Python의 컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 63 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 63: 컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건\nclass Day63Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day63Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 63: 컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건 예시 풀이\nclass Day63Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"컨텍스트 관리와 자원 안전성: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day63Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-64",
+    "language": "python",
+    "day": 64,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컨텍스트 관리와 자원 안전성: 테스트와 디버깅",
+    "summary": "Python의 컨텍스트 관리와 자원 안전성: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컨텍스트 관리와 자원 안전성: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컨텍스트 관리와 자원 안전성: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컨텍스트 관리와 자원 안전성: 테스트와 디버깅의 핵심 개념 설명하기",
+      "컨텍스트 관리와 자원 안전성: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컨텍스트 관리와 자원 안전성: 테스트와 디버깅에서 배운 개념을 사용해 Day 64 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 64: 컨텍스트 관리와 자원 안전성: 테스트와 디버깅\nclass Day64Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day64Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 64: 컨텍스트 관리와 자원 안전성: 테스트와 디버깅 예시 풀이\nclass Day64Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"컨텍스트 관리와 자원 안전성: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day64Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-65",
+    "language": "python",
+    "day": 65,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링",
+    "summary": "Python의 컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 65 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 65: 컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링\nclass Day65Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day65Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 65: 컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링 예시 풀이\nclass Day65Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"컨텍스트 관리와 자원 안전성: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day65Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-66",
+    "language": "python",
+    "day": 66,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "동시성과 병렬 처리: 핵심 원리와 내부 동작",
+    "summary": "Python의 동시성과 병렬 처리: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "동시성과 병렬 처리: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "동시성과 병렬 처리: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "동시성과 병렬 처리: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "동시성과 병렬 처리: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "동시성과 병렬 처리: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 66 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 66: 동시성과 병렬 처리: 핵심 원리와 내부 동작\nclass Day66Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day66Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 66: 동시성과 병렬 처리: 핵심 원리와 내부 동작 예시 풀이\nclass Day66Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"동시성과 병렬 처리: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day66Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-67",
+    "language": "python",
+    "day": 67,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "동시성과 병렬 처리: 실전 구현 패턴",
+    "summary": "Python의 동시성과 병렬 처리: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "동시성과 병렬 처리: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "동시성과 병렬 처리: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "동시성과 병렬 처리: 실전 구현 패턴의 핵심 개념 설명하기",
+      "동시성과 병렬 처리: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "동시성과 병렬 처리: 실전 구현 패턴에서 배운 개념을 사용해 Day 67 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 67: 동시성과 병렬 처리: 실전 구현 패턴\nclass Day67Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day67Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 67: 동시성과 병렬 처리: 실전 구현 패턴 예시 풀이\nclass Day67Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"동시성과 병렬 처리: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day67Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-68",
+    "language": "python",
+    "day": 68,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "동시성과 병렬 처리: 오류 처리와 경계 조건",
+    "summary": "Python의 동시성과 병렬 처리: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "동시성과 병렬 처리: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "동시성과 병렬 처리: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "동시성과 병렬 처리: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "동시성과 병렬 처리: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "동시성과 병렬 처리: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 68 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 68: 동시성과 병렬 처리: 오류 처리와 경계 조건\nclass Day68Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day68Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 68: 동시성과 병렬 처리: 오류 처리와 경계 조건 예시 풀이\nclass Day68Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"동시성과 병렬 처리: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day68Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-69",
+    "language": "python",
+    "day": 69,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "동시성과 병렬 처리: 테스트와 디버깅",
+    "summary": "Python의 동시성과 병렬 처리: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "동시성과 병렬 처리: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "동시성과 병렬 처리: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "동시성과 병렬 처리: 테스트와 디버깅의 핵심 개념 설명하기",
+      "동시성과 병렬 처리: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "동시성과 병렬 처리: 테스트와 디버깅에서 배운 개념을 사용해 Day 69 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 69: 동시성과 병렬 처리: 테스트와 디버깅\nclass Day69Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day69Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 69: 동시성과 병렬 처리: 테스트와 디버깅 예시 풀이\nclass Day69Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"동시성과 병렬 처리: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day69Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-70",
+    "language": "python",
+    "day": 70,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "동시성과 병렬 처리: 성능 개선과 리팩터링",
+    "summary": "Python의 동시성과 병렬 처리: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "동시성과 병렬 처리: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "동시성과 병렬 처리: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "동시성과 병렬 처리: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "동시성과 병렬 처리: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "동시성과 병렬 처리: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 70 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 70: 동시성과 병렬 처리: 성능 개선과 리팩터링\nclass Day70Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day70Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 70: 동시성과 병렬 처리: 성능 개선과 리팩터링 예시 풀이\nclass Day70Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"동시성과 병렬 처리: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day70Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-71",
+    "language": "python",
+    "day": 71,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 I/O: 핵심 원리와 내부 동작",
+    "summary": "Python의 비동기 I/O: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 I/O: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 I/O: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 I/O: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "비동기 I/O: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 I/O: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 71 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 71: 비동기 I/O: 핵심 원리와 내부 동작\nclass Day71Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day71Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 71: 비동기 I/O: 핵심 원리와 내부 동작 예시 풀이\nclass Day71Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"비동기 I/O: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day71Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-72",
+    "language": "python",
+    "day": 72,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 I/O: 실전 구현 패턴",
+    "summary": "Python의 비동기 I/O: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 I/O: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 I/O: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 I/O: 실전 구현 패턴의 핵심 개념 설명하기",
+      "비동기 I/O: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 I/O: 실전 구현 패턴에서 배운 개념을 사용해 Day 72 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 72: 비동기 I/O: 실전 구현 패턴\nclass Day72Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day72Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 72: 비동기 I/O: 실전 구현 패턴 예시 풀이\nclass Day72Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"비동기 I/O: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day72Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-73",
+    "language": "python",
+    "day": 73,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 I/O: 오류 처리와 경계 조건",
+    "summary": "Python의 비동기 I/O: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 I/O: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 I/O: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 I/O: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "비동기 I/O: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 I/O: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 73 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 73: 비동기 I/O: 오류 처리와 경계 조건\nclass Day73Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day73Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 73: 비동기 I/O: 오류 처리와 경계 조건 예시 풀이\nclass Day73Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"비동기 I/O: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day73Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-74",
+    "language": "python",
+    "day": 74,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 I/O: 테스트와 디버깅",
+    "summary": "Python의 비동기 I/O: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 I/O: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 I/O: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 I/O: 테스트와 디버깅의 핵심 개념 설명하기",
+      "비동기 I/O: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 I/O: 테스트와 디버깅에서 배운 개념을 사용해 Day 74 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 74: 비동기 I/O: 테스트와 디버깅\nclass Day74Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day74Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 74: 비동기 I/O: 테스트와 디버깅 예시 풀이\nclass Day74Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"비동기 I/O: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day74Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-75",
+    "language": "python",
+    "day": 75,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "비동기 I/O: 성능 개선과 리팩터링",
+    "summary": "Python의 비동기 I/O: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "비동기 I/O: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "비동기 I/O: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "비동기 I/O: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "비동기 I/O: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "비동기 I/O: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 75 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 75: 비동기 I/O: 성능 개선과 리팩터링\nclass Day75Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day75Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 75: 비동기 I/O: 성능 개선과 리팩터링 예시 풀이\nclass Day75Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"비동기 I/O: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day75Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-76",
+    "language": "python",
+    "day": 76,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 핵심 원리와 내부 동작",
+    "summary": "Python의 테스트 자동화: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "테스트 자동화: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 76 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 76: 테스트 자동화: 핵심 원리와 내부 동작\nclass Day76Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day76Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 76: 테스트 자동화: 핵심 원리와 내부 동작 예시 풀이\nclass Day76Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"테스트 자동화: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day76Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-77",
+    "language": "python",
+    "day": 77,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 실전 구현 패턴",
+    "summary": "Python의 테스트 자동화: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 실전 구현 패턴의 핵심 개념 설명하기",
+      "테스트 자동화: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 실전 구현 패턴에서 배운 개념을 사용해 Day 77 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 77: 테스트 자동화: 실전 구현 패턴\nclass Day77Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day77Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 77: 테스트 자동화: 실전 구현 패턴 예시 풀이\nclass Day77Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"테스트 자동화: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day77Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-78",
+    "language": "python",
+    "day": 78,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 오류 처리와 경계 조건",
+    "summary": "Python의 테스트 자동화: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "테스트 자동화: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 78 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 78: 테스트 자동화: 오류 처리와 경계 조건\nclass Day78Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day78Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 78: 테스트 자동화: 오류 처리와 경계 조건 예시 풀이\nclass Day78Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"테스트 자동화: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day78Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-79",
+    "language": "python",
+    "day": 79,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 테스트와 디버깅",
+    "summary": "Python의 테스트 자동화: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 테스트와 디버깅의 핵심 개념 설명하기",
+      "테스트 자동화: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 테스트와 디버깅에서 배운 개념을 사용해 Day 79 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 79: 테스트 자동화: 테스트와 디버깅\nclass Day79Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day79Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 79: 테스트 자동화: 테스트와 디버깅 예시 풀이\nclass Day79Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"테스트 자동화: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day79Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-80",
+    "language": "python",
+    "day": 80,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "테스트 자동화: 성능 개선과 리팩터링",
+    "summary": "Python의 테스트 자동화: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "테스트 자동화: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "테스트 자동화: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "테스트 자동화: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "테스트 자동화: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "테스트 자동화: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 80 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 80: 테스트 자동화: 성능 개선과 리팩터링\nclass Day80Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day80Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 80: 테스트 자동화: 성능 개선과 리팩터링 예시 풀이\nclass Day80Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"테스트 자동화: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day80Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-81",
+    "language": "python",
+    "day": 81,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "패키징과 의존성 관리: 핵심 원리와 내부 동작",
+    "summary": "Python의 패키징과 의존성 관리: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "패키징과 의존성 관리: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "패키징과 의존성 관리: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "패키징과 의존성 관리: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "패키징과 의존성 관리: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "패키징과 의존성 관리: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 81 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 81: 패키징과 의존성 관리: 핵심 원리와 내부 동작\nclass Day81Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day81Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 81: 패키징과 의존성 관리: 핵심 원리와 내부 동작 예시 풀이\nclass Day81Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"패키징과 의존성 관리: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day81Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-82",
+    "language": "python",
+    "day": 82,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "패키징과 의존성 관리: 실전 구현 패턴",
+    "summary": "Python의 패키징과 의존성 관리: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "패키징과 의존성 관리: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "패키징과 의존성 관리: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "패키징과 의존성 관리: 실전 구현 패턴의 핵심 개념 설명하기",
+      "패키징과 의존성 관리: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "패키징과 의존성 관리: 실전 구현 패턴에서 배운 개념을 사용해 Day 82 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 82: 패키징과 의존성 관리: 실전 구현 패턴\nclass Day82Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day82Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 82: 패키징과 의존성 관리: 실전 구현 패턴 예시 풀이\nclass Day82Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"패키징과 의존성 관리: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day82Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-83",
+    "language": "python",
+    "day": 83,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "패키징과 의존성 관리: 오류 처리와 경계 조건",
+    "summary": "Python의 패키징과 의존성 관리: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "패키징과 의존성 관리: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "패키징과 의존성 관리: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "패키징과 의존성 관리: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "패키징과 의존성 관리: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "패키징과 의존성 관리: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 83 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 83: 패키징과 의존성 관리: 오류 처리와 경계 조건\nclass Day83Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day83Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 83: 패키징과 의존성 관리: 오류 처리와 경계 조건 예시 풀이\nclass Day83Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"패키징과 의존성 관리: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day83Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-84",
+    "language": "python",
+    "day": 84,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "패키징과 의존성 관리: 테스트와 디버깅",
+    "summary": "Python의 패키징과 의존성 관리: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "패키징과 의존성 관리: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "패키징과 의존성 관리: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "패키징과 의존성 관리: 테스트와 디버깅의 핵심 개념 설명하기",
+      "패키징과 의존성 관리: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "패키징과 의존성 관리: 테스트와 디버깅에서 배운 개념을 사용해 Day 84 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 84: 패키징과 의존성 관리: 테스트와 디버깅\nclass Day84Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day84Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 84: 패키징과 의존성 관리: 테스트와 디버깅 예시 풀이\nclass Day84Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"패키징과 의존성 관리: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day84Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-85",
+    "language": "python",
+    "day": 85,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "패키징과 의존성 관리: 성능 개선과 리팩터링",
+    "summary": "Python의 패키징과 의존성 관리: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "패키징과 의존성 관리: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "패키징과 의존성 관리: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "패키징과 의존성 관리: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "패키징과 의존성 관리: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "패키징과 의존성 관리: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 85 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 85: 패키징과 의존성 관리: 성능 개선과 리팩터링\nclass Day85Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day85Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 85: 패키징과 의존성 관리: 성능 개선과 리팩터링 예시 풀이\nclass Day85Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"패키징과 의존성 관리: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day85Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-86",
+    "language": "python",
+    "day": 86,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데이터 처리와 직렬화: 핵심 원리와 내부 동작",
+    "summary": "Python의 데이터 처리와 직렬화: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데이터 처리와 직렬화: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "데이터 처리와 직렬화: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "데이터 처리와 직렬화: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "데이터 처리와 직렬화: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "데이터 처리와 직렬화: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 86 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 86: 데이터 처리와 직렬화: 핵심 원리와 내부 동작\nclass Day86Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day86Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 86: 데이터 처리와 직렬화: 핵심 원리와 내부 동작 예시 풀이\nclass Day86Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"데이터 처리와 직렬화: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day86Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-87",
+    "language": "python",
+    "day": 87,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데이터 처리와 직렬화: 실전 구현 패턴",
+    "summary": "Python의 데이터 처리와 직렬화: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데이터 처리와 직렬화: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "데이터 처리와 직렬화: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "데이터 처리와 직렬화: 실전 구현 패턴의 핵심 개념 설명하기",
+      "데이터 처리와 직렬화: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "데이터 처리와 직렬화: 실전 구현 패턴에서 배운 개념을 사용해 Day 87 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 87: 데이터 처리와 직렬화: 실전 구현 패턴\nclass Day87Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day87Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 87: 데이터 처리와 직렬화: 실전 구현 패턴 예시 풀이\nclass Day87Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"데이터 처리와 직렬화: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day87Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-88",
+    "language": "python",
+    "day": 88,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데이터 처리와 직렬화: 오류 처리와 경계 조건",
+    "summary": "Python의 데이터 처리와 직렬화: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데이터 처리와 직렬화: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "데이터 처리와 직렬화: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "데이터 처리와 직렬화: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "데이터 처리와 직렬화: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "데이터 처리와 직렬화: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 88 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 88: 데이터 처리와 직렬화: 오류 처리와 경계 조건\nclass Day88Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day88Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 88: 데이터 처리와 직렬화: 오류 처리와 경계 조건 예시 풀이\nclass Day88Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"데이터 처리와 직렬화: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day88Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-89",
+    "language": "python",
+    "day": 89,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데이터 처리와 직렬화: 테스트와 디버깅",
+    "summary": "Python의 데이터 처리와 직렬화: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데이터 처리와 직렬화: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "데이터 처리와 직렬화: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "데이터 처리와 직렬화: 테스트와 디버깅의 핵심 개념 설명하기",
+      "데이터 처리와 직렬화: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "데이터 처리와 직렬화: 테스트와 디버깅에서 배운 개념을 사용해 Day 89 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 89: 데이터 처리와 직렬화: 테스트와 디버깅\nclass Day89Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day89Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 89: 데이터 처리와 직렬화: 테스트와 디버깅 예시 풀이\nclass Day89Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"데이터 처리와 직렬화: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day89Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-90",
+    "language": "python",
+    "day": 90,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "데이터 처리와 직렬화: 성능 개선과 리팩터링",
+    "summary": "Python의 데이터 처리와 직렬화: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "데이터 처리와 직렬화: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "데이터 처리와 직렬화: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "데이터 처리와 직렬화: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "데이터 처리와 직렬화: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "데이터 처리와 직렬화: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 90 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 90: 데이터 처리와 직렬화: 성능 개선과 리팩터링\nclass Day90Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day90Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 90: 데이터 처리와 직렬화: 성능 개선과 리팩터링 예시 풀이\nclass Day90Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"데이터 처리와 직렬화: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day90Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-91",
+    "language": "python",
+    "day": 91,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "알고리즘과 자료구조: 핵심 원리와 내부 동작",
+    "summary": "Python의 알고리즘과 자료구조: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "알고리즘과 자료구조: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "알고리즘과 자료구조: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "알고리즘과 자료구조: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "알고리즘과 자료구조: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "알고리즘과 자료구조: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 91 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 91: 알고리즘과 자료구조: 핵심 원리와 내부 동작\nclass Day91Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day91Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 91: 알고리즘과 자료구조: 핵심 원리와 내부 동작 예시 풀이\nclass Day91Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"알고리즘과 자료구조: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day91Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-92",
+    "language": "python",
+    "day": 92,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "알고리즘과 자료구조: 실전 구현 패턴",
+    "summary": "Python의 알고리즘과 자료구조: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "알고리즘과 자료구조: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "알고리즘과 자료구조: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "알고리즘과 자료구조: 실전 구현 패턴의 핵심 개념 설명하기",
+      "알고리즘과 자료구조: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "알고리즘과 자료구조: 실전 구현 패턴에서 배운 개념을 사용해 Day 92 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 92: 알고리즘과 자료구조: 실전 구현 패턴\nclass Day92Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day92Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 92: 알고리즘과 자료구조: 실전 구현 패턴 예시 풀이\nclass Day92Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"알고리즘과 자료구조: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day92Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-93",
+    "language": "python",
+    "day": 93,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "알고리즘과 자료구조: 오류 처리와 경계 조건",
+    "summary": "Python의 알고리즘과 자료구조: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "알고리즘과 자료구조: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "알고리즘과 자료구조: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "알고리즘과 자료구조: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "알고리즘과 자료구조: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "알고리즘과 자료구조: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 93 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 93: 알고리즘과 자료구조: 오류 처리와 경계 조건\nclass Day93Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day93Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 93: 알고리즘과 자료구조: 오류 처리와 경계 조건 예시 풀이\nclass Day93Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"알고리즘과 자료구조: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day93Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-94",
+    "language": "python",
+    "day": 94,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "알고리즘과 자료구조: 테스트와 디버깅",
+    "summary": "Python의 알고리즘과 자료구조: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "알고리즘과 자료구조: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "알고리즘과 자료구조: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "알고리즘과 자료구조: 테스트와 디버깅의 핵심 개념 설명하기",
+      "알고리즘과 자료구조: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "알고리즘과 자료구조: 테스트와 디버깅에서 배운 개념을 사용해 Day 94 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 94: 알고리즘과 자료구조: 테스트와 디버깅\nclass Day94Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day94Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 94: 알고리즘과 자료구조: 테스트와 디버깅 예시 풀이\nclass Day94Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"알고리즘과 자료구조: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day94Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-95",
+    "language": "python",
+    "day": 95,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "알고리즘과 자료구조: 성능 개선과 리팩터링",
+    "summary": "Python의 알고리즘과 자료구조: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "알고리즘과 자료구조: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "알고리즘과 자료구조: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "알고리즘과 자료구조: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "알고리즘과 자료구조: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "알고리즘과 자료구조: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 95 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 95: 알고리즘과 자료구조: 성능 개선과 리팩터링\nclass Day95Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day95Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 95: 알고리즘과 자료구조: 성능 개선과 리팩터링 예시 풀이\nclass Day95Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"알고리즘과 자료구조: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day95Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-96",
+    "language": "python",
+    "day": 96,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "관측 가능성과 성능 분석: 핵심 원리와 내부 동작",
+    "summary": "Python의 관측 가능성과 성능 분석: 핵심 원리와 내부 동작 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "관측 가능성과 성능 분석: 핵심 원리와 내부 동작은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "관측 가능성과 성능 분석: 핵심 원리와 내부 동작의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "관측 가능성과 성능 분석: 핵심 원리와 내부 동작의 핵심 개념 설명하기",
+      "관측 가능성과 성능 분석: 핵심 원리와 내부 동작을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "관측 가능성과 성능 분석: 핵심 원리와 내부 동작에서 배운 개념을 사용해 Day 96 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 96: 관측 가능성과 성능 분석: 핵심 원리와 내부 동작\nclass Day96Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day96Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 96: 관측 가능성과 성능 분석: 핵심 원리와 내부 동작 예시 풀이\nclass Day96Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"관측 가능성과 성능 분석: 핵심 원리와 내부 동작\", \"result\": ordered}\n\nprint(Day96Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-97",
+    "language": "python",
+    "day": 97,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "관측 가능성과 성능 분석: 실전 구현 패턴",
+    "summary": "Python의 관측 가능성과 성능 분석: 실전 구현 패턴 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "관측 가능성과 성능 분석: 실전 구현 패턴은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "관측 가능성과 성능 분석: 실전 구현 패턴의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "관측 가능성과 성능 분석: 실전 구현 패턴의 핵심 개념 설명하기",
+      "관측 가능성과 성능 분석: 실전 구현 패턴을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "관측 가능성과 성능 분석: 실전 구현 패턴에서 배운 개념을 사용해 Day 97 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 97: 관측 가능성과 성능 분석: 실전 구현 패턴\nclass Day97Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day97Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 97: 관측 가능성과 성능 분석: 실전 구현 패턴 예시 풀이\nclass Day97Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"관측 가능성과 성능 분석: 실전 구현 패턴\", \"result\": ordered}\n\nprint(Day97Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-98",
+    "language": "python",
+    "day": 98,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "관측 가능성과 성능 분석: 오류 처리와 경계 조건",
+    "summary": "Python의 관측 가능성과 성능 분석: 오류 처리와 경계 조건 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "관측 가능성과 성능 분석: 오류 처리와 경계 조건은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "관측 가능성과 성능 분석: 오류 처리와 경계 조건의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "관측 가능성과 성능 분석: 오류 처리와 경계 조건의 핵심 개념 설명하기",
+      "관측 가능성과 성능 분석: 오류 처리와 경계 조건을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "관측 가능성과 성능 분석: 오류 처리와 경계 조건에서 배운 개념을 사용해 Day 98 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 98: 관측 가능성과 성능 분석: 오류 처리와 경계 조건\nclass Day98Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day98Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 98: 관측 가능성과 성능 분석: 오류 처리와 경계 조건 예시 풀이\nclass Day98Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"관측 가능성과 성능 분석: 오류 처리와 경계 조건\", \"result\": ordered}\n\nprint(Day98Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-99",
+    "language": "python",
+    "day": 99,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "관측 가능성과 성능 분석: 테스트와 디버깅",
+    "summary": "Python의 관측 가능성과 성능 분석: 테스트와 디버깅 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "관측 가능성과 성능 분석: 테스트와 디버깅은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "관측 가능성과 성능 분석: 테스트와 디버깅의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "관측 가능성과 성능 분석: 테스트와 디버깅의 핵심 개념 설명하기",
+      "관측 가능성과 성능 분석: 테스트와 디버깅을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "관측 가능성과 성능 분석: 테스트와 디버깅에서 배운 개념을 사용해 Day 99 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 99: 관측 가능성과 성능 분석: 테스트와 디버깅\nclass Day99Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day99Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 99: 관측 가능성과 성능 분석: 테스트와 디버깅 예시 풀이\nclass Day99Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"관측 가능성과 성능 분석: 테스트와 디버깅\", \"result\": ordered}\n\nprint(Day99Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-100",
+    "language": "python",
+    "day": 100,
+    "stage": 5,
+    "stageName": "심화",
+    "level": "advanced",
+    "title": "관측 가능성과 성능 분석: 성능 개선과 리팩터링",
+    "summary": "Python의 관측 가능성과 성능 분석: 성능 개선과 리팩터링 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "관측 가능성과 성능 분석: 성능 개선과 리팩터링은(는) Python 심화 주제입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 내부 동작을 이해한 뒤 경계 조건, 테스트, 성능까지 단계적으로 검증하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "관측 가능성과 성능 분석: 성능 개선과 리팩터링의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "관측 가능성과 성능 분석: 성능 개선과 리팩터링의 핵심 개념 설명하기",
+      "관측 가능성과 성능 분석: 성능 개선과 리팩터링을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "관측 가능성과 성능 분석: 성능 개선과 리팩터링에서 배운 개념을 사용해 Day 100 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 100: 관측 가능성과 성능 분석: 성능 개선과 리팩터링\nclass Day100Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day100Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 100: 관측 가능성과 성능 분석: 성능 개선과 리팩터링 예시 풀이\nclass Day100Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"관측 가능성과 성능 분석: 성능 개선과 리팩터링\", \"result\": ordered}\n\nprint(Day100Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-101",
+    "language": "python",
+    "day": 101,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 진도 대시보드",
+    "summary": "Python의 프로젝트: 학습 진도 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 진도 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 진도 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 진도 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 학습 진도 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 진도 대시보드에서 배운 개념을 사용해 Day 101 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 101: 프로젝트: 학습 진도 대시보드\nclass Day101Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day101Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 101: 프로젝트: 학습 진도 대시보드 예시 풀이\nclass Day101Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 학습 진도 대시보드\", \"result\": ordered}\n\nprint(Day101Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-102",
+    "language": "python",
+    "day": 102,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 진도 자동화 도구",
+    "summary": "Python의 프로젝트: 학습 진도 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 진도 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 진도 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 진도 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 학습 진도 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 진도 자동화 도구에서 배운 개념을 사용해 Day 102 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 102: 프로젝트: 학습 진도 자동화 도구\nclass Day102Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day102Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 102: 프로젝트: 학습 진도 자동화 도구 예시 풀이\nclass Day102Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 학습 진도 자동화 도구\", \"result\": ordered}\n\nprint(Day102Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-103",
+    "language": "python",
+    "day": 103,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 진도 API 서비스",
+    "summary": "Python의 프로젝트: 학습 진도 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 진도 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 진도 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 진도 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 학습 진도 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 진도 API 서비스에서 배운 개념을 사용해 Day 103 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 103: 프로젝트: 학습 진도 API 서비스\nclass Day103Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day103Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 103: 프로젝트: 학습 진도 API 서비스 예시 풀이\nclass Day103Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 학습 진도 API 서비스\", \"result\": ordered}\n\nprint(Day103Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-104",
+    "language": "python",
+    "day": 104,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 진도 분석 리포트",
+    "summary": "Python의 프로젝트: 학습 진도 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 진도 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 진도 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 진도 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 학습 진도 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 진도 분석 리포트에서 배운 개념을 사용해 Day 104 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 104: 프로젝트: 학습 진도 분석 리포트\nclass Day104Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day104Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 104: 프로젝트: 학습 진도 분석 리포트 예시 풀이\nclass Day104Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 학습 진도 분석 리포트\", \"result\": ordered}\n\nprint(Day104Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-105",
+    "language": "python",
+    "day": 105,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 학습 진도 운영 콘솔",
+    "summary": "Python의 프로젝트: 학습 진도 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 학습 진도 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 학습 진도 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 학습 진도 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 학습 진도 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 학습 진도 운영 콘솔에서 배운 개념을 사용해 Day 105 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 105: 프로젝트: 학습 진도 운영 콘솔\nclass Day105Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day105Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 105: 프로젝트: 학습 진도 운영 콘솔 예시 풀이\nclass Day105Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 학습 진도 운영 콘솔\", \"result\": ordered}\n\nprint(Day105Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-106",
+    "language": "python",
+    "day": 106,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 대시보드",
+    "summary": "Python의 프로젝트: 가계부 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 가계부 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 대시보드에서 배운 개념을 사용해 Day 106 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 106: 프로젝트: 가계부 대시보드\nclass Day106Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day106Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 106: 프로젝트: 가계부 대시보드 예시 풀이\nclass Day106Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 가계부 대시보드\", \"result\": ordered}\n\nprint(Day106Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-107",
+    "language": "python",
+    "day": 107,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 자동화 도구",
+    "summary": "Python의 프로젝트: 가계부 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 가계부 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 자동화 도구에서 배운 개념을 사용해 Day 107 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 107: 프로젝트: 가계부 자동화 도구\nclass Day107Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day107Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 107: 프로젝트: 가계부 자동화 도구 예시 풀이\nclass Day107Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 가계부 자동화 도구\", \"result\": ordered}\n\nprint(Day107Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-108",
+    "language": "python",
+    "day": 108,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 API 서비스",
+    "summary": "Python의 프로젝트: 가계부 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 가계부 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 API 서비스에서 배운 개념을 사용해 Day 108 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 108: 프로젝트: 가계부 API 서비스\nclass Day108Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day108Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 108: 프로젝트: 가계부 API 서비스 예시 풀이\nclass Day108Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 가계부 API 서비스\", \"result\": ordered}\n\nprint(Day108Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-109",
+    "language": "python",
+    "day": 109,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 분석 리포트",
+    "summary": "Python의 프로젝트: 가계부 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 가계부 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 분석 리포트에서 배운 개념을 사용해 Day 109 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 109: 프로젝트: 가계부 분석 리포트\nclass Day109Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day109Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 109: 프로젝트: 가계부 분석 리포트 예시 풀이\nclass Day109Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 가계부 분석 리포트\", \"result\": ordered}\n\nprint(Day109Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-110",
+    "language": "python",
+    "day": 110,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 가계부 운영 콘솔",
+    "summary": "Python의 프로젝트: 가계부 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 가계부 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 가계부 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 가계부 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 가계부 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 가계부 운영 콘솔에서 배운 개념을 사용해 Day 110 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 110: 프로젝트: 가계부 운영 콘솔\nclass Day110Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day110Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 110: 프로젝트: 가계부 운영 콘솔 예시 풀이\nclass Day110Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 가계부 운영 콘솔\", \"result\": ordered}\n\nprint(Day110Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-111",
+    "language": "python",
+    "day": 111,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 모니터링 대시보드",
+    "summary": "Python의 프로젝트: 로그 모니터링 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 모니터링 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 모니터링 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 모니터링 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 로그 모니터링 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 모니터링 대시보드에서 배운 개념을 사용해 Day 111 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 111: 프로젝트: 로그 모니터링 대시보드\nclass Day111Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day111Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 111: 프로젝트: 로그 모니터링 대시보드 예시 풀이\nclass Day111Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 로그 모니터링 대시보드\", \"result\": ordered}\n\nprint(Day111Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-112",
+    "language": "python",
+    "day": 112,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 모니터링 자동화 도구",
+    "summary": "Python의 프로젝트: 로그 모니터링 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 모니터링 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 모니터링 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 모니터링 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 로그 모니터링 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 모니터링 자동화 도구에서 배운 개념을 사용해 Day 112 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 112: 프로젝트: 로그 모니터링 자동화 도구\nclass Day112Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day112Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 112: 프로젝트: 로그 모니터링 자동화 도구 예시 풀이\nclass Day112Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 로그 모니터링 자동화 도구\", \"result\": ordered}\n\nprint(Day112Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-113",
+    "language": "python",
+    "day": 113,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 모니터링 API 서비스",
+    "summary": "Python의 프로젝트: 로그 모니터링 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 모니터링 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 모니터링 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 모니터링 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 로그 모니터링 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 모니터링 API 서비스에서 배운 개념을 사용해 Day 113 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 113: 프로젝트: 로그 모니터링 API 서비스\nclass Day113Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day113Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 113: 프로젝트: 로그 모니터링 API 서비스 예시 풀이\nclass Day113Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 로그 모니터링 API 서비스\", \"result\": ordered}\n\nprint(Day113Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-114",
+    "language": "python",
+    "day": 114,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 모니터링 분석 리포트",
+    "summary": "Python의 프로젝트: 로그 모니터링 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 모니터링 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 모니터링 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 모니터링 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 로그 모니터링 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 모니터링 분석 리포트에서 배운 개념을 사용해 Day 114 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 114: 프로젝트: 로그 모니터링 분석 리포트\nclass Day114Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day114Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 114: 프로젝트: 로그 모니터링 분석 리포트 예시 풀이\nclass Day114Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 로그 모니터링 분석 리포트\", \"result\": ordered}\n\nprint(Day114Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-115",
+    "language": "python",
+    "day": 115,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 로그 모니터링 운영 콘솔",
+    "summary": "Python의 프로젝트: 로그 모니터링 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 로그 모니터링 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 로그 모니터링 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 로그 모니터링 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 로그 모니터링 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 로그 모니터링 운영 콘솔에서 배운 개념을 사용해 Day 115 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 115: 프로젝트: 로그 모니터링 운영 콘솔\nclass Day115Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day115Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 115: 프로젝트: 로그 모니터링 운영 콘솔 예시 풀이\nclass Day115Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 로그 모니터링 운영 콘솔\", \"result\": ordered}\n\nprint(Day115Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-116",
+    "language": "python",
+    "day": 116,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 정리 대시보드",
+    "summary": "Python의 프로젝트: 파일 정리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 정리 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 정리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 정리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 파일 정리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 정리 대시보드에서 배운 개념을 사용해 Day 116 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 116: 프로젝트: 파일 정리 대시보드\nclass Day116Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day116Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 116: 프로젝트: 파일 정리 대시보드 예시 풀이\nclass Day116Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 파일 정리 대시보드\", \"result\": ordered}\n\nprint(Day116Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-117",
+    "language": "python",
+    "day": 117,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 정리 자동화 도구",
+    "summary": "Python의 프로젝트: 파일 정리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 정리 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 정리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 정리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 파일 정리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 정리 자동화 도구에서 배운 개념을 사용해 Day 117 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 117: 프로젝트: 파일 정리 자동화 도구\nclass Day117Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day117Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 117: 프로젝트: 파일 정리 자동화 도구 예시 풀이\nclass Day117Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 파일 정리 자동화 도구\", \"result\": ordered}\n\nprint(Day117Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-118",
+    "language": "python",
+    "day": 118,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 정리 API 서비스",
+    "summary": "Python의 프로젝트: 파일 정리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 정리 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 정리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 정리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 파일 정리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 정리 API 서비스에서 배운 개념을 사용해 Day 118 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 118: 프로젝트: 파일 정리 API 서비스\nclass Day118Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day118Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 118: 프로젝트: 파일 정리 API 서비스 예시 풀이\nclass Day118Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 파일 정리 API 서비스\", \"result\": ordered}\n\nprint(Day118Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-119",
+    "language": "python",
+    "day": 119,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 정리 분석 리포트",
+    "summary": "Python의 프로젝트: 파일 정리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 정리 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 정리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 정리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 파일 정리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 정리 분석 리포트에서 배운 개념을 사용해 Day 119 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 119: 프로젝트: 파일 정리 분석 리포트\nclass Day119Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day119Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 119: 프로젝트: 파일 정리 분석 리포트 예시 풀이\nclass Day119Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 파일 정리 분석 리포트\", \"result\": ordered}\n\nprint(Day119Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-120",
+    "language": "python",
+    "day": 120,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 파일 정리 운영 콘솔",
+    "summary": "Python의 프로젝트: 파일 정리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 파일 정리 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 파일 정리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 파일 정리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 파일 정리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 파일 정리 운영 콘솔에서 배운 개념을 사용해 Day 120 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 120: 프로젝트: 파일 정리 운영 콘솔\nclass Day120Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day120Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 120: 프로젝트: 파일 정리 운영 콘솔 예시 풀이\nclass Day120Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 파일 정리 운영 콘솔\", \"result\": ordered}\n\nprint(Day120Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-121",
+    "language": "python",
+    "day": 121,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 대시보드",
+    "summary": "Python의 프로젝트: 재고 관리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 대시보드에서 배운 개념을 사용해 Day 121 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 121: 프로젝트: 재고 관리 대시보드\nclass Day121Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day121Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 121: 프로젝트: 재고 관리 대시보드 예시 풀이\nclass Day121Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 재고 관리 대시보드\", \"result\": ordered}\n\nprint(Day121Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-122",
+    "language": "python",
+    "day": 122,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 자동화 도구",
+    "summary": "Python의 프로젝트: 재고 관리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 자동화 도구에서 배운 개념을 사용해 Day 122 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 122: 프로젝트: 재고 관리 자동화 도구\nclass Day122Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day122Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 122: 프로젝트: 재고 관리 자동화 도구 예시 풀이\nclass Day122Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 재고 관리 자동화 도구\", \"result\": ordered}\n\nprint(Day122Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-123",
+    "language": "python",
+    "day": 123,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 API 서비스",
+    "summary": "Python의 프로젝트: 재고 관리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 API 서비스에서 배운 개념을 사용해 Day 123 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 123: 프로젝트: 재고 관리 API 서비스\nclass Day123Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day123Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 123: 프로젝트: 재고 관리 API 서비스 예시 풀이\nclass Day123Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 재고 관리 API 서비스\", \"result\": ordered}\n\nprint(Day123Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-124",
+    "language": "python",
+    "day": 124,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 분석 리포트",
+    "summary": "Python의 프로젝트: 재고 관리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 분석 리포트에서 배운 개념을 사용해 Day 124 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 124: 프로젝트: 재고 관리 분석 리포트\nclass Day124Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day124Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 124: 프로젝트: 재고 관리 분석 리포트 예시 풀이\nclass Day124Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 재고 관리 분석 리포트\", \"result\": ordered}\n\nprint(Day124Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-125",
+    "language": "python",
+    "day": 125,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 재고 관리 운영 콘솔",
+    "summary": "Python의 프로젝트: 재고 관리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 재고 관리 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 재고 관리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 재고 관리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 재고 관리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 재고 관리 운영 콘솔에서 배운 개념을 사용해 Day 125 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 125: 프로젝트: 재고 관리 운영 콘솔\nclass Day125Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day125Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 125: 프로젝트: 재고 관리 운영 콘솔 예시 풀이\nclass Day125Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 재고 관리 운영 콘솔\", \"result\": ordered}\n\nprint(Day125Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-126",
+    "language": "python",
+    "day": 126,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 분석 대시보드",
+    "summary": "Python의 프로젝트: 설문 분석 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 분석 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 분석 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 분석 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 설문 분석 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 분석 대시보드에서 배운 개념을 사용해 Day 126 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 126: 프로젝트: 설문 분석 대시보드\nclass Day126Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day126Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 126: 프로젝트: 설문 분석 대시보드 예시 풀이\nclass Day126Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 설문 분석 대시보드\", \"result\": ordered}\n\nprint(Day126Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-127",
+    "language": "python",
+    "day": 127,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 분석 자동화 도구",
+    "summary": "Python의 프로젝트: 설문 분석 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 분석 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 분석 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 분석 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 설문 분석 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 분석 자동화 도구에서 배운 개념을 사용해 Day 127 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 127: 프로젝트: 설문 분석 자동화 도구\nclass Day127Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day127Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 127: 프로젝트: 설문 분석 자동화 도구 예시 풀이\nclass Day127Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 설문 분석 자동화 도구\", \"result\": ordered}\n\nprint(Day127Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-128",
+    "language": "python",
+    "day": 128,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 분석 API 서비스",
+    "summary": "Python의 프로젝트: 설문 분석 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 분석 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 분석 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 분석 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 설문 분석 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 분석 API 서비스에서 배운 개념을 사용해 Day 128 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 128: 프로젝트: 설문 분석 API 서비스\nclass Day128Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day128Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 128: 프로젝트: 설문 분석 API 서비스 예시 풀이\nclass Day128Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 설문 분석 API 서비스\", \"result\": ordered}\n\nprint(Day128Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-129",
+    "language": "python",
+    "day": 129,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 분석 분석 리포트",
+    "summary": "Python의 프로젝트: 설문 분석 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 분석 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 분석 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 분석 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 설문 분석 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 분석 분석 리포트에서 배운 개념을 사용해 Day 129 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 129: 프로젝트: 설문 분석 분석 리포트\nclass Day129Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day129Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 129: 프로젝트: 설문 분석 분석 리포트 예시 풀이\nclass Day129Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 설문 분석 분석 리포트\", \"result\": ordered}\n\nprint(Day129Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-130",
+    "language": "python",
+    "day": 130,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 설문 분석 운영 콘솔",
+    "summary": "Python의 프로젝트: 설문 분석 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 설문 분석 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 설문 분석 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 설문 분석 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 설문 분석 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 설문 분석 운영 콘솔에서 배운 개념을 사용해 Day 130 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 130: 프로젝트: 설문 분석 운영 콘솔\nclass Day130Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day130Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 130: 프로젝트: 설문 분석 운영 콘솔 예시 풀이\nclass Day130Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 설문 분석 운영 콘솔\", \"result\": ordered}\n\nprint(Day130Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-131",
+    "language": "python",
+    "day": 131,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 뉴스 수집 대시보드",
+    "summary": "Python의 프로젝트: 뉴스 수집 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 뉴스 수집 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 뉴스 수집 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 뉴스 수집 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 뉴스 수집 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 뉴스 수집 대시보드에서 배운 개념을 사용해 Day 131 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 131: 프로젝트: 뉴스 수집 대시보드\nclass Day131Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day131Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 131: 프로젝트: 뉴스 수집 대시보드 예시 풀이\nclass Day131Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 뉴스 수집 대시보드\", \"result\": ordered}\n\nprint(Day131Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-132",
+    "language": "python",
+    "day": 132,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 뉴스 수집 자동화 도구",
+    "summary": "Python의 프로젝트: 뉴스 수집 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 뉴스 수집 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 뉴스 수집 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 뉴스 수집 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 뉴스 수집 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 뉴스 수집 자동화 도구에서 배운 개념을 사용해 Day 132 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 132: 프로젝트: 뉴스 수집 자동화 도구\nclass Day132Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day132Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 132: 프로젝트: 뉴스 수집 자동화 도구 예시 풀이\nclass Day132Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 뉴스 수집 자동화 도구\", \"result\": ordered}\n\nprint(Day132Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-133",
+    "language": "python",
+    "day": 133,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 뉴스 수집 API 서비스",
+    "summary": "Python의 프로젝트: 뉴스 수집 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 뉴스 수집 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 뉴스 수집 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 뉴스 수집 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 뉴스 수집 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 뉴스 수집 API 서비스에서 배운 개념을 사용해 Day 133 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 133: 프로젝트: 뉴스 수집 API 서비스\nclass Day133Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day133Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 133: 프로젝트: 뉴스 수집 API 서비스 예시 풀이\nclass Day133Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 뉴스 수집 API 서비스\", \"result\": ordered}\n\nprint(Day133Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-134",
+    "language": "python",
+    "day": 134,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 뉴스 수집 분석 리포트",
+    "summary": "Python의 프로젝트: 뉴스 수집 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 뉴스 수집 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 뉴스 수집 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 뉴스 수집 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 뉴스 수집 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 뉴스 수집 분석 리포트에서 배운 개념을 사용해 Day 134 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 134: 프로젝트: 뉴스 수집 분석 리포트\nclass Day134Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day134Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 134: 프로젝트: 뉴스 수집 분석 리포트 예시 풀이\nclass Day134Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 뉴스 수집 분석 리포트\", \"result\": ordered}\n\nprint(Day134Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-135",
+    "language": "python",
+    "day": 135,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 뉴스 수집 운영 콘솔",
+    "summary": "Python의 프로젝트: 뉴스 수집 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 뉴스 수집 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 뉴스 수집 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 뉴스 수집 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 뉴스 수집 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 뉴스 수집 운영 콘솔에서 배운 개념을 사용해 Day 135 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 135: 프로젝트: 뉴스 수집 운영 콘솔\nclass Day135Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day135Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 135: 프로젝트: 뉴스 수집 운영 콘솔 예시 풀이\nclass Day135Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 뉴스 수집 운영 콘솔\", \"result\": ordered}\n\nprint(Day135Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-136",
+    "language": "python",
+    "day": 136,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 일정 관리 대시보드",
+    "summary": "Python의 프로젝트: 일정 관리 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 일정 관리 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 일정 관리 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 일정 관리 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 일정 관리 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 일정 관리 대시보드에서 배운 개념을 사용해 Day 136 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 136: 프로젝트: 일정 관리 대시보드\nclass Day136Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day136Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 136: 프로젝트: 일정 관리 대시보드 예시 풀이\nclass Day136Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 일정 관리 대시보드\", \"result\": ordered}\n\nprint(Day136Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-137",
+    "language": "python",
+    "day": 137,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 일정 관리 자동화 도구",
+    "summary": "Python의 프로젝트: 일정 관리 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 일정 관리 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 일정 관리 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 일정 관리 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 일정 관리 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 일정 관리 자동화 도구에서 배운 개념을 사용해 Day 137 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 137: 프로젝트: 일정 관리 자동화 도구\nclass Day137Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day137Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 137: 프로젝트: 일정 관리 자동화 도구 예시 풀이\nclass Day137Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 일정 관리 자동화 도구\", \"result\": ordered}\n\nprint(Day137Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-138",
+    "language": "python",
+    "day": 138,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 일정 관리 API 서비스",
+    "summary": "Python의 프로젝트: 일정 관리 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 일정 관리 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 일정 관리 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 일정 관리 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 일정 관리 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 일정 관리 API 서비스에서 배운 개념을 사용해 Day 138 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 138: 프로젝트: 일정 관리 API 서비스\nclass Day138Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day138Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 138: 프로젝트: 일정 관리 API 서비스 예시 풀이\nclass Day138Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 일정 관리 API 서비스\", \"result\": ordered}\n\nprint(Day138Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-139",
+    "language": "python",
+    "day": 139,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 일정 관리 분석 리포트",
+    "summary": "Python의 프로젝트: 일정 관리 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 일정 관리 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 일정 관리 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 일정 관리 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 일정 관리 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 일정 관리 분석 리포트에서 배운 개념을 사용해 Day 139 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 139: 프로젝트: 일정 관리 분석 리포트\nclass Day139Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day139Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 139: 프로젝트: 일정 관리 분석 리포트 예시 풀이\nclass Day139Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 일정 관리 분석 리포트\", \"result\": ordered}\n\nprint(Day139Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-140",
+    "language": "python",
+    "day": 140,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 일정 관리 운영 콘솔",
+    "summary": "Python의 프로젝트: 일정 관리 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 일정 관리 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 일정 관리 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 일정 관리 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 일정 관리 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 일정 관리 운영 콘솔에서 배운 개념을 사용해 Day 140 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 140: 프로젝트: 일정 관리 운영 콘솔\nclass Day140Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day140Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 140: 프로젝트: 일정 관리 운영 콘솔 예시 풀이\nclass Day140Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 일정 관리 운영 콘솔\", \"result\": ordered}\n\nprint(Day140Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-141",
+    "language": "python",
+    "day": 141,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 이미지 메타데이터 대시보드",
+    "summary": "Python의 프로젝트: 이미지 메타데이터 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 이미지 메타데이터 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 이미지 메타데이터 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 이미지 메타데이터 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 이미지 메타데이터 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 이미지 메타데이터 대시보드에서 배운 개념을 사용해 Day 141 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 141: 프로젝트: 이미지 메타데이터 대시보드\nclass Day141Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day141Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 141: 프로젝트: 이미지 메타데이터 대시보드 예시 풀이\nclass Day141Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 이미지 메타데이터 대시보드\", \"result\": ordered}\n\nprint(Day141Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-142",
+    "language": "python",
+    "day": 142,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 이미지 메타데이터 자동화 도구",
+    "summary": "Python의 프로젝트: 이미지 메타데이터 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 이미지 메타데이터 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 이미지 메타데이터 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 이미지 메타데이터 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 이미지 메타데이터 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 이미지 메타데이터 자동화 도구에서 배운 개념을 사용해 Day 142 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 142: 프로젝트: 이미지 메타데이터 자동화 도구\nclass Day142Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day142Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 142: 프로젝트: 이미지 메타데이터 자동화 도구 예시 풀이\nclass Day142Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 이미지 메타데이터 자동화 도구\", \"result\": ordered}\n\nprint(Day142Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-143",
+    "language": "python",
+    "day": 143,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 이미지 메타데이터 API 서비스",
+    "summary": "Python의 프로젝트: 이미지 메타데이터 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 이미지 메타데이터 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 이미지 메타데이터 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 이미지 메타데이터 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 이미지 메타데이터 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 이미지 메타데이터 API 서비스에서 배운 개념을 사용해 Day 143 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 143: 프로젝트: 이미지 메타데이터 API 서비스\nclass Day143Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day143Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 143: 프로젝트: 이미지 메타데이터 API 서비스 예시 풀이\nclass Day143Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 이미지 메타데이터 API 서비스\", \"result\": ordered}\n\nprint(Day143Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-144",
+    "language": "python",
+    "day": 144,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 이미지 메타데이터 분석 리포트",
+    "summary": "Python의 프로젝트: 이미지 메타데이터 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 이미지 메타데이터 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 이미지 메타데이터 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 이미지 메타데이터 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 이미지 메타데이터 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 이미지 메타데이터 분석 리포트에서 배운 개념을 사용해 Day 144 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 144: 프로젝트: 이미지 메타데이터 분석 리포트\nclass Day144Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day144Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 144: 프로젝트: 이미지 메타데이터 분석 리포트 예시 풀이\nclass Day144Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 이미지 메타데이터 분석 리포트\", \"result\": ordered}\n\nprint(Day144Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-145",
+    "language": "python",
+    "day": 145,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 이미지 메타데이터 운영 콘솔",
+    "summary": "Python의 프로젝트: 이미지 메타데이터 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 이미지 메타데이터 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 이미지 메타데이터 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 이미지 메타데이터 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 이미지 메타데이터 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 이미지 메타데이터 운영 콘솔에서 배운 개념을 사용해 Day 145 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 145: 프로젝트: 이미지 메타데이터 운영 콘솔\nclass Day145Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day145Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 145: 프로젝트: 이미지 메타데이터 운영 콘솔 예시 풀이\nclass Day145Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 이미지 메타데이터 운영 콘솔\", \"result\": ordered}\n\nprint(Day145Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-146",
+    "language": "python",
+    "day": 146,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: API 상태 점검 대시보드",
+    "summary": "Python의 프로젝트: API 상태 점검 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: API 상태 점검 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: API 상태 점검 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: API 상태 점검 대시보드의 핵심 개념 설명하기",
+      "프로젝트: API 상태 점검 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: API 상태 점검 대시보드에서 배운 개념을 사용해 Day 146 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 146: 프로젝트: API 상태 점검 대시보드\nclass Day146Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day146Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 146: 프로젝트: API 상태 점검 대시보드 예시 풀이\nclass Day146Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: API 상태 점검 대시보드\", \"result\": ordered}\n\nprint(Day146Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-147",
+    "language": "python",
+    "day": 147,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: API 상태 점검 자동화 도구",
+    "summary": "Python의 프로젝트: API 상태 점검 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: API 상태 점검 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: API 상태 점검 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: API 상태 점검 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: API 상태 점검 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: API 상태 점검 자동화 도구에서 배운 개념을 사용해 Day 147 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 147: 프로젝트: API 상태 점검 자동화 도구\nclass Day147Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day147Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 147: 프로젝트: API 상태 점검 자동화 도구 예시 풀이\nclass Day147Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: API 상태 점검 자동화 도구\", \"result\": ordered}\n\nprint(Day147Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-148",
+    "language": "python",
+    "day": 148,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: API 상태 점검 API 서비스",
+    "summary": "Python의 프로젝트: API 상태 점검 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: API 상태 점검 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: API 상태 점검 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: API 상태 점검 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: API 상태 점검 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: API 상태 점검 API 서비스에서 배운 개념을 사용해 Day 148 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 148: 프로젝트: API 상태 점검 API 서비스\nclass Day148Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day148Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 148: 프로젝트: API 상태 점검 API 서비스 예시 풀이\nclass Day148Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: API 상태 점검 API 서비스\", \"result\": ordered}\n\nprint(Day148Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-149",
+    "language": "python",
+    "day": 149,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: API 상태 점검 분석 리포트",
+    "summary": "Python의 프로젝트: API 상태 점검 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: API 상태 점검 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: API 상태 점검 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: API 상태 점검 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: API 상태 점검 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: API 상태 점검 분석 리포트에서 배운 개념을 사용해 Day 149 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 149: 프로젝트: API 상태 점검 분석 리포트\nclass Day149Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day149Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 149: 프로젝트: API 상태 점검 분석 리포트 예시 풀이\nclass Day149Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: API 상태 점검 분석 리포트\", \"result\": ordered}\n\nprint(Day149Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-150",
+    "language": "python",
+    "day": 150,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: API 상태 점검 운영 콘솔",
+    "summary": "Python의 프로젝트: API 상태 점검 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: API 상태 점검 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: API 상태 점검 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: API 상태 점검 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: API 상태 점검 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: API 상태 점검 운영 콘솔에서 배운 개념을 사용해 Day 150 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 150: 프로젝트: API 상태 점검 운영 콘솔\nclass Day150Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day150Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 150: 프로젝트: API 상태 점검 운영 콘솔 예시 풀이\nclass Day150Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: API 상태 점검 운영 콘솔\", \"result\": ordered}\n\nprint(Day150Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-151",
+    "language": "python",
+    "day": 151,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 대시보드",
+    "summary": "Python의 프로젝트: 문서 검색 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 대시보드에서 배운 개념을 사용해 Day 151 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 151: 프로젝트: 문서 검색 대시보드\nclass Day151Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day151Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 151: 프로젝트: 문서 검색 대시보드 예시 풀이\nclass Day151Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 문서 검색 대시보드\", \"result\": ordered}\n\nprint(Day151Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-152",
+    "language": "python",
+    "day": 152,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 자동화 도구",
+    "summary": "Python의 프로젝트: 문서 검색 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 자동화 도구에서 배운 개념을 사용해 Day 152 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 152: 프로젝트: 문서 검색 자동화 도구\nclass Day152Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day152Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 152: 프로젝트: 문서 검색 자동화 도구 예시 풀이\nclass Day152Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 문서 검색 자동화 도구\", \"result\": ordered}\n\nprint(Day152Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-153",
+    "language": "python",
+    "day": 153,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 API 서비스",
+    "summary": "Python의 프로젝트: 문서 검색 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 API 서비스에서 배운 개념을 사용해 Day 153 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 153: 프로젝트: 문서 검색 API 서비스\nclass Day153Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day153Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 153: 프로젝트: 문서 검색 API 서비스 예시 풀이\nclass Day153Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 문서 검색 API 서비스\", \"result\": ordered}\n\nprint(Day153Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-154",
+    "language": "python",
+    "day": 154,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 분석 리포트",
+    "summary": "Python의 프로젝트: 문서 검색 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 분석 리포트에서 배운 개념을 사용해 Day 154 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 154: 프로젝트: 문서 검색 분석 리포트\nclass Day154Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day154Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 154: 프로젝트: 문서 검색 분석 리포트 예시 풀이\nclass Day154Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 문서 검색 분석 리포트\", \"result\": ordered}\n\nprint(Day154Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-155",
+    "language": "python",
+    "day": 155,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 문서 검색 운영 콘솔",
+    "summary": "Python의 프로젝트: 문서 검색 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 문서 검색 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 문서 검색 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 문서 검색 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 문서 검색 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 문서 검색 운영 콘솔에서 배운 개념을 사용해 Day 155 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 155: 프로젝트: 문서 검색 운영 콘솔\nclass Day155Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day155Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 155: 프로젝트: 문서 검색 운영 콘솔 예시 풀이\nclass Day155Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 문서 검색 운영 콘솔\", \"result\": ordered}\n\nprint(Day155Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-156",
+    "language": "python",
+    "day": 156,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 배치 작업 대시보드",
+    "summary": "Python의 프로젝트: 배치 작업 대시보드 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 배치 작업 대시보드은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 배치 작업 대시보드의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 배치 작업 대시보드의 핵심 개념 설명하기",
+      "프로젝트: 배치 작업 대시보드을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 배치 작업 대시보드에서 배운 개념을 사용해 Day 156 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 156: 프로젝트: 배치 작업 대시보드\nclass Day156Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day156Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 156: 프로젝트: 배치 작업 대시보드 예시 풀이\nclass Day156Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 배치 작업 대시보드\", \"result\": ordered}\n\nprint(Day156Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-157",
+    "language": "python",
+    "day": 157,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 배치 작업 자동화 도구",
+    "summary": "Python의 프로젝트: 배치 작업 자동화 도구 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 배치 작업 자동화 도구은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 배치 작업 자동화 도구의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 배치 작업 자동화 도구의 핵심 개념 설명하기",
+      "프로젝트: 배치 작업 자동화 도구을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 배치 작업 자동화 도구에서 배운 개념을 사용해 Day 157 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 157: 프로젝트: 배치 작업 자동화 도구\nclass Day157Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day157Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 157: 프로젝트: 배치 작업 자동화 도구 예시 풀이\nclass Day157Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 배치 작업 자동화 도구\", \"result\": ordered}\n\nprint(Day157Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-158",
+    "language": "python",
+    "day": 158,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 배치 작업 API 서비스",
+    "summary": "Python의 프로젝트: 배치 작업 API 서비스 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 배치 작업 API 서비스은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 배치 작업 API 서비스의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 배치 작업 API 서비스의 핵심 개념 설명하기",
+      "프로젝트: 배치 작업 API 서비스을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 배치 작업 API 서비스에서 배운 개념을 사용해 Day 158 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 158: 프로젝트: 배치 작업 API 서비스\nclass Day158Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day158Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 158: 프로젝트: 배치 작업 API 서비스 예시 풀이\nclass Day158Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 배치 작업 API 서비스\", \"result\": ordered}\n\nprint(Day158Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-159",
+    "language": "python",
+    "day": 159,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 배치 작업 분석 리포트",
+    "summary": "Python의 프로젝트: 배치 작업 분석 리포트 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 배치 작업 분석 리포트은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 배치 작업 분석 리포트의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 배치 작업 분석 리포트의 핵심 개념 설명하기",
+      "프로젝트: 배치 작업 분석 리포트을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 배치 작업 분석 리포트에서 배운 개념을 사용해 Day 159 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 159: 프로젝트: 배치 작업 분석 리포트\nclass Day159Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day159Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 159: 프로젝트: 배치 작업 분석 리포트 예시 풀이\nclass Day159Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=False)\n        return {\"topic\": \"프로젝트: 배치 작업 분석 리포트\", \"result\": ordered}\n\nprint(Day159Practice().solve([4, 1, 2, 4, 3]))"
+    },
+    "estimatedMinutes": 60,
+    "published": true
+  },
+  {
+    "id": "python-day-160",
+    "language": "python",
+    "day": 160,
+    "stage": 6,
+    "stageName": "프로젝트",
+    "level": "project",
+    "title": "프로젝트: 배치 작업 운영 콘솔",
+    "summary": "Python의 프로젝트: 배치 작업 운영 콘솔 개념을 이해하고 단계별 예제로 익힙니다.",
+    "detailedExplanation": "프로젝트: 배치 작업 운영 콘솔은(는) Python 실전 프로젝트입니다. 단순히 문법을 따라 쓰는 데서 끝내지 않고 요구사항을 작은 기능으로 나누고 구현, 오류 처리, 테스트, 개선 순서로 완성하는 것이 핵심입니다. 제공된 시작 코드를 실행한 뒤 입력 데이터와 실패 조건을 추가하고, 예시 풀이와 비교하며 자신만의 구현으로 확장해 보세요.",
+    "keyPoints": [
+      "프로젝트: 배치 작업 운영 콘솔의 핵심 문법과 실행 흐름",
+      "입력값과 경계 조건에 따른 결과 차이",
+      "읽기 쉬운 코드로 분리하고 검증하는 방법"
+    ],
+    "objectives": [
+      "프로젝트: 배치 작업 운영 콘솔의 핵심 개념 설명하기",
+      "프로젝트: 배치 작업 운영 콘솔을 활용한 코드 작성하기"
+    ],
+    "practice": {
+      "prompt": "프로젝트: 배치 작업 운영 콘솔에서 배운 개념을 사용해 Day 160 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
+      "starterCode": "# Day 160: 프로젝트: 배치 작업 운영 콘솔\nclass Day160Practice:\n    def solve(self, values):\n        # TODO: 심화 로직을 구현하세요.\n        pass\n\nprint(Day160Practice().solve([1, 2, 3, 4]))",
+      "solutionCode": "# Day 160: 프로젝트: 배치 작업 운영 콘솔 예시 풀이\nclass Day160Practice:\n    def solve(self, values):\n        ordered = sorted(set(values), reverse=True)\n        return {\"topic\": \"프로젝트: 배치 작업 운영 콘솔\", \"result\": ordered}\n\nprint(Day160Practice().solve([4, 1, 2, 4, 3]))"
     },
     "estimatedMinutes": 60,
     "published": true
