@@ -25,3 +25,11 @@ export function getWorkerName(language: LanguageSlug) {
   }
   return worker;
 }
+
+export function getLessonFileName(lessonId: string, extension: string) {
+  const shortId = Array.from(lessonId).slice(0, 18).join("");
+  const shortExtension = Array.from(extension.replace(/^\./, ""))
+    .slice(0, 10)
+    .join("");
+  return `${shortId}.${shortExtension}`;
+}

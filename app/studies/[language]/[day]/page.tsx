@@ -70,9 +70,9 @@ export default async function LessonPage({ params }: PageProps) {
   const next = curriculum.find((item) => item.day === day + 1);
 
   return (
-    <main className="bg-slate-950 text-white">
+    <main className="max-w-full overflow-x-hidden bg-slate-950 text-white">
       <RecordLessonProgress language={language.slug} day={lesson.day} />
-      <div className="mx-auto max-w-[1500px] px-4 py-6 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full min-w-0 max-w-[1500px] px-4 py-6 sm:px-6 lg:px-8">
         <header className="mb-6 flex flex-wrap items-center justify-between gap-4">
           <div className="flex min-w-0 items-center gap-3 text-sm">
             <Link href="/" className="font-bold text-sky-400">
@@ -93,8 +93,8 @@ export default async function LessonPage({ params }: PageProps) {
           </span>
         </header>
 
-        <div className="grid items-start gap-6 xl:grid-cols-[minmax(300px,0.62fr)_minmax(0,1.38fr)]">
-          <aside className="rounded-2xl border border-slate-800 bg-slate-900 p-6 xl:sticky xl:top-6">
+        <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] items-start gap-6 xl:grid-cols-[minmax(300px,0.62fr)_minmax(0,1.38fr)]">
+          <aside className="min-w-0 max-w-full rounded-2xl border border-slate-800 bg-slate-900 p-6 xl:sticky xl:top-6">
             <p className="text-xs font-bold tracking-[0.18em] text-sky-400 uppercase">
               Day {String(lesson.day).padStart(2, "0")} ·{" "}
               {lesson.estimatedMinutes}분

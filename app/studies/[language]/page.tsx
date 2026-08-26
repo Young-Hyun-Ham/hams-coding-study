@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LastLearnedDay } from "@/components/study-progress";
-import { GatedStudyLink } from "@/components/gated-study-link";
+import { ProtectedStudyLink } from "@/components/protected-study-link";
 import { FloatingStageMenu } from "@/components/floating-stage-menu";
 import { getCurriculum, getLanguage, languages } from "@/lib/study-data";
 import { Lesson } from "@/lib/types";
@@ -121,47 +121,51 @@ export default async function StudyPage({ params, searchParams }: PageProps) {
               </div>
 
               <ol className="grid gap-3 md:grid-cols-2">
-                {stageLessons.map((lesson) => (
-                  <li key={lesson.id}>
-                    <GatedStudyLink
-                      href={`/studies/${language.slug}/${lesson.day}`}
-                      autoOpen={
-                        requestedLesson ===
-                        `/studies/${language.slug}/${lesson.day}`
-                      }
-                      requiresLogin={
-                        lesson.level === "advanced" ||
-                        lesson.level === "project"
-                      }
-                      className="group block rounded-xl border border-slate-800 bg-slate-900/60 p-5 transition hover:-translate-y-0.5 hover:border-sky-500/40 hover:bg-slate-900"
-                    >
-                      <div className="flex gap-4">
-                        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-slate-950 font-mono text-sm font-bold text-sky-400">
-                          {String(lesson.day).padStart(2, "0")}
-                        </span>
-                        <div className="min-w-0 flex-1">
-                          <div className="flex flex-wrap items-center gap-2">
-                            <h3 className="font-bold text-slate-100">
-                              {lesson.title}
-                            </h3>
-                            <span className="rounded bg-slate-800 px-2 py-0.5 text-[10px] text-slate-400">
-                              {levelLabels[lesson.level]}
-                            </span>
-                          </div>
-                          <p className="mt-2 line-clamp-2 text-sm leading-6 text-slate-500">
-                            {lesson.summary}
-                          </p>
-                          <div className="mt-3 flex items-center justify-between gap-4 text-xs text-slate-600">
-                            <span>예상 {lesson.estimatedMinutes}분</span>
-                            <span className="shrink-0 text-right text-slate-500 transition group-hover:translate-x-1 group-hover:text-sky-400">
-                              학습하기 →
-                            </span>
+                {stageLessons.length > 0 ? (
+                  stageLessons.map((lesson) => (
+                    <li key={lesson.id} className="h-full">
+                      <ProtectedStudyLink
+                        href={`/studies/${language.slug}/${lesson.day}`}
+                        autoOpen={
+                          requestedLesson ===
+                          `/studies/${language.slug}/${lesson.day}`
+                        }
+                        requiresLogin={
+                          lesson.level === "advanced" ||
+                          lesson.level === "project"
+                        }
+                        className="group block h-full w-full rounded-xl border border-slate-800 bg-slate-900/60 p-5 transition hover:-translate-y-0.5 hover:border-sky-500/40 hover:bg-slate-900"
+                      >
+                        <div className="flex gap-4">
+                          <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-slate-950 font-mono text-sm font-bold text-sky-400">
+                            {String(lesson.day).padStart(2, "0")}
+                          </span>
+                          <div className="min-w-0 flex-1">
+                            <div className="flex flex-wrap items-center gap-2">
+                              <h3 className="font-bold text-slate-100">
+                                {lesson.title}
+                              </h3>
+                              <span className="rounded bg-slate-800 px-2 py-0.5 text-[10px] text-slate-400">
+                                {levelLabels[lesson.level]}
+                              </span>
+                            </div>
+                            <p className="mt-2 line-clamp-2 text-sm leading-6 text-slate-500">
+                              {lesson.summary}
+                            </p>
+                            <div className="mt-3 flex items-center justify-between gap-4 text-xs text-slate-600">
+                              <span>예상 {lesson.estimatedMinutes}분</span>
+                              <span className="shrink-0 text-right text-slate-500 transition group-hover:translate-x-1 group-hover:text-sky-400">
+                                학습하기 →
+                              </span>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </GatedStudyLink>
-                  </li>
-                ))}
+                      </ProtectedStudyLink>
+                    </li>
+                  ))
+                ) : (
+                  <li className="md:col-span-2">학습 목록이 없습니다.</li>
+                )}
               </ol>
             </section>
           ))}

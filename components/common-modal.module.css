@@ -1,7 +1,7 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 110;
   display: grid;
   place-items: center;
   padding: 20px;
@@ -9,6 +9,7 @@
   backdrop-filter: blur(6px);
   animation: fadeIn 0.16s ease-out;
 }
+
 .modal {
   width: min(100%, 420px);
   padding: 32px;
@@ -20,6 +21,7 @@
   text-align: center;
   animation: riseIn 0.2s ease-out;
 }
+
 .icon {
   display: grid;
   width: 52px;
@@ -33,6 +35,7 @@
   font-size: 14px;
   font-weight: 800;
 }
+
 .eyebrow {
   margin: 20px 0 8px;
   color: #6974e9;
@@ -40,72 +43,84 @@
   font-weight: 800;
   letter-spacing: 0.13em;
 }
-.modal h2 {
+
+.title {
   margin: 0;
   font-size: 23px;
   letter-spacing: -0.025em;
 }
-.modal > p:not(.eyebrow) {
+
+.description {
   margin: 14px 0 20px;
   color: var(--page-muted);
   font-size: 13px;
   line-height: 1.7;
 }
-.modal > strong {
+
+.prompt {
   display: block;
   font-size: 14px;
 }
+
 .actions {
   display: grid;
   grid-template-columns: 1fr 1.55fr;
   gap: 9px;
   margin-top: 25px;
 }
+
 .actions button,
 .actions a {
   display: grid;
   min-height: 46px;
   place-items: center;
   border-radius: 10px;
-  cursor: pointer;
   font: inherit;
   font-size: 13px;
   font-weight: 750;
   text-decoration: none;
 }
+
 .actions button {
   border: 1px solid var(--page-border);
   color: var(--page-text);
   background: var(--surface-soft);
 }
+
 .actions a {
   border: 1px solid #636fec;
   color: #fff;
   background: #636fec;
   box-shadow: 0 8px 20px rgba(99, 111, 236, 0.22);
 }
+
 .actions button:hover {
   filter: brightness(0.96);
 }
+
 .actions a:hover {
   background: #5662df;
 }
+
 .actions button:focus-visible,
 .actions a:focus-visible {
   outline: 3px solid rgba(99, 111, 236, 0.35);
   outline-offset: 2px;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
 }
+
 @keyframes riseIn {
   from {
     opacity: 0;
     transform: translateY(8px) scale(0.98);
   }
 }
+
 @media (max-width: 480px) {
   .modal {
     padding: 27px 20px 22px;
@@ -114,6 +129,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .backdrop,
   .modal {

@@ -63,14 +63,22 @@ export async function GET(request: Request) {
       .collection(usersCollection)
       .doc(context.user.id)
       .get();
-    if (!snapshot.exists || !snapshot.data()?.lastLesson)
-      return Response.json({ lastLesson: null });
-    const lastLesson = snapshot.data()!.lastLesson;
+    if (!snapshot.exists) return Response.json({ lastLessons: [] });
+    const data = snapshot.data()!;
+    const savedByLanguage = data.lastLessons as
+      Record<string, Record<string, unknown>> | undefined;
+    const lastLessons = savedByLanguage
+      ? Object.values(savedByLanguage)
+      : data.lastLesson
+        ? [data.lastLesson]
+        : [];
     return Response.json({
-      lastLesson: {
-        ...lastLesson,
-        updatedAt: serializeDate(lastLesson.updatedAt),
-      },
+      lastLessons: lastLessons
+        .map((lesson) => ({
+          ...lesson,
+          updatedAt: serializeDate(lesson.updatedAt),
+        }))
+        .sort((a, b) => String(b.updatedAt).localeCompare(String(a.updatedAt))),
     });
   } catch (cause) {
     console.error("Failed to read study progress.", cause);
@@ -93,13 +101,15 @@ export async function POST(request: Request) {
       .set(
         {
           userId: context.user.id,
-          lastLesson: {
-            lessonId: resolved.lesson.id,
-            language: resolved.language.slug,
-            languageName: resolved.language.name,
-            day: resolved.lesson.day,
-            title: resolved.lesson.title,
-            updatedAt: FieldValue.serverTimestamp(),
+          lastLessons: {
+            [resolved.language.slug]: {
+              lessonId: resolved.lesson.id,
+              language: resolved.language.slug,
+              languageName: resolved.language.name,
+              day: resolved.lesson.day,
+              title: resolved.lesson.title,
+              updatedAt: FieldValue.serverTimestamp(),
+            },
           },
           updatedAt: FieldValue.serverTimestamp(),
         },
@@ -140,13 +150,15 @@ export async function PUT(request: Request) {
       userRef,
       {
         userId: context.user.id,
-        lastLesson: {
-          lessonId: resolved.lesson.id,
-          language: resolved.language.slug,
-          languageName: resolved.language.name,
-          day: resolved.lesson.day,
-          title: resolved.lesson.title,
-          updatedAt: FieldValue.serverTimestamp(),
+        lastLessons: {
+          [resolved.language.slug]: {
+            lessonId: resolved.lesson.id,
+            language: resolved.language.slug,
+            languageName: resolved.language.name,
+            day: resolved.lesson.day,
+            title: resolved.lesson.title,
+            updatedAt: FieldValue.serverTimestamp(),
+          },
         },
         updatedAt: FieldValue.serverTimestamp(),
       },

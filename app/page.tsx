@@ -41,16 +41,14 @@ export default function Home() {
   return (
     <main className="bg-slate-950 text-white">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-20">
-        <header className="max-w-3xl">
+        <header>
           <p className="text-sm font-bold tracking-[0.2em] text-sky-400 uppercase">
             Hams Coding Study
           </p>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-            기초부터 실전까지,
-            <br />
-            160일 동안 완성하세요.
+          <h1 className="mt-4 whitespace-nowrap text-[clamp(1.15rem,4.6vw,3rem)] font-bold tracking-tight">
+            기초부터 실전까지, 160일 동안 완성하세요.
           </h1>
-          <p className="mt-5 text-lg leading-8 text-slate-400">
+          <p className="mt-4 whitespace-nowrap text-[clamp(.55rem,1.5vw,1.125rem)] leading-8 text-slate-400 sm:mt-5">
             배우고 싶은 언어를 선택하세요. 40일 기본 과정과 심화 60일, 프로젝트
             60일로 구성된 학습 코스를 제공합니다.
           </p>
