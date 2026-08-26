@@ -1,6 +1,6 @@
 {
   "cacheBootResources": true,
-  "config": [ ],
+  "config": [],
   "debugBuild": false,
   "entryAssembly": "BrowserCSharp",
   "linkerEnabled": true,

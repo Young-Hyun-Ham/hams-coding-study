@@ -635,10 +635,7 @@
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
-    "objectives": [
-      "상속의 핵심 개념 설명하기",
-      "상속을 활용한 코드 작성하기"
-    ],
+    "objectives": ["상속의 핵심 개념 설명하기", "상속을 활용한 코드 작성하기"],
     "practice": {
       "prompt": "상속에서 배운 개념을 사용해 Day 24 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
       "starterCode": "// Day 24: 상속\nfun solveDay24(values: List<Int>): Int {\n    // TODO: 상속 개념을 적용하세요.\n    return 0\n}\n\nfun main() = println(solveDay24(listOf(1, 2, 3, 4)))",

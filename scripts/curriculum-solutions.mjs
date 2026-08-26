@@ -59,7 +59,7 @@ export const solutionCatalog = {
     `def fibonacci(n):\n    dp = [0, 1]\n    for index in range(2, n + 1): dp.append(dp[-1] + dp[-2])\n    return dp[n]\nprint(fibonacci(10))`,
     `import asyncio\nasync def fetch(name, delay):\n    await asyncio.sleep(delay)\n    return f"{name} 완료"\nasync def main():\n    print(await asyncio.gather(fetch("A", .1), fetch("B", .1)))\nasyncio.run(main())`,
     `import json\nresponse = '{"studies":[{"id":1,"title":"Python"}]}'\ndata = json.loads(response)\nprint([study["title"] for study in data["studies"]])`,
-    `from collections import Counter\ndef analyze_submissions(results):\n    scores = [item["score"] for item in results]\n    return {"average": sum(scores) / len(scores), "status": Counter(item["status"] for item in results)}\nprint(analyze_submissions([{"score": 90, "status": "pass"}, {"score": 70, "status": "pass"}]))`
+    `from collections import Counter\ndef analyze_submissions(results):\n    scores = [item["score"] for item in results]\n    return {"average": sum(scores) / len(scores), "status": Counter(item["status"] for item in results)}\nprint(analyze_submissions([{"score": 90, "status": "pass"}, {"score": 70, "status": "pass"}]))`,
   ],
   javascript: [
     `console.log("Hello, JavaScript!");`,
@@ -121,7 +121,7 @@ export const solutionCatalog = {
     `import { readFile } from "node:fs/promises";\nconst packageJson = JSON.parse(await readFile("package.json", "utf8"));\nconsole.log(packageJson.name);`,
     `const response = await fetch("/api/studies", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ title: "JavaScript" }) });\nconsole.log(await response.json());`,
     `function validate(input) { if (typeof input.title !== "string" || input.title.length > 100) throw new Error("잘못된 입력"); return { title: input.title.trim() }; }\nconsole.log(validate({ title: " Study " }));`,
-    `class StudyService { constructor(repository) { this.repository = repository; } async complete(id) { const study = await this.repository.find(id); return this.repository.save({ ...study, completed: true }); } }\nconsole.log("UI, service, repository 계층으로 분리");`
+    `class StudyService { constructor(repository) { this.repository = repository; } async complete(id) { const study = await this.repository.find(id); return this.repository.save({ ...study, completed: true }); } }\nconsole.log("UI, service, repository 계층으로 분리");`,
   ],
   react: [
     `function Welcome() { return <h1>Hello, React!</h1>; }\nexport default Welcome;`,
@@ -181,9 +181,9 @@ export const solutionCatalog = {
     `import { Profiler, type ProfilerOnRenderCallback } from "react";\nconst report: ProfilerOnRenderCallback = (id, phase, duration) => console.log({ id, phase, duration });\nfunction StudyList() { return <ul>{["React", "Next.js"].map((item) => <li key={item}>{item}</li>)}</ul>; }\nexport default function App() { return <Profiler id="StudyList" onRender={report}><StudyList /></Profiler>; }`,
     `import { useEffect, useState } from "react";\nconst getStudies = async () => ["React", "Next.js App Router"];\nexport default function Page() { const [studies, setStudies] = useState<string[]>([]); useEffect(() => { void getStudies().then(setStudies); }, []); return <ul>{studies.map((study) => <li key={study}>{study}</li>)}</ul>; }`,
     `import { useState } from "react";\nfunction Counter() { const [count, setCount] = useState(0); return <button onClick={() => setCount((value) => value + 1)}>{count}</button>; }\nexport default function Page() { const lesson = { title: "서버와 클라이언트 컴포넌트" }; return <><h1>{lesson.title}</h1><Counter /></>; }`,
-    `import { useState } from "react";\nasync function createStudy(formData: FormData) { await Promise.resolve(); return { title: String(formData.get("title")) }; }\nexport default function App() { const [message, setMessage] = useState(""); return <form onSubmit={async (event) => { event.preventDefault(); const study = await createStudy(new FormData(event.currentTarget)); setMessage(\`${'${'}study.title} 저장 완료\`); }}><input name="title" required /><button>저장</button><p>{message}</p></form>; }`,
+    `import { useState } from "react";\nasync function createStudy(formData: FormData) { await Promise.resolve(); return { title: String(formData.get("title")) }; }\nexport default function App() { const [message, setMessage] = useState(""); return <form onSubmit={async (event) => { event.preventDefault(); const study = await createStudy(new FormData(event.currentTarget)); setMessage(\`${"${"}study.title} 저장 완료\`); }}><input name="title" required /><button>저장</button><p>{message}</p></form>; }`,
     `import { useState } from "react";\ntype Metric = { name: string; value: number };\nfunction reportWebVitals(metric: Metric) { console.log("metric", metric); }\nexport default function App() { const [deployed, setDeployed] = useState(false); return <main><h1>배포와 모니터링</h1><button onClick={() => { reportWebVitals({ name: "interaction", value: performance.now() }); setDeployed(true); }}>배포 확인</button><p>{deployed ? "모니터링 시작" : "대기 중"}</p></main>; }`,
-    `import { Suspense, useState } from "react";\nfunction AppHeader() { return <header><h1>HAMS Study</h1></header>; }\nfunction CourseDashboard() { return <section><h2>60일 커리큘럼</h2><progress value={42} max={60} /></section>; }\nfunction StudyProgress() { const [done, setDone] = useState(false); return <button onClick={() => setDone(true)}>{done ? "오늘 학습 완료" : "학습 완료하기"}</button>; }\nexport default function StudyPlatform() { return <><AppHeader /><main><CourseDashboard /><Suspense fallback={<p>로딩</p>}><StudyProgress /></Suspense></main></>; }`
+    `import { Suspense, useState } from "react";\nfunction AppHeader() { return <header><h1>HAMS Study</h1></header>; }\nfunction CourseDashboard() { return <section><h2>60일 커리큘럼</h2><progress value={42} max={60} /></section>; }\nfunction StudyProgress() { const [done, setDone] = useState(false); return <button onClick={() => setDone(true)}>{done ? "오늘 학습 완료" : "학습 완료하기"}</button>; }\nexport default function StudyPlatform() { return <><AppHeader /><main><CourseDashboard /><Suspense fallback={<p>로딩</p>}><StudyProgress /></Suspense></main></>; }`,
   ],
   java: [
     `public class Main { public static void main(String[] args) { System.out.println("Hello, Java!"); } }`,
@@ -245,25 +245,25 @@ export const solutionCatalog = {
     `import java.util.*; public class Main { static int binarySearch(int[] values, int target) { int left = 0, right = values.length - 1; while (left <= right) { int mid = (left + right) >>> 1; if (values[mid] == target) return mid; if (values[mid] < target) left = mid + 1; else right = mid - 1; } return -1; } public static void main(String[] args) { int[] values = {4, 1, 3, 2}; Arrays.sort(values); System.out.println(binarySearch(values, 3)); } }`,
     `interface PricingStrategy { int price(int amount); } class DiscountPricing implements PricingStrategy { public int price(int amount) { return amount * 9 / 10; } } public class Main { public static void main(String[] args) { PricingStrategy strategy = new DiscountPricing(); System.out.println(strategy.price(10000)); } }`,
     `import java.net.URI; import java.net.http.*; public class Main { public static void main(String[] args) throws Exception { HttpRequest request = HttpRequest.newBuilder(URI.create("https://example.com/api/studies")).GET().build(); System.out.println(request.method() + " " + request.uri()); } }`,
-    `import java.util.*; record Lesson(int day, String title) {} class StudyService { private final List<Lesson> lessons = new ArrayList<>(); void add(Lesson lesson) { lessons.add(lesson); } Optional<Lesson> find(int day) { return lessons.stream().filter(item -> item.day() == day).findFirst(); } } public class Main { public static void main(String[] args) { StudyService service = new StudyService(); service.add(new Lesson(60, "Final")); System.out.println(service.find(60)); } }`
+    `import java.util.*; record Lesson(int day, String title) {} class StudyService { private final List<Lesson> lessons = new ArrayList<>(); void add(Lesson lesson) { lessons.add(lesson); } Optional<Lesson> find(int day) { return lessons.stream().filter(item -> item.day() == day).findFirst(); } } public class Main { public static void main(String[] args) { StudyService service = new StudyService(); service.add(new Lesson(60, "Final")); System.out.println(service.find(60)); } }`,
   ],
   kotlin: [
     `fun main() { println("Hello, Kotlin!") }`,
     `fun main() { val course = "Kotlin"; var day = 1; day += 1; println("$course Day $day") }`,
     `fun main() { val count: Int = 10; val rate: Double = 0.5; val active: Boolean = true; println(listOf(count, rate, active)) }`,
-    `fun main() { val name = "Mina"; val day = 4; println("${'$'}name님의 ${'$'}day일차 학습") }`,
+    `fun main() { val name = "Mina"; val day = 4; println("${"$"}name님의 ${"$"}day일차 학습") }`,
     `fun main() { val nickname: String? = null; val displayName = nickname?.uppercase() ?: "익명"; println(displayName) }`,
     `fun main() { val score = 85; val grade = if (score >= 90) "A" else if (score >= 80) "B" else "C"; println(grade) }`,
     `fun main() { var total = 0; for (number in 1..10) total += number; println(total) }`,
     `fun main() { val command = "start"; val message = when (command) { "start" -> "시작"; "stop" -> "중지"; else -> "알 수 없음" }; println(message) }`,
-    `fun greet(name: String): String = "안녕하세요, ${'$'}name"\nfun main() = println(greet("HAMS"))`,
+    `fun greet(name: String): String = "안녕하세요, ${"$"}name"\nfun main() = println(greet("HAMS"))`,
     `fun main() { val numbers = (1..10).toList(); val result = numbers.filter { it % 2 == 0 }.sum(); println(result) }`,
     `fun main() { val immutable = listOf(1, 2); val mutable = mutableListOf(1, 2); mutable += 3; println(immutable to mutable) }`,
     `fun main() { val tags = setOf("kotlin", "study", "kotlin"); val scores = mapOf("Mina" to 90, "Jin" to 80); println(tags); println(scores["Mina"]) }`,
     `fun main() { val words = listOf("a", "bb", "ccc"); println(words.groupBy { it.length }.mapValues { it.value.size }) }`,
     `fun main() { val result = (1..5).filter { it % 2 == 1 }.map { it * it }; println(result) }`,
-    `data class Student(val name: String, val score: Int)\nfun main() { val student = Student("Mina", 90); val (name, score) = student; println("${'$'}name: ${'$'}score") }`,
-    `fun connect(host: String = "localhost", port: Int = 8080) = "http://${'$'}host:${'$'}port"\nfun main() = println(connect(port = 3000))`,
+    `data class Student(val name: String, val score: Int)\nfun main() { val student = Student("Mina", 90); val (name, score) = student; println("${"$"}name: ${"$"}score") }`,
+    `fun connect(host: String = "localhost", port: Int = 8080) = "http://${"$"}host:${"$"}port"\nfun main() = println(connect(port = 3000))`,
     `fun String.slug(): String = lowercase().trim().replace(" ", "-")\nfun main() = println("Kotlin Study".slug())`,
     `infix fun Int.pow(exponent: Int): Int = (1..exponent).fold(1) { acc, _ -> acc * this }\nfun main() = println(2 pow 5)`,
     `fun calculate(a: Int, b: Int, operation: (Int, Int) -> Int) = operation(a, b)\nfun main() = println(calculate(2, 3) { x, y -> x + y })`,
@@ -277,20 +277,20 @@ export const solutionCatalog = {
     `sealed interface Result { data class Success(val value: String) : Result; data class Failure(val error: String) : Result }\nfun render(result: Result) = when (result) { is Result.Success -> result.value; is Result.Failure -> result.error }\nfun main() = println(render(Result.Success("완료")))`,
     `enum class Level(val label: String) { BEGINNER("입문"), ADVANCED("심화") }\nfun main() = println(Level.BEGINNER.label)`,
     `class Box<T>(private val value: T) { fun get(): T = value }\nfun main() = println(Box("Kotlin").get())`,
-    `interface Repository<T> { fun save(value: T) }\ndata class Study(val title: String)\nclass MemoryRepository : Repository<Study> { override fun save(value: Study) = println("saved: ${'$'}{value.title}") }\nfun main() = MemoryRepository().save(Study("Kotlin"))`,
+    `interface Repository<T> { fun save(value: T) }\ndata class Study(val title: String)\nclass MemoryRepository : Repository<Study> { override fun save(value: Study) = println("saved: ${"$"}{value.title}") }\nfun main() = MemoryRepository().save(Study("Kotlin"))`,
     `fun main() { val name: String? = " Mina "; val result = name?.let { it.trim().uppercase() }; println(result) }`,
     `data class Config(var host: String = "", var port: Int = 0)\nfun main() { val config = Config().apply { host = "localhost"; port = 8080 }; println(config) }`,
-    `data class User(var name: String, var active: Boolean)\nfun main() { val user = User("Mina", false).also { println("before: ${'$'}it") }.apply { active = true }; println(user) }`,
-    `import kotlin.properties.Delegates\nclass Profile { var name: String by Delegates.observable("guest") { _, old, new -> println("${'$'}old -> ${'$'}new") } }\nfun main() { Profile().name = "Mina" }`,
+    `data class User(var name: String, var active: Boolean)\nfun main() { val user = User("Mina", false).also { println("before: ${"$"}it") }.apply { active = true }; println(user) }`,
+    `import kotlin.properties.Delegates\nclass Profile { var name: String by Delegates.observable("guest") { _, old, new -> println("${"$"}old -> ${"$"}new") } }\nfun main() { Profile().name = "Mina" }`,
     `class Service { val config by lazy { println("load"); "config" }; lateinit var token: String }\nfun main() { val service = Service(); service.token = "abc"; println(service.config) }`,
     `fun parse(text: String): Int = try { text.toInt() } catch (error: NumberFormatException) { 0 } finally { println("처리 완료") }\nfun main() = println(parse("12a"))`,
     `fun divide(a: Int, b: Int): Result<Int> = runCatching { a / b }\nfun main() { divide(10, 0).onSuccess(::println).onFailure { println(it.message) } }`,
     `import java.nio.file.Files\nimport java.nio.file.Path\nfun main() { val path = Path.of("study.txt"); Files.writeString(path, "Kotlin I/O"); println(Files.readString(path)); Files.delete(path) }`,
-    `data class Study(val title: String, val day: Int)\nfun main() { val study = Study("Kotlin", 39); val json = """{"title":"${'$'}{study.title}","day":${'$'}{study.day}}"""; println(json) }`,
+    `data class Study(val title: String, val day: Int)\nfun main() { val study = Study("Kotlin", 39); val json = """{"title":"${"$"}{study.title}","day":${"$"}{study.day}}"""; println(json) }`,
     `data class Setting(val key: String, val value: String)\nclass Settings { private val values = mutableMapOf<String, String>(); fun put(setting: Setting) { values[setting.key] = setting.value }; fun get(key: String) = values[key] }\nfun main() { val settings = Settings(); settings.put(Setting("theme", "dark")); println(settings.get("theme")) }`,
     `import kotlinx.coroutines.*\nfun main() = runBlocking { launch { delay(100); println("coroutine") }; println("main") }`,
     `import kotlinx.coroutines.*\nsuspend fun loadStudy(): String { delay(100); return "Kotlin" }\nfun main() = runBlocking { println(loadStudy()) }`,
-    `import kotlinx.coroutines.*\nfun main() = runBlocking { coroutineScope { launch { println("child: ${'$'}{coroutineContext.job}") } } }`,
+    `import kotlinx.coroutines.*\nfun main() = runBlocking { coroutineScope { launch { println("child: ${"$"}{coroutineContext.job}") } } }`,
     `import kotlinx.coroutines.*\nfun main() = runBlocking { val result = withContext(Dispatchers.Default) { (1..1_000).sum() }; println(result) }`,
     `import kotlinx.coroutines.*\nfun main() = runBlocking { supervisorScope { val a = async { 2 }; val b = async { 3 }; println(a.await() + b.await()) } }`,
     `import kotlinx.coroutines.flow.*\nfun numbers(): Flow<Int> = flow { for (n in 1..3) emit(n) }\nfun main() = kotlinx.coroutines.runBlocking { numbers().collect(::println) }`,
@@ -302,12 +302,12 @@ export const solutionCatalog = {
     `fun <T> List<T>.secondOrNull(): T? = getOrNull(1)\nfun main() = println(listOf("a", "b").secondOrNull())`,
     `class Html { private val content = StringBuilder(); fun body(block: Html.() -> Unit) { block(); content.append("</body>") }; fun text(value: String) { content.append(value) }; override fun toString() = content.toString() }\nfun html(block: Html.() -> Unit) = Html().apply(block)\nfun main() = println(html { body { text("Study") } })`,
     `import java.util.Optional\nfun main() { val javaValue: Optional<String> = Optional.of("Java"); val kotlinValue: String? = javaValue.orElse(null); println(kotlinValue) }`,
-    `fun main() { val runtime = Runtime.getRuntime(); val used = runtime.totalMemory() - runtime.freeMemory(); println("heap used=${'$'}used") }`,
+    `fun main() { val runtime = Runtime.getRuntime(); val used = runtime.totalMemory() - runtime.freeMemory(); println("heap used=${"$"}used") }`,
     `data class UiState(val loading: Boolean = false, val items: List<String> = emptyList())\nfun reduce(state: UiState, items: List<String>) = state.copy(loading = false, items = items)\nfun main() = println(reduce(UiState(true), listOf("Kotlin")))`,
     `import androidx.compose.material3.*\nimport androidx.compose.runtime.Composable\n@Composable fun StudyCard(title: String) { Card { Text(title) } }`,
-    `import androidx.compose.runtime.*\n@Composable fun Counter() { var count by remember { mutableIntStateOf(0) }; Button(onClick = { count++ }) { Text("${'$'}count") } }`,
+    `import androidx.compose.runtime.*\n@Composable fun Counter() { var count by remember { mutableIntStateOf(0) }; Button(onClick = { count++ }) { Text("${"$"}count") } }`,
     `class StudyRepository(private val api: StudyApi, private val dao: StudyDao) { suspend fun studies(): List<Study> = runCatching { api.fetch().also { dao.saveAll(it) } }.getOrElse { dao.findAll() } }`,
-    `data class Study(val id: Long, val title: String, val completed: Boolean)\nclass StudyViewModel(private val repository: StudyRepository) { val studies = repository.observe(); suspend fun complete(study: Study) = repository.save(study.copy(completed = true)) }`
+    `data class Study(val id: Long, val title: String, val completed: Boolean)\nclass StudyViewModel(private val repository: StudyRepository) { val studies = repository.observe(); suspend fun complete(study: Study) = repository.save(study.copy(completed = true)) }`,
   ],
   "python-langgraph": [
     `# pip install -U langgraph\nfrom langgraph.graph import StateGraph\nprint("LangGraph는 상태 기반 에이전트 오케스트레이션 런타임입니다.")\nprint(StateGraph)`,
@@ -369,8 +369,8 @@ export const solutionCatalog = {
     `from langgraph.prebuilt import ToolNode, tools_condition\nfrom langchain_core.tools import tool\n@tool\ndef add(a:int,b:int)->int: """두 수를 더합니다."""; return a+b\ntool_node=ToolNode([add])\n# builder.add_node("tools", tool_node)\n# builder.add_conditional_edges("model", tools_condition)\nprint(tool_node)`,
     `# 감독자(supervisor)가 전문 에이전트를 서브그래프/도구로 호출하는 구조입니다.\nfrom langgraph.types import Command\ndef supervisor(state):\n    target="researcher" if "조사" in state["request"] else "coder"\n    return Command(update={"assigned_to":target},goto=target)\nprint(supervisor({"request":"API를 조사해줘"}))`,
     `# 순수 노드는 단위 테스트하고, 컴파일 그래프는 고정 입력/상태 전이를 검증합니다.\ndef classify(state): return {"route":"code" if "코드" in state["text"] else "chat"}\nassert classify({"text":"코드 작성"})=={"route":"code"}\n# LANGSMITH_TRACING=true 환경에서는 실행 trace로 노드 지연과 오류를 분석합니다.\nprint("test passed")`,
-    `# 운영형 구조: API -> graph service -> nodes/tools -> checkpointer/store\nproduction_checklist={\n "durability":"PostgresSaver", "memory":"Store + 보존 정책",\n "safety":"interrupt 승인", "observability":"LangSmith trace",\n "reliability":"retry + idempotency", "delivery":"streaming API",\n}\nprint(production_checklist)`
-  ]
+    `# 운영형 구조: API -> graph service -> nodes/tools -> checkpointer/store\nproduction_checklist={\n "durability":"PostgresSaver", "memory":"Store + 보존 정책",\n "safety":"interrupt 승인", "observability":"LangSmith trace",\n "reliability":"retry + idempotency", "delivery":"streaming API",\n}\nprint(production_checklist)`,
+  ],
 };
 
 export const langGraphExplanations = [
@@ -433,15 +433,19 @@ export const langGraphExplanations = [
   "ToolNode는 도구 호출 메시지를 실행하고 결과 메시지를 상태에 추가합니다. tools_condition은 모델 메시지에 도구 호출이 있는지 보고 도구 노드 또는 종료로 라우팅합니다.",
   "멀티 에이전트에서는 감독자가 요청을 전문 에이전트나 서브그래프로 전달합니다. 상태 소유권, 핸드오프 계약, 종료 조건과 에이전트 간 반복 한도를 명확히 합니다.",
   "노드는 순수 함수 단위 테스트, 그래프는 상태 전이 통합 테스트를 수행합니다. LangSmith trace로 노드 지연, 모델·도구 입력, 오류 경로와 평가 결과를 관측합니다.",
-  "운영형 시스템은 Postgres 체크포인트, 장기 Store, 스트리밍 API, 재시도와 멱등성, interrupt 승인, 추적과 평가를 함께 구성합니다. 비밀 관리와 데이터 보존도 배포 설계에 포함합니다."
+  "운영형 시스템은 Postgres 체크포인트, 장기 Store, 스트리밍 API, 재시도와 멱등성, interrupt 승인, 추적과 평가를 함께 구성합니다. 비밀 관리와 데이터 보존도 배포 설계에 포함합니다.",
 ];
 
 if (langGraphExplanations.length !== 60) {
-  throw new Error(`LangGraph 상세 설명은 60개여야 하지만 ${langGraphExplanations.length}개입니다.`);
+  throw new Error(
+    `LangGraph 상세 설명은 60개여야 하지만 ${langGraphExplanations.length}개입니다.`,
+  );
 }
 
 for (const [language, solutions] of Object.entries(solutionCatalog)) {
   if (solutions.length !== 60) {
-    throw new Error(`${language} 예시 풀이는 60개여야 하지만 ${solutions.length}개입니다.`);
+    throw new Error(
+      `${language} 예시 풀이는 60개여야 하지만 ${solutions.length}개입니다.`,
+    );
   }
 }

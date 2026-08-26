@@ -1,5 +1,12 @@
-
-export type LanguageSlug = "python" | "javascript" | "react" | "java" | "kotlin" | "python-langgraph" | "c" | "csharp";
+export type LanguageSlug =
+  | "python"
+  | "javascript"
+  | "react"
+  | "java"
+  | "kotlin"
+  | "python-langgraph"
+  | "c"
+  | "csharp";
 
 export type StudyLanguage = {
   slug: LanguageSlug;
@@ -7,7 +14,15 @@ export type StudyLanguage = {
   shortName: string;
   description: string;
   courseLength: number;
-  accent: "sky" | "amber" | "cyan" | "orange" | "violet" | "emerald" | "rose" | "indigo";
+  accent:
+    | "sky"
+    | "amber"
+    | "cyan"
+    | "orange"
+    | "violet"
+    | "emerald"
+    | "rose"
+    | "indigo";
 };
 
 export type Lesson = {

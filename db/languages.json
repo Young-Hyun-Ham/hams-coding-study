@@ -1,10 +1,66 @@
 [
-  { "slug": "python", "name": "Python", "shortName": "PY", "description": "문법 기초부터 알고리즘과 실전 자동화까지 배우는 과정", "courseLength": 160, "accent": "sky" },
-  { "slug": "javascript", "name": "JavaScript", "shortName": "JS", "description": "웹의 핵심 문법부터 비동기 처리와 애플리케이션 설계까지 배우는 과정", "courseLength": 160, "accent": "amber" },
-  { "slug": "react", "name": "React", "shortName": "RE", "description": "컴포넌트 기초부터 상태 관리와 성능 최적화까지 배우는 과정", "courseLength": 160, "accent": "cyan" },
-  { "slug": "java", "name": "Java", "shortName": "JV", "description": "객체지향 기초부터 컬렉션, 동시성, 실전 설계까지 배우는 과정", "courseLength": 160, "accent": "orange" },
-  { "slug": "c", "name": "C", "shortName": "C", "description": "기초 문법부터 포인터, 메모리, 자료구조와 시스템 프로그래밍까지 배우는 과정", "courseLength": 160, "accent": "rose" },
-  { "slug": "csharp", "name": "C#", "shortName": "C#", "description": ".NET 문법부터 객체지향, LINQ, 비동기 처리와 서비스 설계까지 배우는 과정", "courseLength": 160, "accent": "indigo" },
-  { "slug": "kotlin", "name": "Kotlin", "shortName": "KT", "description": "간결한 문법부터 코루틴과 안드로이드 기반 설계까지 배우는 과정", "courseLength": 160, "accent": "violet" },
-  { "slug": "python-langgraph", "name": "Python LangGraph", "shortName": "LG", "description": "StateGraph 기초부터 지속 실행, 메모리, 인간 개입과 멀티 에이전트 운영까지 배우는 과정", "courseLength": 160, "accent": "emerald" }
+  {
+    "slug": "python",
+    "name": "Python",
+    "shortName": "PY",
+    "description": "문법 기초부터 알고리즘과 실전 자동화까지 배우는 과정",
+    "courseLength": 160,
+    "accent": "sky"
+  },
+  {
+    "slug": "javascript",
+    "name": "JavaScript",
+    "shortName": "JS",
+    "description": "웹의 핵심 문법부터 비동기 처리와 애플리케이션 설계까지 배우는 과정",
+    "courseLength": 160,
+    "accent": "amber"
+  },
+  {
+    "slug": "react",
+    "name": "React",
+    "shortName": "RE",
+    "description": "컴포넌트 기초부터 상태 관리와 성능 최적화까지 배우는 과정",
+    "courseLength": 160,
+    "accent": "cyan"
+  },
+  {
+    "slug": "java",
+    "name": "Java",
+    "shortName": "JV",
+    "description": "객체지향 기초부터 컬렉션, 동시성, 실전 설계까지 배우는 과정",
+    "courseLength": 160,
+    "accent": "orange"
+  },
+  {
+    "slug": "c",
+    "name": "C",
+    "shortName": "C",
+    "description": "기초 문법부터 포인터, 메모리, 자료구조와 시스템 프로그래밍까지 배우는 과정",
+    "courseLength": 160,
+    "accent": "rose"
+  },
+  {
+    "slug": "csharp",
+    "name": "C#",
+    "shortName": "C#",
+    "description": ".NET 문법부터 객체지향, LINQ, 비동기 처리와 서비스 설계까지 배우는 과정",
+    "courseLength": 160,
+    "accent": "indigo"
+  },
+  {
+    "slug": "kotlin",
+    "name": "Kotlin",
+    "shortName": "KT",
+    "description": "간결한 문법부터 코루틴과 안드로이드 기반 설계까지 배우는 과정",
+    "courseLength": 160,
+    "accent": "violet"
+  },
+  {
+    "slug": "python-langgraph",
+    "name": "Python LangGraph",
+    "shortName": "LG",
+    "description": "StateGraph 기초부터 지속 실행, 메모리, 인간 개입과 멀티 에이전트 운영까지 배우는 과정",
+    "courseLength": 160,
+    "accent": "emerald"
+  }
 ]

@@ -1,0 +1,237 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  flex: none;
+  height: 68px;
+  border-bottom: 1px solid var(--header-border);
+  background: color-mix(in srgb, var(--header-bg) 88%, transparent);
+  color: var(--header-text);
+  backdrop-filter: blur(18px);
+}
+.inner {
+  display: flex;
+  width: min(100%, 1280px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  display: inline-flex;
+  min-width: max-content;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 15px;
+}
+.brand > span {
+  display: grid;
+  width: 46px;
+  height: 32px;
+  place-items: center;
+  border-radius: 9px;
+  color: #fff;
+  background: linear-gradient(145deg, #8189ff, #5964e9);
+  box-shadow: 0 7px 17px rgba(87, 99, 229, 0.22);
+  font-weight: 800;
+}
+.brand b {
+  color: #747ef4;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.themePicker {
+  display: flex;
+  padding: 3px;
+  border: 1px solid var(--header-border);
+  border-radius: 10px;
+  background: var(--control-bg);
+}
+.themePicker button {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  gap: 5px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 7px;
+  color: var(--muted-text);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+}
+.themePicker button:hover {
+  color: var(--header-text);
+}
+.themePicker .activeTheme {
+  color: var(--header-text);
+  background: var(--active-bg);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+}
+.login,
+.logout {
+  text-decoration: none;
+  font-weight: 700;
+}
+.login {
+  display: grid;
+  min-width: 76px;
+  height: 40px;
+  place-items: center;
+  border-radius: 10px;
+  color: #fff;
+  background: #636fec;
+  font-size: 13px;
+  box-shadow: 0 7px 18px rgba(99, 111, 236, 0.22);
+}
+.login:hover {
+  background: #5662df;
+}
+.userMenu {
+  position: relative;
+}
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 4px 7px 4px 4px;
+  border: 1px solid var(--header-border);
+  border-radius: 12px;
+  color: inherit;
+  background: var(--control-bg);
+  cursor: pointer;
+  text-align: left;
+}
+.avatar {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  place-items: center;
+  border-radius: 9px;
+  color: #fff;
+  background: linear-gradient(145deg, #7b84f8, #5964df);
+  font-size: 13px;
+  font-weight: 800;
+}
+.userSummary {
+  display: flex;
+  max-width: 155px;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.userSummary strong {
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.userSummary small {
+  overflow: hidden;
+  margin-top: 3px;
+  color: var(--muted-text);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chevron {
+  color: var(--muted-text);
+  font-size: 15px;
+}
+.dropdown {
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid var(--header-border);
+  border-radius: 14px;
+  background: var(--header-bg);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 6px;
+}
+.profile div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.profile strong,
+.profile span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.profile strong {
+  font-size: 13px;
+}
+.profile div span {
+  margin-top: 3px;
+  color: var(--muted-text);
+  font-size: 11px;
+}
+.logout {
+  display: block;
+  margin-top: 8px;
+  padding: 10px;
+  border-top: 1px solid var(--header-border);
+  color: #e65d69;
+  font-size: 12px;
+  text-align: center;
+}
+.userSkeleton {
+  width: 145px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--control-bg);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 760px) {
+  .header {
+    height: 60px;
+  }
+  .inner {
+    padding: 0 14px;
+  }
+  .brand strong,
+  .themeLabel,
+  .userSummary {
+    display: none;
+  }
+  .themePicker button {
+    width: 30px;
+    justify-content: center;
+    padding: 0;
+  }
+  .userSkeleton {
+    width: 44px;
+  }
+}
+@media (max-width: 390px) {
+  .actions {
+    gap: 7px;
+  }
+  .themePicker button {
+    width: 27px;
+  }
+  .login {
+    min-width: 60px;
+  }
+}

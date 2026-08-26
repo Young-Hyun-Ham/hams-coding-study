@@ -33,10 +33,21 @@ self.onmessage = async (event) => {
       `"use strict"; return (async () => {\n${String(code)}\n})();`,
     );
     await execute(consoleProxy, prompt);
-    self.postMessage({ stdout: stdout.join("\n"), stderr: stderr.join("\n"), exitCode: 0 });
+    self.postMessage({
+      stdout: stdout.join("\n"),
+      stderr: stderr.join("\n"),
+      exitCode: 0,
+    });
   } catch (error) {
-    const message = error instanceof Error ? `${error.name}: ${error.message}` : String(error);
+    const message =
+      error instanceof Error
+        ? `${error.name}: ${error.message}`
+        : String(error);
     stderr.push(message);
-    self.postMessage({ stdout: stdout.join("\n"), stderr: stderr.join("\n"), exitCode: 1 });
+    self.postMessage({
+      stdout: stdout.join("\n"),
+      stderr: stderr.join("\n"),
+      exitCode: 1,
+    });
   }
 };

@@ -230,10 +230,7 @@
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
-    "objectives": [
-      "배열의 핵심 개념 설명하기",
-      "배열을 활용한 코드 작성하기"
-    ],
+    "objectives": ["배열의 핵심 개념 설명하기", "배열을 활용한 코드 작성하기"],
     "practice": {
       "prompt": "배열에서 배운 개념을 사용해 Day 9 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
       "starterCode": "// Day 9: 배열\nimport java.util.List;\n\npublic class Main {\n    static int solveDay9(List<Integer> values) {\n        // TODO: 배열 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay9(List.of(1, 2, 3, 4)));\n    }\n}",
@@ -689,10 +686,7 @@
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
-    "objectives": [
-      "상속의 핵심 개념 설명하기",
-      "상속을 활용한 코드 작성하기"
-    ],
+    "objectives": ["상속의 핵심 개념 설명하기", "상속을 활용한 코드 작성하기"],
     "practice": {
       "prompt": "상속에서 배운 개념을 사용해 Day 26 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
       "starterCode": "// Day 26: 상속\nimport java.util.List;\n\npublic class Main {\n    static int solveDay26(List<Integer> values) {\n        // TODO: 상속 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay26(List.of(1, 2, 3, 4)));\n    }\n}",
@@ -1040,10 +1034,7 @@
       "입력값과 경계 조건에 따른 결과 차이",
       "읽기 쉬운 코드로 분리하고 검증하는 방법"
     ],
-    "objectives": [
-      "Map의 핵심 개념 설명하기",
-      "Map을 활용한 코드 작성하기"
-    ],
+    "objectives": ["Map의 핵심 개념 설명하기", "Map을 활용한 코드 작성하기"],
     "practice": {
       "prompt": "Map에서 배운 개념을 사용해 Day 39 예제를 완성하고, 입력값을 바꿔 결과를 확인하세요.",
       "starterCode": "// Day 39: Map\nimport java.util.List;\n\npublic class Main {\n    static int solveDay39(List<Integer> values) {\n        // TODO: Map 개념을 적용하세요.\n        return 0;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(solveDay39(List.of(1, 2, 3, 4)));\n    }\n}",

@@ -44,7 +44,13 @@ export function runPython(
       cleanup();
 
       if (!event.data.ok) {
-        reject(new Error(event.data.error ?? event.data.stderr ?? "Python 실행에 실패했습니다."));
+        reject(
+          new Error(
+            event.data.error ??
+              event.data.stderr ??
+              "Python 실행에 실패했습니다.",
+          ),
+        );
         return;
       }
 
@@ -58,13 +64,21 @@ export function runPython(
     const handleWorkerError = () => {
       cleanup();
       disposeWorker();
-      reject(new Error("Pyodide 런타임을 불러오지 못했습니다. 네트워크 연결을 확인해 주세요."));
+      reject(
+        new Error(
+          "Pyodide 런타임을 불러오지 못했습니다. 네트워크 연결을 확인해 주세요.",
+        ),
+      );
     };
 
     const timeout = window.setTimeout(() => {
       cleanup();
       disposeWorker();
-      reject(new Error("실행 제한 시간(30초)을 초과하여 Python 실행을 중단했습니다."));
+      reject(
+        new Error(
+          "실행 제한 시간(30초)을 초과하여 Python 실행을 중단했습니다.",
+        ),
+      );
     }, timeoutMs);
 
     activeWorker.addEventListener("message", handleMessage);

@@ -62,19 +62,64 @@ const reactDefinitions = [
 ];
 
 const stageRoles = {
-  python: ["파이썬 코드의 실행과 기본값 표현", "컬렉션에 데이터를 저장하고 변환하는 방법", "함수로 로직을 분리하고 재사용하는 방법", "표준 기능과 외부 자원을 안전하게 다루는 방법", "객체 모델로 책임과 데이터를 구성하는 방법", "자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법"],
-  javascript: ["자바스크립트 값과 실행 흐름을 표현하는 방법", "배열과 객체 데이터를 불변하게 변환하는 방법", "함수·클로저·모듈로 동작을 구조화하는 방법", "브라우저 및 비동기 작업을 제어하는 방법", "언어의 고급 실행 원리와 품질을 다루는 방법", "자료구조·설계·서버 연동을 통합하는 방법"],
-  java: ["JVM에서 동작하는 정적 타입 코드의 기본 문법", "메서드와 기본 데이터 구조로 로직을 구성하는 방법", "클래스·상속·다형성으로 객체의 책임을 설계하는 방법", "컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법", "입출력·테스트·동시성을 운영 수준으로 다루는 방법", "알고리즘과 설계 원칙을 서비스에 통합하는 방법"],
-  kotlin: ["간결한 문법과 null 안전성으로 값을 표현하는 방법", "컬렉션과 고차 함수로 데이터를 변환하는 방법", "클래스와 함수 확장으로 도메인을 모델링하는 방법", "스코프 함수와 안전한 자원 처리를 적용하는 방법", "코루틴과 Flow로 비동기 흐름을 구조화하는 방법", "테스트·DSL·Android 구성 요소를 통합하는 방법"],
+  python: [
+    "파이썬 코드의 실행과 기본값 표현",
+    "컬렉션에 데이터를 저장하고 변환하는 방법",
+    "함수로 로직을 분리하고 재사용하는 방법",
+    "표준 기능과 외부 자원을 안전하게 다루는 방법",
+    "객체 모델로 책임과 데이터를 구성하는 방법",
+    "자료구조와 알고리즘으로 문제를 효율적으로 해결하는 방법",
+  ],
+  javascript: [
+    "자바스크립트 값과 실행 흐름을 표현하는 방법",
+    "배열과 객체 데이터를 불변하게 변환하는 방법",
+    "함수·클로저·모듈로 동작을 구조화하는 방법",
+    "브라우저 및 비동기 작업을 제어하는 방법",
+    "언어의 고급 실행 원리와 품질을 다루는 방법",
+    "자료구조·설계·서버 연동을 통합하는 방법",
+  ],
+  java: [
+    "JVM에서 동작하는 정적 타입 코드의 기본 문법",
+    "메서드와 기본 데이터 구조로 로직을 구성하는 방법",
+    "클래스·상속·다형성으로 객체의 책임을 설계하는 방법",
+    "컬렉션과 함수형 API로 데이터를 안전하게 처리하는 방법",
+    "입출력·테스트·동시성을 운영 수준으로 다루는 방법",
+    "알고리즘과 설계 원칙을 서비스에 통합하는 방법",
+  ],
+  kotlin: [
+    "간결한 문법과 null 안전성으로 값을 표현하는 방법",
+    "컬렉션과 고차 함수로 데이터를 변환하는 방법",
+    "클래스와 함수 확장으로 도메인을 모델링하는 방법",
+    "스코프 함수와 안전한 자원 처리를 적용하는 방법",
+    "코루틴과 Flow로 비동기 흐름을 구조화하는 방법",
+    "테스트·DSL·Android 구성 요소를 통합하는 방법",
+  ],
 };
 
-export function makeDetailedExplanation(language, index, title, stage, solutionCode) {
+export function makeDetailedExplanation(
+  language,
+  index,
+  title,
+  stage,
+  solutionCode,
+) {
   if (language === "react") return reactDefinitions[index];
 
   const role = stageRoles[language]?.[stage - 1];
   if (!role) return null;
-  const firstLine = solutionCode.split("\n").find((line) => line.trim() && !line.trim().startsWith("//") && !line.trim().startsWith("#"))?.trim();
+  const firstLine = solutionCode
+    .split("\n")
+    .find(
+      (line) =>
+        line.trim() &&
+        !line.trim().startsWith("//") &&
+        !line.trim().startsWith("#"),
+    )
+    ?.trim();
   return `${title}은(는) ${role}을 다루는 핵심 개념입니다. 이 주제의 역할은 프로그램이 데이터를 받아 처리하고 다음 단계로 전달하는 규칙을 명확하게 만드는 것입니다. 예시 코드의 \`${firstLine ?? title}\` 부분에서 핵심 문법이 실제 값에 적용되는 과정을 확인할 수 있습니다. 코드를 실행한 뒤 입력값과 경계 조건을 바꾸어 출력 및 상태 변화가 어떻게 달라지는지 비교하세요.`;
 }
 
-if (reactDefinitions.length !== 60) throw new Error(`React 개념 설명은 60개여야 하지만 ${reactDefinitions.length}개입니다.`);
+if (reactDefinitions.length !== 60)
+  throw new Error(
+    `React 개념 설명은 60개여야 하지만 ${reactDefinitions.length}개입니다.`,
+  );

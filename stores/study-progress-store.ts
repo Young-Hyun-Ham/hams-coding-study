@@ -7,13 +7,18 @@ type StudyProgressState = {
   recordLesson: (language: LanguageSlug, day: number) => void;
 };
 
-export const useStudyProgressStore = create<StudyProgressState>()(persist((set) => ({
-  lastLearnedDayByLanguage: {},
-  recordLesson: (language, day) =>
-    set((state) => ({
-      lastLearnedDayByLanguage: {
-        ...state.lastLearnedDayByLanguage,
-        [language]: day,
-      },
-    })),
-}), { name: "hams-study-progress-v1" }));
+export const useStudyProgressStore = create<StudyProgressState>()(
+  persist(
+    (set) => ({
+      lastLearnedDayByLanguage: {},
+      recordLesson: (language, day) =>
+        set((state) => ({
+          lastLearnedDayByLanguage: {
+            ...state.lastLearnedDayByLanguage,
+            [language]: day,
+          },
+        })),
+    }),
+    { name: "hams-study-progress-v1" },
+  ),
+);

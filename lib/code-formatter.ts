@@ -7,7 +7,9 @@ function formatPython(code: string) {
   return code
     .split(/\r?\n/)
     .flatMap((line) => {
-      const match = line.match(/^(\s*)((?:async\s+)?def|class|if|elif|else|for|while|try|except|finally|with)\b([^:]*):\s+(.+)$/);
+      const match = line.match(
+        /^(\s*)((?:async\s+)?def|class|if|elif|else|for|while|try|except|finally|with)\b([^:]*):\s+(.+)$/,
+      );
       if (!match) return [line];
       const [, indent, keyword, condition, body] = match;
       return [`${indent}${keyword}${condition}:`, `${indent}    ${body}`];
@@ -105,7 +107,10 @@ function formatBraceLanguage(code: string) {
     }
   }
   flush();
-  return lines.join("\n").replace(/}\n\s*else/g, "} else").trimEnd();
+  return lines
+    .join("\n")
+    .replace(/}\n\s*else/g, "} else")
+    .trimEnd();
 }
 
 export async function formatCode(language: LanguageSlug, code: string) {
@@ -123,9 +128,11 @@ export async function formatCode(language: LanguageSlug, code: string) {
         trailingComma: "all",
       });
     }
-    if (language === "python" || language === "python-langgraph") return formatPython(code);
+    if (language === "python" || language === "python-langgraph")
+      return formatPython(code);
     if (language === "c" || language === "csharp") return code.trimEnd();
-    if (language === "java" || language === "kotlin") return formatBraceLanguage(code);
+    if (language === "java" || language === "kotlin")
+      return formatBraceLanguage(code);
   } catch {
     return code;
   }

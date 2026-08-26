@@ -1,6 +1,6 @@
 "use client";
 
-import type { BeforeMount, OnMount } from "@monaco-editor/react";
+import type { BeforeMount } from "@monaco-editor/react";
 import {
   SandpackConsole,
   SandpackPreview,
@@ -11,6 +11,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { formatCode } from "@/lib/code-formatter";
 import { useLessonWorkspaceStore } from "@/stores/lesson-workspace-store";
+import { CloudLessonControls } from "@/components/cloud-lesson-controls";
 
 const MonacoEditor = dynamic(() => import("@monaco-editor/react"), {
   ssr: false,
@@ -46,11 +47,12 @@ const configureTypeScript: BeforeMount = (monaco) => {
 
 type Props = {
   lessonId: string;
+  day: number;
   starterCode: string;
   solutionCode: string;
 };
 
-function ReactEditor({ lessonId, starterCode, solutionCode }: Props) {
+function ReactEditor({ lessonId, day, starterCode, solutionCode }: Props) {
   const draft = useLessonWorkspaceStore((state) => state.drafts[lessonId]);
   const setCode = useLessonWorkspaceStore((state) => state.setCode);
   const resetDraft = useLessonWorkspaceStore((state) => state.reset);
@@ -60,7 +62,6 @@ function ReactEditor({ lessonId, starterCode, solutionCode }: Props) {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [isLaunching, setIsLaunching] = useState(false);
   const [isFormatting, setIsFormatting] = useState(false);
-  const handleMount: OnMount = (editor) => editor.focus();
 
   useEffect(() => {
     if (!isPreviewOpen) return;
@@ -107,15 +108,40 @@ function ReactEditor({ lessonId, starterCode, solutionCode }: Props) {
     <section className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900">
       <header className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 px-4 py-3">
         <div className="flex items-center gap-3">
-          <span className={`size-2 rounded-full ${error ? "bg-rose-400" : status === "running" ? "bg-emerald-400" : "bg-slate-500"}`} />
-          <span className="font-mono text-sm text-slate-300">{lessonId}.tsx</span>
-          <span className="rounded bg-cyan-400/10 px-2 py-1 text-[10px] font-bold text-cyan-300">SANDPACK</span>
+          <span
+            className={`size-2 rounded-full ${error ? "bg-rose-400" : status === "running" ? "bg-emerald-400" : "bg-slate-500"}`}
+          />
+          <span className="font-mono text-sm text-slate-300">
+            {lessonId}.tsx
+          </span>
+          <span className="rounded bg-cyan-400/10 px-2 py-1 text-[10px] font-bold text-cyan-300">
+            SANDPACK
+          </span>
         </div>
-        <div className="flex gap-2">
-          <button type="button" disabled={isFormatting} onClick={handleLoadSolution} className="rounded-lg border border-amber-400/30 px-3 py-2 text-sm text-amber-300 transition hover:bg-amber-400/10 disabled:cursor-wait disabled:opacity-50">
+        <div className="flex flex-wrap justify-end gap-2">
+          <CloudLessonControls
+            lessonId={lessonId}
+            language="react"
+            day={day}
+            code={code}
+            onLoad={(content) => {
+              setCode(lessonId, content.code);
+              updateFile("/App.tsx", content.code, false);
+            }}
+          />
+          <button
+            type="button"
+            disabled={isFormatting}
+            onClick={handleLoadSolution}
+            className="rounded-lg border border-amber-400/30 px-3 py-2 text-sm text-amber-300 transition hover:bg-amber-400/10 disabled:cursor-wait disabled:opacity-50"
+          >
             {isFormatting ? "코드 정리 중..." : "예시 풀이 불러오기"}
           </button>
-          <button type="button" onClick={handleReset} className="rounded-lg border border-slate-700 px-3 py-2 text-sm text-slate-300 transition hover:bg-slate-800">
+          <button
+            type="button"
+            onClick={handleReset}
+            className="rounded-lg border border-slate-700 px-3 py-2 text-sm text-slate-300 transition hover:bg-slate-800"
+          >
             초기화
           </button>
           <button
@@ -129,7 +155,7 @@ function ReactEditor({ lessonId, starterCode, solutionCode }: Props) {
         </div>
       </header>
 
-          <MonacoEditor
+      <MonacoEditor
         beforeMount={configureTypeScript}
         height="680px"
         language="typescript"
@@ -137,7 +163,6 @@ function ReactEditor({ lessonId, starterCode, solutionCode }: Props) {
         theme="vs-dark"
         value={code}
         onChange={handleChange}
-        onMount={handleMount}
         options={{
           automaticLayout: true,
           fontSize: 15,
@@ -162,13 +187,25 @@ function ReactEditor({ lessonId, starterCode, solutionCode }: Props) {
           <header className="flex items-center justify-between border-b border-slate-700 px-5 py-4">
             <div>
               <h2 className="font-bold text-white">React 실행 결과</h2>
-              <p className="mt-1 text-xs text-slate-400">미리보기와 콘솔에서 빌드 결과를 확인하세요.</p>
+              <p className="mt-1 text-xs text-slate-400">
+                미리보기와 콘솔에서 빌드 결과를 확인하세요.
+              </p>
             </div>
             <div className="flex items-center gap-2">
-              <button type="button" onClick={handleRun} disabled={isLaunching} className="rounded-lg border border-cyan-400/30 px-3 py-2 text-sm text-cyan-300 hover:bg-cyan-400/10 disabled:opacity-50">
+              <button
+                type="button"
+                onClick={handleRun}
+                disabled={isLaunching}
+                className="rounded-lg border border-cyan-400/30 px-3 py-2 text-sm text-cyan-300 hover:bg-cyan-400/10 disabled:opacity-50"
+              >
                 다시 실행
               </button>
-              <button type="button" onClick={() => setIsPreviewOpen(false)} className="grid size-10 place-items-center rounded-lg bg-slate-800 text-xl text-slate-300 hover:bg-slate-700" aria-label="미리보기 닫기">
+              <button
+                type="button"
+                onClick={() => setIsPreviewOpen(false)}
+                className="grid size-10 place-items-center rounded-lg bg-slate-800 text-xl text-slate-300 hover:bg-slate-700"
+                aria-label="미리보기 닫기"
+              >
                 ×
               </button>
             </div>
@@ -185,7 +222,9 @@ function ReactEditor({ lessonId, starterCode, solutionCode }: Props) {
               />
             </div>
             <div className="min-h-0 bg-[#151515]">
-              <div className="border-b border-slate-700 px-4 py-3 text-xs font-bold tracking-wider text-slate-500 uppercase">Console</div>
+              <div className="border-b border-slate-700 px-4 py-3 text-xs font-bold tracking-wider text-slate-500 uppercase">
+                Console
+              </div>
               <SandpackConsole
                 showHeader={false}
                 showSyntaxError

@@ -3,6 +3,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --header-bg: #ffffff;
+  --header-text: #172037;
+  --header-border: #e4e7ef;
+  --control-bg: #f5f6fa;
+  --active-bg: #ffffff;
+  --page-bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-soft: #f1f5f9;
+  --page-border: #e2e8f0;
+  --page-text: #0f172a;
+  --page-muted: #64748b;
+  --login-grid: #dfe3f0;
+  --login-glow: rgba(108, 119, 241, 0.15);
+  --login-card: rgba(255, 255, 255, 0.94);
+  --login-shadow: rgba(42, 52, 98, 0.13);
 }
 
 @theme inline {
@@ -12,10 +27,76 @@
   --font-mono: "Cascadia Code", Consolas, monospace;
 }
 
+html[data-theme-resolved="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --header-bg: #111827;
+  --header-text: #f8fafc;
+  --header-border: #293345;
+  --control-bg: #1b2535;
+  --active-bg: #2a3547;
+  --muted-text: #9aa6b8;
+  --page-bg: #020617;
+  --surface: #0f172a;
+  --surface-soft: #1e293b;
+  --page-border: #1e293b;
+  --page-text: #f8fafc;
+  --page-muted: #94a3b8;
+  --login-grid: #293345;
+  --login-glow: rgba(99, 111, 236, 0.2);
+  --login-card: rgba(15, 23, 42, 0.94);
+  --login-shadow: rgba(0, 0, 0, 0.3);
+
+  /* Keep Tailwind's slate palette in its native dark-page direction. */
+  --color-slate-950: #020617;
+  --color-slate-900: #0f172a;
+  --color-slate-800: #1e293b;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-500: #64748b;
+  --color-slate-400: #94a3b8;
+  --color-slate-300: #cbd5e1;
+  --color-slate-200: #e2e8f0;
+  --color-slate-100: #f1f5f9;
+}
+
+html[data-theme-resolved="light"] {
+  --muted-text: #778196;
+
+  /* Existing pages use dark-oriented slate utilities. In light mode the
+     semantic order is reversed so surfaces and text switch together. */
+  --color-slate-950: #f8fafc;
+  --color-slate-900: #ffffff;
+  --color-slate-800: #e2e8f0;
+  --color-slate-700: #cbd5e1;
+  --color-slate-600: #64748b;
+  --color-slate-500: #64748b;
+  --color-slate-400: #475569;
+  --color-slate-300: #334155;
+  --color-slate-200: #1e293b;
+  --color-slate-100: #0f172a;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  html:not([data-theme-resolved]) {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --header-bg: #111827;
+    --header-text: #f8fafc;
+    --header-border: #293345;
+    --control-bg: #1b2535;
+    --active-bg: #2a3547;
+    --muted-text: #9aa6b8;
+    --page-bg: #020617;
+    --surface: #0f172a;
+    --surface-soft: #1e293b;
+    --page-border: #1e293b;
+    --page-text: #f8fafc;
+    --page-muted: #94a3b8;
+    --login-grid: #293345;
+    --login-glow: rgba(99, 111, 236, 0.2);
+    --login-card: rgba(15, 23, 42, 0.94);
+    --login-shadow: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -23,4 +104,36 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-body {
+  display: flex;
+  min-height: calc(100vh - 68px);
+  flex: 1;
+  flex-direction: column;
+  background: var(--page-bg);
+  color: var(--page-text);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.site-body > main {
+  flex: 1;
+}
+
+html[data-theme-resolved="light"] .site-body .text-white {
+  color: var(--page-text);
+}
+html[data-theme-resolved="light"] .site-body .hover\:text-white:hover,
+html[data-theme-resolved="light"]
+  .site-body
+  .group:hover
+  .group-hover\:text-white {
+  color: var(--page-text);
+}
+
+@media (max-width: 760px) {
+  .site-body {
+    min-height: calc(100vh - 60px);
+  }
 }
