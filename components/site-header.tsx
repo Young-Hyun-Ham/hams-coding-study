@@ -66,6 +66,15 @@ export function SiteHeader() {
     .trim()
     .slice(0, 1)
     .toUpperCase();
+  const currentMembership = user?.serviceMemberships?.[0] ?? null;
+  const genderLabel = user?.gender
+    ? {
+        male: "남성",
+        female: "여성",
+        other: "기타",
+        prefer_not_to_say: "응답하지 않음",
+      }[user.gender]
+    : "미등록";
 
   return (
     <header className={styles.header}>
@@ -131,6 +140,13 @@ export function SiteHeader() {
                       <span>{user.email}</span>
                     </div>
                   </div>
+                  <dl className={styles.sessionDetails}>
+                    <div><dt>생년월일</dt><dd>{user.birthDate || "미등록"}</dd></div>
+                    <div><dt>성별</dt><dd>{genderLabel}</dd></div>
+                    <div><dt>서비스</dt><dd>{currentMembership?.serviceName || "가입정보 없음"}</dd></div>
+                    <div><dt>이용 타입</dt><dd>{currentMembership?.plan?.toUpperCase() || "-"}</dd></div>
+                    {currentMembership ? <div><dt>월 이용요금</dt><dd>{currentMembership.monthlyPrice.toLocaleString("ko-KR")}원</dd></div> : null}
+                  </dl>
                   <a className={styles.logout} href="/api/auth/logout">
                     로그아웃
                   </a>

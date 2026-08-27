@@ -81,6 +81,32 @@
   text-decoration: none;
   font-weight: 700;
 }
+.sessionDetails {
+  display: grid;
+  gap: 7px;
+  margin: 10px 6px 0;
+  padding: 10px 0;
+  border-top: 1px solid var(--header-border);
+}
+.sessionDetails > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+}
+.sessionDetails dt {
+  color: var(--muted-text);
+}
+.sessionDetails dd {
+  overflow: hidden;
+  margin: 0;
+  color: var(--header-text);
+  font-weight: 700;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .login {
   display: grid;
   min-width: 76px;

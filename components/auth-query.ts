@@ -3,6 +3,16 @@ export type SessionUser = {
   email: string;
   loginId: string;
   nickname: string;
+  birthDate: string | null;
+  gender: "male" | "female" | "other" | "prefer_not_to_say" | null;
+  serviceMemberships: Array<{
+    serviceSiteId: string;
+    clientId: string;
+    serviceName: string;
+    plan: "basic" | "standard" | "premium";
+    monthlyPrice: number;
+    joinedAt: string;
+  }>;
 };
 
 export async function getCurrentUser(): Promise<SessionUser | null> {
