@@ -147,6 +147,12 @@ export function SiteHeader() {
                     <div><dt>이용 타입</dt><dd>{currentMembership?.plan?.toUpperCase() || "-"}</dd></div>
                     {currentMembership ? <div><dt>월 이용요금</dt><dd>{currentMembership.monthlyPrice.toLocaleString("ko-KR")}원</dd></div> : null}
                   </dl>
+                  <div className={styles.accountActions}>
+                    <a href="/api/auth/profile">회원정보 수정</a>
+                    <a href="/api/auth/profile?destination=services">
+                      서비스 수정
+                    </a>
+                  </div>
                   <a className={styles.logout} href="/api/auth/logout">
                     로그아웃
                   </a>

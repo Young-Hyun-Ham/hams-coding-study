@@ -208,6 +208,30 @@
   color: var(--muted-text);
   font-size: 11px;
 }
+.accountActions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 2px;
+}
+.accountActions a {
+  display: grid;
+  min-height: 34px;
+  place-items: center;
+  padding: 7px;
+  border: 1px solid var(--header-border);
+  border-radius: 8px;
+  color: var(--header-text);
+  background: var(--control-bg);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+.accountActions a:hover {
+  border-color: #747ef4;
+  color: #747ef4;
+}
 .logout {
   display: block;
   margin-top: 8px;
